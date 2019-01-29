@@ -19,8 +19,8 @@ const mapStateToProps = state => ({
   isLoading: state.getIn(['suggestions', 'isLoading']),
 });
 
-export default @connect(mapStateToProps)
-class FollowRecommendations extends ImmutablePureComponent {
+@connect(mapStateToProps)
+export default class FollowRecommendations extends ImmutablePureComponent {
 
   static contextTypes = {
     router: PropTypes.object.isRequired,

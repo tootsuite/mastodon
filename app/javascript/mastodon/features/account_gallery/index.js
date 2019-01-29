@@ -49,8 +49,8 @@ class LoadMoreMedia extends ImmutablePureComponent {
 
 }
 
-export default @connect(mapStateToProps)
-class AccountGallery extends ImmutablePureComponent {
+@connect(mapStateToProps)
+export default class AccountGallery extends ImmutablePureComponent {
 
   static propTypes = {
     params: PropTypes.object.isRequired,

@@ -20,9 +20,9 @@ const mapStateToProps = (state, props) => ({
   accountIds: state.getIn(['user_lists', 'favourited_by', props.params.statusId]),
 });
 
-export default @connect(mapStateToProps)
+@connect(mapStateToProps)
 @injectIntl
-class Favourites extends ImmutablePureComponent {
+export default class Favourites extends ImmutablePureComponent {
 
   static propTypes = {
     params: PropTypes.object.isRequired,

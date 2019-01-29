@@ -8,8 +8,8 @@ const messages = defineMessages({
   unblockDomain: { id: 'account.unblock_domain', defaultMessage: 'Unblock domain {domain}' },
 });
 
-export default @injectIntl
-class Account extends ImmutablePureComponent {
+@injectIntl
+export default class Account extends ImmutablePureComponent {
 
   static propTypes = {
     domain: PropTypes.string,

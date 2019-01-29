@@ -23,9 +23,9 @@ const mapDispatchToProps = (dispatch, { listId }) => ({
   onAdd: () => dispatch(addToListAdder(listId)),
 });
 
-export default @connect(MapStateToProps, mapDispatchToProps)
+@connect(MapStateToProps, mapDispatchToProps)
 @injectIntl
-class List extends ImmutablePureComponent {
+export default class List extends ImmutablePureComponent {
 
   static propTypes = {
     list: ImmutablePropTypes.map.isRequired,

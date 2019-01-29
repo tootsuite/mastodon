@@ -298,8 +298,8 @@ class EmojiPickerMenu extends React.PureComponent {
 
 }
 
-export default @injectIntl
-class EmojiPickerDropdown extends React.PureComponent {
+@injectIntl
+export default class EmojiPickerDropdown extends React.PureComponent {
 
   static propTypes = {
     custom_emojis: ImmutablePropTypes.list,

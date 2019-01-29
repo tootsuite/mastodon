@@ -28,9 +28,9 @@ const mapStateToProps = state => ({
   domain: state.getIn(['meta', 'domain']),
 });
 
-export default @connect(mapStateToProps)
+@connect(mapStateToProps)
 @injectIntl
-class Directory extends React.PureComponent {
+export default class Directory extends React.PureComponent {
 
   static contextTypes = {
     router: PropTypes.object,

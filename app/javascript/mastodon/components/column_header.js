@@ -12,8 +12,8 @@ const messages = defineMessages({
   moveRight: { id: 'column_header.moveRight_settings', defaultMessage: 'Move column to the right' },
 });
 
-export default @injectIntl
-class ColumnHeader extends React.PureComponent {
+@injectIntl
+export default class ColumnHeader extends React.PureComponent {
 
   static contextTypes = {
     router: PropTypes.object,

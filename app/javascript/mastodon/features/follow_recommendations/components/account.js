@@ -32,9 +32,9 @@ const getFirstSentence = str => {
   return arr[0];
 };
 
-export default @connect(makeMapStateToProps)
+@connect(makeMapStateToProps)
 @injectIntl
-class Account extends ImmutablePureComponent {
+export default class Account extends ImmutablePureComponent {
 
   static propTypes = {
     account: ImmutablePropTypes.map.isRequired,

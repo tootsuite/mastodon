@@ -7,8 +7,8 @@ import NavigationContainer from 'mastodon/features/compose/containers/navigation
 import LinkFooter from './link_footer';
 import { changeComposing } from 'mastodon/actions/compose';
 
-export default @connect()
-class ComposePanel extends React.PureComponent {
+@connect()
+export default class ComposePanel extends React.PureComponent {
 
   static propTypes = {
     dispatch: PropTypes.func.isRequired,

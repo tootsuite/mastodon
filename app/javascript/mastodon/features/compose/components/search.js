@@ -44,8 +44,8 @@ class SearchPopout extends React.PureComponent {
 
 }
 
-export default @injectIntl
-class Search extends React.PureComponent {
+@injectIntl
+export default class Search extends React.PureComponent {
 
   static contextTypes = {
     router: PropTypes.object.isRequired,

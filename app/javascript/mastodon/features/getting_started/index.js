@@ -60,9 +60,9 @@ const badgeDisplay = (number, limit) => {
 
 const NAVIGATION_PANEL_BREAKPOINT = 600 + (285 * 2) + (10 * 2);
 
-export default @connect(mapStateToProps, mapDispatchToProps)
+@connect(mapStateToProps, mapDispatchToProps)
 @injectIntl
-class GettingStarted extends ImmutablePureComponent {
+export default class GettingStarted extends ImmutablePureComponent {
 
   static contextTypes = {
     router: PropTypes.object.isRequired,

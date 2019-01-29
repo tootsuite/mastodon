@@ -94,8 +94,8 @@ export const fileNameFromURL = str => {
   return pathname.substring(index + 1);
 };
 
-export default @injectIntl
-class Video extends React.PureComponent {
+@injectIntl
+export default class Video extends React.PureComponent {
 
   static propTypes = {
     preview: PropTypes.string,

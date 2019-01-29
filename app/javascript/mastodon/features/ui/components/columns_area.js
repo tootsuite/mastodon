@@ -55,8 +55,8 @@ const messages = defineMessages({
 
 const shouldHideFAB = path => path.match(/^\/statuses\/|^\/search|^\/getting-started|^\/start/);
 
-export default @(component => injectIntl(component, { withRef: true }))
-class ColumnsArea extends ImmutablePureComponent {
+@(component => injectIntl(component, { withRef: true }))
+export default class ColumnsArea extends ImmutablePureComponent {
 
   static contextTypes = {
     router: PropTypes.object.isRequired,

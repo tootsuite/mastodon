@@ -28,9 +28,9 @@ const mapStateToProps = state => ({
   showAnnouncements: state.getIn(['announcements', 'show']),
 });
 
-export default @connect(mapStateToProps)
+@connect(mapStateToProps)
 @injectIntl
-class HomeTimeline extends React.PureComponent {
+export default class HomeTimeline extends React.PureComponent {
 
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
