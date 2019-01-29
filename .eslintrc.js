@@ -25,6 +25,7 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
+      legacyDecorators: true,
       jsx: true,
     },
     ecmaVersion: 2018,
@@ -34,9 +35,13 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    'import/extensions': [
-      '.js',
-    ],
+    'import/resolver': {
+      node:[
+        '.js',
+        '.ts',
+        '.tsx',
+      ]
+    },
     'import/ignore': [
       'node_modules',
       '\\.(css|scss|json)$',
@@ -183,6 +188,8 @@ module.exports = {
       'always',
       {
         js: 'never',
+        ts: 'never',
+        tsx: 'never',
       },
     ],
     'import/newline-after-import': 'error',
