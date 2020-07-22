@@ -4,6 +4,14 @@ require 'rails_helper'
 
 RSpec.describe Remotable do
   class Foo
+    include ActiveSupport::Callbacks
+
+    define_callbacks :save
+
+    def self.after_save(*filters, &blk)
+      set_callback(:save, :after, *filters, &blk)
+    end
+
     def initialize
       @attrs = {}
     end
