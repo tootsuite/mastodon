@@ -22,6 +22,7 @@ end
 
 setup_redis_env_url
 setup_redis_env_url(:cache, false)
+setup_redis_env_url(:synchro, false) if ENV['SYNCHRO_REDIS_HOST'].present?
 
 namespace       = ENV.fetch('REDIS_NAMESPACE') { nil }
 cache_namespace = namespace ? namespace + '_cache' : 'cache'
