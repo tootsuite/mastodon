@@ -432,75 +432,6 @@ class Account < ApplicationRecord
       DeliveryFailureTracker.without_unavailable(urls)
     end
 
-    def search_for(terms, limit = 10, offset = 0)
-      textsearch, query = generate_query_for_search(terms)
-
-      sql = <<-SQL.squish
-        SELECT
-          accounts.*,
-          ts_rank_cd(#{textsearch}, #{query}, 32) AS rank
-        FROM accounts
-        WHERE #{query} @@ #{textsearch}
-          AND accounts.suspended_at IS NULL
-          AND accounts.moved_to_account_id IS NULL
-        ORDER BY rank DESC
-        LIMIT ? OFFSET ?
-      SQL
-
-      records = find_by_sql([sql, limit, offset])
-      ActiveRecord::Associations::Preloader.new.preload(records, :account_stat)
-      records
-    end
-
-    def advanced_search_for(terms, account, limit = 10, following = false, offset = 0)
-      textsearch, query = generate_query_for_search(terms)
-
-      if following
-        sql = <<-SQL.squish
-          WITH first_degree AS (
-            SELECT target_account_id
-            FROM follows
-            WHERE account_id = ?
-            UNION ALL
-            SELECT ?
-          )
-          SELECT
-            accounts.*,
-            (count(f.id) + 1) * ts_rank_cd(#{textsearch}, #{query}, 32) AS rank
-          FROM accounts
-          LEFT OUTER JOIN follows AS f ON (accounts.id = f.account_id AND f.target_account_id = ?)
-          WHERE accounts.id IN (SELECT * FROM first_degree)
-            AND #{query} @@ #{textsearch}
-            AND accounts.suspended_at IS NULL
-            AND accounts.moved_to_account_id IS NULL
-          GROUP BY accounts.id
-          ORDER BY rank DESC
-          LIMIT ? OFFSET ?
-        SQL
-
-        records = find_by_sql([sql, account.id, account.id, account.id, limit, offset])
-      else
-        sql = <<-SQL.squish
-          SELECT
-            accounts.*,
-            (count(f.id) + 1) * ts_rank_cd(#{textsearch}, #{query}, 32) AS rank
-          FROM accounts
-          LEFT OUTER JOIN follows AS f ON (accounts.id = f.account_id AND f.target_account_id = ?) OR (accounts.id = f.target_account_id AND f.account_id = ?)
-          WHERE #{query} @@ #{textsearch}
-            AND accounts.suspended_at IS NULL
-            AND accounts.moved_to_account_id IS NULL
-          GROUP BY accounts.id
-          ORDER BY rank DESC
-          LIMIT ? OFFSET ?
-        SQL
-
-        records = find_by_sql([sql, account.id, account.id, limit, offset])
-      end
-
-      ActiveRecord::Associations::Preloader.new.preload(records, :account_stat)
-      records
-    end
-
     def from_text(text)
       return [] if text.blank?
 
@@ -512,18 +443,9 @@ class Account < ApplicationRecord
             TagManager.instance.normalize_domain(domain)
           end
         end
+
         EntityCache.instance.mention(username, domain)
       end
-    end
-
-    private
-
-    def generate_query_for_search(terms)
-      terms      = Arel.sql(connection.quote(terms.gsub(/['?\\:]/, ' ')))
-      textsearch = "(setweight(to_tsvector('simple', accounts.display_name), 'A') || setweight(to_tsvector('simple', accounts.username), 'B') || setweight(to_tsvector('simple', coalesce(accounts.domain, '')), 'C'))"
-      query      = "to_tsquery('simple', ''' ' || #{terms} || ' ''' || ':*')"
-
-      [textsearch, query]
     end
   end
 

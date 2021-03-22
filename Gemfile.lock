@@ -54,6 +54,8 @@ GEM
       activemodel (= 5.2.4.5)
       activesupport (= 5.2.4.5)
       arel (>= 9.0)
+    activerecord-cte (0.1.1)
+      activerecord
     activestorage (5.2.4.5)
       actionpack (= 5.2.4.5)
       activerecord (= 5.2.4.5)
@@ -679,6 +681,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.10)
   active_record_query_trace (~> 1.8)
+  activerecord-cte (~> 0.1)
   addressable (~> 2.7)
   annotate (~> 3.1)
   aws-sdk-s3 (~> 1.92)

@@ -26,6 +26,7 @@ gem 'streamio-ffmpeg', '~> 3.0'
 gem 'blurhash', '~> 0.1'
 
 gem 'active_model_serializers', '~> 0.10'
+gem 'activerecord-cte', '~> 0.1'
 gem 'addressable', '~> 2.7'
 gem 'bootsnap', '~> 1.6.0', require: false
 gem 'browser'
