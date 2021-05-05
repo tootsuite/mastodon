@@ -1,72 +1,50 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import ImmutablePropTypes from 'react-immutable-proptypes';
+import React, { CSSProperties } from 'react';
+import classNames from 'classnames';
 import { autoPlayGif } from '../initial_state';
+import { useHovering } from '../../hooks/useHovering';
+import { Account } from '../../types/resources';
 
-export default class Avatar extends React.PureComponent {
-
-  static propTypes = {
-    account: ImmutablePropTypes.map.isRequired,
-    size: PropTypes.number.isRequired,
-    style: PropTypes.object,
-    inline: PropTypes.bool,
-    animate: PropTypes.bool,
-  };
-
-  static defaultProps = {
-    animate: autoPlayGif,
-    size: 20,
-    inline: false,
-  };
-
-  state = {
-    hovering: false,
-  };
-
-  handleMouseEnter = () => {
-    if (this.props.animate) return;
-    this.setState({ hovering: true });
-  }
-
-  handleMouseLeave = () => {
-    if (this.props.animate) return;
-    this.setState({ hovering: false });
-  }
-
-  render () {
-    const { account, size, animate, inline } = this.props;
-    const { hovering } = this.state;
-
-    const src = account.get('avatar');
-    const staticSrc = account.get('avatar_static');
-
-    let className = 'account__avatar';
-
-    if (inline) {
-      className = className + ' account__avatar-inline';
-    }
-
-    const style = {
-      ...this.props.style,
-      width: `${size}px`,
-      height: `${size}px`,
-      backgroundSize: `${size}px ${size}px`,
-    };
-
-    if (hovering || animate) {
-      style.backgroundImage = `url(${src})`;
-    } else {
-      style.backgroundImage = `url(${staticSrc})`;
-    }
-
-    return (
-      <div
-        className={className}
-        onMouseEnter={this.handleMouseEnter}
-        onMouseLeave={this.handleMouseLeave}
-        style={style}
-      />
-    );
-  }
-
+type Props = {
+  account: Account;
+  size?: number;
+  style?: CSSProperties;
+  inline?: Boolean;
+  animate?: Boolean;
 }
+
+export const Avatar: React.FC<Props> = ({
+  account,
+  animate = autoPlayGif,
+  size = 20,
+  inline = false,
+  style: styleFromParent,
+}) => {
+
+  const { hovering, handleMouseEnter, handleMouseLeave } = useHovering();
+
+  const className = classNames(
+    'account__avatar',
+    { 'account__avatar-inline': inline },
+  );
+
+  const src = account.get('avatar');
+  const staticSrc = account.get('avatar_static');
+  const style = {
+    ...styleFromParent,
+    width: `${size}px`,
+    height: `${size}px`,
+    backgroundSize: `${size}px ${size}px`,
+    backgroundImage: (hovering || animate) ? `url(${src})` : `url(${staticSrc})`,
+  };
+
+  return (
+    <div
+      className={className}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      style={style}
+    />
+  );
+};
+
+export default Avatar;
