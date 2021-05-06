@@ -40,7 +40,7 @@ module.exports = {
         '.js',
         '.ts',
         '.tsx',
-      ]
+      ],
     },
     'import/ignore': [
       'node_modules',
@@ -123,7 +123,10 @@ module.exports = {
     'react/jsx-wrap-multilines': 'error',
     'react/no-multi-comp': 'off',
     'react/no-string-refs': 'error',
-    'react/prop-types': 'error',
+    'react/prop-types': [
+      'error',
+      { skipUndeclared: true },
+    ],
     'react/self-closing-comp': 'error',
 
     'jsx-a11y/accessible-emoji': 'warn',
