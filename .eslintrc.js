@@ -12,7 +12,7 @@ module.exports = {
     ATTACHMENT_HOST: false,
   },
 
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
 
   plugins: [
     'react',
