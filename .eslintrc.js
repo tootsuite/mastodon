@@ -30,17 +30,12 @@ module.exports = {
     },
     ecmaVersion: 2018,
   },
-
+  extends: [
+    'plugin:import/typescript',
+  ],
   settings: {
     react: {
       version: 'detect',
-    },
-    'import/resolver': {
-      node:[
-        '.js',
-        '.ts',
-        '.tsx',
-      ],
     },
     'import/ignore': [
       'node_modules',
