@@ -11,3 +11,15 @@ type AccountValues = {
   [key: string]: any;
 }
 export type Account = MastodonMap<AccountValues>
+
+type HashtagHistoryValues = {
+  accounts: number
+  uses: number
+}
+
+type HashtagValues = {
+  url: string;
+  name: string;
+  history: MastodonMap<HashtagHistoryValues>[]
+}
+export type Hashtag = MastodonMap<HashtagValues>
