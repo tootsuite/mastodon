@@ -1,5 +1,3 @@
-// @ts-check
-
 import { connectStream } from '../stream';
 import {
   updateTimeline,
@@ -21,34 +19,37 @@ import { getLocale } from '../locales';
 
 const { messages } = getLocale();
 
-/**
- * @param {number} max
- * @return {number}
- */
-const randomUpTo = max =>
+type randomUpTo = (max: number) => number
+const randomUpTo: randomUpTo = (max) =>
   Math.floor(Math.random() * Math.floor(max));
 
-/**
- * @param {string} timelineId
- * @param {string} channelName
- * @param {Object.<string, string>} params
- * @param {Object} options
- * @param {function(Function, Function): void} [options.fallback]
- * @param {function(object): boolean} [options.accept]
- * @return {function(): void}
- */
-export const connectTimelineStream = (timelineId, channelName, params = {}, options = {}) =>
-  connectStream(channelName, params, (dispatch, getState) => {
+
+type connectTimelineStreamParams = {
+  [key: string]: string
+}
+type connectTimelineStreamOption = {
+  fallback?: (dispatch: Function, done: () => void) => void;
+  accept?: (object: object) => boolean;
+}
+type connectTimelineStream = (
+  timelineId: string,
+  channelName: string,
+  params?: connectTimelineStreamParams,
+  options?: connectTimelineStreamOption,
+) => void
+
+export const connectTimelineStream: connectTimelineStream = (timelineId, channelName, params = {}, options = {}) =>
+  connectStream(channelName, params, (dispatch: Function, getState: Function) => {
     const locale = getState().getIn(['meta', 'locale']);
 
-    let pollingId;
+    let pollingId: number | null;
 
     /**
      * @param {function(Function, Function): void} fallback
      */
-    const useFallback = fallback => {
+    const useFallback = (fallback: any) => {
       fallback(dispatch, () => {
-        pollingId = setTimeout(() => useFallback(fallback), 20000 + randomUpTo(20000));
+        pollingId = window.setTimeout(() => useFallback(fallback), 20000 + randomUpTo(20000));
       });
     };
 
@@ -66,11 +67,11 @@ export const connectTimelineStream = (timelineId, channelName, params = {}, opti
         dispatch(disconnectTimeline(timelineId));
 
         if (options.fallback) {
-          pollingId = setTimeout(() => useFallback(options.fallback), randomUpTo(40000));
+          pollingId = window.setTimeout(() => useFallback(options.fallback), randomUpTo(40000));
         }
       },
 
-      onReceive (data) {
+      onReceive (data: any) {
         switch(data.event) {
         case 'update':
           dispatch(updateTimeline(timelineId, JSON.parse(data.payload), options.accept));
@@ -101,58 +102,45 @@ export const connectTimelineStream = (timelineId, channelName, params = {}, opti
     };
   });
 
-/**
- * @param {Function} dispatch
- * @param {function(): void} done
- */
-const refreshHomeTimelineAndNotification = (dispatch, done) => {
+type refreshHomeTimelineAndNotification = (dispatch: Function, done: () => void) => void
+const refreshHomeTimelineAndNotification: refreshHomeTimelineAndNotification = (dispatch, done) => {
   dispatch(expandHomeTimeline({}, () =>
     dispatch(expandNotifications({}, () =>
       dispatch(fetchAnnouncements(done))))));
 };
 
-/**
- * @return {function(): void}
- */
-export const connectUserStream = () =>
+type connectUserStream = () => void
+export const connectUserStream: connectUserStream = () =>
   connectTimelineStream('home', 'user', {}, { fallback: refreshHomeTimelineAndNotification });
 
-/**
- * @param {Object} options
- * @param {boolean} [options.onlyMedia]
- * @return {function(): void}
- */
-export const connectCommunityStream = ({ onlyMedia } = {}) =>
+type connectCommunityStreamOption = {
+  onlyMedia?: boolean
+}
+export const connectCommunityStream = ({ onlyMedia }: connectCommunityStreamOption = {}) =>
   connectTimelineStream(`community${onlyMedia ? ':media' : ''}`, `public:local${onlyMedia ? ':media' : ''}`);
 
-/**
- * @param {Object} options
- * @param {boolean} [options.onlyMedia]
- * @param {boolean} [options.onlyRemote]
- * @return {function(): void}
- */
-export const connectPublicStream = ({ onlyMedia, onlyRemote } = {}) =>
+type connectPublicStreamOption = {
+  onlyMedia?: boolean
+  onlyRemote?: boolean
+}
+type connectPublicStream = (option: connectPublicStreamOption) => void
+export const connectPublicStream: connectPublicStream = ({ onlyMedia, onlyRemote } = {}) =>
   connectTimelineStream(`public${onlyRemote ? ':remote' : ''}${onlyMedia ? ':media' : ''}`, `public${onlyRemote ? ':remote' : ''}${onlyMedia ? ':media' : ''}`);
 
-/**
- * @param {string} columnId
- * @param {string} tagName
- * @param {boolean} onlyLocal
- * @param {function(object): boolean} accept
- * @return {function(): void}
- */
-export const connectHashtagStream = (columnId, tagName, onlyLocal, accept) =>
+type connectHashtagStream = (
+  columnId: string,
+  tagName: string,
+  onlyLocal: boolean,
+  accept: (object: object) => boolean,
+) => void
+export const connectHashtagStream: connectHashtagStream = (columnId, tagName, onlyLocal, accept) =>
   connectTimelineStream(`hashtag:${columnId}${onlyLocal ? ':local' : ''}`, `hashtag${onlyLocal ? ':local' : ''}`, { tag: tagName }, { accept });
 
-/**
- * @return {function(): void}
- */
-export const connectDirectStream = () =>
+type connectDirectStream = () => void
+export const connectDirectStream: connectDirectStream = () =>
   connectTimelineStream('direct', 'direct');
 
-/**
- * @param {string} listId
- * @return {function(): void}
- */
-export const connectListStream = listId =>
+
+type connectListStream = (listId: string) => void
+export const connectListStream: connectListStream = listId =>
   connectTimelineStream(`list:${listId}`, 'list', { list: listId });
