@@ -1,65 +1,46 @@
-// @ts-check
-
 import { decode } from 'blurhash';
-import React, { useRef, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, { useRef, useEffect, useMemo } from 'react';
 
-/**
- * @typedef BlurhashPropsBase
- * @property {string?} hash Hash to render
- * @property {number} width
- * Width of the blurred region in pixels. Defaults to 32
- * @property {number} [height]
- * Height of the blurred region in pixels. Defaults to width
- * @property {boolean} [dummy]
- * Whether dummy mode is enabled. If enabled, nothing is rendered
- * and canvas left untouched
- */
+const useCanvas = () => {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const canvasCtxRef = React.useRef<CanvasRenderingContext2D | null>(null);
+  useEffect(() => {
+    if (canvasRef.current) {
+      canvasCtxRef.current = canvasRef.current.getContext('2d');
+    }
+  }, [canvasRef.current]);
 
-/** @typedef {JSX.IntrinsicElements['canvas'] & BlurhashPropsBase} BlurhashProps */
+  return { canvasRef, canvasCtxRef };
+};
 
-/**
- * Component that is used to render blurred of blurhash string
- *
- * @param {BlurhashProps} param1 Props of the component
- * @returns Canvas which will render blurred region element to embed
- */
-function Blurhash({
+const useBlurhashImageData = (hash: string, width: number, height: number) => useMemo(() => new ImageData(decode(hash, width, height), width, height), [hash, width, height]);
+
+type Props = {
+  hash: string,
+  width?: number,
+  height?: number,
+  dummy?: boolean,
+  [key: string]: any
+}
+
+const Blurhash = ({
   hash,
   width = 32,
   height = width,
   dummy = false,
   ...canvasProps
-}) {
-  const canvasRef = /** @type {import('react').MutableRefObject<HTMLCanvasElement>} */ (useRef());
+}: Props) => {
+  if (dummy || !hash) return null;
 
-  useEffect(() => {
-    const { current: canvas } = canvasRef;
-    canvas.width = canvas.width; // resets canvas
+  const { canvasRef, canvasCtxRef } = useCanvas();
+  try {
+    const imageData = useBlurhashImageData(hash, width, height);
+    canvasCtxRef.current!.putImageData(imageData, 0, 0);
+  } catch (err) {
+    console.error('Blurhash decoding failure', { err, hash });
+  }
 
-    if (dummy || !hash) return;
-
-    try {
-      const pixels = decode(hash, width, height);
-      const ctx = canvas.getContext('2d');
-      const imageData = new ImageData(pixels, width, height);
-
-      ctx.putImageData(imageData, 0, 0);
-    } catch (err) {
-      console.error('Blurhash decoding failure', { err, hash });
-    }
-  }, [dummy, hash, width, height]);
-
-  return (
-    <canvas {...canvasProps} ref={canvasRef} width={width} height={height} />
-  );
-}
-
-Blurhash.propTypes = {
-  hash: PropTypes.string.isRequired,
-  width: PropTypes.number,
-  height: PropTypes.number,
-  dummy: PropTypes.bool,
+  return <canvas {...canvasProps} ref={canvasRef} width={width} height={height} />;
 };
 
-export default React.memo(Blurhash);
+export default Blurhash;
