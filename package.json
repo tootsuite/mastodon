@@ -227,6 +227,7 @@
     "@types/webpack-dev-server": "^3.11.3",
     "@types/webpack-manifest-plugin": "^3.0.4",
     "@types/yargs": "^16.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
     "@typescript-eslint/parser": "^4.22.1",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.0.2",

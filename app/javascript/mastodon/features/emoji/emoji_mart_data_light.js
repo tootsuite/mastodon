@@ -9,7 +9,7 @@ const emojis = {};
 // decompress
 Object.keys(shortCodesToEmojiData).forEach((shortCode) => {
   let [
-    filenameData, // eslint-disable-line no-unused-vars
+    filenameData, // eslint-disable-line @typescript-eslint/no-unused-vars
     searchData,
   ] = shortCodesToEmojiData[shortCode];
   let [
