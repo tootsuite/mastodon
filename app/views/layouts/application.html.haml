@@ -31,7 +31,7 @@
     = stylesheet_link_tag '/inert.css', skip_pipeline: true, media: 'all', id: 'inert-style'
 
     - if Setting.custom_css.present?
-      = stylesheet_link_tag custom_css_path, host: request.host, media: 'all'
+      = stylesheet_link_tag custom_css_path(v: Setting.settings_version), host: request.host, media: 'all'
 
     = yield :header_tags
 

@@ -88,6 +88,9 @@ class Form::AdminSettings
         setting.update(value: typecast_value(key, value))
       end
     end
+
+    setting = Setting.where(var: 'settings_version').first_or_initialize(var: 'settings_version')
+    setting.update(value: Time.now.to_i)
   end
 
   private
