@@ -127,6 +127,8 @@
         %li
           = feature_hint('PAM', @pam_enabled)
         %li
+          = feature_hint('OpenID Connect', @openidc_enabled)
+        %li
           = feature_hint(t('admin.dashboard.hidden_service'), @hidden_service)
 
   .dashboard__widgets__trends

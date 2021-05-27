@@ -22,6 +22,6 @@
 
     .actions
       - resource_class.omniauth_providers.each do |provider|
-        = link_to t("auth.providers.#{provider}", default: provider.to_s.chomp("_oauth2").capitalize), omniauth_authorize_path(resource_name, provider), class: "button button-#{provider}", method: :post
+        = link_to t("auth.providers.#{Devise.omniauth_configs[provider].strategy.display_name}", default: Devise.omniauth_configs[provider].strategy.display_name.capitalize), omniauth_authorize_path(resource_name, provider), class: "button button-#{Devise.omniauth_configs[provider].strategy.display_name}", method: :post
 
 .form-footer= render 'auth/shared/links'
