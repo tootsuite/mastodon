@@ -89,10 +89,9 @@ const mapDispatchToProps = (dispatch, { intl }) => ({
   },
 });
 
-export default
 @injectIntl
 @connect(makeMapStateToProps, mapDispatchToProps)
-class AccountCard extends ImmutablePureComponent {
+export default class AccountCard extends ImmutablePureComponent {
 
   static propTypes = {
     account: ImmutablePropTypes.map.isRequired,

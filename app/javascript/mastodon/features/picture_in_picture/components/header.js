@@ -17,9 +17,9 @@ const mapStateToProps = (state, { accountId }) => ({
   account: state.getIn(['accounts', accountId]),
 });
 
-export default @connect(mapStateToProps)
+@connect(mapStateToProps)
 @injectIntl
-class Header extends ImmutablePureComponent {
+export default class Header extends ImmutablePureComponent {
 
   static propTypes = {
     accountId: PropTypes.string.isRequired,

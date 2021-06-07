@@ -19,8 +19,8 @@ const mapStateToProps = (state, { local }) => {
   };
 };
 
-export default @connect(mapStateToProps)
-class PublicTimeline extends React.PureComponent {
+@connect(mapStateToProps)
+export default class PublicTimeline extends React.PureComponent {
 
   static propTypes = {
     dispatch: PropTypes.func.isRequired,

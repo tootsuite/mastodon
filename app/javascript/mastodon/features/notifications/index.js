@@ -65,9 +65,9 @@ const mapStateToProps = state => ({
   needsNotificationPermission: state.getIn(['settings', 'notifications', 'alerts']).includes(true) && state.getIn(['notifications', 'browserSupport']) && state.getIn(['notifications', 'browserPermission']) === 'default' && !state.getIn(['settings', 'notifications', 'dismissPermissionBanner']),
 });
 
-export default @connect(mapStateToProps)
+@connect(mapStateToProps)
 @injectIntl
-class Notifications extends React.PureComponent {
+export default class Notifications extends React.PureComponent {
 
   static propTypes = {
     columnId: PropTypes.string,

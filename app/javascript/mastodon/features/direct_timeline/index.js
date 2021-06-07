@@ -13,9 +13,9 @@ const messages = defineMessages({
   title: { id: 'column.direct', defaultMessage: 'Direct messages' },
 });
 
-export default @connect()
+@connect()
 @injectIntl
-class DirectTimeline extends React.PureComponent {
+export default class DirectTimeline extends React.PureComponent {
 
   static propTypes = {
     dispatch: PropTypes.func.isRequired,

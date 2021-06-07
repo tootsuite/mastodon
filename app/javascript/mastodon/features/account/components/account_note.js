@@ -43,8 +43,8 @@ class InlineAlert extends React.PureComponent {
 
 }
 
-export default @injectIntl
-class AccountNote extends ImmutablePureComponent {
+@injectIntl
+export default class AccountNote extends ImmutablePureComponent {
 
   static propTypes = {
     account: ImmutablePropTypes.map.isRequired,

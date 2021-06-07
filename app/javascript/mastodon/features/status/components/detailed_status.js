@@ -24,8 +24,8 @@ const messages = defineMessages({
   direct_short: { id: 'privacy.direct.short', defaultMessage: 'Direct' },
 });
 
-export default  @injectIntl
-class DetailedStatus extends ImmutablePureComponent {
+@injectIntl
+export default class DetailedStatus extends ImmutablePureComponent {
 
   static contextTypes = {
     router: PropTypes.object,

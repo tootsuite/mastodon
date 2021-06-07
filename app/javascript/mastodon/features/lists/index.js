@@ -31,9 +31,9 @@ const mapStateToProps = state => ({
   lists: getOrderedLists(state),
 });
 
-export default @connect(mapStateToProps)
+@connect(mapStateToProps)
 @injectIntl
-class Lists extends ImmutablePureComponent {
+export default class Lists extends ImmutablePureComponent {
 
   static propTypes = {
     params: PropTypes.object.isRequired,

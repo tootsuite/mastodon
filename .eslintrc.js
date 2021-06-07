@@ -12,31 +12,32 @@ module.exports = {
     ATTACHMENT_HOST: false,
   },
 
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
 
   plugins: [
     'react',
     'jsx-a11y',
     'import',
     'promise',
+    '@typescript-eslint',
   ],
 
   parserOptions: {
     sourceType: 'module',
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
+      legacyDecorators: true,
       jsx: true,
     },
     ecmaVersion: 2018,
   },
-
+  extends: [
+    'plugin:import/typescript',
+  ],
   settings: {
     react: {
       version: 'detect',
     },
-    'import/extensions': [
-      '.js',
-    ],
     'import/ignore': [
       'node_modules',
       '\\.(css|scss|json)$',
@@ -83,7 +84,8 @@ module.exports = {
     'no-undef': 'error',
     'no-unreachable': 'error',
     'no-unused-expressions': 'error',
-    'no-unused-vars': [
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': [
       'error',
       {
         vars: 'all',
@@ -118,7 +120,10 @@ module.exports = {
     'react/jsx-wrap-multilines': 'error',
     'react/no-multi-comp': 'off',
     'react/no-string-refs': 'error',
-    'react/prop-types': 'error',
+    'react/prop-types': [
+      'error',
+      { skipUndeclared: true },
+    ],
     'react/self-closing-comp': 'error',
 
     'jsx-a11y/accessible-emoji': 'warn',
@@ -183,6 +188,8 @@ module.exports = {
       'always',
       {
         js: 'never',
+        ts: 'never',
+        tsx: 'never',
       },
     ],
     'import/newline-after-import': 'error',

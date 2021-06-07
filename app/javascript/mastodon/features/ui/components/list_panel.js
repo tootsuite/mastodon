@@ -20,9 +20,9 @@ const mapStateToProps = state => ({
   lists: getOrderedLists(state),
 });
 
-export default @withRouter
+@withRouter
 @connect(mapStateToProps)
-class ListPanel extends ImmutablePureComponent {
+export default class ListPanel extends ImmutablePureComponent {
 
   static propTypes = {
     dispatch: PropTypes.func.isRequired,

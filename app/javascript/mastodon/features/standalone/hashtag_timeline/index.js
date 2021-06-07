@@ -15,8 +15,8 @@ const mapStateToProps = (state, { hashtag }) => ({
   hasMore: state.getIn(['timelines', `hashtag:${hashtag}`, 'hasMore'], false),
 });
 
-export default @connect(mapStateToProps)
-class HashtagTimeline extends React.PureComponent {
+@connect(mapStateToProps)
+export default class HashtagTimeline extends React.PureComponent {
 
   static propTypes = {
     dispatch: PropTypes.func.isRequired,

@@ -24,8 +24,8 @@ const messages = defineMessages({
   unmuteConversation: { id: 'status.unmute_conversation', defaultMessage: 'Unmute conversation' },
 });
 
-export default @injectIntl
-class Conversation extends ImmutablePureComponent {
+@injectIntl
+export default class Conversation extends ImmutablePureComponent {
 
   static contextTypes = {
     router: PropTypes.object,

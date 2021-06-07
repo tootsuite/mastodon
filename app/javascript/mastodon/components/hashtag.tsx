@@ -1,11 +1,11 @@
-// @ts-check
 import React from 'react';
 import { Sparklines, SparklinesCurve } from 'react-sparklines';
 import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
-import ImmutablePropTypes from 'react-immutable-proptypes';
 import Permalink from './permalink';
+// @ts-expect-error
 import ShortNumber from 'mastodon/components/short_number';
+import { Hashtag as HashtagType } from '../../types/resources';
 
 class SilentErrorBoundary extends React.Component {
 
@@ -17,11 +17,11 @@ class SilentErrorBoundary extends React.Component {
     error: false,
   };
 
-  componentDidCatch () {
+  componentDidCatch() {
     this.setState({ error: true });
   }
 
-  render () {
+  render() {
     if (this.state.error) {
       return null;
     }
@@ -31,12 +31,8 @@ class SilentErrorBoundary extends React.Component {
 
 }
 
-/**
- * Used to render counter of how much people are talking about hashtag
- *
- * @type {(displayNumber: JSX.Element, pluralReady: number) => JSX.Element}
- */
-const accountsCountRenderer = (displayNumber, pluralReady) => (
+type accountsCountRenderer = (displayNumber: React.ReactNode, pluralReady: number) => React.ReactNode
+const accountsCountRenderer: accountsCountRenderer = (displayNumber, pluralReady) => (
   <FormattedMessage
     id='trends.counter_by_accounts'
     defaultMessage='{count, plural, one {{counter} person} other {{counter} people}} talking'
@@ -47,7 +43,10 @@ const accountsCountRenderer = (displayNumber, pluralReady) => (
   />
 );
 
-const Hashtag = ({ hashtag }) => (
+type Props = {
+  hashtag: HashtagType;
+}
+const Hashtag: React.FC<Props> = ({ hashtag }) => (
   <div className='trends__item'>
     <div className='trends__item__name'>
       <Permalink
@@ -59,8 +58,8 @@ const Hashtag = ({ hashtag }) => (
 
       <ShortNumber
         value={
-          hashtag.getIn(['history', 0, 'accounts']) * 1 +
-          hashtag.getIn(['history', 1, 'accounts']) * 1
+          hashtag.get('history')[0].get('accounts') * 1 +
+          hashtag.get('history')[1].get('accounts') * 1
         }
         renderer={accountsCountRenderer}
       />
@@ -69,8 +68,8 @@ const Hashtag = ({ hashtag }) => (
     <div className='trends__item__current'>
       <ShortNumber
         value={
-          hashtag.getIn(['history', 0, 'uses']) * 1 +
-          hashtag.getIn(['history', 1, 'uses']) * 1
+          hashtag.get('history')[0].get('uses') * 1 +
+          hashtag.get('history')[1].get('uses') * 1
         }
       />
     </div>
@@ -84,6 +83,7 @@ const Hashtag = ({ hashtag }) => (
             .get('history')
             .reverse()
             .map((day) => day.get('uses'))
+            // @ts-expect-error
             .toArray()}
         >
           <SparklinesCurve style={{ fill: 'none' }} />
@@ -92,9 +92,5 @@ const Hashtag = ({ hashtag }) => (
     </div>
   </div>
 );
-
-Hashtag.propTypes = {
-  hashtag: ImmutablePropTypes.map.isRequired,
-};
 
 export default Hashtag;

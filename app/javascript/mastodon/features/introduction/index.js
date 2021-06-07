@@ -99,8 +99,8 @@ FrameInteractions.propTypes = {
   onNext: PropTypes.func.isRequired,
 };
 
-export default @connect(state => ({ domain: state.getIn(['meta', 'domain']) }))
-class Introduction extends React.PureComponent {
+@connect(state => ({ domain: state.getIn(['meta', 'domain']) }))
+export default class Introduction extends React.PureComponent {
 
   static propTypes = {
     domain: PropTypes.string.isRequired,

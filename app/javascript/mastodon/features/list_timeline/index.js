@@ -30,9 +30,9 @@ const mapStateToProps = (state, props) => ({
   hasUnread: state.getIn(['timelines', `list:${props.params.id}`, 'unread']) > 0,
 });
 
-export default @connect(mapStateToProps)
+@connect(mapStateToProps)
 @injectIntl
-class ListTimeline extends React.PureComponent {
+export default class ListTimeline extends React.PureComponent {
 
   static contextTypes = {
     router: PropTypes.object,

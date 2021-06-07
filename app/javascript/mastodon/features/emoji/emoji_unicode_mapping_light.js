@@ -4,9 +4,9 @@
 
 const [
   shortCodesToEmojiData,
-  skins, // eslint-disable-line no-unused-vars
-  categories, // eslint-disable-line no-unused-vars
-  short_names, // eslint-disable-line no-unused-vars
+  skins, // eslint-disable-line @typescript-eslint/no-unused-vars
+  categories, // eslint-disable-line @typescript-eslint/no-unused-vars
+  short_names, // eslint-disable-line @typescript-eslint/no-unused-vars
   emojisWithoutShortCodes,
 ] = require('./emoji_compressed');
 const { unicodeToFilename } = require('./unicode_to_filename');

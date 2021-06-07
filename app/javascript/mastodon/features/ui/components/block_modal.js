@@ -36,9 +36,9 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default @connect(makeMapStateToProps, mapDispatchToProps)
+@connect(makeMapStateToProps, mapDispatchToProps)
 @injectIntl
-class BlockModal extends React.PureComponent {
+export default class BlockModal extends React.PureComponent {
 
   static propTypes = {
     account: PropTypes.object.isRequired,

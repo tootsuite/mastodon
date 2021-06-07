@@ -9,8 +9,8 @@ const messages = defineMessages({
   heading: { id: 'keyboard_shortcuts.heading', defaultMessage: 'Keyboard Shortcuts' },
 });
 
-export default @injectIntl
-class KeyboardShortcuts extends ImmutablePureComponent {
+@injectIntl
+export default class KeyboardShortcuts extends ImmutablePureComponent {
 
   static propTypes = {
     intl: PropTypes.object.isRequired,

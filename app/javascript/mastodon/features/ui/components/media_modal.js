@@ -22,8 +22,8 @@ const messages = defineMessages({
 
 export const previewState = 'previewMediaModal';
 
-export default @injectIntl
-class MediaModal extends ImmutablePureComponent {
+@injectIntl
+export default class MediaModal extends ImmutablePureComponent {
 
   static propTypes = {
     media: ImmutablePropTypes.list.isRequired,

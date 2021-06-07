@@ -215,6 +215,12 @@ jobs:
       - run:
           name: Run jest
           command: yarn test:jest
+      - run:
+          name: Run lint
+          command: yarn test:lint
+      - run:
+          name: Run type check
+          command: yarn test:typecheck
 
 workflows:
   version: 2

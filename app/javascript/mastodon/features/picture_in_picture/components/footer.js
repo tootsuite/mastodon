@@ -37,9 +37,9 @@ const makeMapStateToProps = () => {
   return mapStateToProps;
 };
 
-export default @connect(makeMapStateToProps)
+@connect(makeMapStateToProps)
 @injectIntl
-class Footer extends ImmutablePureComponent {
+export default class Footer extends ImmutablePureComponent {
 
   static contextTypes = {
     router: PropTypes.object,

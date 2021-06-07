@@ -110,9 +110,8 @@ class Option extends React.PureComponent {
 
 }
 
-export default
 @injectIntl
-class PollForm extends ImmutablePureComponent {
+export default class PollForm extends ImmutablePureComponent {
 
   static propTypes = {
     options: ImmutablePropTypes.list,

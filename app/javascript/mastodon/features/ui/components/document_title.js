@@ -7,8 +7,8 @@ const mapStateToProps = state => ({
   unread: state.getIn(['missed_updates', 'unread']),
 });
 
-export default @connect(mapStateToProps)
-class DocumentTitle extends PureComponent {
+@connect(mapStateToProps)
+export default class DocumentTitle extends PureComponent {
 
   static propTypes = {
     unread: PropTypes.number.isRequired,

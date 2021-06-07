@@ -28,9 +28,9 @@ const mapDispatchToProps = dispatch => ({
   onReset: () => dispatch(resetListAdder()),
 });
 
-export default @connect(mapStateToProps, mapDispatchToProps)
+@connect(mapStateToProps, mapDispatchToProps)
 @injectIntl
-class ListAdder extends ImmutablePureComponent {
+export default class ListAdder extends ImmutablePureComponent {
 
   static propTypes = {
     accountId: PropTypes.string.isRequired,

@@ -24,9 +24,9 @@ export function getLink (index) {
   return links[index].props.to;
 }
 
-export default @injectIntl
+@injectIntl
 @withRouter
-class TabsBar extends React.PureComponent {
+export default class TabsBar extends React.PureComponent {
 
   static propTypes = {
     intl: PropTypes.object.isRequired,

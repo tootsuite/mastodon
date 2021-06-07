@@ -12,9 +12,9 @@ const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },
 });
 
-export default @connect()
+@connect()
 @injectIntl
-class NotificationsPermissionBanner extends React.PureComponent {
+export default class NotificationsPermissionBanner extends React.PureComponent {
 
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
