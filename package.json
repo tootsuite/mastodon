@@ -180,7 +180,7 @@
     "eslint-plugin-jsx-a11y": "~6.4.1",
     "eslint-plugin-promise": "~5.1.0",
     "eslint-plugin-react": "~7.24.0",
-    "jest": "^26.6.3",
+    "jest": "^27.0.4",
     "raf": "^3.4.1",
     "react-intl-translations-manager": "^5.0.3",
     "react-test-renderer": "^16.14.0",
