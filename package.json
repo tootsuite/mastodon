@@ -27,6 +27,7 @@
     "not dead"
   ],
   "jest": {
+    "testEnvironment": "jsdom",
     "projects": [
       "<rootDir>/app/javascript/mastodon"
     ],
