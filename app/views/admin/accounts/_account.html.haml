@@ -4,11 +4,6 @@
   %td
     %div.account-badges= account_badge(account, all: true)
   %td
-    - if account.user_current_sign_in_ip
-      %samp.ellipsized-ip{ title: account.user_current_sign_in_ip }= account.user_current_sign_in_ip
-    - else
-      \-
-  %td
     - if account.user_current_sign_in_at
       %time.time-ago{ datetime: account.user_current_sign_in_at.iso8601, title: l(account.user_current_sign_in_at) }= l account.user_current_sign_in_at
     - elsif account.last_status_at.present?

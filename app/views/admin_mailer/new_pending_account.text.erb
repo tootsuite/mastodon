@@ -3,7 +3,7 @@
 <%= raw t('admin_mailer.new_pending_account.body') %>
 
 <%= @account.user_email %> (@<%= @account.username %>)
-<%= @account.user_current_sign_in_ip %>
+<%= @account.user_sign_up_ip %>
 <% if @account.user&.invite_request&.text.present? %>
 
 <%= quote_wrap(@account.user&.invite_request&.text) %>

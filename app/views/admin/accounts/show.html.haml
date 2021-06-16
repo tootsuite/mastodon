@@ -141,12 +141,14 @@
               %time.formatted{ datetime: @account.created_at.iso8601, title: l(@account.created_at) }= l @account.created_at
             %td
 
-          - @account.user.recent_ips.each_with_index do |(_, ip), i|
+          - recent_ips = @account.user.ips.order(used_at: :desc).to_a
+
+          - recent_ips.each_with_index do |recent_ip, i|
             %tr
               - if i.zero?
-                %th{ rowspan: @account.user.recent_ips.size }= t('admin.accounts.most_recent_ip')
-              %td= ip
-              %td= table_link_to 'search', t('admin.accounts.search_same_ip'), admin_accounts_path(ip: ip)
+                %th{ rowspan: recent_ips.size }= t('admin.accounts.most_recent_ip')
+              %td= recent_ip.ip
+              %td= table_link_to 'search', t('admin.accounts.search_same_ip'), admin_accounts_path(ip: recent_ip.ip)
 
           %tr
             %th= t('admin.accounts.most_recent_activity')

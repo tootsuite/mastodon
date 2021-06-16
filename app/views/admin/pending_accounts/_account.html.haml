@@ -7,7 +7,7 @@
         %strong= account.user_email
         = "(@#{account.username})"
       %br/
-      %samp= account.user_current_sign_in_ip
+      %samp= account.user_sign_up_ip
       •
       = t 'admin.accounts.time_in_queue', time: time_ago_in_words(account.user&.created_at)
 
