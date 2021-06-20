@@ -153,6 +153,8 @@ class ActivityPub::Activity
 
     return status unless status.nil?
 
+    dereference_object!
+
     # If the boosted toot is embedded and it is a self-boost, handle it like a Create
     unless unsupported_object_type?
       actor_id = value_or_id(first_of_value(@object['attributedTo']))
@@ -165,11 +167,16 @@ class ActivityPub::Activity
     fetch_remote_original_status
   end
 
+  def dereferenced?
+    @dereferenced
+  end
+
   def dereference_object!
     return unless @object.is_a?(String)
 
     dereferencer = ActivityPub::Dereferencer.new(@object, permitted_origin: @account.uri, signature_account: signed_fetch_account)
 
+    @dereferenced = !dereferencer.object.nil?
     @object = dereferencer.object unless dereferencer.object.nil?
   end
 
@@ -204,7 +211,12 @@ class ActivityPub::Activity
   def fetch_remote_original_status
     if object_uri.start_with?('http')
       return if ActivityPub::TagManager.instance.local_uri?(object_uri)
-      ActivityPub::FetchRemoteStatusService.new.call(object_uri, id: true, on_behalf_of: @account.followers.local.first)
+
+      if dereferenced?
+        ActivityPub::FetchRemoteStatusService.new.call(object_uri, id: true, prefetched_body: @object)
+      else
+        ActivityPub::FetchRemoteStatusService.new.call(object_uri, id: true, on_behalf_of: @account.followers.local.first)
+      end
     elsif @object['url'].present?
       ::FetchRemoteStatusService.new.call(@object['url'])
     end

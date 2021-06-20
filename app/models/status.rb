@@ -76,7 +76,7 @@ class Status < ApplicationRecord
   validates_with StatusLengthValidator
   validates_with DisallowedHashtagsValidator
   validates :reblog, uniqueness: { scope: :account }, if: :reblog?
-  validates :visibility, exclusion: { in: %w(direct limited) }, if: :reblog?
+  validates :visibility, exclusion: { in: %w(direct) }, if: :reblog?
 
   accepts_nested_attributes_for :poll
 
