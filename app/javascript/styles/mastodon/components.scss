@@ -3992,6 +3992,53 @@ a.status-card.compact:hover {
   vertical-align: middle;
 }
 
+.column-settings__pillbar {
+  display: flex;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.pillbar-button {
+  border: 0;
+  color: #fafafa;
+  padding: 4px;
+  margin: 0;
+  margin-left: 2px;
+  font-size: inherit;
+  flex: auto;
+  background-color: $ui-base-color;
+  transition: background-color 0.2s ease;
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &:not([disabled]) {
+    &:hover,
+    &:focus {
+      background-color: darken($ui-base-color, 10%);
+    }
+
+    &.active {
+      background-color: $ui-highlight-color;
+
+      &:hover,
+      &:focus {
+        background-color: lighten($ui-highlight-color, 10%);
+      }
+    }
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
 .empty-column-indicator,
 .error-column,
 .follow_requests-unlocked_explanation {
