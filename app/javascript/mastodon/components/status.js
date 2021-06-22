@@ -16,7 +16,7 @@ import { MediaGallery, Video, Audio } from '../features/ui/util/async-components
 import { HotKeys } from 'react-hotkeys';
 import classNames from 'classnames';
 import Icon from 'mastodon/components/icon';
-import { displayMedia } from '../initial_state';
+import { displayMedia, showBoostVisibility } from '../initial_state';
 import PictureInPicturePlaceholder from 'mastodon/components/picture_in_picture_placeholder';
 
 // We use the component (and not the container) since we do not want
@@ -305,6 +305,13 @@ class Status extends ImmutablePureComponent {
       openMedia: this.handleHotkeyOpenMedia,
     };
 
+    const visibilityIconInfo = {
+      'public': { icon: 'globe', text: intl.formatMessage(messages.public_short) },
+      'unlisted': { icon: 'unlock', text: intl.formatMessage(messages.unlisted_short) },
+      'private': { icon: 'lock', text: intl.formatMessage(messages.private_short) },
+      'direct': { icon: 'envelope', text: intl.formatMessage(messages.direct_short) },
+    };
+
     if (hidden) {
       return (
         <HotKeys handlers={handlers}>
@@ -340,11 +347,14 @@ class Status extends ImmutablePureComponent {
       );
     } else if (status.get('reblog', null) !== null && typeof status.get('reblog') === 'object') {
       const display_name_html = { __html: status.getIn(['account', 'display_name_html']) };
+      const visibilityReblogIcon = visibilityIconInfo[status.get('visibility')];
+      const visibilityReblogLink = <Icon id={visibilityReblogIcon.icon} className='status__prepend-visibility-icon' title={visibilityReblogIcon.text} />;
 
       prepend = (
-        <div className='status__prepend'>
+        <div className={classNames('status__prepend', `status__prepend-${status.get('visibility')}`)}>
           <div className='status__prepend-icon-wrapper'><Icon id='retweet' className='status__prepend-icon' fixedWidth /></div>
           <FormattedMessage id='status.reblogged_by' defaultMessage='{name} boosted' values={{ name: <a onClick={this.handleAccountClick} data-id={status.getIn(['account', 'id'])} href={status.getIn(['account', 'url'])} className='status__display-name muted'><bdi><strong dangerouslySetInnerHTML={display_name_html} /></bdi></a> }} />
+          {showBoostVisibility && status.get('visibility') !== 'public' && visibilityReblogLink}
         </div>
       );
 
@@ -449,13 +459,6 @@ class Status extends ImmutablePureComponent {
     } else {
       statusAvatar = <AvatarOverlay account={status.get('account')} friend={account} />;
     }
-
-    const visibilityIconInfo = {
-      'public': { icon: 'globe', text: intl.formatMessage(messages.public_short) },
-      'unlisted': { icon: 'unlock', text: intl.formatMessage(messages.unlisted_short) },
-      'private': { icon: 'lock', text: intl.formatMessage(messages.private_short) },
-      'direct': { icon: 'envelope', text: intl.formatMessage(messages.direct_short) },
-    };
 
     const visibilityIcon = visibilityIconInfo[status.get('visibility')];
 

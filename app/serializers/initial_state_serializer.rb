@@ -25,27 +25,29 @@ class InitialStateSerializer < ActiveModel::Serializer
     }
 
     if object.current_account
-      store[:me]                = object.current_account.id.to_s
-      store[:unfollow_modal]    = object.current_account.user.setting_unfollow_modal
-      store[:boost_modal]       = object.current_account.user.setting_boost_modal
-      store[:delete_modal]      = object.current_account.user.setting_delete_modal
-      store[:auto_play_gif]     = object.current_account.user.setting_auto_play_gif
-      store[:display_media]     = object.current_account.user.setting_display_media
-      store[:expand_spoilers]   = object.current_account.user.setting_expand_spoilers
-      store[:reduce_motion]     = object.current_account.user.setting_reduce_motion
-      store[:disable_swiping]   = object.current_account.user.setting_disable_swiping
-      store[:advanced_layout]   = object.current_account.user.setting_advanced_layout
-      store[:use_blurhash]      = object.current_account.user.setting_use_blurhash
-      store[:use_pending_items] = object.current_account.user.setting_use_pending_items
-      store[:is_staff]          = object.current_account.user.staff?
-      store[:trends]            = Setting.trends && object.current_account.user.setting_trends
-      store[:crop_images]       = object.current_account.user.setting_crop_images
+      store[:me]                    = object.current_account.id.to_s
+      store[:unfollow_modal]        = object.current_account.user.setting_unfollow_modal
+      store[:boost_modal]           = object.current_account.user.setting_boost_modal
+      store[:delete_modal]          = object.current_account.user.setting_delete_modal
+      store[:auto_play_gif]         = object.current_account.user.setting_auto_play_gif
+      store[:display_media]         = object.current_account.user.setting_display_media
+      store[:expand_spoilers]       = object.current_account.user.setting_expand_spoilers
+      store[:reduce_motion]         = object.current_account.user.setting_reduce_motion
+      store[:disable_swiping]       = object.current_account.user.setting_disable_swiping
+      store[:advanced_layout]       = object.current_account.user.setting_advanced_layout
+      store[:use_blurhash]          = object.current_account.user.setting_use_blurhash
+      store[:use_pending_items]     = object.current_account.user.setting_use_pending_items
+      store[:is_staff]              = object.current_account.user.staff?
+      store[:trends]                = Setting.trends && object.current_account.user.setting_trends
+      store[:crop_images]           = object.current_account.user.setting_crop_images
+      store[:show_boost_visibility] = object.current_account.user.setting_show_boost_visibility
     else
-      store[:auto_play_gif] = Setting.auto_play_gif
-      store[:display_media] = Setting.display_media
-      store[:reduce_motion] = Setting.reduce_motion
-      store[:use_blurhash]  = Setting.use_blurhash
-      store[:crop_images]   = Setting.crop_images
+      store[:auto_play_gif]         = Setting.auto_play_gif
+      store[:display_media]         = Setting.display_media
+      store[:reduce_motion]         = Setting.reduce_motion
+      store[:use_blurhash]          = Setting.use_blurhash
+      store[:crop_images]           = Setting.crop_images
+      store[:show_boost_visibility] = Setting.show_boost_visibility
     end
 
     store

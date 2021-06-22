@@ -158,6 +158,10 @@ body.rtl {
   .status__prepend {
     margin-left: 0;
     margin-right: 68px;
+
+    > span {
+      margin-left: 4px;
+    }
   }
 
   .status__prepend-icon-wrapper {

@@ -38,6 +38,7 @@ defaults: &defaults
   trends: true
   trendable_by_default: false
   crop_images: true
+  show_boost_visibility: true
   notification_emails:
     follow: false
     reblog: false

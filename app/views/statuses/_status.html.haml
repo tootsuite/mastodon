@@ -1,17 +1,18 @@
 :ruby
-  pinned          ||= false
-  include_threads ||= false
-  is_predecessor  ||= false
-  is_successor    ||= false
-  direct_reply_id ||= false
-  parent_id       ||= false
-  is_direct_parent  = direct_reply_id == status.id
-  is_direct_child   = parent_id == status.in_reply_to_id
-  centered        ||= include_threads && !is_predecessor && !is_successor
-  h_class           = microformats_h_class(status, is_predecessor, is_successor, include_threads)
-  style_classes     = style_classes(status, is_predecessor, is_successor, include_threads)
-  mf_classes        = microformats_classes(status, is_direct_parent, is_direct_child)
-  entry_classes     = h_class + ' ' + mf_classes + ' ' + style_classes
+  pinned                ||= false
+  include_threads       ||= false
+  is_predecessor        ||= false
+  is_successor          ||= false
+  direct_reply_id       ||= false
+  parent_id             ||= false
+  show_boost_visibility ||= current_account&.user ? current_account.user.setting_show_boost_visibility : Setting.show_boost_visibility
+  is_direct_parent        = direct_reply_id == status.id
+  is_direct_child         = parent_id == status.in_reply_to_id
+  centered              ||= include_threads && !is_predecessor && !is_successor
+  h_class                 = microformats_h_class(status, is_predecessor, is_successor, include_threads)
+  style_classes           = style_classes(status, is_predecessor, is_successor, include_threads)
+  mf_classes              = microformats_classes(status, is_direct_parent, is_direct_child)
+  entry_classes           = h_class + ' ' + mf_classes + ' ' + style_classes
 
 - if status.reply? && include_threads
   - if @next_ancestor
@@ -23,7 +24,7 @@
 .entry{ class: entry_classes }
 
   - if status.reblog?
-    .status__prepend
+    .status__prepend{ class: "status__prepend-#{status.visibility}" }
       .status__prepend-icon-wrapper
         %i.status__prepend-icon.fa.fa-fw.fa-retweet
       %span
@@ -31,6 +32,8 @@
           %bdi
             %strong.emojify= display_name(status.account, custom_emojify: true)
         = t('stream_entries.reblogged')
+      - if show_boost_visibility && !status.public_visibility?
+        = visibility_icon status, class: 'status__prepend-visibility-icon'
   - elsif pinned
     .status__prepend
       .status__prepend-icon-wrapper
