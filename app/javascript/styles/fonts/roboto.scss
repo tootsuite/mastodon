@@ -6,6 +6,7 @@
     url('../fonts/roboto/roboto-italic-webfont.ttf') format('truetype'),
     url('../fonts/roboto/roboto-italic-webfont.svg#roboto-italic-webfont') format('svg');
   font-weight: normal;
+  font-display: swap;
   font-style: italic;
 }
 
@@ -17,6 +18,7 @@
     url('../fonts/roboto/roboto-bold-webfont.ttf') format('truetype'),
     url('../fonts/roboto/roboto-bold-webfont.svg#roboto-bold-webfont') format('svg');
   font-weight: bold;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -28,6 +30,7 @@
     url('../fonts/roboto/roboto-medium-webfont.ttf') format('truetype'),
     url('../fonts/roboto/roboto-medium-webfont.svg#roboto-medium-webfont') format('svg');
   font-weight: 500;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -39,5 +42,6 @@
     url('../fonts/roboto/roboto-regular-webfont.ttf') format('truetype'),
     url('../fonts/roboto/roboto-regular-webfont.svg#roboto-regular-webfont') format('svg');
   font-weight: normal;
+  font-display: swap;
   font-style: normal;
 }
