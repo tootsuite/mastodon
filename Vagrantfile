@@ -12,7 +12,7 @@ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 sudo apt-add-repository 'deb https://dl.yarnpkg.com/debian/ stable main'
 
 # Add repo for NodeJS
-curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 
 # Add firewall rule to redirect 80 to PORT and save
 sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port #{ENV["PORT"]}

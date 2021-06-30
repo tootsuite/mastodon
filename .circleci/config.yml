@@ -209,7 +209,7 @@ jobs:
   test-webui:
     <<: *defaults
     docker:
-      - image: circleci/node:12-buster
+      - image: circleci/node:14-buster
     steps:
       - *attach_workspace
       - run:
