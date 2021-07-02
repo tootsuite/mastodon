@@ -159,7 +159,7 @@ class ActivityPub::ActorSerializer < ActivityPub::Serializer
   end
 
   def published
-    object.created_at.midnight.iso8601
+    object.created_at.beginning_of_minute.iso8601
   end
 
   class CustomEmojiSerializer < ActivityPub::EmojiSerializer
