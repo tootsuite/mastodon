@@ -1,0 +1,95 @@
+version: '3.5'
+# This docker setup is for local development and NOT intended for production use!
+
+volumes:
+  db:
+  redis:
+
+services:
+
+  db:
+    restart: unless-stopped
+    image: postgres:9.6-alpine
+    shm_size: 256mb
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "mastodon"]
+    volumes:
+      - db:/var/lib/postgresql/data
+    environment:
+      # Disable authentication  https://www.postgresql.org/docs/current/auth-trust.html
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_USER: mastodon
+      POSTGRES_PASSWORD: mastodon
+
+  redis:
+    restart: unless-stopped
+    image: redis:6.0-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+    volumes:
+      - redis:/data
+
+  web:
+    build:
+      context: .
+      target: development
+    image: tootsuite/mastodon:development
+    restart: unless-stopped
+    env_file: .env.local
+    command: bash -c "rm -f /mastodon/tmp/pids/server.pid; bundle exec rails s -b 0.0.0.0 -p 3000"
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider --proxy=off localhost:3000/health || exit 1"]
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      - db
+      - redis
+      - webpack
+#      - es
+    volumes:
+      - .:/mastodon:delegated
+
+  webpack:
+    build:
+      context: .
+      target: development
+    image: tootsuite/mastodon:development
+    restart: unless-stopped
+    env_file: .env.local
+    command: ./bin/webpack-dev-server --listen-host 0.0.0.0
+    ports:
+      - "127.0.0.1:3035:3035"
+    volumes:
+      - .:/mastodon:delegated
+
+  streaming:
+    build:
+      context: .
+      target: development
+    image: tootsuite/mastodon:development
+    restart: unless-stopped
+    env_file: .env.local
+    command: node ./streaming
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider --proxy=off localhost:4000/api/v1/streaming/health || exit 1"]
+    ports:
+      - "127.0.0.1:4000:4000"
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - .:/mastodon:delegated
+
+  sidekiq:
+    build:
+      context: .
+      target: development
+    image: tootsuite/mastodon:development
+    restart: unless-stopped
+    env_file: .env.local
+    command: bundle exec sidekiq
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - .:/mastodon:delegated

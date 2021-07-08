@@ -55,7 +55,7 @@ development:
   # Reference: https://webpack.js.org/configuration/dev-server/
   dev_server:
     https: false
-    host: localhost
+    host: webpack # TODO this change will break vagrant!
     port: 3035
     public: localhost:3035
     hmr: false

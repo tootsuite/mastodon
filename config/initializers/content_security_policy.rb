@@ -29,8 +29,10 @@ Rails.application.config.content_security_policy do |p|
 
   if Rails.env.development?
     webpacker_urls = %w(ws http).map { |protocol| "#{protocol}#{Webpacker.dev_server.https? ? 's' : ''}://#{Webpacker.dev_server.host_with_port}" }
+    # TODO: get these from webpack.yml config key: public
+    webpacker_public_urls = 'http://localhost:3035', 'ws://localhost:3035'
 
-    p.connect_src :self, :data, :blob, assets_host, media_host, Rails.configuration.x.streaming_api_base_url, *webpacker_urls
+    p.connect_src :self, :data, :blob, assets_host, media_host, Rails.configuration.x.streaming_api_base_url, *webpacker_urls, *webpacker_public_urls
     p.script_src  :self, :unsafe_inline, :unsafe_eval, assets_host
     p.child_src   :self, :blob, assets_host
     p.worker_src  :self, :blob, assets_host

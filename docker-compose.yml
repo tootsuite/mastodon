@@ -1,4 +1,6 @@
 version: '3'
+# This docker setup is an example file for production use
+
 services:
 
   db:

@@ -11,6 +11,7 @@ public/packs
 node_modules
 neo4j
 vendor/bundle
+vendor/cache
 .DS_Store
 *.swp
 *~
@@ -18,3 +19,5 @@ postgres
 redis
 elasticsearch
 chart
+.git
+.cache

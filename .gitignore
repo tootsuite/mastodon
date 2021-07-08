@@ -7,6 +7,12 @@
 # Ignore bundler config and downloaded libraries.
 /.bundle
 /vendor/bundle
+/vendor/cache
+
+# Ignore yarn config and downloaded libraries.
+/node_modules/
+/.cache/
+/.yarn/
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -25,8 +31,8 @@
 .env
 .env.production
 .env.development
-/node_modules/
 /build/
+.docker-db-initialized
 
 # Ignore Vagrant files
 .vagrant/
@@ -42,7 +48,6 @@
 /postgres
 /redis
 /elasticsearch
-
 # ignore Helm dependency charts
 /chart/charts/*.tgz
 

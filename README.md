@@ -76,6 +76,8 @@ The repository includes deployment configurations for **Docker and docker-compos
 
 A **Vagrant** configuration is included for development purposes.
 
+A **Docker** setup for local development is also included, start it using `make up`.
+
 ## Contributing
 
 Mastodon is **free, open-source software** licensed under **AGPLv3**.
