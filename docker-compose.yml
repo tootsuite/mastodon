@@ -109,6 +109,16 @@ services:
 #      - external_network
 #      - internal_network
 
+  postfix:
+    image: mwader/postfix-relay
+    env_file: .env.production
+    networks:
+      - external_network
+      - internal_network
+    volumes:
+      - ./docker-volume/opendkim/keys:/etc/opendkim/keys
+    restart: "always"
+
 networks:
   external_network:
   internal_network:
