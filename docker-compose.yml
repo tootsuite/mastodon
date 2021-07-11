@@ -3,7 +3,7 @@ services:
 
   db:
     restart: always
-    image: postgres:9.6-alpine
+    image: postgres:13.3-alpine
     shm_size: 256mb
     networks:
       - internal_network
@@ -14,7 +14,7 @@ services:
 
   redis:
     restart: always
-    image: redis:6.0-alpine
+    image: redis:6.2-alpine
     networks:
       - internal_network
     healthcheck:
@@ -24,7 +24,7 @@ services:
 
 #  es:
 #    restart: always
-#    image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.8.10
+#    image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.13.2
 #    environment:
 #      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
 #      - "cluster.name=es-mastodon"
