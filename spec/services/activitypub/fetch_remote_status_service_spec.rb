@@ -145,5 +145,46 @@ RSpec.describe ActivityPub::FetchRemoteStatusService, type: :service do
         expect(sender.statuses.first).to be_nil
       end
     end
+
+    context 'with a valid Create activity' do
+      let(:object) do
+        {
+          '@context': 'https://www.w3.org/ns/activitystreams',
+          id: "https://#{valid_domain}/@foo/1234/create",
+          type: 'Create',
+          actor: ActivityPub::TagManager.instance.uri_for(sender),
+          object: note,
+        }
+      end
+
+      it 'creates status' do
+        status = sender.statuses.first
+
+        expect(status).to_not be_nil
+        expect(status.uri).to eq note[:id]
+        expect(status.text).to eq note[:content]
+      end
+    end
+
+    context 'with a Create activity with a mismatching id' do
+      let(:object) do
+        {
+          '@context': 'https://www.w3.org/ns/activitystreams',
+          id: "https://#{valid_domain}/@foo/1234/create",
+          type: 'Create',
+          actor: ActivityPub::TagManager.instance.uri_for(sender),
+          object: {
+            id: "https://real.address/@foo/1234",
+            type: 'Note',
+            content: 'Lorem ipsum',
+            attributedTo: ActivityPub::TagManager.instance.uri_for(sender),
+          },
+        }
+      end
+
+      it 'does not create status' do
+        expect(sender.statuses.first).to be_nil
+      end
+    end
   end
 end
