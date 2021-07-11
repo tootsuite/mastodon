@@ -52,7 +52,7 @@ const Hashtag = ({ hashtag }) => (
     <div className='trends__item__name'>
       <Permalink
         href={hashtag.get('url')}
-        to={`/timelines/tag/${hashtag.get('name')}`}
+        to={`/tags/${hashtag.get('name')}`}
       >
         #<span>{hashtag.get('name')}</span>
       </Permalink>

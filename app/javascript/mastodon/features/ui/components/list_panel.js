@@ -46,7 +46,7 @@ class ListPanel extends ImmutablePureComponent {
         <hr />
 
         {lists.map(list => (
-          <NavLink key={list.get('id')} className='column-link column-link--transparent' strict to={`/timelines/list/${list.get('id')}`}><Icon className='column-link__icon' id='list-ul' fixedWidth />{list.get('title')}</NavLink>
+          <NavLink key={list.get('id')} className='column-link column-link--transparent' strict to={`/lists/${list.get('id')}`}><Icon className='column-link__icon' id='list-ul' fixedWidth />{list.get('title')}</NavLink>
         ))}
       </div>
     );

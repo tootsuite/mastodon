@@ -34,7 +34,7 @@ class Header extends ImmutablePureComponent {
 
     return (
       <div className='picture-in-picture__header'>
-        <Link to={`/statuses/${statusId}`} className='picture-in-picture__header__account'>
+        <Link to={`/@${account.get('acct')}/${statusId}`} className='picture-in-picture__header__account'>
           <Avatar account={account} size={36} />
           <DisplayName account={account} />
         </Link>

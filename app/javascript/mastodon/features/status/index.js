@@ -396,7 +396,7 @@ class Status extends ImmutablePureComponent {
   }
 
   handleHotkeyOpenProfile = () => {
-    this.context.router.history.push(`/accounts/${this.props.status.getIn(['account', 'id'])}`);
+    this.context.router.history.push(`/@${this.props.status.getIn(['account', 'acct'])}`);
   }
 
   handleHotkeyToggleHidden = () => {

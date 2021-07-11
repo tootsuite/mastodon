@@ -21,7 +21,7 @@ export default class MovedNote extends ImmutablePureComponent {
   handleAccountClick = e => {
     if (e.button === 0) {
       e.preventDefault();
-      this.context.router.history.push(`/accounts/${this.props.to.get('id')}`);
+      this.context.router.history.push(`/@${this.props.to.get('acct')}`);
     }
 
     e.stopPropagation();
