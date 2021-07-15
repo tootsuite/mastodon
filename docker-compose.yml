@@ -5,10 +5,19 @@ services:
     restart: always
     image: postgres:9.6-alpine
     shm_size: 256mb
+    env_file: .env.production
+    command: ["postgres"]
+    entrypoint:
+      - bash
+      - -c
+      - "POSTGRES_USER=$$DB_USER POSTGRES_DB=$$DB_NAME docker-entrypoint.sh $$@"
+      - "--"
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
     networks:
       - internal_network
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "postgres"]
+      test: ["CMD", "bash", "-c", "pg_isready -U $$DB_USER $$DB_NAME"]
     volumes:
       - ./postgres:/var/lib/postgresql/data
 
@@ -46,7 +55,7 @@ services:
     image: tootsuite/mastodon
     restart: always
     env_file: .env.production
-    command: bash -c "rm -f /mastodon/tmp/pids/server.pid; bundle exec rails s -p 3000"
+    command: bash -c "rm -f /mastodon/tmp/pids/server.pid; bundle exec rails db:migrate ; bundle exec rails db:seed; bundle exec rails s -p 3000"
     networks:
       - external_network
       - internal_network
@@ -92,6 +101,7 @@ services:
       - internal_network
     volumes:
       - ./public/system:/mastodon/public/system
+
 ## Uncomment to enable federation with tor instances along with adding the following ENV variables
 ## http_proxy=http://privoxy:8118
 ## ALLOW_ACCESS_TO_HIDDEN_SERVICE=true
