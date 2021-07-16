@@ -375,7 +375,7 @@ class Account < ApplicationRecord
   def synchronization_uri_prefix
     return 'local' if local?
 
-    @synchronization_uri_prefix ||= uri[/http(s?):\/\/[^\/]+\//]
+    @synchronization_uri_prefix ||= "#{uri[/\Ahttp(s?):\/\/[^\/]+/]}/"
   end
 
   class Field < ActiveModelSerializers::Model

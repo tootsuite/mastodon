@@ -539,46 +539,57 @@ describe AccountInteractions do
     end
   end
 
-  describe '#followers_hash' do
+  describe '#remote_followers_hash' do
     let(:me) { Fabricate(:account, username: 'Me') }
     let(:remote_1) { Fabricate(:account, username: 'alice', domain: 'example.org', uri: 'https://example.org/users/alice') }
     let(:remote_2) { Fabricate(:account, username: 'bob', domain: 'example.org', uri: 'https://example.org/users/bob') }
-    let(:remote_3) { Fabricate(:account, username: 'eve', domain: 'foo.org', uri: 'https://foo.org/users/eve') }
+    let(:remote_3) { Fabricate(:account, username: 'instance-actor', domain: 'example.org', uri: 'https://example.org') }
+    let(:remote_4) { Fabricate(:account, username: 'eve', domain: 'foo.org', uri: 'https://foo.org/users/eve') }
 
     before do
       remote_1.follow!(me)
       remote_2.follow!(me)
       remote_3.follow!(me)
+      remote_4.follow!(me)
       me.follow!(remote_1)
     end
 
-    context 'on a local user' do
-      it 'returns correct hash for remote domains' do
-        expect(me.remote_followers_hash('https://example.org/')).to eq '707962e297b7bd94468a21bc8e506a1bcea607a9142cd64e27c9b106b2a5f6ec'
-        expect(me.remote_followers_hash('https://foo.org/')).to eq 'ccb9c18a67134cfff9d62c7f7e7eb88e6b803446c244b84265565f4eba29df0e'
-      end
-
-      it 'invalidates cache as needed when removing or adding followers' do
-        expect(me.remote_followers_hash('https://example.org/')).to eq '707962e297b7bd94468a21bc8e506a1bcea607a9142cd64e27c9b106b2a5f6ec'
-        remote_1.unfollow!(me)
-        expect(me.remote_followers_hash('https://example.org/')).to eq '241b00794ce9b46aa864f3220afadef128318da2659782985bac5ed5bd436bff'
-        remote_1.follow!(me)
-        expect(me.remote_followers_hash('https://example.org/')).to eq '707962e297b7bd94468a21bc8e506a1bcea607a9142cd64e27c9b106b2a5f6ec'
-      end
+    it 'returns correct hash for remote domains' do
+      expect(me.remote_followers_hash('https://example.org/')).to eq '20aecbe774b3d61c25094370baf370012b9271c5b172ecedb05caff8d79ef0c7'
+      expect(me.remote_followers_hash('https://foo.org/')).to eq 'ccb9c18a67134cfff9d62c7f7e7eb88e6b803446c244b84265565f4eba29df0e'
+      expect(me.remote_followers_hash('https://foo.org.evil.com/')).to eq '0000000000000000000000000000000000000000000000000000000000000000'
+      expect(me.remote_followers_hash('https://foo')).to eq '0000000000000000000000000000000000000000000000000000000000000000'
     end
 
-    context 'on a remote user' do
-      it 'returns correct hash for remote domains' do
-        expect(remote_1.local_followers_hash).to eq Digest::SHA256.hexdigest(ActivityPub::TagManager.instance.uri_for(me))
-      end
+    it 'invalidates cache as needed when removing or adding followers' do
+      expect(me.remote_followers_hash('https://example.org/')).to eq '20aecbe774b3d61c25094370baf370012b9271c5b172ecedb05caff8d79ef0c7'
+      remote_3.unfollow!(me)
+      expect(me.remote_followers_hash('https://example.org/')).to eq '707962e297b7bd94468a21bc8e506a1bcea607a9142cd64e27c9b106b2a5f6ec'
+      remote_1.unfollow!(me)
+      expect(me.remote_followers_hash('https://example.org/')).to eq '241b00794ce9b46aa864f3220afadef128318da2659782985bac5ed5bd436bff'
+      remote_1.follow!(me)
+      expect(me.remote_followers_hash('https://example.org/')).to eq '707962e297b7bd94468a21bc8e506a1bcea607a9142cd64e27c9b106b2a5f6ec'
+    end
+  end
 
-      it 'invalidates cache as needed when removing or adding followers' do
-        expect(remote_1.local_followers_hash).to eq Digest::SHA256.hexdigest(ActivityPub::TagManager.instance.uri_for(me))
-        me.unfollow!(remote_1)
-        expect(remote_1.local_followers_hash).to eq '0000000000000000000000000000000000000000000000000000000000000000'
-        me.follow!(remote_1)
-        expect(remote_1.local_followers_hash).to eq Digest::SHA256.hexdigest(ActivityPub::TagManager.instance.uri_for(me))
-      end
+  describe '#local_followers_hash' do
+    let(:me) { Fabricate(:account, username: 'Me') }
+    let(:remote_1) { Fabricate(:account, username: 'alice', domain: 'example.org', uri: 'https://example.org/users/alice') }
+
+    before do
+      me.follow!(remote_1)
+    end
+
+    it 'returns correct hash for local users' do
+      expect(remote_1.local_followers_hash).to eq Digest::SHA256.hexdigest(ActivityPub::TagManager.instance.uri_for(me))
+    end
+
+    it 'invalidates cache as needed when removing or adding followers' do
+      expect(remote_1.local_followers_hash).to eq Digest::SHA256.hexdigest(ActivityPub::TagManager.instance.uri_for(me))
+      me.unfollow!(remote_1)
+      expect(remote_1.local_followers_hash).to eq '0000000000000000000000000000000000000000000000000000000000000000'
+      me.follow!(remote_1)
+      expect(remote_1.local_followers_hash).to eq Digest::SHA256.hexdigest(ActivityPub::TagManager.instance.uri_for(me))
     end
   end
 
