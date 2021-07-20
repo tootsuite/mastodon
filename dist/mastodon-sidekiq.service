@@ -13,6 +13,9 @@ Environment="LD_PRELOAD=libjemalloc.so"
 ExecStart=/home/mastodon/.rbenv/shims/bundle exec sidekiq -c 25
 TimeoutSec=15
 Restart=always
+# Proc filesystem
+ProcSubset=pid
+ProtectProc=invisible
 # Capabilities
 CapabilityBoundingSet=
 # Security
@@ -35,11 +38,15 @@ RestrictNamespaces=true
 LockPersonality=true
 RestrictRealtime=true
 RestrictSUIDSGID=true
+RemoveIPC=true
 PrivateMounts=true
 ProtectClock=true
 # System Call Filtering
 SystemCallArchitectures=native
-SystemCallFilter=~@clock @cpu-emulation @debug @keyring @module @mount @obsolete @raw-io @reboot @setuid @swap
+SystemCallFilter=~@cpu-emulation @debug @keyring @ipc @mount @obsolete @privileged @setuid
+SystemCallFilter=@chown
+SystemCallFilter=pipe
+SystemCallFilter=pipe2
 
 [Install]
 WantedBy=multi-user.target
