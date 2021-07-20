@@ -260,6 +260,15 @@ class Header extends ImmutablePureComponent {
       badge = null;
     }
 
+    let staffBadge;
+    if (account.get('user_staff')) {
+      if (account.get('user_admin')){
+        staffBadge = <div className='account-role admin'><FormattedMessage id='account.badges.admin' defaultMessage='Admin' /></div>;
+      } else if (account.get('user_moderator')){
+        staffBadge = <div className='account-role moderator'><FormattedMessage id='account.badges.moderator' defaultMessage='Moderator' /></div>;
+      }
+    }
+
     return (
       <div className={classNames('account__header', { inactive: !!account.get('moved') })} onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
         <div className='account__header__image'>
@@ -290,7 +299,7 @@ class Header extends ImmutablePureComponent {
 
           <div className='account__header__tabs__name'>
             <h1>
-              <span dangerouslySetInnerHTML={displayNameHtml} /> {badge}
+              <span dangerouslySetInnerHTML={displayNameHtml} /> {staffBadge} {badge}
               <small>@{acct} {lockedIcon}</small>
             </h1>
           </div>

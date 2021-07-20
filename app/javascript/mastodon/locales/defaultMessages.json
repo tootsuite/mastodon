@@ -911,6 +911,14 @@
         "id": "account.badges.group"
       },
       {
+        "defaultMessage": "Admin",
+        "id": "account.badges.admin"
+      },
+      {
+        "defaultMessage": "Moderator",
+        "id": "account.badges.moderator"
+      },
+      {  
         "defaultMessage": "Joined {date}",
         "id": "account.joined"
       }

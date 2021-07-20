@@ -1,8 +1,10 @@
 {
   "account.account_note_header": "Note",
   "account.add_or_remove_from_list": "Add or Remove from lists",
+  "account.badges.admin": "Admin",
   "account.badges.bot": "Bot",
   "account.badges.group": "Group",
+  "account.badges.moderator": "Moderator",
   "account.block": "Block @{name}",
   "account.block_domain": "Block domain {domain}",
   "account.blocked": "Blocked",

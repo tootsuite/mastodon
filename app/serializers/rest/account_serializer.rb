@@ -12,6 +12,9 @@ class REST::AccountSerializer < ActiveModel::Serializer
   has_many :emojis, serializer: REST::CustomEmojiSerializer
 
   attribute :suspended, if: :suspended?
+  attribute :user_staff, if: -> { Setting.show_staff_badge }
+  attribute :user_admin, if: -> { Setting.show_staff_badge }
+  attribute :user_moderator, if: -> { Setting.show_staff_badge }
 
   class FieldSerializer < ActiveModel::Serializer
     attributes :name, :value, :verified_at
@@ -99,5 +102,17 @@ class REST::AccountSerializer < ActiveModel::Serializer
 
   def moved_and_not_nested?
     object.moved? && object.moved_to_account.moved_to_account_id.nil?
+  end
+
+  def user_staff
+    object.user_staff?
+  end
+
+  def user_admin
+    object.user_admin?
+  end
+
+  def user_moderator
+    object.user_moderator?
   end
 end
