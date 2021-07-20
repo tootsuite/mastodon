@@ -1,0 +1,4 @@
+#domain,#severity,#reject_media,#reject_reports,#public_comment,#obfuscate
+bad.domain,silence,false,false,bad,false
+worse.domain,suspend,true,true,worse,true
+reject.media,noop,true,false,reject media,false

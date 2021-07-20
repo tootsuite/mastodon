@@ -401,6 +401,8 @@ en:
       add_new: Allow federation with domain
       created_msg: Domain has been successfully allowed for federation
       destroyed_msg: Domain has been disallowed from federation
+      export: Export
+      import: Import
       undo: Disallow federation with domain
     domain_blocks:
       add_new: Add new domain block
@@ -409,6 +411,8 @@ en:
       domain: Domain
       edit: Edit domain block
       existing_domain_block_html: You have already imposed stricter limits on %{name}, you need to <a href="%{unblock_url}">unblock it</a> first.
+      export: Export
+      import: Import
       new:
         create: Create block
         hint: The domain block will not prevent creation of account entries in the database, but will retroactively and automatically apply specific moderation methods on those accounts.
@@ -456,6 +460,14 @@ en:
         create: Add domain
         title: Block new e-mail domain
       title: Blocked e-mail domains
+    export_domain_allows:
+      new:
+        title: Import domain allows
+      no_file: No file selected
+    export_domain_blocks:
+      new:
+        title: Import domain blocks
+      no_file: No file selected
     follow_recommendations:
       description_html: "<strong>Follow recommendations help new users quickly find interesting content</strong>. When a user has not interacted with others enough to form personalized follow recommendations, these accounts are recommended instead. They are re-calculated on a daily basis from a mix of accounts with the highest recent engagements and highest local follower counts for a given language."
       language: For language

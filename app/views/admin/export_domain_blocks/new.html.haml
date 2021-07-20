@@ -1,0 +1,10 @@
+- content_for :page_title do
+  = t('.title')
+
+= simple_form_for @import, url: import_admin_export_domain_blocks_path, html: { multipart: true } do |f|
+  .fields-row
+    .fields-group.fields-row__column.fields-row__column-6
+      = f.input :data, wrapper: :with_block_label, hint: t('simple_form.hints.imports.data'), as: :file
+
+  .actions
+    = f.button :button, t('imports.upload'), type: :submit
