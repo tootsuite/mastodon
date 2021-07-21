@@ -196,7 +196,7 @@ class Request
 
         addresses.each do |address|
           begin
-            check_private_address(address)
+            check_private_address(address, host)
 
             sock     = ::Socket.new(address.is_a?(Resolv::IPv6) ? ::Socket::AF_INET6 : ::Socket::AF_INET, ::Socket::SOCK_STREAM, 0)
             sockaddr = ::Socket.pack_sockaddr_in(port, address.to_s)
@@ -252,10 +252,10 @@ class Request
 
       alias new open
 
-      def check_private_address(address)
+      def check_private_address(address, host)
         addr = IPAddr.new(address.to_s)
         return if private_address_exceptions.any? { |range| range.include?(addr) }
-        raise Mastodon::HostValidationError if PrivateAddressCheck.private_address?(addr)
+        raise Mastodon::PrivateNetworkAddressError.new(host) if PrivateAddressCheck.private_address?(addr)
       end
 
       def private_address_exceptions

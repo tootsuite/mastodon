@@ -3,7 +3,7 @@
 class Webfinger
   class Error < StandardError; end
   class GoneError < Error; end
-  class RedirectError < StandardError; end
+  class RedirectError < Error; end
 
   class Response
     def initialize(body)

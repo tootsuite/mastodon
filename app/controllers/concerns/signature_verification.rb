@@ -93,11 +93,15 @@ module SignatureVerification
 
     return account unless verify_signature(account, signature, compare_signed_string).nil?
 
-    @signature_verification_failure_reason = "Verification failed for #{account.username}@#{account.domain} #{account.uri} using rsa-sha256 (RSASSA-PKCS1-v1_5 with SHA-256)"
-    @signed_request_account = nil
+    fail_with! "Verification failed for #{account.username}@#{account.domain} #{account.uri} using rsa-sha256 (RSASSA-PKCS1-v1_5 with SHA-256)"
   rescue SignatureVerificationError => e
-    @signature_verification_failure_reason = e.message
-    @signed_request_account = nil
+    fail_with! e.message
+  rescue HTTP::Error, OpenSSL::SSL::SSLError => e
+    fail_with! "Failed to fetch remote data: #{e.message}"
+  rescue Mastodon::UnexptectedResponseError
+    fail_with! 'Failed to fetch remote data (got unexpected reply from server)'
+  rescue Stoplight::Error::RedLight
+    fail_with! 'Fetching attempt skipped because of recent connection failure'
   end
 
   def request_body
@@ -105,6 +109,11 @@ module SignatureVerification
   end
 
   private
+
+  def fail_with!(message)
+    @signature_verification_failure_reason = message
+    @signed_request_account = nil
+  end
 
   def signature_params
     @signature_params ||= begin
@@ -138,7 +147,17 @@ module SignatureVerification
     digests = request.headers['Digest'].split(',').map { |digest| digest.split('=', 2) }.map { |key, value| [key.downcase, value] }
     sha256  = digests.assoc('sha-256')
     raise SignatureVerificationError, "Mastodon only supports SHA-256 in Digest header. Offered algorithms: #{digests.map(&:first).join(', ')}" if sha256.nil?
-    raise SignatureVerificationError, "Invalid Digest value. Computed SHA-256 digest: #{body_digest}; given: #{sha256[1]}" if body_digest != sha256[1]
+
+    return if body_digest == sha256[1]
+
+    digest_size = begin
+      Base64.strict_decode64(sha256[1].strip).length
+    rescue ArgumentError
+      raise SignatureVerificationError, "Invalid Digest value. The provided Digest value is not a valid base64 string. Given digest: #{sha256[1]}"
+    end
+
+    raise SignatureVerificationError, "Invalid Digest value. The provided Digest value is not a SHA-256 digest. Given digest: #{sha256[1]}" if digest_size != 32
+    raise SignatureVerificationError, "Invalid Digest value. Computed SHA-256 digest: #{body_digest}; given: #{sha256[1]}"
   end
 
   def verify_signature(account, signature, compare_signed_string)
@@ -216,19 +235,20 @@ module SignatureVerification
     end
 
     if key_id.start_with?('acct:')
-      stoplight_wrap_request { ResolveAccountService.new.call(key_id.gsub(/\Aacct:/, '')) }
+      stoplight_wrap_request { ResolveAccountService.new.call(key_id.gsub(/\Aacct:/, ''), suppress_errors: false) }
     elsif !ActivityPub::TagManager.instance.local_uri?(key_id)
       account   = ActivityPub::TagManager.instance.uri_to_resource(key_id, Account)
-      account ||= stoplight_wrap_request { ActivityPub::FetchRemoteKeyService.new.call(key_id, id: false) }
+      account ||= stoplight_wrap_request { ActivityPub::FetchRemoteKeyService.new.call(key_id, id: false, suppress_errors: false) }
       account
     end
-  rescue Mastodon::HostValidationError
-    nil
+  rescue Mastodon::PrivateNetworkAddressError => e
+    raise SignatureVerificationError, "Requests to private network addresses are disallowed (tried to query #{e.host})"
+  rescue Mastodon::HostValidationError, ActivityPub::FetchRemoteAccountService::Error, ActivityPub::FetchRemoteKeyService::Error, Webfinger::Error => e
+    raise SignatureVerificationError, e.message
   end
 
   def stoplight_wrap_request(&block)
     Stoplight("source:#{request.remote_ip}", &block)
-      .with_fallback { nil }
       .with_threshold(1)
       .with_cool_off_time(5.minutes.seconds)
       .with_error_handler { |error, handle| error.is_a?(HTTP::Error) || error.is_a?(OpenSSL::SSL::SSLError) ? handle.call(error) : raise(error) }
@@ -237,6 +257,10 @@ module SignatureVerification
 
   def account_refresh_key(account)
     return if account.local? || !account.activitypub?
-    ActivityPub::FetchRemoteAccountService.new.call(account.uri, only_key: true)
+    ActivityPub::FetchRemoteAccountService.new.call(account.uri, only_key: true, suppress_errors: false)
+  rescue Mastodon::PrivateNetworkAddressError => e
+    raise SignatureVerificationError, "Requests to private network addresses are disallowed (tried to query #{e.host})"
+  rescue Mastodon::HostValidationError, ActivityPub::FetchRemoteAccountService::Error, Webfinger::Error => e
+    raise SignatureVerificationError, e.message
   end
 end

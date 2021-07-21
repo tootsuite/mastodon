@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class ResolveAccountService < BaseService
-  include JsonLdHelper
   include DomainControlHelper
   include WebfingerHelper
 
@@ -11,6 +10,7 @@ class ResolveAccountService < BaseService
   # @param [Hash] options
   # @option options [Boolean] :redirected Do not follow further Webfinger redirects
   # @option options [Boolean] :skip_webfinger Do not attempt any webfinger query or refreshing account data
+  # @option options [Boolean] :suppress_errors When failing, return nil instead of raising an error
   # @return [Account]
   def call(uri, options = {})
     return if uri.blank?
@@ -50,15 +50,15 @@ class ResolveAccountService < BaseService
     # either needs to be created, or updated from fresh data
 
     fetch_account!
-  rescue Webfinger::Error, Oj::ParseError => e
+  rescue Webfinger::Error => e
     Rails.logger.debug "Webfinger query for #{@uri} failed: #{e}"
-    nil
+    raise unless @options[:suppress_errors]
   end
 
   private
 
   def process_options!(uri, options)
-    @options = options
+    @options = { suppress_errors: true }.merge(options)
 
     if uri.is_a?(Account)
       @account  = uri
@@ -94,7 +94,7 @@ class ResolveAccountService < BaseService
     @username, @domain = split_acct(@webfinger.subject)
 
     unless confirmed_username.casecmp(@username).zero? && confirmed_domain.casecmp(@domain).zero?
-      raise Webfinger::RedirectError, "The URI #{uri} tries to hijack #{@username}@#{@domain}"
+      raise Webfinger::RedirectError, "Too many webfinger redirects for URI #{uri} (stopped at #{@username}@#{@domain})"
     end
   rescue Webfinger::GoneError
     @gone = true
@@ -109,7 +109,7 @@ class ResolveAccountService < BaseService
 
     RedisLock.acquire(lock_options) do |lock|
       if lock.acquired?
-        @account = ActivityPub::FetchRemoteAccountService.new.call(actor_url)
+        @account = ActivityPub::FetchRemoteAccountService.new.call(actor_url, suppress_errors: @options[:suppress_errors])
       else
         raise Mastodon::RaceConditionError
       end
