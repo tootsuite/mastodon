@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_30_000137) do
+ActiveRecord::Schema.define(version: 2021_07_22_120340) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -112,6 +112,21 @@ ActiveRecord::Schema.define(version: 2021_06_30_000137) do
     t.datetime "updated_at", null: false
     t.datetime "last_status_at"
     t.index ["account_id"], name: "index_account_stats_on_account_id", unique: true
+  end
+
+  create_table "account_statuses_cleanup_policies", force: :cascade do |t|
+    t.bigint "account_id", null: false
+    t.boolean "enabled", default: true, null: false
+    t.integer "min_status_age", default: 1209600, null: false
+    t.boolean "keep_direct", default: true, null: false
+    t.boolean "keep_pinned", default: true, null: false
+    t.boolean "keep_polls", default: false, null: false
+    t.boolean "keep_media", default: false, null: false
+    t.boolean "keep_self_fav", default: true, null: false
+    t.boolean "keep_self_bookmark", default: true, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["account_id"], name: "index_account_statuses_cleanup_policies_on_account_id"
   end
 
   create_table "account_warning_presets", force: :cascade do |t|
@@ -984,6 +999,7 @@ ActiveRecord::Schema.define(version: 2021_06_30_000137) do
   add_foreign_key "account_pins", "accounts", column: "target_account_id", on_delete: :cascade
   add_foreign_key "account_pins", "accounts", on_delete: :cascade
   add_foreign_key "account_stats", "accounts", on_delete: :cascade
+  add_foreign_key "account_statuses_cleanup_policies", "accounts", on_delete: :cascade
   add_foreign_key "account_warnings", "accounts", column: "target_account_id", on_delete: :cascade
   add_foreign_key "account_warnings", "accounts", on_delete: :nullify
   add_foreign_key "accounts", "accounts", column: "moved_to_account_id", on_delete: :nullify
