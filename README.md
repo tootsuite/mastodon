@@ -74,7 +74,12 @@ Mastodon acts as an OAuth2 provider so 3rd party apps can use the REST and Strea
 
 The repository includes deployment configurations for **Docker and docker-compose**, but also a few specific platforms like **Heroku**, **Scalingo**, and **Nanobox**. The [**stand-alone** installation guide](https://docs.joinmastodon.org/admin/install/) is available in the documentation.
 
-A **Vagrant** configuration is included for development purposes.
+A **Vagrant** configuration is included for development purposes. To use it, complete following steps:
+
+- Install Vagrant and Virtualbox
+- Run `vagrant up`
+- Run `vagrant ssh -c "cd /vagrant && foreman start"`
+- Open `http://mastodon.local` in your browser
 
 ## Contributing
 
