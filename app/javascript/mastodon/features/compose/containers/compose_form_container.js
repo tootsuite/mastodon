@@ -23,7 +23,6 @@ const mapStateToProps = state => ({
   isSubmitting: state.getIn(['compose', 'is_submitting']),
   isChangingUpload: state.getIn(['compose', 'is_changing_upload']),
   isUploading: state.getIn(['compose', 'is_uploading']),
-  showSearch: state.getIn(['search', 'submitted']) && !state.getIn(['search', 'hidden']),
   anyMedia: state.getIn(['compose', 'media_attachments']).size > 0,
 });
 
