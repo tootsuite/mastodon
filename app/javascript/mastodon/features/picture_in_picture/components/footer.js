@@ -114,7 +114,11 @@ class Footer extends ImmutablePureComponent {
       return;
     }
 
-    const { status } = this.props;
+    const { status, onClose } = this.props;
+
+    if (onClose) {
+      onClose();
+    }
 
     router.history.push(`/statuses/${status.get('id')}`);
   }
