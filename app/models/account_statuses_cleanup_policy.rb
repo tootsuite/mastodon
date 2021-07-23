@@ -33,7 +33,7 @@ class AccountStatusesCleanupPolicy < ApplicationRecord
   def statuses_to_delete(limit = 50, max_id = nil, min_id = nil)
     scope = account.statuses
     scope.merge!(old_enough_scope(max_id))
-    scope = scope.where(Status.arel_table[:id].gt(min_id)) if min_id.present?
+    scope = scope.where(Status.arel_table[:id].gteq(min_id)) if min_id.present?
     scope.merge!(without_direct_scope) if keep_direct?
     scope.merge!(without_pinned_scope) if keep_pinned?
     scope.merge!(without_poll_scope) if keep_polls?
