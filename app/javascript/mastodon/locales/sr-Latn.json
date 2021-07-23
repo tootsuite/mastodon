@@ -392,6 +392,7 @@
   "status.favourite": "Omiljeno",
   "status.filtered": "Filtered",
   "status.load_more": "Učitaj još",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Multimedija sakrivena",
   "status.mention": "Pomeni korisnika @{name}",
   "status.more": "Još",

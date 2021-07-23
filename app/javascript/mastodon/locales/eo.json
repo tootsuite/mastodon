@@ -392,6 +392,7 @@
   "status.favourite": "Stelumi",
   "status.filtered": "Filtrita",
   "status.load_more": "Ŝargi pli",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Aŭdovidaĵo kaŝita",
   "status.mention": "Mencii @{name}",
   "status.more": "Pli",

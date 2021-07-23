@@ -392,6 +392,7 @@
   "status.favourite": "Lik",
   "status.filtered": "Filtrert",
   "status.load_more": "Last mer",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Media skjult",
   "status.mention": "Nevn @{name}",
   "status.more": "Mer",

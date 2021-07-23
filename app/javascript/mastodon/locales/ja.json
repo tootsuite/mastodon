@@ -392,6 +392,7 @@
   "status.favourite": "お気に入り",
   "status.filtered": "フィルターされました",
   "status.load_more": "もっと見る",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "非表示のメディア",
   "status.mention": "@{name}さんに投稿",
   "status.more": "もっと見る",

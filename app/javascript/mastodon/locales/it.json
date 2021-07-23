@@ -392,6 +392,7 @@
   "status.favourite": "Apprezzato",
   "status.filtered": "Filtrato",
   "status.load_more": "Mostra di più",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Allegato nascosto",
   "status.mention": "Nomina @{name}",
   "status.more": "Altro",

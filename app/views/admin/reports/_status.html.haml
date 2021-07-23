@@ -38,3 +38,7 @@
         ·
         = fa_icon('eye-slash fw')
         = t('stream_entries.sensitive_content')
+      - if status.proper.local_only
+        ·
+        = fa_icon('chain-broken fw')
+        = t('statuses.local_only')

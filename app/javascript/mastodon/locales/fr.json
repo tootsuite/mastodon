@@ -392,6 +392,7 @@
   "status.favourite": "Ajouter aux favoris",
   "status.filtered": "Filtré",
   "status.load_more": "Charger plus",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Média caché",
   "status.mention": "Mentionner @{name}",
   "status.more": "Plus",

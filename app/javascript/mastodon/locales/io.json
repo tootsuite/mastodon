@@ -392,6 +392,7 @@
   "status.favourite": "Favorizar",
   "status.filtered": "Filtered",
   "status.load_more": "Kargar pluse",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Kontenajo celita",
   "status.mention": "Mencionar @{name}",
   "status.more": "More",

@@ -392,6 +392,7 @@
   "status.favourite": "즐겨찾기",
   "status.filtered": "필터로 걸러짐",
   "status.load_more": "더 보기",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "미디어 숨겨짐",
   "status.mention": "답장",
   "status.more": "자세히",

@@ -392,6 +392,7 @@
   "status.favourite": "Tykkää",
   "status.filtered": "Suodatettu",
   "status.load_more": "Lataa lisää",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Media piilotettu",
   "status.mention": "Mainitse @{name}",
   "status.more": "Lisää",

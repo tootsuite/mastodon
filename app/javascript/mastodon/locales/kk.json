@@ -392,6 +392,7 @@
   "status.favourite": "Таңдаулы",
   "status.filtered": "Фильтрленген",
   "status.load_more": "Тағы әкел",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Жабық медиа",
   "status.mention": "Аталым @{name}",
   "status.more": "Тағы",

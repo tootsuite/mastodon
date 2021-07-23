@@ -69,6 +69,10 @@
       %span.detailed-status__favorites>= friendly_number_to_human status.favourites_count
       = " "
 
+    - if status.local_only
+      ·
+      %span.detailed-status__link.modal-button.disabled<
+        = fa_icon 'chain-broken fw', 'title': t('statuses.local_only')
     - if user_signed_in?
       ·
       = link_to t('statuses.open_in_web'), web_url("statuses/#{status.id}"), class: 'detailed-status__application', target: '_blank'

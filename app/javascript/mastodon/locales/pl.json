@@ -392,6 +392,7 @@
   "status.favourite": "Dodaj do ulubionych",
   "status.filtered": "Filtrowany(-a)",
   "status.load_more": "Załaduj więcej",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Zawartość multimedialna ukryta",
   "status.mention": "Wspomnij o @{name}",
   "status.more": "Więcej",

@@ -392,6 +392,7 @@
   "status.favourite": "Kedvenc",
   "status.filtered": "Megszűrt",
   "status.load_more": "Többet",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Média elrejtve",
   "status.mention": "@{name} megemlítése",
   "status.more": "Többet",

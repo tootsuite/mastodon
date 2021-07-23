@@ -392,6 +392,7 @@
   "status.favourite": "Favoriet",
   "status.filtered": "Gefilterd",
   "status.load_more": "Meer laden",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Media verborgen",
   "status.mention": "@{name} vermelden",
   "status.more": "Meer",

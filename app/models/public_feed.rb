@@ -25,7 +25,11 @@ class PublicFeed
     scope.merge!(without_reblogs_scope) unless with_reblogs?
     scope.merge!(local_only_scope) if local_only?
     scope.merge!(remote_only_scope) if remote_only?
-    scope.merge!(account_filters_scope) if account?
+    if account?
+      scope.merge!(account_filters_scope)
+    else
+      scope.merge!(instance_only_statuses_scope)
+    end
     scope.merge!(media_only_scope) if media_only?
 
     scope.cache_ids.to_a_paginated_by_id(limit, max_id: max_id, since_id: since_id, min_id: min_id)
@@ -81,6 +85,10 @@ class PublicFeed
 
   def media_only_scope
     Status.joins(:media_attachments).group(:id)
+  end
+
+  def instance_only_statuses_scope
+    Status.where(local_only: [false, nil])
   end
 
   def account_filters_scope

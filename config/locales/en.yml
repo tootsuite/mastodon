@@ -1276,6 +1276,7 @@ en:
     errors:
       in_reply_not_found: The post you are trying to reply to does not appear to exist.
     language_detection: Automatically detect language
+    local_only: Local-only
     open_in_web: Open in web
     over_character_limit: character limit of %{max} exceeded
     pin_errors:

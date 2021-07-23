@@ -392,6 +392,7 @@
   "status.favourite": "I parapëlqyer",
   "status.filtered": "I filtruar",
   "status.load_more": "Ngarko më tepër",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Me media të fshehur",
   "status.mention": "Përmendni @{name}",
   "status.more": "Më tepër",

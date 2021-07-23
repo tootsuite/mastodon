@@ -29,6 +29,9 @@
     = f.input :setting_default_sensitive, as: :boolean, wrapper: :with_label
 
   .fields-group
+    = f.input :setting_default_federation, as: :boolean, wrapper: :with_label
+
+  .fields-group
     = f.input :setting_show_application, as: :boolean, wrapper: :with_label, recommended: true
 
   %h4= t 'preferences.public_timelines'

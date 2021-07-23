@@ -392,6 +392,7 @@
   "status.favourite": "விருப்பத்துக்குகந்த",
   "status.filtered": "வடிகட்டு",
   "status.load_more": "அதிகமாய் ஏற்று",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "மீடியா மறைக்கப்பட்டது",
   "status.mention": "குறிப்பிடு @{name}",
   "status.more": "அதிக",

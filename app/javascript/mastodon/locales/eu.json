@@ -392,6 +392,7 @@
   "status.favourite": "Gogokoa",
   "status.filtered": "Iragazita",
   "status.load_more": "Kargatu gehiago",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Multimedia ezkutatua",
   "status.mention": "Aipatu @{name}",
   "status.more": "Gehiago",

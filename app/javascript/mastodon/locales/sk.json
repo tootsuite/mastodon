@@ -392,6 +392,7 @@
   "status.favourite": "Páči sa mi",
   "status.filtered": "Filtrované",
   "status.load_more": "Ukáž viac",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Skryté médiá",
   "status.mention": "Spomeň @{name}",
   "status.more": "Viac",

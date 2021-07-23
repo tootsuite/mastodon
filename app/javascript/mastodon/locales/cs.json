@@ -392,6 +392,7 @@
   "status.favourite": "Oblíbit",
   "status.filtered": "Filtrováno",
   "status.load_more": "Zobrazit více",
+  "status.local_only": "This post is only visible by other users of your instance",
   "status.media_hidden": "Média skryta",
   "status.mention": "Zmínit @{name}",
   "status.more": "Více",

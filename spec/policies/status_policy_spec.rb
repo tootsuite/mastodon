@@ -73,6 +73,18 @@ RSpec.describe StatusPolicy, type: :model do
 
       expect(subject).to_not permit(viewer, status)
     end
+
+    it 'denies access when local-only and the viewer is not logged in' do
+      allow(status).to receive(:local_only?) { true }
+
+      expect(subject).to_not permit(nil, status)
+    end
+
+    it 'denies access when local-only and the viewer is from another domain' do
+      viewer = Fabricate(:account, domain: 'remote-domain')
+      allow(status).to receive(:local_only?) { true }
+      expect(subject).to_not permit(viewer, status)
+    end
   end
 
   permissions :reblog? do

@@ -64,3 +64,6 @@
         = fa_icon 'envelope fw'
     = link_to remote_interaction_path(status, type: :favourite), class: 'status__action-bar-button icon-button modal-button' do
       = fa_icon 'star fw'
+    - if status.local_only
+      %span.status__action-bar-button.icon-button.disabled{style: 'font-size: 18px; width: 23.1429px; height: 23.1429px; line-height: 23.15px;'}<
+        = fa_icon 'chain-broken fw', 'title': t('statuses.local_only')

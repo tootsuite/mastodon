@@ -58,7 +58,7 @@ class ProcessMentionsService < BaseService
 
     if mentioned_account.local?
       LocalNotificationWorker.perform_async(mentioned_account.id, mention.id, mention.class.name, :mention)
-    elsif mentioned_account.activitypub?
+    elsif mentioned_account.activitypub? && !@status.local_only?
       ActivityPub::DeliveryWorker.perform_async(activitypub_json, mention.status.account_id, mentioned_account.inbox_url, { synchronize_followers: !mention.status.distributable? })
     end
   end
