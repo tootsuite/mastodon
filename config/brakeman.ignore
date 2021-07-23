@@ -61,46 +61,6 @@
       "note": ""
     },
     {
-      "warning_type": "SQL Injection",
-      "warning_code": 0,
-      "fingerprint": "6e4051854bb62e2ddbc671f82d6c2328892e1134b8b28105ecba9b0122540714",
-      "check_name": "SQL",
-      "message": "Possible SQL injection",
-      "file": "app/models/account.rb",
-      "line": 479,
-      "link": "https://brakemanscanner.org/docs/warning_types/sql_injection/",
-      "code": "find_by_sql([\"          WITH first_degree AS (\\n            SELECT target_account_id\\n            FROM follows\\n            WHERE account_id = ?\\n            UNION ALL\\n            SELECT ?\\n          )\\n          SELECT\\n            accounts.*,\\n            (count(f.id) + 1) * ts_rank_cd(#{textsearch}, #{query}, 32) AS rank\\n          FROM accounts\\n          LEFT OUTER JOIN follows AS f ON (accounts.id = f.account_id AND f.target_account_id = ?)\\n          WHERE accounts.id IN (SELECT * FROM first_degree)\\n            AND #{query} @@ #{textsearch}\\n            AND accounts.suspended_at IS NULL\\n            AND accounts.moved_to_account_id IS NULL\\n          GROUP BY accounts.id\\n          ORDER BY rank DESC\\n          LIMIT ? OFFSET ?\\n\".squish, account.id, account.id, account.id, limit, offset])",
-      "render_path": null,
-      "location": {
-        "type": "method",
-        "class": "Account",
-        "method": "advanced_search_for"
-      },
-      "user_input": "textsearch",
-      "confidence": "Medium",
-      "note": ""
-    },
-    {
-      "warning_type": "SQL Injection",
-      "warning_code": 0,
-      "fingerprint": "6f075c1484908e3ec9bed21ab7cf3c7866be8da3881485d1c82e13093aefcbd7",
-      "check_name": "SQL",
-      "message": "Possible SQL injection",
-      "file": "app/models/status.rb",
-      "line": 105,
-      "link": "https://brakemanscanner.org/docs/warning_types/sql_injection/",
-      "code": "result.joins(\"LEFT OUTER JOIN statuses_tags t#{id} ON t#{id}.status_id = statuses.id AND t#{id}.tag_id = #{id}\")",
-      "render_path": null,
-      "location": {
-        "type": "method",
-        "class": "Status",
-        "method": null
-      },
-      "user_input": "id",
-      "confidence": "Weak",
-      "note": ""
-    },
-    {
       "warning_type": "Mass Assignment",
       "warning_code": 105,
       "fingerprint": "7631e93d0099506e7c3e5c91ba8d88523b00a41a0834ae30031a5a4e8bb3020a",
@@ -138,26 +98,6 @@
       },
       "user_input": ":account_id",
       "confidence": "High",
-      "note": ""
-    },
-    {
-      "warning_type": "SQL Injection",
-      "warning_code": 0,
-      "fingerprint": "9251d682c4e2840e1b2fea91e7d758efe2097ecb7f6255c065e3750d25eb178c",
-      "check_name": "SQL",
-      "message": "Possible SQL injection",
-      "file": "app/models/account.rb",
-      "line": 448,
-      "link": "https://brakemanscanner.org/docs/warning_types/sql_injection/",
-      "code": "find_by_sql([\"        SELECT\\n          accounts.*,\\n          ts_rank_cd(#{textsearch}, #{query}, 32) AS rank\\n        FROM accounts\\n        WHERE #{query} @@ #{textsearch}\\n          AND accounts.suspended_at IS NULL\\n          AND accounts.moved_to_account_id IS NULL\\n        ORDER BY rank DESC\\n        LIMIT ? OFFSET ?\\n\".squish, limit, offset])",
-      "render_path": null,
-      "location": {
-        "type": "method",
-        "class": "Account",
-        "method": "search_for"
-      },
-      "user_input": "textsearch",
-      "confidence": "Medium",
       "note": ""
     },
     {
@@ -218,26 +158,6 @@
       },
       "user_input": "MediaAttachment.attached.find_by!(:shortcode => ((params[:id] or params[:medium_id]))).file.url(:original)",
       "confidence": "High",
-      "note": ""
-    },
-    {
-      "warning_type": "SQL Injection",
-      "warning_code": 0,
-      "fingerprint": "e21d8fee7a5805761679877ca35ed1029c64c45ef3b4012a30262623e1ba8bb9",
-      "check_name": "SQL",
-      "message": "Possible SQL injection",
-      "file": "app/models/account.rb",
-      "line": 495,
-      "link": "https://brakemanscanner.org/docs/warning_types/sql_injection/",
-      "code": "find_by_sql([\"          SELECT\\n            accounts.*,\\n            (count(f.id) + 1) * ts_rank_cd(#{textsearch}, #{query}, 32) AS rank\\n          FROM accounts\\n          LEFT OUTER JOIN follows AS f ON (accounts.id = f.account_id AND f.target_account_id = ?) OR (accounts.id = f.target_account_id AND f.account_id = ?)\\n          WHERE #{query} @@ #{textsearch}\\n            AND accounts.suspended_at IS NULL\\n            AND accounts.moved_to_account_id IS NULL\\n          GROUP BY accounts.id\\n          ORDER BY rank DESC\\n          LIMIT ? OFFSET ?\\n\".squish, account.id, account.id, limit, offset])",
-      "render_path": null,
-      "location": {
-        "type": "method",
-        "class": "Account",
-        "method": "advanced_search_for"
-      },
-      "user_input": "textsearch",
-      "confidence": "Medium",
       "note": ""
     },
     {
