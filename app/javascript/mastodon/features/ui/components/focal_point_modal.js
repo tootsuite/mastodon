@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import { connect } from 'react-redux';
 import classNames from 'classnames';
-import { changeUploadCompose, uploadThumbnail } from '../../../actions/compose';
+import { changeUploadCompose, uploadThumbnail, onChangeMediaDescription, onChangeMediaFocus } from '../../../actions/compose';
 import { getPointerPosition } from '../../video';
 import { FormattedMessage, defineMessages, injectIntl } from 'react-intl';
 import IconButton from 'mastodon/components/icon_button';
@@ -27,20 +27,36 @@ import { assetHost } from 'mastodon/utils/config';
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },
   apply: { id: 'upload_modal.apply', defaultMessage: 'Apply' },
+  applying: { id: 'upload_modal.applying', defaultMessage: 'Applying…' },
   placeholder: { id: 'upload_modal.description_placeholder', defaultMessage: 'A quick brown fox jumps over the lazy dog' },
   chooseImage: { id: 'upload_modal.choose_image', defaultMessage: 'Choose image' },
+  discardMessage: { id: 'confirmations.discard_edit_media.message', defaultMessage: 'You have unsaved changes to the media description or preview, discard them anyway?' },
+  discardConfirm: { id: 'confirmations.discard_edit_media.confirm', defaultMessage: 'Discard' },
 });
 
 const mapStateToProps = (state, { id }) => ({
   media: state.getIn(['compose', 'media_attachments']).find(item => item.get('id') === id),
   account: state.getIn(['accounts', me]),
   isUploadingThumbnail: state.getIn(['compose', 'isUploadingThumbnail']),
+  description: state.getIn(['compose', 'media_modal', 'description']),
+  focusX: state.getIn(['compose', 'media_modal', 'focusX']),
+  focusY: state.getIn(['compose', 'media_modal', 'focusY']),
+  dirty: state.getIn(['compose', 'media_modal', 'dirty']),
+  is_changing_upload: state.getIn(['compose', 'is_changing_upload']),
 });
 
 const mapDispatchToProps = (dispatch, { id }) => ({
 
   onSave: (description, x, y) => {
     dispatch(changeUploadCompose(id, { description, focus: `${x.toFixed(2)},${y.toFixed(2)}` }));
+  },
+
+  onChangeDescription: (description) => {
+    dispatch(onChangeMediaDescription(description));
+  },
+
+  onChangeFocus: (focusX, focusY) => {
+    dispatch(onChangeMediaFocus(focusX, focusY));
   },
 
   onSelectThumbnail: files => {
@@ -83,8 +99,8 @@ class ImageLoader extends React.PureComponent {
 
 }
 
-export default @connect(mapStateToProps, mapDispatchToProps)
-@injectIntl
+export default @connect(mapStateToProps, mapDispatchToProps, null, { forwardRef: true })
+@(component => injectIntl(component, { withRef: true }))
 class FocalPointModal extends ImmutablePureComponent {
 
   static propTypes = {
@@ -92,33 +108,20 @@ class FocalPointModal extends ImmutablePureComponent {
     account: ImmutablePropTypes.map.isRequired,
     isUploadingThumbnail: PropTypes.bool,
     onSave: PropTypes.func.isRequired,
+    onChangeDescription: PropTypes.func.isRequired,
+    onChangeFocus: PropTypes.func.isRequired,
     onSelectThumbnail: PropTypes.func.isRequired,
     onClose: PropTypes.func.isRequired,
     intl: PropTypes.object.isRequired,
   };
 
   state = {
-    x: 0,
-    y: 0,
-    focusX: 0,
-    focusY: 0,
     dragging: false,
-    description: '',
     dirty: false,
     progress: 0,
     loading: true,
     ocrStatus: '',
   };
-
-  componentWillMount () {
-    this.updatePositionFromMedia(this.props.media);
-  }
-
-  componentWillReceiveProps (nextProps) {
-    if (this.props.media.get('id') !== nextProps.media.get('id')) {
-      this.updatePositionFromMedia(nextProps.media);
-    }
-  }
 
   componentWillUnmount () {
     document.removeEventListener('mousemove', this.handleMouseMove);
@@ -164,54 +167,37 @@ class FocalPointModal extends ImmutablePureComponent {
     const focusX   = (x - .5) *  2;
     const focusY   = (y - .5) * -2;
 
-    this.setState({ x, y, focusX, focusY, dirty: true });
-  }
-
-  updatePositionFromMedia = media => {
-    const focusX      = media.getIn(['meta', 'focus', 'x']);
-    const focusY      = media.getIn(['meta', 'focus', 'y']);
-    const description = media.get('description') || '';
-
-    if (focusX && focusY) {
-      const x = (focusX /  2) + .5;
-      const y = (focusY / -2) + .5;
-
-      this.setState({
-        x,
-        y,
-        focusX,
-        focusY,
-        description,
-        dirty: false,
-      });
-    } else {
-      this.setState({
-        x: 0.5,
-        y: 0.5,
-        focusX: 0,
-        focusY: 0,
-        description,
-        dirty: false,
-      });
-    }
+    this.props.onChangeFocus(focusX, focusY);
   }
 
   handleChange = e => {
-    this.setState({ description: e.target.value, dirty: true });
+    this.props.onChangeDescription(e.target.value);
   }
 
   handleKeyDown = (e) => {
     if (e.keyCode === 13 && (e.ctrlKey || e.metaKey)) {
       e.preventDefault();
       e.stopPropagation();
-      this.setState({ description: e.target.value, dirty: true });
+      this.props.onChangeDescription(e.target.value);
       this.handleSubmit();
     }
   }
 
   handleSubmit = () => {
-    this.props.onSave(this.state.description, this.state.focusX, this.state.focusY);
-    this.props.onClose();
+    this.props.onSave(this.props.description, this.props.focusX, this.props.focusY);
+  }
+
+  getCloseConfirmationMessage = () => {
+    const { intl, dirty } = this.props;
+
+    if (dirty) {
+      return {
+        message: intl.formatMessage(messages.discardMessage),
+        confirm: intl.formatMessage(messages.discardConfirm),
+      };
+    } else {
+      return null;
+    }
   }
 
   setRef = c => {
@@ -257,7 +243,8 @@ class FocalPointModal extends ImmutablePureComponent {
         await worker.loadLanguage('eng');
         await worker.initialize('eng');
         const { data: { text } } = await worker.recognize(media_url);
-        this.setState({ description: removeExtraLineBreaks(text), dirty: true, detecting: false });
+        this.setState({ detecting: false });
+        this.props.onChangeDescription(removeExtraLineBreaks(text));
         await worker.terminate();
       })().catch((e) => {
         if (refreshCache) {
@@ -274,7 +261,6 @@ class FocalPointModal extends ImmutablePureComponent {
 
   handleThumbnailChange = e => {
     if (e.target.files.length > 0) {
-      this.setState({ dirty: true });
       this.props.onSelectThumbnail(e.target.files);
     }
   }
@@ -288,8 +274,10 @@ class FocalPointModal extends ImmutablePureComponent {
   }
 
   render () {
-    const { media, intl, account, onClose, isUploadingThumbnail } = this.props;
-    const { x, y, dragging, description, dirty, detecting, progress, ocrStatus } = this.state;
+    const { media, intl, account, onClose, isUploadingThumbnail, description, focusX, focusY, dirty, is_changing_upload } = this.props;
+    const { dragging, detecting, progress, ocrStatus } = this.state;
+    const x = (focusX /  2) + .5;
+    const y = (focusY / -2) + .5;
 
     const width  = media.getIn(['meta', 'original', 'width']) || null;
     const height = media.getIn(['meta', 'original', 'height']) || null;
@@ -344,7 +332,7 @@ class FocalPointModal extends ImmutablePureComponent {
                     accept='image/png,image/jpeg'
                     onChange={this.handleThumbnailChange}
                     style={{ display: 'none' }}
-                    disabled={isUploadingThumbnail}
+                    disabled={isUploadingThumbnail || is_changing_upload}
                   />
                 </label>
 
@@ -363,7 +351,7 @@ class FocalPointModal extends ImmutablePureComponent {
                 value={detecting ? '…' : description}
                 onChange={this.handleChange}
                 onKeyDown={this.handleKeyDown}
-                disabled={detecting}
+                disabled={detecting || is_changing_upload}
                 autoFocus
               />
 
@@ -373,11 +361,11 @@ class FocalPointModal extends ImmutablePureComponent {
             </div>
 
             <div className='setting-text__toolbar'>
-              <button disabled={detecting || media.get('type') !== 'image'} className='link-button' onClick={this.handleTextDetection}><FormattedMessage id='upload_modal.detect_text' defaultMessage='Detect text from picture' /></button>
+              <button disabled={detecting || media.get('type') !== 'image' || is_changing_upload} className='link-button' onClick={this.handleTextDetection}><FormattedMessage id='upload_modal.detect_text' defaultMessage='Detect text from picture' /></button>
               <CharacterCounter max={1500} text={detecting ? '' : description} />
             </div>
 
-            <Button disabled={!dirty || detecting || isUploadingThumbnail || length(description) > 1500} text={intl.formatMessage(messages.apply)} onClick={this.handleSubmit} />
+            <Button disabled={!dirty || detecting || isUploadingThumbnail || length(description) > 1500 || is_changing_upload} text={intl.formatMessage(is_changing_upload ? messages.applying : messages.apply)} onClick={this.handleSubmit} />
           </div>
 
           <div className='focal-point-modal__content'>

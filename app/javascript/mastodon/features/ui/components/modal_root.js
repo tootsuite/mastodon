@@ -77,16 +77,33 @@ export default class ModalRoot extends React.PureComponent {
     return <BundleModalError {...props} onClose={onClose} />;
   }
 
+  handleClose = () => {
+    const { onClose } = this.props;
+    let message = null;
+    try {
+      message = this._modal?.getWrappedInstance?.().getCloseConfirmationMessage?.();
+    } catch (_) {
+      // injectIntl defines `getWrappedInstance` but errors out if `withRef`
+      // isn't set.
+      // This would be much smoother with react-intl 3+ and `forwardRef`.
+    }
+    onClose(message);
+  }
+
+  setModalRef = (c) => {
+    this._modal = c;
+  }
+
   render () {
-    const { type, props, onClose } = this.props;
+    const { type, props } = this.props;
     const { backgroundColor } = this.state;
     const visible = !!type;
 
     return (
-      <Base backgroundColor={backgroundColor} onClose={onClose}>
+      <Base backgroundColor={backgroundColor} onClose={this.handleClose}>
         {visible && (
           <BundleContainer fetchComponent={MODAL_COMPONENTS[type]} loading={this.renderLoading(type)} error={this.renderError} renderDelay={200}>
-            {(SpecificComponent) => <SpecificComponent {...props} onChangeBackgroundColor={this.setBackgroundColor} onClose={onClose} />}
+            {(SpecificComponent) => <SpecificComponent {...props} onChangeBackgroundColor={this.setBackgroundColor} onClose={this.handleClose} ref={this.setModalRef} />}
           </BundleContainer>
         )}
       </Base>
