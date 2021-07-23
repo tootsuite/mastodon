@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ReactionValidator < ActiveModel::Validator
-  SUPPORTED_EMOJIS = Oj.load(File.read(Rails.root.join('app', 'javascript', 'mastodon', 'features', 'emoji', 'emoji_map.json'))).keys.freeze
+  SUPPORTED_EMOJIS = Oj.load_file(Rails.root.join('app', 'javascript', 'mastodon', 'features', 'emoji', 'emoji_map.json').to_s).keys.freeze
 
   LIMIT = 8
 

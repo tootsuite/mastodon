@@ -24,10 +24,9 @@ module Twitter::TwitterText
         )
       \)
     /iox
-    REGEXEN[:valid_iri_ucschar] = /[\u{A0}-\u{D7FF}\u{F900}-\u{FDCF}\u{FDF0}-\u{FFEF}\u{10000}-\u{1FFFD}\u{20000}-\u{2FFFD}\u{30000}-\u{3FFFD}\u{40000}-\u{4FFFD}\u{50000}-\u{5FFFD}\u{60000}-\u{6FFFD}\u{70000}-\u{7FFFD}\u{80000}-\u{8FFFD}\u{90000}-\u{9FFFD}\u{A0000}-\u{AFFFD}\u{B0000}-\u{BFFFD}\u{C0000}-\u{CFFFD}\u{D0000}-\u{DFFFD}\u{E1000}-\u{EFFFD}]/iou
-    REGEXEN[:valid_iri_iprivate] = /[\u{E000}-\u{F8FF}\u{F0000}-\u{FFFFD}\u{100000}-\u{10FFFD}]/iou
-    REGEXEN[:valid_url_query_chars] = /(?:#{REGEXEN[:valid_iri_ucschar]})|(?:#{REGEXEN[:valid_iri_iprivate]})|[a-z0-9!?\*'\(\);:&=\+\$\/%#\[\]\-_\.,~|@]/iou
-    REGEXEN[:valid_url_query_ending_chars] = /(?:#{REGEXEN[:valid_iri_ucschar]})|(?:#{REGEXEN[:valid_iri_iprivate]})|[a-z0-9_&=#\/\-]/iou
+    UCHARS = '\u{A0}-\u{D7FF}\u{F900}-\u{FDCF}\u{FDF0}-\u{FFEF}\u{10000}-\u{1FFFD}\u{20000}-\u{2FFFD}\u{30000}-\u{3FFFD}\u{40000}-\u{4FFFD}\u{50000}-\u{5FFFD}\u{60000}-\u{6FFFD}\u{70000}-\u{7FFFD}\u{80000}-\u{8FFFD}\u{90000}-\u{9FFFD}\u{A0000}-\u{AFFFD}\u{B0000}-\u{BFFFD}\u{C0000}-\u{CFFFD}\u{D0000}-\u{DFFFD}\u{E1000}-\u{EFFFD}\u{E000}-\u{F8FF}\u{F0000}-\u{FFFFD}\u{100000}-\u{10FFFD}'
+    REGEXEN[:valid_url_query_chars] = /[a-z0-9!?\*'\(\);:&=\+\$\/%#\[\]\-_\.,~|@#{UCHARS}]/iou
+    REGEXEN[:valid_url_query_ending_chars] = /[a-z0-9_&=#\/\-#{UCHARS}]/iou
     REGEXEN[:valid_url_path] = /(?:
       (?:
         #{REGEXEN[:valid_general_url_path_chars]}*
@@ -57,23 +56,21 @@ module Twitter::TwitterText
       #{REGEXEN[:validate_url_pct_encoded]}|
       #{REGEXEN[:validate_url_sub_delims]}
     )/iox
-    REGEXEN[:xmpp_uri] = %r{
-      (xmpp:)                                                                           # Protocol
-      (//#{REGEXEN[:validate_nodeid]}+@#{REGEXEN[:valid_domain]}/)?                     # Authority (optional)
-      (#{REGEXEN[:validate_nodeid]}+@)?                                                 # Username in path (optional)
-      (#{REGEXEN[:valid_domain]})                                                       # Domain in path
-      (/#{REGEXEN[:validate_resid]}+)?                                                  # Resource in path (optional)
-      (\?#{REGEXEN[:valid_url_query_chars]}*#{REGEXEN[:valid_url_query_ending_chars]})? # Query String
-    }iox
-    REGEXEN[:magnet_uri] = %r{
-      (magnet:)                                                                         # Protocol
-      (\?#{REGEXEN[:valid_url_query_chars]}*#{REGEXEN[:valid_url_query_ending_chars]})  # Query String
-    }iox
     REGEXEN[:valid_extended_uri] = %r{
       (                                                                                 #   $1 total match
         (#{REGEXEN[:valid_url_preceding_chars]})                                        #   $2 Preceding character
         (                                                                               #   $3 URL
-          (#{REGEXEN[:xmpp_uri]}) | (#{REGEXEN[:magnet_uri]})
+          (
+            (xmpp:)                                                                           # Protocol
+            (//#{REGEXEN[:validate_nodeid]}+@#{REGEXEN[:valid_domain]}/)?                     # Authority (optional)
+            (#{REGEXEN[:validate_nodeid]}+@)?                                                 # Username in path (optional)
+            (#{REGEXEN[:valid_domain]})                                                       # Domain in path
+            (/#{REGEXEN[:validate_resid]}+)?                                                  # Resource in path (optional)
+            (\?#{REGEXEN[:valid_url_query_chars]}*#{REGEXEN[:valid_url_query_ending_chars]})? # Query String
+          ) | (
+            (magnet:)                                                                         # Protocol
+            (\?#{REGEXEN[:valid_url_query_chars]}*#{REGEXEN[:valid_url_query_ending_chars]})  # Query String
+          )
         )
       )
     }iox
