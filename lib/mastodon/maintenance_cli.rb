@@ -175,7 +175,173 @@ module Mastodon
       @prompt.say 'Finished!'
     end
 
+    MEDIA_TYPES = %w(accounts custom_emojis media_attachments).freeze
+
+    option :domain, type: :string, required: true, desc: 'Target server domain'
+    option :only, type: :array, enum: MEDIA_TYPES, desc: 'Only process these media types'
+    option :force, type: :boolean, desc: 'Skip new remote_url check'
+    desc 'fix-remote-url FROM TO', 'Fix remote_url of existing media'
+    long_desc <<-DESC
+      Fix the remote_url of the existing media when the remote media server is changed.
+
+      It will automatically check if the media can be obtained from the changed URL. To avoid this, specify the --force option.
+    DESC
+    def fix_remote_url(from, to)
+      @prompt = TTY::Prompt.new
+
+      @from   = from
+      @to     = to
+      @domain = options[:domain]
+      @types  = options[:only] || MEDIA_TYPES
+      @force  = options[:force]
+
+      @prompt.say "Start fixing the remote_url of #{@types.join ', '} on the remote server \"#{@domain}\" from \"#{@from}\" to \"#{@to}\"."
+      exit(1) unless @prompt.yes?('Continue?') # skipcq: RB-RL1021
+
+      fix_accounts_remote_url!
+      fix_custom_emojis_remote_url!
+      fix_media_attachments_remote_url!
+
+      Rails.cache.clear
+
+      @prompt.say 'Finished!'
+    end
+
     private
+
+    def fix_accounts_remote_url!
+      return unless @types.include? 'accounts'
+
+      @prompt.say 'Fixing accounts…'
+
+      unless @force
+        accounts_avatar_remote_url = ::Account.where(domain: @domain).where('avatar_remote_url like ?', "#{@from}%").reorder(avatar_updated_at: :desc).first&.avatar_remote_url&.sub(/^#{@from}/, @to)
+        return @prompt.warn  'Skipping because no corresponding remote avatar image could be found.' unless accounts_avatar_remote_url
+        return @prompt.error 'The remote avatar image cannot be reached with the changed URL.'       unless reachable_url?(accounts_avatar_remote_url)
+      end
+
+      fixed_avatars = ActiveRecord::Base.connection.exec_update(<<-SQL.squish, 'SQL', [[nil, @domain], [nil, @from], [nil, @to], [nil, "#{@from}%"]])
+        WITH new AS (
+          SELECT
+              id,
+              replace(avatar_remote_url, $2, $3) AS avatar_remote_url
+          FROM
+              accounts c
+          WHERE
+              domain = $1
+              AND avatar_remote_url LIKE $4)
+        UPDATE
+            accounts
+        SET
+            avatar_remote_url = new.avatar_remote_url
+        FROM
+            new
+        WHERE
+            accounts.id = new.id
+      SQL
+      fixed_headers = ActiveRecord::Base.connection.exec_update(<<-SQL.squish, 'SQL', [[nil, @domain], [nil, @from], [nil, @to], [nil, "#{@from}%"]])
+        WITH new AS (
+          SELECT
+              id,
+              replace(header_remote_url, $2, $3) AS header_remote_url
+          FROM
+              accounts c
+          WHERE
+              domain = $1
+              AND header_remote_url LIKE $4)
+        UPDATE
+            accounts
+        SET
+            header_remote_url = new.header_remote_url
+        FROM
+            new
+        WHERE
+            accounts.id = new.id
+      SQL
+      @prompt.ok "Fixed #{fixed_avatars} avatars, #{fixed_headers} headers"
+    end
+
+    def fix_custom_emojis_remote_url!
+      return unless @types.include? 'custom_emojis'
+
+      @prompt.say 'Fixing custon emojis…'
+
+      unless @force
+        custom_emojis_image_remote_url = ::CustomEmoji.where(domain: @domain).where('image_remote_url like ?', "#{@from}%").reorder(image_updated_at: :desc).first&.image_remote_url&.sub(/^#{@from}/, @to)
+
+        return @prompt.warn  'Skipping because no corresponding remote custom emoji could be found.' unless custom_emojis_image_remote_url
+        return @prompt.error 'The remote custom emoji cannot be reached with the modified URL.'      unless reachable_url?(custom_emojis_image_remote_url)
+      end
+
+      fixed_emojis = ActiveRecord::Base.connection.exec_update(<<-SQL.squish, 'SQL', [[nil, @domain], [nil, @from], [nil, @to], [nil, "#{@from}%"]])
+        WITH new AS (
+          SELECT
+              id,
+              replace(image_remote_url, $2, $3) AS image_remote_url
+          FROM
+              custom_emojis c
+          WHERE
+              domain = $1
+              AND image_remote_url LIKE $4)
+        UPDATE
+            custom_emojis
+        SET
+            image_remote_url = new.image_remote_url
+        FROM
+            new
+        WHERE
+            custom_emojis.id = new.id
+      SQL
+      @prompt.ok "Fixed #{fixed_emojis} custom emojis"
+    end
+
+    def fix_media_attachments_remote_url!
+      return unless @types.include? 'media_attachments'
+
+      @prompt.say 'Fixing media attachments…'
+
+      unless @force
+        attatchments_remote_url = ::MediaAttachment.joins(status: :account).where(statuses: { accounts: { domain: @domain } }).where('remote_url like ?', "#{@from}%").reorder(file_updated_at: :desc).first&.remote_url&.sub(/^#{@from}/, @to)
+
+        return @prompt.warn  'Skipping because no corresponding remote media attachment could be found.' unless attatchments_remote_url
+        return @prompt.error 'The remote media attachment cannot be reached with the modified URL.'      unless reachable_url?(attatchments_remote_url)
+      end
+
+      fixed_attachments = ActiveRecord::Base.connection.exec_update(<<-SQL.squish, 'SQL', [[nil, @domain], [nil, @from], [nil, @to], [nil, "#{@from}%"]])
+        WITH new AS (
+          SELECT
+              m.id,
+              replace(m.remote_url, $2, $3) AS remote_url,
+              replace(m.thumbnail_remote_url, $2, $3) AS thumbnail_remote_url
+          FROM
+              media_attachments m
+              INNER JOIN statuses s ON m.status_id = s.id
+                  AND s.deleted_at IS NULL
+                  INNER JOIN accounts a ON s.account_id = a.id
+              WHERE
+                  a.domain = $1
+                  AND m.remote_url LIKE $4)
+        UPDATE
+            media_attachments
+        SET
+            remote_url = new.remote_url,
+            thumbnail_remote_url = new.thumbnail_remote_url
+        FROM
+            new
+        WHERE
+            media_attachments.id = new.id;
+      SQL
+      @prompt.ok "Fixed #{fixed_attachments} media attachments"
+    end
+
+    def reachable_url?(url)
+      return false if url.blank?
+
+      code = Request.new(:head, url).perform(&:code)
+      (200...300).cover?(code)
+    rescue HTTP::ConnectionError
+      false
+    end
 
     def deduplicate_accounts!
       remove_index_if_exists!(:accounts, 'index_accounts_on_username_and_domain_lower')
