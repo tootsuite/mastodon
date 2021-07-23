@@ -8,13 +8,12 @@ import UI from '../features/ui';
 import { fetchCustomEmojis } from '../actions/custom_emojis';
 import { hydrateStore } from '../actions/store';
 import { connectUserStream } from '../actions/streaming';
-import { IntlProvider, addLocaleData } from 'react-intl';
+import { IntlProvider } from 'react-intl';
 import { getLocale } from '../locales';
 import initialState from '../initial_state';
 import ErrorBoundary from '../components/error_boundary';
 
-const { localeData, messages } = getLocale();
-addLocaleData(localeData);
+const { messages } = getLocale();
 
 export const store = configureStore();
 const hydrateAction = hydrateStore(initialState);
@@ -47,7 +46,7 @@ export default class Mastodon extends React.PureComponent {
     const { locale } = this.props;
 
     return (
-      <IntlProvider locale={locale} messages={messages}>
+      <IntlProvider locale={locale} messages={messages} textComponent='span'>
         <Provider store={store}>
           <ErrorBoundary>
             <BrowserRouter basename='/web'>

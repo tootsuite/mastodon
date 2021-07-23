@@ -1,7 +1,7 @@
 import React, { PureComponent, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import { IntlProvider, addLocaleData } from 'react-intl';
+import { IntlProvider } from 'react-intl';
 import { fromJS } from 'immutable';
 import { getLocale } from 'mastodon/locales';
 import { getScrollbarWidth } from 'mastodon/utils/scrollbar';
@@ -14,8 +14,7 @@ import Video from 'mastodon/features/video';
 import Card from 'mastodon/features/status/components/card';
 import Audio from 'mastodon/features/audio';
 
-const { localeData, messages } = getLocale();
-addLocaleData(localeData);
+const { messages } = getLocale();
 
 const MEDIA_COMPONENTS = { MediaGallery, Video, Card, Poll, Hashtag, Audio };
 
@@ -73,7 +72,7 @@ export default class MediaContainer extends PureComponent {
     const { locale, components } = this.props;
 
     return (
-      <IntlProvider locale={locale} messages={messages}>
+      <IntlProvider locale={locale} messages={messages} textComponent='span'>
         <Fragment>
           {[].map.call(components, (component, i) => {
             const componentName = component.getAttribute('data-component');

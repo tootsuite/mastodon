@@ -138,7 +138,7 @@ class SwitchingColumnsArea extends React.PureComponent {
 
   setRef = c => {
     if (c) {
-      this.node = c.getWrappedInstance();
+      this.node = c;
     }
   }
 

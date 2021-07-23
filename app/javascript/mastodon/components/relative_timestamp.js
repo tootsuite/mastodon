@@ -127,7 +127,7 @@ class RelativeTimestamp extends React.Component {
   };
 
   state = {
-    now: this.props.intl.now(),
+    now: (new Date()),
   };
 
   static defaultProps = {
@@ -144,7 +144,7 @@ class RelativeTimestamp extends React.Component {
 
   componentWillReceiveProps (nextProps) {
     if (this.props.timestamp !== nextProps.timestamp) {
-      this.setState({ now: this.props.intl.now() });
+      this.setState({ now: new Date() });
     }
   }
 
@@ -171,7 +171,7 @@ class RelativeTimestamp extends React.Component {
     const delay          = delta < 0 ? Math.max(updateInterval, unitDelay - unitRemainder) : Math.max(updateInterval, unitRemainder);
 
     this._timer = setTimeout(() => {
-      this.setState({ now: this.props.intl.now() });
+      this.setState({ now: new Date() });
     }, delay);
   }
 

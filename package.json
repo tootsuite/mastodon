@@ -128,7 +128,7 @@
     "react-hotkeys": "^1.1.4",
     "react-immutable-proptypes": "^2.2.0",
     "react-immutable-pure-component": "^2.2.2",
-    "react-intl": "^2.9.0",
+    "react-intl": "^3.12.0",
     "react-masonry-infinite": "^1.2.2",
     "react-motion": "^0.5.2",
     "react-notification": "^6.8.5",
