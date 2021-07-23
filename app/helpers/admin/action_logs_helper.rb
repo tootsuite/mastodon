@@ -31,6 +31,8 @@ module Admin::ActionLogsHelper
       link_to truncate(record.text), edit_admin_announcement_path(record.id)
     when 'IpBlock'
       "#{record.ip}/#{record.ip.prefix} (#{I18n.t("simple_form.labels.ip_block.severities.#{record.severity}")})"
+    when 'RegistrationFilter'
+      link_to "#{truncate(record.phrase)} (#{I18n.t("admin.registration_filters.types.#{record.type}")})", edit_admin_registration_filter_path(record.id)
     end
   end
 
@@ -52,6 +54,8 @@ module Admin::ActionLogsHelper
       truncate(attributes['text'].is_a?(Array) ? attributes['text'].last : attributes['text'])
     when 'IpBlock'
       "#{attributes['ip']}/#{attributes['ip'].prefix} (#{I18n.t("simple_form.labels.ip_block.severities.#{attributes['severity']}")})"
+    when 'RegistrationFilter'
+      "#{truncate(attributes['phrase'])} (#{I18n.t("admin.registration_filters.types.#{attributes['type']}")})"
     end
   end
 end

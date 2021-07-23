@@ -14,4 +14,5 @@
 class UserInviteRequest < ApplicationRecord
   belongs_to :user, inverse_of: :invite_request
   validates :text, presence: true, length: { maximum: 420 }
+  validates_with InviteRequestValidator
 end

@@ -1,0 +1,10 @@
+%tr
+  %td
+    %samp= registration_filter.phrase
+  %td
+    = t("admin.registration_filters.types.#{registration_filter.type}")
+  %td
+    - if can?(:update, registration_filter)
+      = table_link_to 'pencil', t('filters.edit.title'), edit_admin_registration_filter_path(registration_filter)
+    - if can?(:update, registration_filter)
+      = table_link_to 'trash', t('admin.registration_filters.delete'), admin_registration_filter_path(registration_filter), method: :delete

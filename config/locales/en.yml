@@ -236,6 +236,7 @@ en:
         create_domain_block: Create Domain Block
         create_email_domain_block: Create E-mail Domain Block
         create_ip_block: Create IP rule
+        create_registration_filter: Create Registration Text Filter
         create_unavailable_domain: Create Unavailable Domain
         demote_user: Demote User
         destroy_announcement: Delete Announcement
@@ -244,6 +245,7 @@ en:
         destroy_domain_block: Delete Domain Block
         destroy_email_domain_block: Delete E-mail Domain Block
         destroy_ip_block: Delete IP rule
+        destroy_registration_filter: Destroy Registration Text Filter
         destroy_status: Delete Post
         destroy_unavailable_domain: Delete Unavailable Domain
         disable_2fa_user: Disable 2FA
@@ -269,6 +271,7 @@ en:
         update_announcement: Update Announcement
         update_custom_emoji: Update Custom Emoji
         update_domain_block: Update Domain Block
+        update_registration_filter: Update Registration Text Filter
         update_status: Update Post
       actions:
         assigned_to_self_report_html: "%{name} assigned report %{target} to themselves"
@@ -281,6 +284,7 @@ en:
         create_domain_block_html: "%{name} blocked domain %{target}"
         create_email_domain_block_html: "%{name} blocked e-mail domain %{target}"
         create_ip_block_html: "%{name} created rule for IP %{target}"
+        create_registration_filter_html: "%{name} blocked registrations with request text matching %{target}"
         create_unavailable_domain_html: "%{name} stopped delivery to domain %{target}"
         demote_user_html: "%{name} demoted user %{target}"
         destroy_announcement_html: "%{name} deleted announcement %{target}"
@@ -289,6 +293,7 @@ en:
         destroy_domain_block_html: "%{name} unblocked domain %{target}"
         destroy_email_domain_block_html: "%{name} unblocked e-mail domain %{target}"
         destroy_ip_block_html: "%{name} deleted rule for IP %{target}"
+        destroy_registration_filter_html: "%{name} unblocked registrations with request text matching %{target}"
         destroy_status_html: "%{name} removed post by %{target}"
         destroy_unavailable_domain_html: "%{name} resumed delivery to domain %{target}"
         disable_2fa_user_html: "%{name} disabled two factor requirement for user %{target}"
@@ -314,6 +319,7 @@ en:
         update_announcement_html: "%{name} updated announcement %{target}"
         update_custom_emoji_html: "%{name} updated emoji %{target}"
         update_domain_block_html: "%{name} updated domain block for %{target}"
+        update_registration_filter_html: "%{name} updated registration filter blocking request text matching %{target}"
         update_status_html: "%{name} updated post by %{target}"
       deleted_status: "(deleted post)"
       empty: No logs found.
@@ -525,6 +531,29 @@ en:
       title: IP rules
     pending_accounts:
       title: Pending accounts (%{count})
+    registration_filters:
+      add_new: Add new filter
+      created_msg: Registration text filter successfully created!
+      delete: Delete
+      description_html: Registration text filters allow you to automatically reject new user registrations based on their invite request text, that is their response to the “Why do you want to join?” prompt. This can be used to cut down on registration spam.
+      destroyed_msg: Registration text filter successfully destroyed!
+      edit:
+        title: Edit registration text filter
+      empty: No registration text filter found.
+      new:
+        create: Create registration text filter
+        title: New registration text filter
+      phrase: Keyword, phrase or regular expression
+      phrase_hint: Forbid registration of new users whose answer to the “Why do you want to join?” prompt contains text that matches this keyword, phrase or regular expression.
+      title: Registration text filters
+      type:
+        title: Filter type
+      types:
+        regexp: Regular Expression
+        regexp_hint: Use regular expressions if you want to filter registrations featuring more advanced patterns.
+        text: Simple text
+        text_hint: Use this for simple recurring keywords and if you do not know regular expressions.
+      updated_msg: Registration text filter successfully updated!
     relationships:
       title: "%{acct}'s relationships"
     relays:
@@ -1154,6 +1183,8 @@ en:
     errors:
       limit_reached: Limit of different reactions reached
       unrecognized_emoji: is not a recognized emoji
+  regex_validator:
+    invalid_regexp: 'error parsing regular expression: %{error}'
   relationships:
     activity: Account activity
     dormant: Dormant
@@ -1469,6 +1500,7 @@ en:
   users:
     follow_limit_reached: You cannot follow more than %{limit} people
     generic_access_help_html: Trouble accessing your account? You may get in touch with %{email} for assistance
+    invalid_invite_request_text: This text includes forbidden words or expressions
     invalid_otp_token: Invalid two-factor code
     invalid_sign_in_token: Invalid security code
     otp_lost_help_html: If you lost access to both, you may get in touch with %{email}

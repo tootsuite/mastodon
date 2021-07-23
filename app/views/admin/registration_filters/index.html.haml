@@ -1,0 +1,23 @@
+- content_for :page_title do
+  = t('admin.registration_filters.title')
+
+- if can?(:create, :registration_filter)
+  - content_for :heading_actions do
+    = link_to t('admin.registration_filters.add_new'), new_admin_registration_filter_path, class: 'button'
+
+%p= t('admin.registration_filters.description_html')
+
+- if @registration_filters.empty?
+  %div.muted-hint.center-text=t 'admin.registration_filters.empty'
+- else
+  .table-wrapper
+    %table.table
+      %thead
+        %tr
+          %th= t('admin.registration_filters.text')
+          %th= t('admin.registration_filters.type.title')
+          %th
+      %tbody
+        = render partial: 'registration_filter', collection: @registration_filters
+
+= paginate @registration_filters

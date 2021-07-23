@@ -1,0 +1,10 @@
+- content_for :page_title do
+  = t('admin.registration_filters.new.title')
+
+= simple_form_for @registration_filter, url: admin_registration_filters_path do |f|
+  = render 'shared/error_messages', object: @registration_filter
+
+  = render 'fields', f: f
+
+  .actions
+    = f.button :button, t('.create'), type: :submit
