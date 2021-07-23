@@ -287,7 +287,7 @@ module Mastodon
 
     option :concurrency, type: :numeric, default: 5, aliases: [:c]
     option :dry_run, type: :boolean
-    desc 'cull', 'Remove remote accounts that no longer exist'
+    desc 'cull [DOMAIN...]', 'Remove remote accounts that no longer exist'
     long_desc <<-LONG_DESC
       Query every single remote account in the database to determine
       if it still exists on the origin server, and if it doesn't,
@@ -296,12 +296,15 @@ module Mastodon
       Accounts that have had confirmed activity within the last week
       are excluded from the checks.
     LONG_DESC
-    def cull
+    def cull(*domains)
       skip_threshold = 7.days.ago
       dry_run        = options[:dry_run] ? ' (DRY RUN)' : ''
       skip_domains   = Concurrent::Set.new
 
-      processed, culled = parallelize_with_progress(Account.remote.where(protocol: :activitypub).partitioned) do |account|
+      query = Account.remote.where(protocol: :activitypub)
+      query = query.where(domain: domains) unless domains.empty?
+
+      processed, culled = parallelize_with_progress(query.partitioned) do |account|
         next if account.updated_at >= skip_threshold || (account.last_webfingered_at.present? && account.last_webfingered_at >= skip_threshold) || skip_domains.include?(account.domain)
 
         code = 0
