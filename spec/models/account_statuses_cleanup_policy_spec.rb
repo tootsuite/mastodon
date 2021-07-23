@@ -12,11 +12,118 @@ RSpec.describe AccountStatusesCleanupPolicy, type: :model do
     end
   end
 
-  describe '#get_cutoff_id' do
-    let!(:unrelated_status)  { Fabricate(:status, created_at: 3.year.ago) }
+  describe '#record_last_inspected' do
     let(:account_statuses_cleanup_policy) { Fabricate(:account_statuses_cleanup_policy, account: account) }
 
-    subject { account_statuses_cleanup_policy.get_cutoff_id }
+    it 'records the given id' do
+      account_statuses_cleanup_policy.record_last_inspected(42)
+      expect(account_statuses_cleanup_policy.last_inspected).to eq 42
+    end
+  end
+
+  describe '#invalidate_last_inspected' do
+    let(:account_statuses_cleanup_policy) { Fabricate(:account_statuses_cleanup_policy, account: account) }
+    let(:status) { Fabricate(:status, id: 10, account: account) }
+    subject { account_statuses_cleanup_policy.invalidate_last_inspected(status, action) }
+
+    before do
+      account_statuses_cleanup_policy.record_last_inspected(42)
+    end
+
+    context 'when the action is :unbookmark' do
+      let(:action) { :unbookmark }
+
+      context 'when the policy is not to keep self-bookmarked toots' do
+        before do
+          account_statuses_cleanup_policy.keep_self_bookmark = false
+        end
+
+        it 'does not change the recorded id' do
+          subject
+          expect(account_statuses_cleanup_policy.last_inspected).to eq 42
+        end
+      end
+
+      context 'when the policy is to keep self-bookmarked toots' do
+        before do
+          account_statuses_cleanup_policy.keep_self_bookmark = true
+        end
+
+        it 'records the older id' do
+          subject
+          expect(account_statuses_cleanup_policy.last_inspected).to eq 10
+        end
+      end
+    end
+
+    context 'when the action is :unfav' do
+      let(:action) { :unfav }
+
+      context 'when the policy is not to keep self-favourited toots' do
+        before do
+          account_statuses_cleanup_policy.keep_self_fav = false
+        end
+
+        it 'does not change the recorded id' do
+          subject
+          expect(account_statuses_cleanup_policy.last_inspected).to eq 42
+        end
+      end
+
+      context 'when the policy is to keep self-favourited toots' do
+        before do
+          account_statuses_cleanup_policy.keep_self_fav = true
+        end
+
+        it 'records the older id' do
+          subject
+          expect(account_statuses_cleanup_policy.last_inspected).to eq 10
+        end
+      end
+    end
+
+    context 'when the action is :unpin' do
+      let(:action) { :unpin }
+
+      context 'when the policy is not to keep pinned toots' do
+        before do
+          account_statuses_cleanup_policy.keep_pinned = false
+        end
+
+        it 'does not change the recorded id' do
+          subject
+          expect(account_statuses_cleanup_policy.last_inspected).to eq 42
+        end
+      end
+
+      context 'when the policy is to keep pinned toots' do
+        before do
+          account_statuses_cleanup_policy.keep_pinned = true
+        end
+
+        it 'records the older id' do
+          subject
+          expect(account_statuses_cleanup_policy.last_inspected).to eq 10
+        end
+      end
+    end
+
+    context 'when the status is more recent than the recorded inspected id' do
+      let(:action) { :unfav }
+      let(:status) { Fabricate(:status, account: account) }
+
+      it 'does not change the recorded id' do
+        subject
+        expect(account_statuses_cleanup_policy.last_inspected).to eq 42
+      end
+    end
+  end
+
+  describe '#compute_cutoff_id' do
+    let!(:unrelated_status)  { Fabricate(:status, created_at: 3.years.ago) }
+    let(:account_statuses_cleanup_policy) { Fabricate(:account_statuses_cleanup_policy, account: account) }
+
+    subject { account_statuses_cleanup_policy.compute_cutoff_id }
 
     context 'when the account has posted multiple toots' do
       let!(:very_old_status)   { Fabricate(:status, created_at: 3.years.ago, account: account) }
