@@ -57,3 +57,7 @@
     cron: '0 * * * *'
     class: Scheduler::InstanceRefreshScheduler
     queue: scheduler
+  accounts_statuses_cleanup_scheduler:
+    interval: 1 minute
+    class: Scheduler::AccountsStatusesCleanupScheduler
+    queue: scheduler

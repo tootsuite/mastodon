@@ -23,4 +23,12 @@ class Bookmark < ApplicationRecord
   before_validation do
     self.status = status.reblog if status&.reblog?
   end
+
+  after_destroy :invalidate_cleanup_info
+
+  def invalidate_cleanup_info
+    return unless status&.account_id == account_id && account.local?
+
+    account.statuses_cleanup_policy&.invalidate_last_inspected(status, :unbookmark)
+  end
 end
