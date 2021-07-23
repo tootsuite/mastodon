@@ -251,10 +251,13 @@ module AccountInteractions
          .where('users.current_sign_in_at > ?', User::ACTIVE_DURATION.ago)
   end
 
-  def remote_followers_hash(url_prefix)
-    Rails.cache.fetch("followers_hash:#{id}:#{url_prefix}") do
+  def remote_followers_hash(url)
+    url_prefix = url[/\Ahttp(s?):\/\/[^\/]+/]
+    return if url_prefix.blank?
+
+    Rails.cache.fetch("followers_hash:#{id}:#{url_prefix}/") do
       digest = "\x00" * 32
-      followers.where(Account.arel_table[:uri].matches(url_prefix + '%', false, true)).pluck_each(:uri) do |uri|
+      followers.where(Account.arel_table[:uri].matches("#{Account.sanitize_sql_like(url_prefix)}/%", false, true)).or(followers.where(uri: url_prefix)).pluck_each(:uri) do |uri|
         Xorcist.xor!(digest, Digest::SHA256.digest(uri))
       end
       digest.unpack('H*')[0]
