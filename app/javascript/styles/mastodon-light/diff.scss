@@ -256,6 +256,14 @@ html {
   background: $ui-base-color;
 }
 
+.status.status-direct {
+  background: lighten($ui-base-color, 4%);
+}
+
+.focusable:focus .status.status-direct {
+  background: lighten($ui-base-color, 8%);
+}
+
 .detailed-status,
 .detailed-status__action-bar {
   background: $white;
