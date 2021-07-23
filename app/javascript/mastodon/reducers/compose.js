@@ -21,6 +21,7 @@ import {
   COMPOSE_SUGGESTIONS_CLEAR,
   COMPOSE_SUGGESTIONS_READY,
   COMPOSE_SUGGESTION_SELECT,
+  COMPOSE_SUGGESTION_IGNORE,
   COMPOSE_SUGGESTION_TAGS_UPDATE,
   COMPOSE_TAG_HISTORY_UPDATE,
   COMPOSE_SENSITIVITY_CHANGE,
@@ -151,6 +152,17 @@ const insertSuggestion = (state, position, token, completion, path) => {
       map.set('focusDate', new Date());
       map.set('caretPosition', position + completion.length + 1);
     }
+    map.set('idempotencyKey', uuid());
+  });
+};
+
+const ignoreSuggestion = (state, position, token, completion, path) => {
+  return state.withMutations(map => {
+    map.updateIn(path, oldText => `${oldText.slice(0, position + token.length)} ${oldText.slice(position + token.length)}`);
+    map.set('suggestion_token', null);
+    map.set('suggestions', ImmutableList());
+    map.set('focusDate', new Date());
+    map.set('caretPosition', position + token.length + 1);
     map.set('idempotencyKey', uuid());
   });
 };
@@ -375,6 +387,8 @@ export default function compose(state = initialState, action) {
     return state.set('suggestions', ImmutableList(normalizeSuggestions(state, action))).set('suggestion_token', action.token);
   case COMPOSE_SUGGESTION_SELECT:
     return insertSuggestion(state, action.position, action.token, action.completion, action.path);
+  case COMPOSE_SUGGESTION_IGNORE:
+    return ignoreSuggestion(state, action.position, action.token, action.completion, action.path);
   case COMPOSE_SUGGESTION_TAGS_UPDATE:
     return updateSuggestionTags(state, action.token);
   case COMPOSE_TAG_HISTORY_UPDATE:
