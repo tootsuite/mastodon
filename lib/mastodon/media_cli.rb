@@ -184,6 +184,20 @@ module Mastodon
       say("Removed #{removed} orphans (approx. #{number_to_human_size(reclaimed_bytes)})#{dry_run}", :green, true)
     end
 
+    desc 'mark-media-missing', 'Clears references to remote media which has been stored locally'
+    long_desc <<~DESC
+      Clears references to file and thumbnails stored locally that originated remotely.
+
+      This is useful if you are restoring a backup without the cache and need Mastodon to fetch remote media again.
+    DESC
+    def mark_media_missing
+      MediaAttachment.cached.where.not(remote_url: '').each do |attachment|
+        attachment.file.destroy
+        attachment.thumbnail.destroy
+        attachment.save
+      end
+    end
+
     option :account, type: :string
     option :domain, type: :string
     option :status, type: :numeric
