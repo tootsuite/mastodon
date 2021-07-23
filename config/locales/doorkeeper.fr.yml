@@ -1,4 +1,3 @@
----
 fr:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ fr:
       application:
         title: Autorisation OAuth requise
     scopes:
-      admin:read: lire toutes les données du serveur
-      admin:read:accounts: lire les informations sensibles de tous les comptes
-      admin:read:reports: lire les informations sensibles de tous les signalements et des comptes signalés
-      admin:write: modifier toutes les données sur le serveur
-      admin:write:accounts: effectuer des actions de modération sur les comptes
-      admin:write:reports: effectuer des actions de modération sur les signalements
+      "admin:read": lire toutes les données du serveur
+      "admin:read:accounts": lire les informations sensibles de tous les comptes
+      "admin:read:reports": lire les informations sensibles de tous les signalements et des comptes signalés
+      "admin:write": modifier toutes les données sur le serveur
+      "admin:write:accounts": effectuer des actions de modération sur les comptes
+      "admin:write:reports": effectuer des actions de modération sur les signalements
       follow: modifier les relations du compte
       push: recevoir vos notifications poussées
       read: lire toutes les données de votre compte
-      read:accounts: voir les informations des comptes
-      read:blocks: voir vos blocages
-      read:bookmarks: voir vos marque-pages
-      read:favourites: voir vos favoris
-      read:filters: voir vos filtres
-      read:follows: voir vos abonnements
-      read:lists: voir vos listes
-      read:mutes: voir vos masquages
-      read:notifications: voir vos notifications
-      read:reports: voir vos signalements
-      read:search: rechercher en votre nom
-      read:statuses: voir tous les statuts
+      "read:accounts": voir les informations des comptes
+      "read:blocks": voir vos blocages
+      "read:bookmarks": voir vos marque-pages
+      "read:favourites": voir vos favoris
+      "read:filters": voir vos filtres
+      "read:follows": voir vos abonnements
+      "read:lists": voir vos listes
+      "read:mutes": voir vos masquages
+      "read:notifications": voir vos notifications
+      "read:reports": voir vos signalements
+      "read:search": rechercher en votre nom
+      "read:statuses": voir tous les statuts
       write: modifier toutes les données de votre compte
-      write:accounts: modifier votre profil
-      write:blocks: bloquer des comptes et des domaines
-      write:bookmarks: statuts des marque-pages
-      write:favourites: mettre des statuts en favori
-      write:filters: créer des filtres
-      write:follows: suivre des personnes
-      write:lists: créer des listes
-      write:media: téléverser des fichiers média
-      write:mutes: masquer des comptes et des conversations
-      write:notifications: effacer vos notifications
-      write:reports: signaler d’autres personnes
-      write:statuses: publier des statuts
+      "write:accounts": modifier votre profil
+      "write:blocks": bloquer des comptes et des domaines
+      "write:bookmarks": statuts des marque-pages
+      "write:favourites": mettre des statuts en favori
+      "write:filters": créer des filtres
+      "write:follows": suivre des personnes
+      "write:lists": créer des listes
+      "write:media": téléverser des fichiers média
+      "write:mutes": masquer des comptes et des conversations
+      "write:notifications": effacer vos notifications
+      "write:reports": signaler d’autres personnes
+      "write:statuses": publier des statuts

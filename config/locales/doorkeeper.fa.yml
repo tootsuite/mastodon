@@ -1,4 +1,3 @@
----
 fa:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ fa:
       application:
         title: درخواست اجازهٔ OAuth
     scopes:
-      admin:read: خواندن تمام داده‌ها روی کارساز
-      admin:read:accounts: خواندن اطّلاعات حساس از همهٔ حساب‌ها
-      admin:read:reports: خواندن اطّلاعات حساس از همهٔ گزارش‌ها و حساب‌های گزارش‌شده
-      admin:write: تغییر تمام داده‌ها روی کارساز
-      admin:write:accounts: انجام کنش مدیریتی روی حساب‌ها
-      admin:write:reports: انجام کنش مدیریتی روی گزارش‌ها
+      "admin:read": خواندن تمام داده‌ها روی کارساز
+      "admin:read:accounts": خواندن اطّلاعات حساس از همهٔ حساب‌ها
+      "admin:read:reports": خواندن اطّلاعات حساس از همهٔ گزارش‌ها و حساب‌های گزارش‌شده
+      "admin:write": تغییر تمام داده‌ها روی کارساز
+      "admin:write:accounts": انجام کنش مدیریتی روی حساب‌ها
+      "admin:write:reports": انجام کنش مدیریتی روی گزارش‌ها
       follow: پیگیری، مسدودسازی، لغو مسدودسازی، و لغو پیگیری حساب‌ها
       push: برای حساب خود اعلان‌های لحظه‌ای دریافت کنید
       read: خواندن اطلاعات حساب شما
-      read:accounts: دیدن اطّلاعات حساب
-      read:blocks: دیدن انسدادهایتان
-      read:bookmarks: دیدن نشانک‌هایتان
-      read:favourites: دیدن برگزیده‌هایتان
-      read:filters: دیدن پالایه‌هایتان
-      read:follows: دیدن پی‌گیری‌هایتان
-      read:lists: دیدن فهرست‌هایتان
-      read:mutes: دیدن خموشی‌هایتان
-      read:notifications: دیدن آگاهی‌هایتان
-      read:reports: دیدن گزارش‌هایتان
-      read:search: حست‌وجو از سمت خودتان
-      read:statuses: دیدن همهٔ وضعیت‌ها
+      "read:accounts": دیدن اطّلاعات حساب
+      "read:blocks": دیدن انسدادهایتان
+      "read:bookmarks": دیدن نشانک‌هایتان
+      "read:favourites": دیدن برگزیده‌هایتان
+      "read:filters": دیدن پالایه‌هایتان
+      "read:follows": دیدن پی‌گیری‌هایتان
+      "read:lists": دیدن فهرست‌هایتان
+      "read:mutes": دیدن خموشی‌هایتان
+      "read:notifications": دیدن آگاهی‌هایتان
+      "read:reports": دیدن گزارش‌هایتان
+      "read:search": حست‌وجو از سمت خودتان
+      "read:statuses": دیدن همهٔ وضعیت‌ها
       write: انتشار مطالب از طرف شما
-      write:accounts: تغییر نمایه‌تان
-      write:blocks: انسداد حساب‌ها و دامنه‌ها
-      write:bookmarks: نشانک‌گذاری وضعیت‌ها
-      write:favourites: برگزیدن وضعیت‌ها
-      write:filters: ایحاد پالایش‌ها
-      write:follows: پی‌گیری افراد
-      write:lists: ایجاد فهرست‌ها
-      write:media: بارگذاری پرونده‌های رسانه
-      write:mutes: خموش کردن افراد و گفت‌وگوها
-      write:notifications: پام‌سازی آگاهی‌هایتان
-      write:reports: گزارش دیگر افراد
-      write:statuses: انتشار وضعیت‌ها
+      "write:accounts": تغییر نمایه‌تان
+      "write:blocks": انسداد حساب‌ها و دامنه‌ها
+      "write:bookmarks": نشانک‌گذاری وضعیت‌ها
+      "write:favourites": برگزیدن وضعیت‌ها
+      "write:filters": ایحاد پالایش‌ها
+      "write:follows": پی‌گیری افراد
+      "write:lists": ایجاد فهرست‌ها
+      "write:media": بارگذاری پرونده‌های رسانه
+      "write:mutes": خموش کردن افراد و گفت‌وگوها
+      "write:notifications": پام‌سازی آگاهی‌هایتان
+      "write:reports": گزارش دیگر افراد
+      "write:statuses": انتشار وضعیت‌ها

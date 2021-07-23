@@ -1,4 +1,3 @@
----
 es-MX:
   activerecord:
     attributes:
@@ -6,7 +5,7 @@ es-MX:
         expires_at: Vencimiento
         options: Opciones
       user:
-        agreement: Acuerdo de Servicio
+        agreement: Contrato de servicio
         email: Dirección de correo electrónico
         locale: Idioma
         password: Contraseña

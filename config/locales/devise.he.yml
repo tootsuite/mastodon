@@ -1,4 +1,3 @@
----
 he:
   devise:
     confirmations:
@@ -8,10 +7,10 @@ he:
     failure:
       already_authenticated: חשבון זה כבר מחובר.
       inactive: חשבון זה טרם הופעל.
-      invalid: "%{authentication_keys} או סיסמא לא נכונים."
+      invalid: '%{authentication_keys} או סיסמא לא נכונים.'
       last_attempt: יש לך עוד ניסיון אחד לפני נעילת החשבון.
       locked: חשבון זה נעול.
-      not_found_in_database: "%{authentication_keys} או סיסמא לא נכונים."
+      not_found_in_database: '%{authentication_keys} או סיסמא לא נכונים.'
       timeout: פג תוקף השהיה בחשבון. נא להכנס מחדש על מנת להמשיך.
       unauthenticated: יש להרשם או להכנס לחשבון על מנת להמשיך.
       unconfirmed: יש לאמת את כתובת הדוא"ל על מנת להמשיך.

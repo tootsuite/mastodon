@@ -1,4 +1,3 @@
----
 nl:
   devise:
     confirmations:
@@ -8,10 +7,10 @@ nl:
     failure:
       already_authenticated: Je bent al ingelogd.
       inactive: Jouw account is nog niet geactiveerd.
-      invalid: "%{authentication_keys} of wachtwoord ongeldig."
+      invalid: '%{authentication_keys} of wachtwoord ongeldig.'
       last_attempt: Je hebt nog één poging over voordat jouw account wordt opgeschort.
       locked: Jouw account is opgeschort.
-      not_found_in_database: "%{authentication_keys} of wachtwoord ongeldig."
+      not_found_in_database: '%{authentication_keys} of wachtwoord ongeldig.'
       pending: Jouw account moet nog steeds worden beoordeeld.
       timeout: Jouw sessie is verlopen, log opnieuw in.
       unauthenticated: Je dient in te loggen of te registreren.

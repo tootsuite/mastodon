@@ -1,4 +1,3 @@
----
 eu:
   activerecord:
     attributes:
@@ -61,7 +60,7 @@ eu:
         title: Errore bat gertatu da
       new:
         able_to: Egin ahal izango du
-        prompt: "%{client_name} aplikazioak zure kontua atzitzea eskatu du"
+        prompt: '%{client_name} aplikazioak zure kontua atzitzea eskatu du'
         title: Baimena behar da
       show:
         title: Kopiatu baimen kode hau eta itsatsi aplikazioan.
@@ -118,37 +117,37 @@ eu:
       application:
         title: OAuth autorizazioa behar da
     scopes:
-      admin:read: zerbitzariko datu guztiak irakurri
-      admin:read:accounts: kontu guztien informazio sentsiblea irakurri
-      admin:read:reports: salaketa guztietako eta salatutako kontu guztietako informazio sentsiblea irakurri
-      admin:write: zerbitzariko datu guztiak aldatu
-      admin:write:accounts: kontuetan moderazio ekintzak burutu
-      admin:write:reports: salaketetan moderazio ekintzak burutu
+      "admin:read": zerbitzariko datu guztiak irakurri
+      "admin:read:accounts": kontu guztien informazio sentsiblea irakurri
+      "admin:read:reports": salaketa guztietako eta salatutako kontu guztietako informazio sentsiblea irakurri
+      "admin:write": zerbitzariko datu guztiak aldatu
+      "admin:write:accounts": kontuetan moderazio ekintzak burutu
+      "admin:write:reports": salaketetan moderazio ekintzak burutu
       follow: aldatu kontuaren erlazioak
       push: jaso push jakinarazpenak
       read: irakurri zure kontuko datu guztiak
-      read:accounts: ikusi kontuaren informazioa
-      read:blocks: ikusi zure blokeoak
-      read:bookmarks: ikusi zure laster-markak
-      read:favourites: ikusi zure gogokoak
-      read:filters: ikusi zure iragazkiak
-      read:follows: ikusi zuk jarraitutakoak
-      read:lists: ikusi zure zerrendak
-      read:mutes: ikusi zuk mutututakoak
-      read:notifications: ikusi zure jakinarazpenak
-      read:reports: ikusi zure salaketak
-      read:search: bilatu zure izenean
-      read:statuses: ikusi mezu guztiak
+      "read:accounts": ikusi kontuaren informazioa
+      "read:blocks": ikusi zure blokeoak
+      "read:bookmarks": ikusi zure laster-markak
+      "read:favourites": ikusi zure gogokoak
+      "read:filters": ikusi zure iragazkiak
+      "read:follows": ikusi zuk jarraitutakoak
+      "read:lists": ikusi zure zerrendak
+      "read:mutes": ikusi zuk mutututakoak
+      "read:notifications": ikusi zure jakinarazpenak
+      "read:reports": ikusi zure salaketak
+      "read:search": bilatu zure izenean
+      "read:statuses": ikusi mezu guztiak
       write: kontuaren datu guztiak aldatzea
-      write:accounts: zure profila aldatzea
-      write:blocks: kontuak eta domeinuak blokeatzea
-      write:bookmarks: mezuen laster-marka
-      write:favourites: gogoko mezuak
-      write:filters: sortu iragazkiak
-      write:follows: jarraitu jendea
-      write:lists: sortu zerrendak
-      write:media: igo multimedia fitxategiak
-      write:mutes: mututu pertsonak eta elkarrizketak
-      write:notifications: garbitu zure jakinarazpenak
-      write:reports: salatu beste jendea
-      write:statuses: argitaratu mezuak
+      "write:accounts": zure profila aldatzea
+      "write:blocks": kontuak eta domeinuak blokeatzea
+      "write:bookmarks": mezuen laster-marka
+      "write:favourites": gogoko mezuak
+      "write:filters": sortu iragazkiak
+      "write:follows": jarraitu jendea
+      "write:lists": sortu zerrendak
+      "write:media": igo multimedia fitxategiak
+      "write:mutes": mututu pertsonak eta elkarrizketak
+      "write:notifications": garbitu zure jakinarazpenak
+      "write:reports": salatu beste jendea
+      "write:statuses": argitaratu mezuak

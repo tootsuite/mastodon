@@ -22,7 +22,7 @@
   "account.follows.empty": "Questo utente non segue ancora nessuno.",
   "account.follows_you": "Ti segue",
   "account.hide_reblogs": "Nascondi condivisioni da @{name}",
-  "account.joined": "Registrato dal {date}",
+  "account.joined": "Su questa istanza dal {date}",
   "account.last_status": "Ultima attività",
   "account.link_verified_on": "La proprietà di questo link è stata controllata il {date}",
   "account.locked_info": "Questo è un account privato. Il proprietario approva manualmente chi può seguirlo.",

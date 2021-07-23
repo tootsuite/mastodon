@@ -1,8 +1,7 @@
----
 eo:
   about:
-    about_hashtag_html: Ĉi tiuj estas la publikaj mesaĝoj markitaj per <strong>#%{hashtag}</strong>. Vi povas interagi kun ili se vi havas konton ie ajn en la fediverse.
-    about_mastodon_html: Mastodon estas socia reto bazita sur malfermitaj retaj protokoloj kaj sur libera malfermitkoda programo. Ĝi estas sencentra kiel retmesaĝoj.
+    about_hashtag_html: 'Ĉi tiuj estas la publikaj mesaĝoj markitaj per <strong>#%{hashtag}</strong>. Vi povas interagi kun ili se vi havas konton ie ajn en la fediverse.'
+    about_mastodon_html: 'Mastodon estas socia reto bazita sur malfermitaj retaj protokoloj kaj sur libera malfermitkoda programo. Ĝi estas sencentra kiel retmesaĝoj.'
     about_this: Pri
     active_count_after: aktiva
     active_footnote: Monate Aktivaj Uzantoj (MAU)
@@ -20,7 +19,7 @@ eo:
     documentation: Dokumentado
     federation_hint_html: Per konto ĉe %{instance}, vi povos sekvi homojn ĉe iu ajn Mastodon nodo kaj preter.
     get_apps: Provu telefonan aplikaĵon
-    hosted_on: "%{domain} estas nodo de Mastodon"
+    hosted_on: '%{domain} estas nodo de Mastodon'
     instance_actor_flash: |
       Ĉi tiu konto estas virtuala ulo uzata por reprezenti la servilon mem kaj ne iun apartan uzanton.
       Ĝi estas uzata por frataraj celoj kaj ĝi ne devus esti blokita krom se vi volas bloki la tutan servilon, tiuokaze vi devus uzi domajnan blokadon.
@@ -28,7 +27,7 @@ eo:
     privacy_policy: Privateca politiko
     rules: Reguloj de la servilo
     see_whats_happening: Vidi kio okazas
-    server_stats: Servo statuso
+    server_stats: 'Servo statuso'
     source_code: Fontkodo
     status_count_after:
       one: mesaĝo
@@ -49,7 +48,7 @@ eo:
     user_count_before: Hejmo de
     what_is_mastodon: Kio estas Mastodon?
   accounts:
-    choices_html: 'Proponoj de %{name}:'
+    choices_html: "Proponoj de %{name}:"
     follow: Sekvi
     followers:
       one: Sekvanto
@@ -413,8 +412,12 @@ eo:
       suppressed: Subpremita
       title: Rekomendoj de sekvado
     instances:
+      back_to_all: Ĉiuj
+      back_to_limited: Limigita
+      back_to_warning: Averta
       by_domain: Domajno
       delivery:
+        all: Ĉiuj
         warning: Averto
       delivery_available: Liverado disponeblas
       empty: Neniuj domajnoj trovitaj.
@@ -459,11 +462,11 @@ eo:
     pending_accounts:
       title: Pritraktataj kontoj (%{count})
     relationships:
-      title: Rilatoj de %{acct}
+      title: "Rilatoj de %{acct}"
     relays:
       add_new: Aldoni novan ripetilon
       delete: Forigi
-      description_html: "<strong>Fratara ripetilo</strong> estas survoja servilo, kiu interŝanĝas grandan kvanton de publikaj mesaĝoj inter serviloj, kiuj abonas kaj publikigas al ĝi. <strong>Ĝi povas helpi etajn kaj mezgrandajn servilojn malkovri enhavon de la fediverse</strong>, kio normale postulus al lokaj uzantoj mane sekvi homojn de foraj serviloj."
+      description_html: <strong>Fratara ripetilo</strong> estas survoja servilo, kiu interŝanĝas grandan kvanton de publikaj mesaĝoj inter serviloj, kiuj abonas kaj publikigas al ĝi. <strong>Ĝi povas helpi etajn kaj mezgrandajn servilojn malkovri enhavon de la fediverse</strong>, kio normale postulus al lokaj uzantoj mane sekvi homojn de foraj serviloj.
       disable: Malebligi
       disabled: Malebligita
       enable: Ebligi
@@ -650,10 +653,10 @@ eo:
     new_report:
       body: "%{reporter} signalis %{target}"
       body_remote: Iu de %{domain} signalis %{target}
-      subject: Nova signalo por %{instance} (#%{id})
+      subject: 'Nova signalo por %{instance} (#%{id})'
     new_trending_tag:
       body: 'La kradvorto #%{name} furoras hodiaŭ, sed ankoraŭ ne estis kontrolita. Ĝi ne aperos publike sen via aprobo. Se vi ne volas tion, simple konservu la formularon tiel kiel.'
-      subject: Nova kradvorto kontrolebla en %{instance} (#%{name})
+      subject: 'Nova kradvorto kontrolebla en %{instance} (#%{name})'
   aliases:
     add_new: Krei alinomon
     created_msg: Kreis novan alinomon sukcese. Vi povas inici la transloki el la malnovan konton nun.
@@ -662,7 +665,7 @@ eo:
     remove: Malligili alinomon
   appearance:
     advanced_web_interface: Altnivela retpaĝa interfaco
-    advanced_web_interface_hint: 'Se vi volas uzi la tutan larĝecon de via ekrano, la kompleksa reta interfaco permesas al vi agordi multajn malsamajn kolumnojn por vidi tiom da informoj kiom vi volas samtempe: Hejmo, sciigoj, fratara tempolinio, kaj ajna kvanto de listoj kaj kradvortoj.'
+    advanced_web_interface_hint: 'Se vi volas uzi la tutan larĝecon de via ekrano, la kompleksa reta interfaco permesas al vi agordi multajn malsamajn kolumnojn por vidi tiom da informoj kiom vi volas samtempe: Hejmo, sciigoj, fratara templinio, kaj ajna kvanto de listoj kaj kradvortoj.'
     animations_and_accessibility: Animacioj kaj alirebleco
     confirmation_dialogs: Konfirmaj fenestroj
     discovery: Eltrovo
@@ -793,9 +796,7 @@ eo:
       content: Ni bedaŭras, io malsukcesis niaflanke.
       title: Ĉi tiu paĝo ne estas ĝusta
     '503': The page could not be served due to a temporary server failure.
-    noscript_html: |-
-      Por uzi la retan aplikaĵon de Mastodon, bonvolu ebligi JavaScript. Alimaniere, provu unu el la
-      <a href="%{apps_path}">operaciumaj aplikaĵoj</a> por Mastodon por via platformo.
+    noscript_html: "Por uzi la retan aplikaĵon de Mastodon, bonvolu ebligi JavaScript. Alimaniere, provu unu el la\n<a href=\"%{apps_path}\">operaciumaj aplikaĵoj</a> por Mastodon por via platformo."
   existing_username_validator:
     not_found: Ne povas trovi lokaj uzanto kun tiu uzantnomo
     not_found_multiple: Ne povas trovi %{usernames}
@@ -913,6 +914,12 @@ eo:
   lists:
     errors:
       limit: Vi atingis la maksimuman kvanton de listoj
+  login_activities:
+    authentication_methods:
+      password: pasvorto
+      sign_in_token: retpoŝta sekureca kodo
+      webauthn: sekurecaj ŝlosiloj
+    title: Aŭtentiga historio
   media_attachments:
     validations:
       images_and_video: Aldoni videon al mesaĝo, kiu jam havas bildojn ne eblas
@@ -952,7 +959,7 @@ eo:
         other: "%{count} novaj sciigoj ekde via lasta vizito \U0001F418"
       title: En via foresto…
     favourite:
-      body: "%{name} stelumis vian mesaĝon:"
+      body: '%{name} stelumis vian mesaĝon:'
       subject: "%{name} stelumis vian mesaĝon"
       title: Nova stelumo
     follow:
@@ -962,15 +969,15 @@ eo:
     follow_request:
       action: Administri petojn de sekvado
       body: "%{name} petis sekvi vin"
-      subject: "%{name} petis sekvi vin"
+      subject: '%{name} petis sekvi vin'
       title: Nova peto de sekvado
     mention:
       action: Respondi
-      body: "%{name} menciis vin en:"
-      subject: "%{name} menciis vin"
+      body: '%{name} menciis vin en:'
+      subject: '%{name} menciis vin'
       title: Nova mencio
     reblog:
-      body: "%{name} diskonigis vian mesaĝon:"
+      body: '%{name} diskonigis vian mesaĝon:'
       subject: "%{name} diskonigis vian mesaĝon"
       title: Nova diskonigo
     status:
@@ -1160,7 +1167,7 @@ eo:
     show_older: Montri pli malnovajn
     show_thread: Montri la fadenon
     sign_in_to_participate: Ensaluti por partopreni en la konversacio
-    title: "%{name}: “%{quote}”"
+    title: '%{name}: “%{quote}”'
     visibilities:
       direct: Rekta
       private: Montri nur al sekvantoj
@@ -1176,7 +1183,7 @@ eo:
   tags:
     does_not_match_previous_name: ne kongruas kun la antaŭa nomo
   terms:
-    title: Uzkondiĉoj kaj privateca politiko de %{instance}
+    title: "Uzkondiĉoj kaj privateca politiko de %{instance}"
   themes:
     contrast: Mastodon (Forta kontrasto)
     default: Mastodon (Malluma)

@@ -1,8 +1,7 @@
----
 pl:
   about:
-    about_hashtag_html: Znajdują się tu publiczne wpisy oznaczone hashtagiem <strong>#%{hashtag}</strong>. Możesz dołączyć do dyskusji, jeżeli posiadasz konto gdziekolwiek w Fediwersum.
-    about_mastodon_html: Mastodon jest wolną i otwartą siecią społecznościową, zdecentralizowaną alternatywą dla zamkniętych, komercyjnych platform.
+    about_hashtag_html: 'Znajdują się tu publiczne wpisy oznaczone hashtagiem <strong>#%{hashtag}</strong>. Możesz dołączyć do dyskusji, jeżeli posiadasz konto gdziekolwiek w Fediwersum.'
+    about_mastodon_html: 'Mastodon jest wolną i otwartą siecią społecznościową, zdecentralizowaną alternatywą dla zamkniętych, komercyjnych platform.'
     about_this: O tej instancji
     active_count_after: aktywni
     active_footnote: Aktywni użytkownicy miesięcznie (MAU)
@@ -32,9 +31,9 @@ pl:
     server_stats: 'Statystyki serwera:'
     source_code: Kod źródłowy
     status_count_after:
+      one: wpisu
       few: wpisów
       many: wpisów
-      one: wpisu
       other: wpisów
     status_count_before: Są autorami
     tagline: Śledź znajomych i poznawaj nowych
@@ -51,21 +50,21 @@ pl:
       suspended_title: Zawieszone serwery
     unavailable_content_html: Normalnie Mastodon pozwala ci przeglądać treści od innych użytkowników z jakiegokolwiek serwera w fediwersum. To są wyjątki, które zostały stworzone na tym konkretnym serwerze.
     user_count_after:
+      one: użytkownik
       few: użytkowników
       many: użytkowników
-      one: użytkownik
       other: użytkowników
     user_count_before: Z serwera korzysta
     what_is_mastodon: Czym jest Mastodon?
   accounts:
-    choices_html: 'Polecani przez %{name}:'
+    choices_html: "Polecani przez %{name}:"
     endorsements_hint: Możesz promować ludzi, których obserwujesz, z poziomu interfejsu webowego - wtedy oni pojawią się w tym miejscu.
     featured_tags_hint: Możesz przedstawić w tym miejscu kilka wybranych hasztagów.
     follow: Śledź
     followers:
+      one: śledzący
       few: śledzących
       many: śledzących
-      one: śledzący
       other: Śledzących
     following: śledzonych
     instance_actor_flash: To konto jest wirtualnym profilem używanym do reprezentowania samego serwera, a nie żadnego indywidualnego użytkownika. Jest ono stosowane do celów federacji i nie powinien być zawieszany.
@@ -82,9 +81,9 @@ pl:
     pin_errors:
       following: Musisz śledzić osobę, którą chcesz polecać
     posts:
+      one: wpis
       few: wpisy
       many: wpisów
-      one: wpis
       other: Wpisów
     posts_tab_heading: Wpisy
     posts_with_replies: Wpisy z odpowiedziami
@@ -125,7 +124,7 @@ pl:
       delete: Usuń dane
       deleted: Usunięto
       demote: Degraduj
-      destroyed_msg: Dane %{username} są teraz w kolejce do natychmiastowego usunięcia
+      destroyed_msg: "Dane %{username} są teraz w kolejce do natychmiastowego usunięcia"
       disable: Dezaktywuj
       disable_two_factor_authentication: Wyłącz uwierzytelnianie dwuetapowe
       disabled: Dezaktywowano
@@ -433,10 +432,10 @@ pl:
         suspend: zawieszono
       show:
         affected_accounts:
-          few: Dotknęło %{count} kont w bazie danych
-          many: Dotknęło %{count} kont w bazie danych
           one: Dotknęło jedno konto w bazie danych
-          other: Dotknęło %{count} kont w bazie danych
+          few: "Dotknęło %{count} kont w bazie danych"
+          many: "Dotknęło %{count} kont w bazie danych"
+          other: "Dotknęło %{count} kont w bazie danych"
         retroactive:
           silence: Odwołaj wyciszenie wszystkich kont w tej domenie
           suspend: Odwołaj zawieszenie wszystkich kont w tej domenie
@@ -479,18 +478,18 @@ pl:
         unavailable_message: Doręczaniei niedostępne
         warning: Ostrzeżenie
         warning_message:
-          few: "%{count} dni niepowodzenia doręczenia"
-          many: "%{count} dni niepowodzenia doręczenia"
-          one: "%{count} dzień niepowodzenia doręczenia"
-          other: "%{count} dni niepowodzenia doręczenia"
+          one: '%{count} dzień niepowodzenia doręczenia'
+          few: '%{count} dni niepowodzenia doręczenia'
+          many: '%{count} dni niepowodzenia doręczenia'
+          other: '%{count} dni niepowodzenia doręczenia'
       delivery_available: Doręczanie jest dostępne
       delivery_error_days: Dni błędów doręczenia
       delivery_error_hint: Jeżeli doręczanie nie będzie możliwe przez %{count} dni, zostanie automatycznie oznaczona jako nie do doręczania.
       empty: Nie znaleziono domen.
       known_accounts:
+        one: "%{count} znane konto"
         few: "%{count} znane konta"
         many: "%{count} znane konta"
-        one: "%{count} znane konto"
         other: "%{count} znane konta"
       moderation:
         all: Wszystkie
@@ -530,11 +529,11 @@ pl:
     pending_accounts:
       title: Oczekujące konta (%{count})
     relationships:
-      title: Relacje %{acct}
+      title: "Relacje %{acct}"
     relays:
       add_new: Dodaj nowy
       delete: Usuń
-      description_html: "<strong>Przekaźnik federacji</strong> jest pośredniczącym serwerem wymieniającym duże ilości publicznych wpisów pomiędzy serwerami które subskrybują je i publikują na nich. <strong>Pomaga to małym i średnim instancją poznawać nową zawartość z Fediwersum</strong>, co w innym przypadku wymagałoby od użytkowników ręcznego śledzenia osób z innych serwerów."
+      description_html: <strong>Przekaźnik federacji</strong> jest pośredniczącym serwerem wymieniającym duże ilości publicznych wpisów pomiędzy serwerami które subskrybują je i publikują na nich. <strong>Pomaga to małym i średnim instancją poznawać nową zawartość z Fediwersum</strong>, co w innym przypadku wymagałoby od użytkowników ręcznego śledzenia osób z innych serwerów.
       disable: Wyłącz
       disabled: Wyłączony
       enable: Włącz
@@ -553,14 +552,14 @@ pl:
     reports:
       account:
         notes:
+          one: "%{count} notatka"
           few: "%{count} notatki"
           many: "%{count} notatek"
-          one: "%{count} notatka"
           other: "%{count} notatki"
         reports:
+          one: "%{count} zgłoszenie"
           few: "%{count} zgłoszenia"
           many: "%{count} zgłoszeń"
-          one: "%{count} zgłoszenie"
           other: "%{count} zgłoszenia"
       action_taken_by: Działanie podjęte przez
       are_you_sure: Czy na pewno?
@@ -739,12 +738,12 @@ pl:
       body: Poniżej znajdują się szczegóły dotycząće nowego konta. Możesz przyjąć lub odrzucić to podanie.
       subject: Nowe konto czeka na przegląd na %{instance} (%{username})
     new_report:
-      body: Użytkownik %{reporter} zgłosił(a) %{target}
+      body: "Użytkownik %{reporter} zgłosił(a) %{target}"
       body_remote: Użytkownik instancji %{domain} zgłosił(a) %{target}
-      subject: Nowe zgłoszenie na %{instance} (#%{id})
+      subject: 'Nowe zgłoszenie na %{instance} (#%{id})'
     new_trending_tag:
       body: 'Hashtag #%{name} jest dziś popularny, ale nie został wcześniej zatwierdzony. Nie będzie wyświetlany publicznie zanim na to pozwolisz, możesz też zapisać, że nie chcesz o nim już słyszeć.'
-      subject: Nowy hashtag do zatwierdzenia na %{instance} (#%{name})
+      subject: 'Nowy hashtag do zatwierdzenia na %{instance} (#%{name})'
   aliases:
     add_new: Utwórz alias
     created_msg: Pomyślnie utworzono nowy alias. Możesz teraz rozpocząć przenoszenie ze starego konta.
@@ -754,7 +753,7 @@ pl:
     remove: Odłącz alias
   appearance:
     advanced_web_interface: Zaawansowany interfejs użytkownika
-    advanced_web_interface_hint: Jeśli chcesz użyć pełną szerokość swojego ekranu, zaawansowany interfejs użytkownika pozwala Ci skonfigurować wiele różnych kolumn, by zobaczyć jak najwięcej informacji kiedy tylko chcesz. Strona główna, Powiadomienia, Globalna oś czasu, dowolna ilość list i hasztagów.
+    advanced_web_interface_hint: 'Jeśli chcesz użyć pełną szerokość swojego ekranu, zaawansowany interfejs użytkownika pozwala Ci skonfigurować wiele różnych kolumn, by zobaczyć jak najwięcej informacji kiedy tylko chcesz. Strona główna, Powiadomienia, Globalna oś czasu, dowolna ilość list i hasztagów.'
     animations_and_accessibility: Animacje i dostępność
     confirmation_dialogs: Dialogi potwierdzenia
     discovery: Odkrywanie
@@ -955,9 +954,9 @@ pl:
     order_by: Uporządkuj według
     save_changes: Zapisz zmiany
     validation_errors:
+      one: Coś jest wciąż nie tak! Przyjrzyj się poniższemu błędowi
       few: Coś jest wciąż nie tak! Przejrzyj %{count} poniższe błędy
       many: Coś jest wciąż nie tak! Przejrzyj %{count} poniższych błędów
-      one: Coś jest wciąż nie tak! Przyjrzyj się poniższemu błędowi
       other: Coś jest wciąż nie tak! Przejrzyj poniższe błędy (%{count})
   html_validator:
     invalid_markup: 'zawiera nieprawidłową składnię HTML: %{error}'
@@ -1013,9 +1012,9 @@ pl:
     generate: Wygeneruj
     invited_by: 'Zostałeś(-aś) zaproszony(-a) przez:'
     max_uses:
+      one: jedno użycie
       few: "%{count} użycia"
       many: "%{count} użyć"
-      one: jedno użycie
       other: "%{count} użyć"
     max_uses_prompt: Bez ograniczenia
     prompt: Wygeneruj odnośniki i udostępnij je innym, aby pozwolić na rejestrację na tym serwerze
@@ -1026,6 +1025,17 @@ pl:
   lists:
     errors:
       limit: Przekroczyłeś maksymalną liczbę utworzonych list
+  login_activities:
+    authentication_methods:
+      otp: aplikacja weryfikacji dwuetapowej
+      password: hasło
+      sign_in_token: kod bezpieczeństwa e-mail
+      webauthn: klucze bezpieczeństwa
+    description_html: Jeśli widzisz aktywność, której nie rozpoznajesz, rozważ zmianę hasła i włączenie weryfikacji dwuetapowej.
+    empty: Brak historii uwierzytelniania
+    failed_sign_in_html: Próba logowania zakończona niepowodzeniem przy pomocy %{method} z %{ip} (%{browser})
+    successful_sign_in_html: Pomyślne logowanie przy pomocy %{method} z %{ip} (%{browser})
+    title: Historia uwierzytelniania
   media_attachments:
     validations:
       images_and_video: Nie możesz załączyć pliku wideo do wpisu, który zawiera już zdjęcia
@@ -1074,14 +1084,14 @@ pl:
       body: Oto krótkie podsumowanie wiadomości, które ominęły Cię od Twojej ostatniej wizyty (%{since})
       mention: "%{name} wspomniał o Tobie w:"
       new_followers_summary:
-        few: "(%{count}) nowe osoby śledzą Cię!"
-        many: "(%{count}) nowych osób Cię śledzi! Wspaniale!"
         one: Dodatkowo, w czasie nieobecności zaczęła śledzić Cię jedna osoba Gratulacje!
+        few: (%{count}) nowe osoby śledzą Cię!
+        many: (%{count}) nowych osób Cię śledzi! Wspaniale!
         other: Dodatkowo, zaczęło Cię śledzić %{count} nowych osób! Wspaniale!
       subject:
+        one: "1 nowe powiadomienie od Twojej ostatniej wizyty \U0001F418"
         few: "%{count} nowe powiadomienia od Twojej ostatniej wizyty \U0001F418"
         many: "%{count} nowych powiadomień od Twojej ostatniej wizyty \U0001F418"
-        one: "1 nowe powiadomienie od Twojej ostatniej wizyty \U0001F418"
         other: "%{count} nowych powiadomień od Twojej ostatniej wizyty \U0001F418"
       title: W trakcie Twojej nieobecności…
     favourite:
@@ -1099,14 +1109,14 @@ pl:
       title: Nowa prośba o możliwość śledzenia
     mention:
       action: Odpowiedz
-      body: "%{name} wspomniał(a) o Tobie w:"
-      subject: "%{name} wspomniał(a) o Tobie"
+      body: '%{name} wspomniał(a) o Tobie w:'
+      subject: '%{name} wspomniał(a) o Tobie'
       title: Nowe wspomnienie o Tobie
     poll:
       subject: Ankieta %{name} zakończyła się
     reblog:
       body: 'Twój wpis został podbity przez %{name}:'
-      subject: Twój wpis został podbity przez %{name}
+      subject: "Twój wpis został podbity przez %{name}"
       title: Nowe podbicie
     status:
       subject: "%{name} właśnie opublikował(a) wpis"
@@ -1236,6 +1246,7 @@ pl:
     revoke: Unieważnij
     revoke_success: Pomyślnie unieważniono sesję
     title: Sesje
+    view_authentication_history: Zobacz historię uwierzytelniania swojego konta
   settings:
     account: Konto
     account_settings: Ustawienia konta
@@ -1261,27 +1272,27 @@ pl:
   statuses:
     attached:
       audio:
+        one: "%{count} plik dźwiękowy"
         few: "%{count} pliki dźwiękowe"
         many: "%{count} plików dźwiękowych"
-        one: "%{count} plik dźwiękowy"
-        other: pliki dźwiękowe (%{count})
+        other: "pliki dźwiękowe (%{count})"
       description: 'Załączono: %{attached}'
       image:
+        one: "%{count} obraz"
         few: "%{count} obrazy"
         many: "%{count} obrazów"
-        one: "%{count} obraz"
         other: "%{count} obrazów"
       video:
+        one: "%{count} film"
         few: "%{count} filmy"
         many: "%{count} filmów"
-        one: "%{count} film"
         other: "%{count} filmów"
     boosted_from_html: Podbito przez %{acct_link}
     content_warning: 'Ostrzeżenie o zawartości: %{warning}'
     disallowed_hashtags:
+      one: 'zawiera niedozwolony hashtag: %{tags}'
       few: 'zawiera niedozwolone hashtagi: %{tags}'
       many: 'zawiera niedozwolone hashtagi: %{tags}'
-      one: 'zawiera niedozwolony hashtag: %{tags}'
       other: 'zawiera niedozwolone hashtagi: %{tags}'
     errors:
       in_reply_not_found: Post, na który próbujesz odpowiedzieć, nie istnieje.
@@ -1295,14 +1306,14 @@ pl:
       reblog: Nie możesz przypiąć podbicia wpisu
     poll:
       total_people:
+        one: "%{count} osoba"
         few: "%{count} osoby"
         many: "%{count} osób"
-        one: "%{count} osoba"
         other: "%{count} osoby"
       total_votes:
+        one: "%{count} głos"
         few: "%{count} głosy"
         many: "%{count} głosy"
-        one: "%{count} głos"
         other: "%{count} głosy"
       vote: Głosuj
     show_more: Pokaż więcej
@@ -1407,7 +1418,7 @@ pl:
       <p>Dokument jest dostępny na licencji CC-BY-SA. Ostatnio zmodyfikowano go 7 marca 2018, przetłumaczono 9 kwietnia 2018. Tłumaczenie (mimo dołożenia wszelkich starań) może nie być w pełni poprawne.</p>
 
       <p>Bazowano na <a href="https://github.com/discourse/discourse">polityce prywatności Discourse</a>.</p>
-    title: Zasady korzystania i polityka prywatności %{instance}
+    title: "Zasady korzystania i polityka prywatności %{instance}"
   themes:
     contrast: Mastodon (Wysoki kontrast)
     default: Mastodon (Ciemny)

@@ -1,4 +1,3 @@
----
 oc:
   devise:
     confirmations:
@@ -8,10 +7,10 @@ oc:
     failure:
       already_authenticated: Sètz ja connectat.
       inactive: Vòstre compte es pas encara activat.
-      invalid: "%{authentication_keys} invalida."
+      invalid: '%{authentication_keys} invalida.'
       last_attempt: Vos demòra un ensag abans que vòstre compte siasque blocat.
       locked: Vòstre compte es blocat.
-      not_found_in_database: "%{authentication_keys} invalida."
+      not_found_in_database: '%{authentication_keys} invalida.'
       pending: Vòstre compte es encara en aprobacion.
       timeout: Vòstra session a expirat. Mercés de vos tornar connectar per contunhar.
       unauthenticated: Vos cal vos connectar o marcar abans de contunhar.
@@ -33,7 +32,7 @@ oc:
       password_change:
         explanation: Lo senhal per vòstre compte a cambiat.
         extra: S’avètz pas demandat aqueste cambiament de senhal, poiriá arribar que qualqu’un mai aguèsse agut accès a vòstre compte. Mercés de cambiar sulpic vòstre senhal o de contactar vòstre administrator de servidor se l’accès a vòstre compte vos es barrat.
-        subject: Mastodon : senhal cambiat
+        subject: 'Mastodon : senhal cambiat'
         title: Senhal cambiat
       reconfirmation_instructions:
         explanation: Confirmar la nòva adreça per cambiar lo corrièl.
@@ -44,7 +43,7 @@ oc:
         action: Cambiament de senhal
         explanation: Avètz demandat un nòu senhal per vòstre compte.
         extra: S’avètz pas res demandat, fasquètz pas cas a aqueste corrièl. Vòstre senhal cambiarà pas se clicatz pas lo ligam e que ne causissètz pas un novèl.
-        subject: Mastodon : consignas per reïnicializar lo senhal
+        subject: 'Mastodon : consignas per reïnicializar lo senhal'
         title: Reïnicializacion del senhal
       two_factor_disabled:
         explanation: L’autentificacion dos factors per vòstre compte es estada desactivada. La connexion es ara possibla solament amb l’adreça electronica e lo senhal.
@@ -59,7 +58,7 @@ oc:
         subject: 'Mastodon : còdis de recuperacion dos factors regenerats'
         title: Còdis 2FA de recuperacion cambiats
       unlock_instructions:
-        subject: Mastodon : consignas de desblocatge
+        subject: 'Mastodon : consignas de desblocatge'
       webauthn_credential:
         added:
           explanation: La clau de seguretat seguenta foguèt ajustada a vòstre compte

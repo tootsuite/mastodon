@@ -1,4 +1,3 @@
----
 es-AR:
   activerecord:
     attributes:
@@ -25,11 +24,11 @@ es-AR:
         edit: Editar
         submit: Enviar
       confirmations:
-        destroy: "¿Estás seguro?"
+        destroy: '¿Estás seguro?'
       edit:
         title: Editar aplicación
       form:
-        error: "¡Epa! Comprobá tu formulario por posibles errores"
+        error: '¡Epa! Comprobá tu formulario por posibles errores'
       help:
         native_redirect_uri: Usá %{native_redirect_uri} para pruebas locales
         redirect_uri: Usá una línea por dirección web
@@ -69,7 +68,7 @@ es-AR:
       buttons:
         revoke: Revocar
       confirmations:
-        revoke: "¿Estás seguro?"
+        revoke: '¿Estás seguro?'
       index:
         application: Aplicación
         created_at: Autorizada
@@ -118,37 +117,37 @@ es-AR:
       application:
         title: Autorización de OAuth requerida
     scopes:
-      admin:read: leer todos los datos en el servidor
-      admin:read:accounts: leer información sensible de todas las cuentas
-      admin:read:reports: leer información sensible de todos los informes y cuentas denunciadas
-      admin:write: modificar todos los datos en el servidor
-      admin:write:accounts: ejecutar acciones de moderación en cuentas
-      admin:write:reports: ejecutar acciones de moderación en denuncias
+      "admin:read": leer todos los datos en el servidor
+      "admin:read:accounts": leer información sensible de todas las cuentas
+      "admin:read:reports": leer información sensible de todos los informes y cuentas denunciadas
+      "admin:write": modificar todos los datos en el servidor
+      "admin:write:accounts": ejecutar acciones de moderación en cuentas
+      "admin:write:reports": ejecutar acciones de moderación en denuncias
       follow: modificar relaciones de cuenta
       push: recibir tus notificaciones push
       read: leer todos los datos de tu cuenta
-      read:accounts: ver información de cuentas
-      read:blocks: ver qué cuentas bloqueaste
-      read:bookmarks: ver tus marcadores
-      read:favourites: ver tus favoritos
-      read:filters: ver tus filtros
-      read:follows: ver qué cuentas seguís
-      read:lists: ver tus listas
-      read:mutes: ver qué cuentas silenciaste
-      read:notifications: ver tus notificaciones
-      read:reports: ver tus denuncias
-      read:search: buscar en tu nombre
-      read:statuses: ver todos los mensajes
+      "read:accounts": ver información de cuentas
+      "read:blocks": ver qué cuentas bloqueaste
+      "read:bookmarks": ver tus marcadores
+      "read:favourites": ver tus favoritos
+      "read:filters": ver tus filtros
+      "read:follows": ver qué cuentas seguís
+      "read:lists": ver tus listas
+      "read:mutes": ver qué cuentas silenciaste
+      "read:notifications": ver tus notificaciones
+      "read:reports": ver tus denuncias
+      "read:search": buscar en tu nombre
+      "read:statuses": ver todos los mensajes
       write: modificar todos los datos de tu cuenta
-      write:accounts: modificar tu perfil
-      write:blocks: bloquear cuentas y dominios
-      write:bookmarks: marcar mensajes
-      write:favourites: marcar mensajes como favoritos
-      write:filters: crear filtros
-      write:follows: seguir cuentas
-      write:lists: crear listas
-      write:media: subir archivos de medios
-      write:mutes: silenciar cuentas y conversaciones
-      write:notifications: limpiar tus notificaciones
-      write:reports: denunciar otras cuentas
-      write:statuses: publicar mensajes
+      "write:accounts": modificar tu perfil
+      "write:blocks": bloquear cuentas y dominios
+      "write:bookmarks": marcar mensajes
+      "write:favourites": marcar mensajes como favoritos
+      "write:filters": crear filtros
+      "write:follows": seguir cuentas
+      "write:lists": crear listas
+      "write:media": subir archivos de medios
+      "write:mutes": silenciar cuentas y conversaciones
+      "write:notifications": limpiar tus notificaciones
+      "write:reports": denunciar otras cuentas
+      "write:statuses": publicar mensajes

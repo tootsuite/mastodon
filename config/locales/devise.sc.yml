@@ -1,4 +1,3 @@
----
 sc:
   devise:
     confirmations:
@@ -8,10 +7,10 @@ sc:
     failure:
       already_authenticated: Ses giai intradu.
       inactive: Su contu tuo no est ancora ativadu.
-      invalid: "%{authentication_keys} o crae non vàlida."
+      invalid: '%{authentication_keys} o crae non vàlida.'
       last_attempt: Tenes ancora un'àteru tentativu, in antis chi su contu tuo bèngiat blocadu.
       locked: Su contu tuo est blocadu.
-      not_found_in_database: "%{authentication_keys} o crae non vàlida."
+      not_found_in_database: '%{authentication_keys} o crae non vàlida.'
       pending: Su contu tuo est ancora in revisione.
       timeout: Sa sessione tua est iscadida. Torra·bi a intrare pro sighire.
       unauthenticated: Tocat a ti autenticare o ti registrare prima de sighire.

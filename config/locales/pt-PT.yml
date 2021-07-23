@@ -1,8 +1,7 @@
----
 pt-PT:
   about:
-    about_hashtag_html: Estes são toots públicos marcados com <strong>#%{hashtag}</strong>. Podes interagir com eles se tiveres uma conta Mastodon.
-    about_mastodon_html: Mastodon é uma rede social baseada em protocolos abertos da web e software livre e gratuito. É descentralizado como e-mail.
+    about_hashtag_html: 'Estes são toots públicos marcados com <strong>#%{hashtag}</strong>. Podes interagir com eles se tiveres uma conta Mastodon.'
+    about_mastodon_html: 'Mastodon é uma rede social baseada em protocolos abertos da web e software livre e gratuito. É descentralizado como e-mail.'
     about_this: Sobre esta instância
     active_count_after: activo
     active_footnote: Utilizadores activos mensais (UAM)
@@ -54,7 +53,7 @@ pt-PT:
     user_count_before: Casa para
     what_is_mastodon: O que é o Mastodon?
   accounts:
-    choices_html: 'escolhas de %{name}:'
+    choices_html: "escolhas de %{name}:"
     endorsements_hint: Você pode, através da interface web, escolher endossar pessoas que segue, e elas aparecerão aqui.
     featured_tags_hint: Você pode destacar hashtags específicas que serão exibidas aqui.
     follow: Seguir
@@ -97,7 +96,7 @@ pt-PT:
       delete: Eliminar
       destroyed_msg: Nota de moderação excluída com sucesso!
     accounts:
-      add_email_domain_block: Adicionar o domínio de email à lista negra
+      add_email_domain_block: Adicionar o domínio de e-mail à lista negra
       approve: Aprovar
       approve_all: Aprovar todos
       approved_msg: Inscrição de %{username} aprovada com sucesso
@@ -106,7 +105,7 @@ pt-PT:
       by_domain: Domínio
       change_email:
         changed_msg: E-mail da conta alterado com sucesso!
-        current_email: E-mail actual
+        current_email: E-mail atual
         label: Alterar e-mail
         new_email: Novo e-mail
         submit: Alterar e-mail
@@ -117,8 +116,9 @@ pt-PT:
       delete: Eliminar dados
       deleted: Eliminada
       demote: Despromoveu
-      destroyed_msg: Os dados de %{username} estão agora em fila de espera para serem eliminados de imediato
-      disable: Desativar
+      destroyed_msg: "Os dados de %{username} estão agora em fila de espera para serem eliminados de imediato"
+      disable: Congelar
+      disable_sign_in_token_auth: Desativar token de autenticação por e-mail
       disable_two_factor_authentication: Desativar 2FA
       disabled: Congelada
       display_name: Nome a mostrar
@@ -126,7 +126,8 @@ pt-PT:
       edit: Editar
       email: E-mail
       email_status: Estado do e-mail
-      enable: Ativar
+      enable: Descongelar
+      enable_sign_in_token_auth: Ativar token de autenticação por e-mail
       enabled: Ativado
       enabled_msg: Descongelou com sucesso a conta %{username}
       followers: Seguidores
@@ -177,8 +178,8 @@ pt-PT:
       removed_header_msg: Imagem de cabeçalho de %{username} removida com sucesso
       resend_confirmation:
         already_confirmed: Este utilizador já está confirmado
-        send: Reenviar um email de confirmação
-        success: Email de confirmação enviado com sucesso!
+        send: Reenviar um e-mail de confirmação
+        success: E-mail de confirmação enviado com sucesso!
       reset: Restaurar
       reset_password: Reset palavra-passe
       resubscribe: Reinscrever
@@ -189,8 +190,12 @@ pt-PT:
         staff: Equipa
         user: Utilizador
       search: Pesquisar
-      search_same_email_domain: Outros utilizadores com o mesmo domínio de email
+      search_same_email_domain: Outros utilizadores com o mesmo domínio de e-mail
       search_same_ip: Outros utilizadores com o mesmo IP
+      security_measures:
+        only_password: Apenas palavra-passe
+        password_and_2fa: Palavra-passe e 2FA
+        password_and_sign_in_token: Palavra-passe e token por e-mail
       sensitive: Marcar como sensível
       sensitized: marcada como sensível
       shared_inbox_url: URL da caixa de entrada compartilhada
@@ -242,8 +247,10 @@ pt-PT:
         destroy_unavailable_domain: Eliminar Domínio Indisponível
         disable_2fa_user: Desativar 2FA
         disable_custom_emoji: Desativar Emoji Personalizado
+        disable_sign_in_token_auth_user: Desativar token de autenticação por e-mail para Utilizador
         disable_user: Desativar Utilizador
         enable_custom_emoji: Ativar Emoji Personalizado
+        enable_sign_in_token_auth_user: Ativar token de autenticação por e-mail para Utilizador
         enable_user: Ativar Utilizador
         memorialize_account: Memorizar Conta
         promote_user: Promover Utilizador
@@ -285,8 +292,10 @@ pt-PT:
         destroy_unavailable_domain_html: "%{name} retomou a entrega ao domínio %{target}"
         disable_2fa_user_html: "%{name} desativou o requerimento de autenticação em dois passos para o utilizador %{target}"
         disable_custom_emoji_html: "%{name} desabilitou o emoji %{target}"
+        disable_sign_in_token_auth_user_html: "%{name} desativou token de autenticação por e-mail para %{target}"
         disable_user_html: "%{name} desativou o acesso para o utilizador %{target}"
         enable_custom_emoji_html: "%{name} habilitou o emoji %{target}"
+        enable_sign_in_token_auth_user_html: "%{name} ativou token de autenticação por e-mail para %{target}"
         enable_user_html: "%{name} ativou o acesso para o utilizador %{target}"
         memorialize_account_html: "%{name} transformou a conta de %{target} em um memorial"
         promote_user_html: "%{name} promoveu o utilizador %{target}"
@@ -436,16 +445,16 @@ pt-PT:
       view: Ver domínios bloqueados
     email_domain_blocks:
       add_new: Adicionar novo
-      created_msg: Bloqueio de domínio de email criado com sucesso
+      created_msg: Bloqueio de domínio de e-mail criado com sucesso
       delete: Eliminar
-      destroyed_msg: Bloqueio de domínio de email excluído com sucesso
+      destroyed_msg: Bloqueio de domínio de e-mail excluído com sucesso
       domain: Domínio
       empty: Nenhum domínio de e-mail atualmente na lista negra.
       from_html: de %{domain}
       new:
         create: Adicionar domínio
-        title: Novo bloqueio de domínio de email
-      title: Bloqueio de Domínio de Email
+        title: Novo bloqueio de domínio de e-mail
+      title: Domínios de e-mail bloqueados
     follow_recommendations:
       description_html: "<strong>Recomendações de quem seguir ajudam novos utilizadores a encontrar conteúdo interessante rapidamente.</strong>. Quando um utilizador não interage com outros o suficiente para formar recomendações personalizadas, estas contas são recomendadas. Elas são recalculadas diariamente a partir de uma mistura de contas com mais atividade recente e maior número de seguidores locais para um determinado idioma."
       language: Para o idioma
@@ -491,7 +500,7 @@ pt-PT:
       total_reported: Relatórios sobre eles
       total_storage: Anexos de media
     invites:
-      deactivate_all: Desactivar todos
+      deactivate_all: Desativar todos
       filter:
         all: Todos
         available: Disponíveis
@@ -516,12 +525,12 @@ pt-PT:
     pending_accounts:
       title: Contas pendentes (%{count})
     relationships:
-      title: Relações de %{acct}
+      title: "Relações de %{acct}"
     relays:
       add_new: Adicionar novo repetidor
       delete: Eliminar
       description_html: Um <strong>repetidor de federação</strong> é um servidor intermediário que troca grandes volumes de publicações públicas entre instâncias que o subscrevem e publicam. <strong>Ele pode ajudar pequenas e medias instâncias a descobrir conteúdo do fediverso</strong> que, de outro modo, exigiria que os utilizadores locais seguissem manualmente outras pessoas em instâncias remotas.
-      disable: Desactivar
+      disable: Desativar
       disabled: Desactivado
       enable: Activar
       enable_hint: Uma vez ativado, a tua instância irá subscrever a todas as publicações deste repetidor e irá começar a enviar as suas publicações públicas para ele.
@@ -569,6 +578,7 @@ pt-PT:
       resolved: Resolvido
       resolved_msg: Relatório resolvido com sucesso!
       status: Estado
+      target_origin: Origem da conta reportada
       title: Relatórios
       unassign: Não atribuir
       unresolved: Por resolver
@@ -588,14 +598,14 @@ pt-PT:
         desc_html: Separa os nomes de utilizadores por vírgulas. Funciona apenas com contas locais e desbloqueadas. O padrão quando vazio são todos os administradores locais.
         title: Seguidores predefinidos para novas contas
       contact_information:
-        email: Inserir um endereço de email para tornar público
+        email: Inserir um endereço de e-mail para tornar público
         username: Insira um nome de utilizador
       custom_css:
         desc_html: Modificar a aparência com CSS carregado em cada página
         title: CSS personalizado
       default_noindex:
         desc_html: Afeta todos os utilizadores que não alteraram esta configuração
-        title: Desactivar, por omissão, a indexação de utilizadores por parte dos motores de pesquisa
+        title: Desativar, por omissão, a indexação de utilizadores por parte dos motores de pesquisa
       domain_blocks:
         all: Para toda a gente
         disabled: Para ninguém
@@ -723,10 +733,10 @@ pt-PT:
     new_report:
       body: "%{reporter} relatou %{target}"
       body_remote: Alguém de %{domain} relatou %{target}
-      subject: Novo relatório sobre %{instance} (#%{id})
+      subject: 'Novo relatório sobre %{instance} (#%{id})'
     new_trending_tag:
       body: 'A hashtag #%{name} está hoje a destacar-se, mas não foi anteriormente revista. Ela não será exibida publicamente a menos que você o permita, ou limite-se a salvar o formulário tal como está, para nunca mais ouvir falar dela.'
-      subject: Nova hashtag para revisão em %{instance} (#%{name})
+      subject: 'Nova hashtag para revisão em %{instance} (#%{name})'
   aliases:
     add_new: Criar pseudónimo
     created_msg: Criou com sucesso um novo pseudónimo. Pode agora iniciar a migração da conta antiga.
@@ -749,7 +759,7 @@ pt-PT:
   application_mailer:
     notification_preferences: Alterar preferências de e-mail
     salutation: "%{name},"
-    settings: 'Alterar preferências de email: %{link}'
+    settings: 'Alterar preferências de e-mail: %{link}'
     view: 'Ver:'
     view_profile: Ver perfil
     view_status: Ver publicação
@@ -772,11 +782,11 @@ pt-PT:
       prefix_invited_by_user: "@%{name} convidou-o a juntar-se a esta instância do Mastodon!"
       prefix_sign_up: Inscreva-se hoje no Mastodon!
       suffix: Com uma conta, poderá seguir pessoas, publicar atualizações e trocar mensagens com utilizadores de qualquer instância Mastodon e muito mais!
-    didnt_get_confirmation: Não recebeu o email de confirmação?
+    didnt_get_confirmation: Não recebeu o e-mail de confirmação?
     dont_have_your_security_key: Não tem a sua chave de segurança?
     forgot_password: Esqueceste a palavra-passe?
     invalid_reset_password_token: Token de modificação da palavra-passe é inválido ou expirou. Por favor, solicita um novo.
-    link_to_otp: Insere um código de duas etapas do teu telemóvel ou um código de recuperação
+    link_to_otp: Insira um código de autenticação em duas etapas do seu telemóvel ou um código de recuperação
     link_to_webauth: Usa o teu dispositivo de chave de segurança
     login: Entrar
     logout: Sair
@@ -794,7 +804,7 @@ pt-PT:
     set_new_password: Editar palavra-passe
     setup:
       email_below_hint_html: Se o endereço de e-mail abaixo estiver incorreto, pode alterá-lo aqui e receber um novo e-mail de confirmação.
-      email_settings_hint_html: O e-mail de confirmação foi enviado para %{email}. Se esse endereço de e-mail não estiver correcto, pode alterá-lo nas definições da conta.
+      email_settings_hint_html: O e-mail de confirmação foi enviado para %{email}. Se esse endereço de e-mail não estiver correto, pode alterá-lo nas definições da conta.
       title: Configuração
     status:
       account_status: Estado da conta
@@ -819,9 +829,9 @@ pt-PT:
     title: Seguir %{acct}
   challenge:
     confirm: Continuar
-    hint_html: "<strong>Dica:</strong> Não vamos pedir novamente a sua senha durante a próxima hora."
-    invalid_password: Senha inválida
-    prompt: Confirme a sua senha para continuar
+    hint_html: "<strong>Dica:</strong> Não vamos pedir novamente a sua palavra-passe durante a próxima hora."
+    invalid_password: Palavra-passe inválida
+    prompt: Confirmar a sua palavra-passe para continuar
   crypto:
     errors:
       invalid_key: não é uma chave Ed25519 ou Curve25519 válida
@@ -1004,6 +1014,17 @@ pt-PT:
   lists:
     errors:
       limit: Número máximo de listas alcançado
+  login_activities:
+    authentication_methods:
+      otp: aplicação de autenticação em duas etapas
+      password: palavra-passe
+      sign_in_token: código de segurança por e-mail
+      webauthn: chaves de segurança
+    description_html: Se vê atividade que não reconhece, considere alterar a sua palavra-passe e ativar a autenticação em duas etapas.
+    empty: Sem histórico de autenticação disponível
+    failed_sign_in_html: Tentativa falhada de início de sessão com %{method} de %{ip} (%{browser})
+    successful_sign_in_html: Iniciada sessão com sucesso com %{method} de %{ip} (%{browser})
+    title: Histórico de autenticação
   media_attachments:
     validations:
       images_and_video: Não é possível anexar um vídeo a uma publicação que já contém imagens
@@ -1074,7 +1095,7 @@ pt-PT:
     mention:
       action: Responder
       body: 'Foste mencionado por %{name}:'
-      subject: "%{name} mencionou-te"
+      subject: '%{name} mencionou-te'
       title: Nova menção
     poll:
       subject: Uma votação realizada por %{name} terminou
@@ -1210,6 +1231,7 @@ pt-PT:
     revoke: Revogar
     revoke_success: Sessão revogada com sucesso
     title: Sessões
+    view_authentication_history: Ver histórico de autenticação da sua conta
   settings:
     account: Conta
     account_settings: Definições da conta
@@ -1230,7 +1252,7 @@ pt-PT:
     preferences: Preferências
     profile: Perfil
     relationships: Seguindo e seguidores
-    two_factor_authentication: Autenticação em dois passos
+    two_factor_authentication: Autenticação em duas etapas
     webauthn_authentication: Chaves de segurança
   statuses:
     attached:
@@ -1383,11 +1405,11 @@ pt-PT:
     disable: Desativar
     disabled_success: Autenticação em duas etapas desativada com sucesso
     edit: Editar
-    enabled: A autenticação em dois passos está ativada
-    enabled_success: Autenticação em dois passos ativada com sucesso
+    enabled: A autenticação em duas etapas está ativada
+    enabled_success: Autenticação em duas etapas ativada com sucesso
     generate_recovery_codes: Gerar códigos para recuperar conta
     lost_recovery_codes: Códigos de recuperação permite que você recupere o acesso a sua conta se você perder seu telefone. Se você perder os códigos de recuperação, você pode regera-los aqui. Seus códigos antigos serão invalidados.
-    methods: Métodos de duas etapas
+    methods: Métodos de autenticação em duas etapas
     otp: Aplicação de autenticação
     recovery_codes: Cópia de segurança dos códigos de recuperação
     recovery_codes_regenerated: Códigos de recuperação foram gerados com sucesso
@@ -1401,7 +1423,7 @@ pt-PT:
     sign_in_token:
       details: 'Aqui estão os detalhes da tentativa:'
       explanation: 'Detectamos uma tentativa de entrar na sua conta a partir de um endereço IP não reconhecido. Se é você, por favor, insira o código de segurança abaixo na página de acesso:'
-      further_actions: 'Se não foi você, por favor altere sua senha e ative a autenticação de dois fatores na sua conta. Pode fazê-lo aqui:'
+      further_actions: 'Se não foi você, por favor altere a sua palavra-passe e ative a autenticação em duas etapzs na sua conta. Pode fazê-lo aqui:'
       subject: Por favor, confirme a tentativa de acesso
       title: Tentativa de acesso
     warning:
@@ -1434,7 +1456,7 @@ pt-PT:
       full_handle: O teu nome completo
       full_handle_hint: Isto é o que você diria aos seus amigos para que eles lhe possam enviar mensagens ou seguir a partir de outra instância.
       review_preferences_action: Alterar preferências
-      review_preferences_step: Certifica-te de configurar as tuas preferências, tais como os e-mails que gostarias de receber ou o nível de privacidade que desejas que as tuas publicações tenham por defeito. Se não sofres de enjoo, podes ativar a opção de auto-iniciar GIFs.
+      review_preferences_step: Certifique-se de configurar as suas preferências, tais como os e-mails que gostaria de receber ou o nível de privacidade que deseja que as suas publicações tenham por defeito. Se não sofres de enjoo, podes ativar a opção de auto-iniciar GIFs.
       subject: Bem-vindo ao Mastodon
       tip_federated_timeline: A cronologia federativa é uma visão global da rede Mastodon. Mas só inclui pessoas que os teus vizinhos subscrevem, por isso não é uma visão completa.
       tip_following: Segues o(s) administrador(es) do teu servidor por defeito. Para encontrar mais pessoas interessantes, procura nas cronologias local e federada.
@@ -1447,7 +1469,7 @@ pt-PT:
     generic_access_help_html: Problemas para aceder à sua conta? Pode entrar em contacto com %{email} para obter ajuda
     invalid_otp_token: Código de autenticação inválido
     invalid_sign_in_token: Cógido de segurança inválido
-    otp_lost_help_html: Se tu perdeste acesso a ambos, tu podes entrar em contacto com %{email}
+    otp_lost_help_html: Se perdeu acesso a ambos, pode entrar em contacto com %{email}
     seamless_external_login: Tu estás ligado via um serviço externo. Por isso, as configurações da palavra-passe e do e-mail não estão disponíveis.
     signed_in_as: 'Registado como:'
     suspicious_sign_in_confirmation: Parece que não iniciou sessão através deste dispositivo antes, e não acede à sua conta há algum tempo. Portanto, enviámos um código de segurança para o seu endereço de e-mail para confirmar que é você.
@@ -1469,5 +1491,5 @@ pt-PT:
     nickname_hint: Introduza o apelido da sua nova chave de segurança
     not_enabled: Ainda não ativou o WebAuthn
     not_supported: Este navegador não suporta chaves de segurança
-    otp_required: Para usar chaves de segurança, por favor ative primeiro a autenticação de duas etapas.
+    otp_required: Para usar chaves de segurança, por favor ative primeiro a autenticação em duas etapas.
     registered_on: Registado em %{date}

@@ -1,4 +1,3 @@
----
 ast:
   devise:
     confirmations:
@@ -41,7 +40,7 @@ ast:
       updated: La contraseña camudó con ésitu. Agora aniciesti sesión.
       updated_not_active: La contraseña camudó con ésitu.
     registrations:
-      signed_up: "¡Afáyate! Rexistréstite con ésitu."
+      signed_up: '¡Afáyate! Rexistréstite con ésitu.'
       signed_up_but_unconfirmed: Unvióse un mensaxe de confirmación a la direición de corréu. Sigui l'enllaz p'activar la cuenta. Comprueba la carpeta Puxarra si nun recibiesti esti corréu, por favor.
       updated: La cuenta anovóse con ésitu.
     unlocks:

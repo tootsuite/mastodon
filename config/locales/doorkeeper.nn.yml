@@ -1,4 +1,3 @@
----
 nn:
   activerecord:
     attributes:
@@ -113,37 +112,37 @@ nn:
       application:
         title: OAuth-autorisering påkrevet
     scopes:
-      admin:read: lese alle data på tjeneren
-      admin:read:accounts: lese sensitiv informasjon om alle kontoer
-      admin:read:reports: lese sensitiv informasjon om alle rapporter og rapporterte kontoer
-      admin:write: modifisere alle data på tjeneren
-      admin:write:accounts: utføre moderatorhandlinger på kontoer
-      admin:write:reports: utføre moderatorhandlinger på rapporter
+      "admin:read": lese alle data på tjeneren
+      "admin:read:accounts": lese sensitiv informasjon om alle kontoer
+      "admin:read:reports": lese sensitiv informasjon om alle rapporter og rapporterte kontoer
+      "admin:write": modifisere alle data på tjeneren
+      "admin:write:accounts": utføre moderatorhandlinger på kontoer
+      "admin:write:reports": utføre moderatorhandlinger på rapporter
       follow: følg, blokkér, avblokkér, avfølg brukere
       push: motta dine varsler
       read: lese dine data
-      read:accounts: se informasjon om kontoer
-      read:blocks: se dine blokkeringer
-      read:bookmarks: sjå bokmerka dine
-      read:favourites: sjå favorittane dine
-      read:filters: sjå filtera dine
-      read:follows: sjå fylgjarane dine
-      read:lists: sjå listene dine
-      read:mutes: sjå kven du har målbunde
-      read:notifications: sjå varsla dine
-      read:reports: sjå rapportane dine
-      read:search: søke på dine vegne
-      read:statuses: sjå alle statusar
+      "read:accounts": se informasjon om kontoer
+      "read:blocks": se dine blokkeringer
+      "read:bookmarks": sjå bokmerka dine
+      "read:favourites": sjå favorittane dine
+      "read:filters": sjå filtera dine
+      "read:follows": sjå fylgjarane dine
+      "read:lists": sjå listene dine
+      "read:mutes": sjå kven du har målbunde
+      "read:notifications": sjå varsla dine
+      "read:reports": sjå rapportane dine
+      "read:search": søke på dine vegne
+      "read:statuses": sjå alle statusar
       write: poste på dine vegne
-      write:accounts: rediger profilen din
-      write:blocks: blokker kontoar og domene
-      write:bookmarks: bokmerk statusar
-      write:favourites: merk statusar som favoritt
-      write:filters: lag filter
-      write:follows: fylg folk
-      write:lists: lag lister
-      write:media: last opp mediefiler
-      write:mutes: målbind folk og samtalar
-      write:notifications: tøm varsla dine
-      write:reports: rapporter andre folk
-      write:statuses: legg ut statusar
+      "write:accounts": rediger profilen din
+      "write:blocks": blokker kontoar og domene
+      "write:bookmarks": bokmerk statusar
+      "write:favourites": merk statusar som favoritt
+      "write:filters": lag filter
+      "write:follows": fylg folk
+      "write:lists": lag lister
+      "write:media": last opp mediefiler
+      "write:mutes": målbind folk og samtalar
+      "write:notifications": tøm varsla dine
+      "write:reports": rapporter andre folk
+      "write:statuses": legg ut statusar

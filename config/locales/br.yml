@@ -1,4 +1,3 @@
----
 br:
   about:
     about_this: Diàr-benn
@@ -11,37 +10,37 @@ br:
     privacy_policy: Reolennoù prevezded
     source_code: Boneg tarzh
     status_count_after:
+      one: toud
+      two: toud
       few: toud
       many: toud
-      one: toud
       other: toud
-      two: toud
     terms: Divizoù gwerzhañ hollek
     unavailable_content_description:
       domain: Dafariad
     user_count_after:
+      one: implijer·ez
+      two: implijer·ez
       few: implijer·ez
       many: implijer·ez
-      one: implijer·ez
       other: implijer·ez
-      two: implijer·ez
     what_is_mastodon: Petra eo Mastodon?
   accounts:
     follow: Heuliañ
     followers:
+      one: Heulier·ez
+      two: Heulier·ez
       few: Heulier·ez
       many: Heulier·ez
-      one: Heulier·ez
       other: Heulier·ez
-      two: Heulier·ez
     following: O heuliañ
     never_active: Birviken
     posts:
+      one: Toud
+      two: Toud
       few: Toud
       many: Toud
-      one: Toud
       other: Toud
-      two: Toud
     posts_tab_heading: Toudoù
     posts_with_replies: Toudoù ha respontoù
     roles:
@@ -152,11 +151,11 @@ br:
     reports:
       account:
         notes:
+          one: "%{count} a notennoù"
+          two: "%{count} a notennoù"
           few: "%{count} a notennoù"
           many: "%{count} a notennoù"
-          one: "%{count} a notennoù"
           other: "%{count} a notennoù"
-          two: "%{count} a notennoù"
       are_you_sure: Ha sur oc'h?
       notes:
         delete: Dilemel
@@ -220,9 +219,9 @@ br:
     '404': The page you are looking for isn't here.
     '406': This page is not available in the requested format.
     '410': The page you were looking for doesn't exist here anymore.
-    '422': 
+    '422':
     '429': Too many requests
-    '500': 
+    '500':
     '503': The page could not be served due to a temporary server failure.
   exports:
     archive_takeout:
@@ -272,7 +271,23 @@ br:
   sessions:
     browser: Merdeer
     browsers:
+      alipay: Alipay
+      blackberry: Blackberry
+      chrome: Chrome
+      edge: Microsoft Edge
+      electron: Electron
+      firefox: Firefox
       generic: Merdeer dianav
+      ie: Internet Explorer
+      micro_messenger: MicroMessenger
+      nokia: Merdeer Nokia S40 Ovi
+      opera: Opera
+      otter: Otter
+      phantom_js: PhantomJS
+      qq: QQ Browser
+      safari: Safari
+      uc_browser: UCBrowser
+      weibo: Weibo
     description: "%{browser} war %{platform}"
     platforms:
       other: savenn dianav
@@ -288,11 +303,11 @@ br:
   statuses:
     attached:
       image:
+        one: "%{count} skeudenn"
+        two: "%{count} skeudenn"
         few: "%{count} skeudenn"
         many: "%{count} skeudenn"
-        one: "%{count} skeudenn"
         other: "%{count} skeudenn"
-        two: "%{count} skeudenn"
     show_more: Diskouez muioc'h
     visibilities:
       public: Publik

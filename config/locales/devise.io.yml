@@ -1,4 +1,3 @@
----
 io:
   devise:
     confirmations:
@@ -17,13 +16,13 @@ io:
       unconfirmed: Tu devas konfirmar tua konto por durar.
     mailer:
       confirmation_instructions:
-        subject: Instrucioni por konfirmar %{instance}
+        subject: 'Instrucioni por konfirmar %{instance}'
       password_change:
-        subject: Tua pasvorto chanjesis senprobleme.
+        subject: 'Tua pasvorto chanjesis senprobleme.'
       reset_password_instructions:
-        subject: Instrucioni por chanjar la pasvorto
+        subject: 'Instrucioni por chanjar la pasvorto'
       unlock_instructions:
-        subject: Instructioni por riacendar la konto
+        subject: 'Instructioni por riacendar la konto'
     omniauth_callbacks:
       failure: 'Ni ne povis autentikigar tu per %{kind}: ''%{reason}''.'
       success: Autentikigita senprobleme per %{kind}.

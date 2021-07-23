@@ -1,4 +1,3 @@
----
 hu:
   devise:
     confirmations:
@@ -12,7 +11,7 @@ hu:
       last_attempt: Már csak egy próbálkozásod maradt, mielőtt a fiókodat zároljuk.
       locked: A fiókodat zároltuk.
       not_found_in_database: Helytelen %{authentication_keys} vagy jelszó.
-      pending: A fiókod még felülvizsgálat alatt áll.
+      pending: A fiókod felülvizsgálat alatt áll, még mielőtt használhatnád.
       timeout: A munkameneted lejárt. Kérjük, a folytatáshoz jelentkezz be újra.
       unauthenticated: A folytatás előtt be kell jelentkezned vagy regisztrálnod kell.
       unconfirmed: A folytatás előtt meg kell erősítened az e-mail címed.
@@ -48,15 +47,15 @@ hu:
         title: Jelszó visszaállítása
       two_factor_disabled:
         explanation: A fiókod kétlépcsős hitelesítését kikapcsoltuk. A bejelentkezés mostantól csak az e-mail cím és a jelszó használatával lesz lehetséges.
-        subject: Kétlépcsős azonosítás kikapcsolva
+        subject: 'Kétlépcsős azonosítás kikapcsolva'
         title: Kétlépcsős hitelesítés kikapcsolva
       two_factor_enabled:
         explanation: A kétlépcsős hitelesítést engedélyeztük a fiókodban. A bejelentkezéshez a párosított TOTP alkalmazás által generált tokenre lesz szükség.
-        subject: Kétlépcsős azonosítás engedélyezve
+        subject: 'Kétlépcsős azonosítás engedélyezve'
         title: Kétlépcsős hitelesítés engedélyezve
       two_factor_recovery_codes_changed:
         explanation: A korábbi helyreállítási kódokat letiltottuk, és újakat generáltunk.
-        subject: Kétlépcsős helyreállítási kódok újra létrejöttek
+        subject: 'Kétlépcsős helyreállítási kódok újra létrejöttek'
         title: A kétlépcsős kódok megváltozott
       unlock_instructions:
         subject: 'Mastodon: Feloldási lépések'
@@ -106,7 +105,7 @@ hu:
   errors:
     messages:
       already_confirmed: már meg lett erősítve, kérjük jelentkezz be
-      confirmation_period_expired: "%{period} belül kellett megerősíteni, kérjük igényelj újat"
+      confirmation_period_expired: '%{period} belül kellett megerősíteni, kérjük igényelj újat'
       expired: lejárt, kérjük igényelj újat
       not_found: nem található
       not_locked: nincs lezárva

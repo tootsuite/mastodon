@@ -1,4 +1,3 @@
----
 zgh:
   simple_form:
     hints:
@@ -35,5 +34,5 @@ zgh:
         ip: ⵜⴰⵏⵙⴰ IP
       tag:
         name: ⵀⴰⵛⵟⴰⴳ
-    'no': ⵓⵀⵓ
-    'yes': ⵢⴰⵀ
+    'no': 'ⵓⵀⵓ'
+    'yes': 'ⵢⴰⵀ'

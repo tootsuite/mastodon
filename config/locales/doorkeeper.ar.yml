@@ -1,4 +1,3 @@
----
 ar:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ ar:
       application:
         title: طلب تصريح مفتوح OAuth
     scopes:
-      admin:read: قراءة كافة البيانات على الخادم
-      admin:read:accounts: قراءة المعلومات الحساسة عن كافة الحسابات
-      admin:read:reports: قراءة المعلومات الحساسة الواردة في جميع التقارير والحسابات المبلغ عنها
-      admin:write: تعديل كافة البيانات على الخادم
-      admin:write:accounts: اتخاذ إجراءات إشراف على الحسابات
-      admin:write:reports: اتخاذ إجراءات إشراف على الإبلاغات
+      "admin:read": قراءة كافة البيانات على الخادم
+      "admin:read:accounts": قراءة المعلومات الحساسة عن كافة الحسابات
+      "admin:read:reports": قراءة المعلومات الحساسة الواردة في جميع التقارير والحسابات المبلغ عنها
+      "admin:write": تعديل كافة البيانات على الخادم
+      "admin:write:accounts": اتخاذ إجراءات إشراف على الحسابات
+      "admin:write:reports": اتخاذ إجراءات إشراف على الإبلاغات
       follow: تعديل علاقات الحساب
       push: تلقي إشعاراتك
       read: قراءة كافة بيانات حسابك
-      read:accounts: معاينة معلومات الحساب
-      read:blocks: رؤية الحسابات التي قمت بحجبها
-      read:bookmarks: اطّلع على فواصلك المرجعية
-      read:favourites: رؤية مفضلاتك
-      read:filters: رؤية عوامل التصفية الخاصة بك
-      read:follows: رؤية متابِعيك
-      read:lists: رؤية قوائمك
-      read:mutes: رؤية الحسابات التي كَتمتَها
-      read:notifications: رؤية إشعاراتك الخاصة
-      read:reports: رؤية إبلاغاتك
-      read:search: البحث مكانك
-      read:statuses: رؤية كافة المنشورات
+      "read:accounts": معاينة معلومات الحساب
+      "read:blocks": رؤية الحسابات التي قمت بحجبها
+      "read:bookmarks": اطّلع على فواصلك المرجعية
+      "read:favourites": رؤية مفضلاتك
+      "read:filters": رؤية عوامل التصفية الخاصة بك
+      "read:follows": رؤية متابِعيك
+      "read:lists": رؤية قوائمك
+      "read:mutes": رؤية الحسابات التي كَتمتَها
+      "read:notifications": رؤية إشعاراتك الخاصة
+      "read:reports": رؤية إبلاغاتك
+      "read:search": البحث مكانك
+      "read:statuses": رؤية كافة المنشورات
       write: تغيير كافة بيانات حسابك
-      write:accounts: تعديل صفحتك التعريفية
-      write:blocks: حجب الحسابات و النطاقات
-      write:bookmarks: الإحتفاظ بالمنشورات في الفواصل المرجعية
-      write:favourites: الإعجاب بمنشورات
-      write:filters: إنشاء عوامل تصفية
-      write:follows: متابَعة الأشخاص
-      write:lists: إنشاء القوائم
-      write:media: إرسال الصور
-      write:mutes: كتم الأشخاص و المحادثات
-      write:notifications: مسح إشعاراتك
-      write:reports: الإبلاغ عن الأشخاص نيابة عنك
-      write:statuses: نشر منشورات
+      "write:accounts": تعديل صفحتك التعريفية
+      "write:blocks": حجب الحسابات و النطاقات
+      "write:bookmarks": الإحتفاظ بالمنشورات في الفواصل المرجعية
+      "write:favourites": الإعجاب بمنشورات
+      "write:filters": إنشاء عوامل تصفية
+      "write:follows": متابَعة الأشخاص
+      "write:lists": إنشاء القوائم
+      "write:media": إرسال الصور
+      "write:mutes": كتم الأشخاص و المحادثات
+      "write:notifications": مسح إشعاراتك
+      "write:reports": الإبلاغ عن الأشخاص نيابة عنك
+      "write:statuses": نشر منشورات

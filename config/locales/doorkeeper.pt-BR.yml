@@ -1,4 +1,3 @@
----
 pt-BR:
   activerecord:
     attributes:
@@ -29,10 +28,10 @@ pt-BR:
       edit:
         title: Editar aplicativo
       form:
-        error: Eita! Verifique o seu formulário para saber de possíveis erros
+        error: Eita! Verifique o seu formulário e procure possíveis erros
       help:
         native_redirect_uri: Use %{native_redirect_uri} para testes locais
-        redirect_uri: Use uma linha para cada link
+        redirect_uri: Use uma linha por link
         scopes: Separe autorizações com espaços. Deixe em branco para usar autorizações padrões.
       index:
         application: Aplicativos
@@ -56,7 +55,7 @@ pt-BR:
     authorizations:
       buttons:
         authorize: Autorizar
-        deny: Negar
+        deny: Recusar
       error:
         title: Ocorreu um erro
       new:
@@ -78,20 +77,24 @@ pt-BR:
         title: Aplicativos autorizados
     errors:
       messages:
-        access_denied: O proprietário ou servidor de autorização negou a solicitação.
-        credential_flow_not_configured: Cadeira de Credenciais de Senha do Proprietário falhou porque Doorkeeper.configure.resource_owner_from_credentials não foram configuradas.
+        access_denied: O proprietário do recurso ou servidor de autorização recusou a solicitação.
+        credential_flow_not_configured: Fluxo das Credenciais de Senha do Proprietário do Recurso falhou porque Doorkeeper.configure.resource_owner_from_credentials não foi configurado.
         invalid_client: Autenticação do cliente falhou por causa de um cliente desconhecido, nenhum cliente de autenticação foi incluído ou o método de autenticação não é suportado.
         invalid_grant: A garantia de autorização está inválida, expirou ou foi revogada, não é equivalente ao link de redirecionamento usado na solicitação de autorização ou foi emitido por outro cliente.
-        invalid_redirect_uri: O link de redirecionamento não é válido.
-        invalid_resource_owner: As credenciais do proprietário informadas não são válidas ou o proprietário não pôde ser encontrado
-        invalid_scope: A autorização requirida é inválida, desconhecida ou está mal formatada.
+        invalid_redirect_uri: O link de redirecionamento é inválido.
+        invalid_request:
+          missing_param: 'Parâmetro obrigatório faltando: %{value}.'
+          request_not_authorized: A solicitação precisa ser autorizada. O parâmetro obrigatório para autorização da solicitação está ausente ou inválido.
+          unknown: A solicitação não possui um parâmetro obrigatório, inclui um valor não suportado ou está malformado.
+        invalid_resource_owner: As credenciais do proprietário informadas são inválidas ou o proprietário não pôde ser encontrado
+        invalid_scope: A autorização necessária é inválida, desconhecida ou está malformada.
         invalid_token:
           expired: O código de acesso expirou
           revoked: O código de acesso foi revogado
           unknown: O código de acesso é inválido
         resource_owner_authenticator_not_configured: A procura pelo Proprietário do Recurso falhou porque Doorkeeper.configure.resource_owner_authenticator não foi configurado.
-        server_error: O servidor de autorização encontrou uma condição inesperada que preveniu a solicitação de ser respondida.
-        temporarily_unavailable: O servidor de autorização é incapaz de lidar com a solicitação no momento devido à múltiplas requisições ou manutenção programada.
+        server_error: O servidor de autorização encontrou uma condição inesperada que impediu a solicitação de ser respondida.
+        temporarily_unavailable: O servidor de autorização não consegue lidar com a solicitação no momento devido à múltiplas solicitações ou manutenção programada.
         unauthorized_client: O cliente não possui autorização para executar esta solicitação usando este método.
         unsupported_grant_type: O tipo de garantia de autorização não é suportado pelo servidor de autorização.
         unsupported_response_type: O servidor de autorização não suporta este tipo de resposta.
@@ -114,37 +117,37 @@ pt-BR:
       application:
         title: Autorização OAuth obrigatória
     scopes:
-      admin:read: ler todos os dados no servidor
-      admin:read:accounts: ler informações sensíveis de todas as contas
-      admin:read:reports: ler informações sensíveis de todas as denúncias e contas denunciadas
-      admin:write: alterar todos os dados no servidor
-      admin:write:accounts: executar ações de moderação em contas
-      admin:write:reports: executar ações de moderação em denúncias
+      "admin:read": ler todos os dados no servidor
+      "admin:read:accounts": ler informações sensíveis de todas as contas
+      "admin:read:reports": ler informações sensíveis de todas as denúncias e contas denunciadas
+      "admin:write": alterar todos os dados no servidor
+      "admin:write:accounts": executar ações de moderação em contas
+      "admin:write:reports": executar ações de moderação em denúncias
       follow: alterar o relacionamento das contas
       push: receber notificações push
       read: ler todos os dados da sua conta
-      read:accounts: ver informações das contas
-      read:blocks: ver seus bloqueios
-      read:bookmarks: ver seus salvos
-      read:favourites: ver seus favoritos
-      read:filters: ver seus filtros
-      read:follows: ver quem você segue
-      read:lists: ver suas listas
-      read:mutes: ver seus silenciamentos
-      read:notifications: ver suas notificações
-      read:reports: ver suas denúncias
-      read:search: pesquisar em seu nome
-      read:statuses: ver todos os toots
+      "read:accounts": ver informações das contas
+      "read:blocks": ver seus bloqueados
+      "read:bookmarks": ver seus salvos
+      "read:favourites": ver seus favoritos
+      "read:filters": ver seus filtros
+      "read:follows": ver quem você segue
+      "read:lists": ver suas listas
+      "read:mutes": ver seus silenciados
+      "read:notifications": ver suas notificações
+      "read:reports": ver suas denúncias
+      "read:search": pesquisar em seu nome
+      "read:statuses": ver todos os toots
       write: alterar todos os dados da sua conta
-      write:accounts: alterar seu perfil
-      write:blocks: bloquear contas e domínios
-      write:bookmarks: salvar toots
-      write:favourites: favoritar toots
-      write:filters: criar filtros
-      write:follows: seguir pessoas
-      write:lists: criar listas
-      write:media: enviar arquivos de mídia
-      write:mutes: silenciar pessoas e conversas
-      write:notifications: limpar notificações
-      write:reports: denunciar outras pessoas
-      write:statuses: postar toots
+      "write:accounts": alterar seu perfil
+      "write:blocks": bloquear contas e domínios
+      "write:bookmarks": salvar toots
+      "write:favourites": favoritar toots
+      "write:filters": criar filtros
+      "write:follows": seguir pessoas
+      "write:lists": criar listas
+      "write:media": enviar arquivos de mídia
+      "write:mutes": silenciar pessoas e conversas
+      "write:notifications": limpar notificações
+      "write:reports": denunciar outras pessoas
+      "write:statuses": postar toots

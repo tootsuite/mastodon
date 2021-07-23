@@ -1,4 +1,3 @@
----
 vi:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ vi:
       application:
         title: Đăng nhập bằng OAuth
     scopes:
-      admin:read: đọc tất cả dữ liệu trên máy chủ
-      admin:read:accounts: đọc thông tin nhạy cảm của tất cả các tài khoản
-      admin:read:reports: đọc thông tin của các báo cáo và các tài khoản bị báo cáo
-      admin:write: sửa đổi tất cả dữ liệu trên máy chủ
-      admin:write:accounts: áp đặt hành động kiểm duyệt trên tài khoản
-      admin:write:reports: áp đặt kiểm duyệt với các báo cáo
+      "admin:read": đọc tất cả dữ liệu trên máy chủ
+      "admin:read:accounts": đọc thông tin nhạy cảm của tất cả các tài khoản
+      "admin:read:reports": đọc thông tin của các báo cáo và các tài khoản bị báo cáo
+      "admin:write": sửa đổi tất cả dữ liệu trên máy chủ
+      "admin:write:accounts": áp đặt hành động kiểm duyệt trên tài khoản
+      "admin:write:reports": áp đặt kiểm duyệt với các báo cáo
       follow: sửa đổi các mối quan hệ tài khoản
       push: nhận thông báo đẩy của bạn
       read: đọc tất cả dữ liệu tài khoản của bạn
-      read:accounts: xem thông tin tài khoản
-      read:blocks: xem những người bạn chặn
-      read:bookmarks: xem những thứ bạn đã lưu
-      read:favourites: xem lượt thích
-      read:filters: xem bộ lọc của bạn
-      read:follows: xem lượt theo dõi của bạn
-      read:lists: xem danh sách của bạn
-      read:mutes: xem những người bạn đã ẩn
-      read:notifications: xem thông báo của bạn
-      read:reports: xem báo cáo của bạn
-      read:search: thay mặt bạn tìm kiếm
-      read:statuses: xem toàn bộ tút
+      "read:accounts": xem thông tin tài khoản
+      "read:blocks": xem những người bạn chặn
+      "read:bookmarks": xem những thứ bạn đã lưu
+      "read:favourites": xem lượt thích
+      "read:filters": xem bộ lọc của bạn
+      "read:follows": xem lượt theo dõi của bạn
+      "read:lists": xem danh sách của bạn
+      "read:mutes": xem những người bạn đã ẩn
+      "read:notifications": xem thông báo của bạn
+      "read:reports": xem báo cáo của bạn
+      "read:search": thay mặt bạn tìm kiếm
+      "read:statuses": xem toàn bộ tút
       write: sửa đổi mọi dữ liệu tài khoản của bạn
-      write:accounts: sửa đổi trang cá nhân của bạn
-      write:blocks: chặn người dùng và máy chủ
-      write:bookmarks: sửa đổi những thứ bạn lưu
-      write:favourites: lượt thích
-      write:filters: tạo bộ lọc
-      write:follows: theo dõi ai đó
-      write:lists: tạo danh sách
-      write:media: tải lên tập tin
-      write:mutes: ẩn người dùng và cuộc đối thoại
-      write:notifications: xóa thông báo của bạn
-      write:reports: báo cáo người khác
-      write:statuses: đăng tút
+      "write:accounts": sửa đổi trang cá nhân của bạn
+      "write:blocks": chặn người dùng và máy chủ
+      "write:bookmarks": sửa đổi những thứ bạn lưu
+      "write:favourites": lượt thích
+      "write:filters": tạo bộ lọc
+      "write:follows": theo dõi ai đó
+      "write:lists": tạo danh sách
+      "write:media": tải lên tập tin
+      "write:mutes": ẩn người dùng và cuộc đối thoại
+      "write:notifications": xóa thông báo của bạn
+      "write:reports": báo cáo người khác
+      "write:statuses": đăng tút

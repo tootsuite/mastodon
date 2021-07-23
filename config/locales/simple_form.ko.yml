@@ -1,4 +1,3 @@
----
 ko:
   simple_form:
     hints:
@@ -13,7 +12,7 @@ ko:
         include_statuses: 사용자는 어떤 게시물에 대해 경고나 조치가 취해졌는지 볼 수 있게 됩니다
         send_email_notification: 유저는 어떤 일이 일어났는 지에 대한 설명을 받게 됩니다
         text_html: 선택사항. 게시물 문법을 사용할 수 있습니다. <a href="%{path}">경고 틀을 추가</a>하여 시간을 절약할 수 있습니다
-        type_html: "<strong>%{acct}</strong>에 대해 취할 행동 선택"
+        type_html: <strong>%{acct}</strong>에 대해 취할 행동 선택
         types:
           disable: 사용자가 계정을 사용하는 것을 막지만, 그들의 게시물을 삭제하거나 숨기지는 않습니다.
           none: 이것을 사용해서 어떤 동작도 하지 않고, 사용자에게 경고를 보냅니다.
@@ -52,8 +51,8 @@ ko:
         setting_display_media_hide_all: 항상 모든 미디어를 가리기
         setting_display_media_show_all: 민감함으로 설정 된 미디어를 항상 보이기
         setting_hide_network: 나를 팔로우 하는 사람들과 내가 팔로우 하는 사람들을 내 프로필에서 숨깁니다
-        setting_noindex: 공개 프로필 및 각 툿페이지에 영향을 미칩니다
-        setting_show_application: 당신이 게시물을 작성하는데에 사용한 앱이 툿의 상세정보에 표시 됩니다
+        setting_noindex: 공개 프로필 및 각 게시물 페이지에 영향을 미칩니다
+        setting_show_application: 당신이 게시물을 작성하는데에 사용한 앱이 게시물의 상세정보에 표시 됩니다
         setting_use_blurhash: 그라디언트는 숨겨진 내용의 색상을 기반으로 하지만 상세 내용은 보이지 않게 합니다
         setting_use_pending_items: 타임라인의 새 게시물을 자동으로 보여 주는 대신, 클릭해서 나타내도록 합니다
         username: 당신의 유저네임은 %{domain} 안에서 유일해야 합니다
@@ -151,7 +150,7 @@ ko:
         setting_boost_modal: 부스트 전 확인 창을 표시
         setting_crop_images: 확장되지 않은 게시물의 이미지를 16x9로 자르기
         setting_default_language: 게시물 언어
-        setting_default_privacy: 툿 프라이버시
+        setting_default_privacy: 게시물 프라이버시
         setting_default_sensitive: 미디어를 언제나 민감한 컨텐츠로 설정
         setting_delete_modal: 게시물 삭제 전 확인 창을 표시
         setting_disable_swiping: 스와이프 모션 비활성화
@@ -212,7 +211,7 @@ ko:
         name: 해시태그
         trendable: 이 해시태그가 유행에 보여지도록 허용
         usable: 이 해시태그를 게시물에 사용 가능하도록 허용
-    'no': 아니오
+    'no': '아니오'
     recommended: 추천함
     required:
       mark: "*"
@@ -220,4 +219,4 @@ ko:
     title:
       sessions:
         webauthn: 로그인하기 위해서 보안 키를 사용해 주세요
-    'yes': 네
+    'yes': '네'

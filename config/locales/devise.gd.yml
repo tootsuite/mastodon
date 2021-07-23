@@ -1,4 +1,3 @@
----
 gd:
   devise:
     confirmations:
@@ -8,10 +7,10 @@ gd:
     failure:
       already_authenticated: Tha thu air do chlàradh a-steach mu thràth.
       inactive: Cha deach an cunntas agad a ghnìomhachadh fhathast.
-      invalid: "%{authentication_keys} no facal-faire mì-dhligheach."
+      invalid: '%{authentication_keys} no facal-faire mì-dhligheach.'
       last_attempt: Tha aon oidhirp eile agad mus dèid an cunntas agad a ghlasadh.
       locked: Tha an cunntas agad glaiste.
-      not_found_in_database: "%{authentication_keys} no facal-faire mì-dhligheach."
+      not_found_in_database: '%{authentication_keys} no facal-faire mì-dhligheach.'
       pending: Tha an cunntas agad fo lèirmheas fhathast.
       timeout: Dh’fhalbh an ùine air an t-seisean agad. Clàraich a-steach a-rithist airson leantainn air adhart.
       unauthenticated: Feumaidh tu clàradh a-steach no clàradh leinn mus lean thu air adhart.
@@ -105,13 +104,13 @@ gd:
       unlocked: Chaidh a’ ghlas a thoirt far a’ chunntais agad. Clàraich a-steach airson leantainn air adhart.
   errors:
     messages:
-      already_confirmed: "– chaidh a dhearbhadh mu thràth, feuch is clàraich a-steach"
-      confirmation_period_expired: "– feumaidh tu a dhearbhadh am broinn %{period}, iarr fear ùr"
-      expired: "– dh’fhalbh an ùine air, iarr fear ùr"
-      not_found: "– cha deach seo a lorg"
-      not_locked: "– cha deach seo a ghlasadh"
+      already_confirmed: '– chaidh a dhearbhadh mu thràth, feuch is clàraich a-steach'
+      confirmation_period_expired: '– feumaidh tu a dhearbhadh am broinn %{period}, iarr fear ùr'
+      expired: '– dh’fhalbh an ùine air, iarr fear ùr'
+      not_found: '– cha deach seo a lorg'
+      not_locked: '– cha deach seo a ghlasadh'
       not_saved:
-        few: 'Dh’adhbharaich %{count} mearachdan nach gabh a’ %{resource} seo a shàbhaladh:'
         one: 'Dh’adhbharaich %{count} mhearachd nach gabh a’ %{resource} seo a shàbhaladh:'
-        other: 'Dh’adhbharaich %{count} mearachd nach gabh a’ %{resource} seo a shàbhaladh:'
-        two: 'Dh’adhbharaich %{count} mhearachd nach gabh a’ %{resource} seo a shàbhaladh:'
+        two: "Dh’adhbharaich %{count} mhearachd nach gabh a’ %{resource} seo a shàbhaladh:"
+        few: "Dh’adhbharaich %{count} mearachdan nach gabh a’ %{resource} seo a shàbhaladh:"
+        other: "Dh’adhbharaich %{count} mearachd nach gabh a’ %{resource} seo a shàbhaladh:"

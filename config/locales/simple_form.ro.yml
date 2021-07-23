@@ -1,4 +1,3 @@
----
 ro:
   simple_form:
     hints:
@@ -179,8 +178,8 @@ ro:
         listable: Permite acestui hashtag să apară în căutări și în directorul de profil
         trendable: Permite acestui hashtag să apară sub tendințe
         usable: Permite postărilor să folosească acest hashtag
-    'no': Nu
+    'no': 'Nu'
     recommended: Recomandat
     required:
       text: obligatoriu
-    'yes': Da
+    'yes': 'Da'

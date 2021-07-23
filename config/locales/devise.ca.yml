@@ -1,19 +1,16 @@
----
 ca:
   devise:
     confirmations:
       confirmed: La teva adreça de correu electrònic s'ha confirmat correctament.
       send_instructions: "En pocs minuts rebràs un correu electrònic amb instruccions sobre com confirmar l'adreça de correu. \nSi us plau verifica la teva carpeta de correu brossa si no has rebut aquest correu."
-      send_paranoid_instructions: |-
-        Si l'adreça de correu electrònic existeix en la nostra base de dades, en pocs minuts rebràs un correu electrònic amb instruccions sobre com confirmar l'adreça de correu.
-        Si us plau verifica la teva carpeta de correu brossa si no has rebut aquest correu.
+      send_paranoid_instructions: "Si l'adreça de correu electrònic existeix en la nostra base de dades, en pocs minuts rebràs un correu electrònic amb instruccions sobre com confirmar l'adreça de correu.\nSi us plau verifica la teva carpeta de correu brossa si no has rebut aquest correu."
     failure:
       already_authenticated: Ja estàs registrat.
       inactive: El teu compte encara no s'ha activat.
-      invalid: "%{authentication_keys} o contrasenya no són vàlids."
+      invalid: '%{authentication_keys} o contrasenya no són vàlids.'
       last_attempt: Tens un intent més, abans que es bloquegi el compte.
       locked: El compte s'ha bloquejat.
-      not_found_in_database: "%{authentication_keys} o contrasenya no són vàlids."
+      not_found_in_database: '%{authentication_keys} o contrasenya no són vàlids.'
       pending: El teu compte encara està en revisió.
       timeout: La sessió ha expirat. Inicia sessió una altra vegada per a continuar.
       unauthenticated: Cal iniciar sessió o registrar-se abans de continuar.

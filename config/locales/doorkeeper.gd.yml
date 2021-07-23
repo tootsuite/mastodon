@@ -1,4 +1,3 @@
----
 gd:
   activerecord:
     attributes:
@@ -12,10 +11,10 @@ gd:
         doorkeeper/application:
           attributes:
             redirect_uri:
-              fragment_present: "– chan fhaod bloigh a bhith ’na bhroinn."
-              invalid_uri: "– feumaidh seo a bhith ’na URI dligheach."
-              relative_uri: "– feumaidh seo a bhith ’na URI absaloideach."
-              secured_uri: "– feumaidh seo a bhith ’na URI HTTPS/SSL."
+              fragment_present: '– chan fhaod bloigh a bhith ’na bhroinn.'
+              invalid_uri: '– feumaidh seo a bhith ’na URI dligheach.'
+              relative_uri: '– feumaidh seo a bhith ’na URI absaloideach.'
+              secured_uri: '– feumaidh seo a bhith ’na URI HTTPS/SSL.'
   doorkeeper:
     applications:
       buttons:
@@ -118,37 +117,37 @@ gd:
       application:
         title: Tha feum air ùghdarrachadh OAuth
     scopes:
-      admin:read: dàta sam bith a leughadh air an fhrithealaiche
-      admin:read:accounts: fiosrachadh dìomhair air a h-uile cunntas a leughadh
-      admin:read:reports: fiosrachadh dìomhair air a h-uile gearan is cunntasan a chaidh a ghearan mun dèidhinn a leughadh
-      admin:write: dàta sam bith atharrachadh air an fhrithealaiche
-      admin:write:accounts: gnìomhan na maorsainneachd a ghabhail air cunntasan
-      admin:write:reports: gnìomhan na maorsainneachd a ghabhail air gearanan
+      "admin:read": dàta sam bith a leughadh air an fhrithealaiche
+      "admin:read:accounts": fiosrachadh dìomhair air a h-uile cunntas a leughadh
+      "admin:read:reports": fiosrachadh dìomhair air a h-uile gearan is cunntasan a chaidh a ghearan mun dèidhinn a leughadh
+      "admin:write": dàta sam bith atharrachadh air an fhrithealaiche
+      "admin:write:accounts": gnìomhan na maorsainneachd a ghabhail air cunntasan
+      "admin:write:reports": gnìomhan na maorsainneachd a ghabhail air gearanan
       follow: dàimhean chunntasan atharrachadh
       push: na brathan putaidh agad fhaighinn
       read: dàta sam bith a’ cunntais agad a leughadh
-      read:accounts: fiosrachadh nan cunntasan fhaicinn
-      read:blocks: na bacaidhean agad fhaicinn
-      read:bookmarks: na comharran-lìn agad fhaicinn
-      read:favourites: na h-annsachdan agad fhaicinn
-      read:filters: na criathragan agad fhaicinn
-      read:follows: faicinn cò air a tha thu a’ leantainn
-      read:lists: na liostaichean agad fhaicinn
-      read:mutes: na mùchaidhean agad fhaicinn
-      read:notifications: na brathan agad faicinn
-      read:reports: na gearanan agad fhaicinn
-      read:search: lorg a dhèanamh às do leth
-      read:statuses: na postaichean uile fhaicinn
+      "read:accounts": fiosrachadh nan cunntasan fhaicinn
+      "read:blocks": na bacaidhean agad fhaicinn
+      "read:bookmarks": na comharran-lìn agad fhaicinn
+      "read:favourites": na h-annsachdan agad fhaicinn
+      "read:filters": na criathragan agad fhaicinn
+      "read:follows": faicinn cò air a tha thu a’ leantainn
+      "read:lists": na liostaichean agad fhaicinn
+      "read:mutes": na mùchaidhean agad fhaicinn
+      "read:notifications": na brathan agad faicinn
+      "read:reports": na gearanan agad fhaicinn
+      "read:search": lorg a dhèanamh às do leth
+      "read:statuses": na postaichean uile fhaicinn
       write: dàta sam bith a’ cunntais agad atharrachadh
-      write:accounts: a’ phròifil agad atharrachadh
-      write:blocks: cunntasan is àrainnean a bhacadh
-      write:bookmarks: comharran-lìn a dhèanamh de phostaichean
-      write:favourites: postaichean a chur ris na h-annsachdan
-      write:filters: criathragan a chruthachadh
-      write:follows: leantainn air daoine
-      write:lists: liostaichean a chruthachadh
-      write:media: faidhlichean meadhain a luchdadh suas
-      write:mutes: daoine is còmhraidhean a mhùchadh
-      write:notifications: na brathan agad fhalamhachadh
-      write:reports: gearan a dhèanamh mu chàch
-      write:statuses: postaichean fhoillseachadh
+      "write:accounts": a’ phròifil agad atharrachadh
+      "write:blocks": cunntasan is àrainnean a bhacadh
+      "write:bookmarks": comharran-lìn a dhèanamh de phostaichean
+      "write:favourites": postaichean a chur ris na h-annsachdan
+      "write:filters": criathragan a chruthachadh
+      "write:follows": leantainn air daoine
+      "write:lists": liostaichean a chruthachadh
+      "write:media": faidhlichean meadhain a luchdadh suas
+      "write:mutes": daoine is còmhraidhean a mhùchadh
+      "write:notifications": na brathan agad fhalamhachadh
+      "write:reports": gearan a dhèanamh mu chàch
+      "write:statuses": postaichean fhoillseachadh

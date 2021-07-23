@@ -1,4 +1,3 @@
----
 hu:
   activerecord:
     attributes:
@@ -61,7 +60,7 @@ hu:
         title: Hiba történt
       new:
         able_to: Képes lesz
-        prompt: "%{client_name} nevű alkalmazás engedélyt kér a fiókodhoz való hozzáféréshez."
+        prompt: '%{client_name} nevű alkalmazás engedélyt kér a fiókodhoz való hozzáféréshez.'
         title: Engedély szükséges
       show:
         title: Másold le ezt az engedélyező kódot és írd be az alkalmazásba.
@@ -118,37 +117,37 @@ hu:
       application:
         title: OAuth engedély szükséges
     scopes:
-      admin:read: szerver minden adatának olvasása
-      admin:read:accounts: minden kényes fiókadat olvasása
-      admin:read:reports: minden bejelentés és bejelentett fiók kényes adatainak olvasása
-      admin:write: szerver minden adatának változtatása
-      admin:write:accounts: moderációs műveletek végzése fiókokon
-      admin:write:reports: moderációs műveletek végzése bejelentéseken
+      "admin:read": szerver minden adatának olvasása
+      "admin:read:accounts": minden kényes fiókadat olvasása
+      "admin:read:reports": minden bejelentés és bejelentett fiók kényes adatainak olvasása
+      "admin:write": szerver minden adatának változtatása
+      "admin:write:accounts": moderációs műveletek végzése fiókokon
+      "admin:write:reports": moderációs műveletek végzése bejelentéseken
       follow: fiókok követése, letiltása, tiltás feloldása és követés abbahagyása
       push: push értesítések fogadása
       read: fiókod adatainak olvasása
-      read:accounts: fiók adatainak megtekintése
-      read:blocks: letiltások megtekintése
-      read:bookmarks: könyvjelzőid megtekintése
-      read:favourites: kedvencek megtekintése
-      read:filters: szűrök megtekintése
-      read:follows: követések megtekintése
-      read:lists: listák megtekintése
-      read:mutes: némítások megtekintése
-      read:notifications: értesítések megtekintése
-      read:reports: bejelentések megtekintése
-      read:search: nevedben keresés
-      read:statuses: bejegyzések megtekintése
+      "read:accounts": fiók adatainak megtekintése
+      "read:blocks": letiltások megtekintése
+      "read:bookmarks": könyvjelzőid megtekintése
+      "read:favourites": kedvencek megtekintése
+      "read:filters": szűrök megtekintése
+      "read:follows": követések megtekintése
+      "read:lists": listák megtekintése
+      "read:mutes": némítások megtekintése
+      "read:notifications": értesítések megtekintése
+      "read:reports": bejelentések megtekintése
+      "read:search": nevedben keresés
+      "read:statuses": bejegyzések megtekintése
       write: fiókod adatainak megváltoztatása
-      write:accounts: profilod megváltoztatása
-      write:blocks: fiókok és domainek letiltása
-      write:bookmarks: bejegyzések könyvjelzőzése
-      write:favourites: bejegyzések kedvencnek jelölése
-      write:filters: szűrők létrehozása
-      write:follows: mások követése
-      write:lists: listák létrehozása
-      write:media: média feltöltése
-      write:mutes: emberek és beszélgetések némítása
-      write:notifications: értesítések törlése
-      write:reports: mások bejelentése
-      write:statuses: bejegyzések közzététele
+      "write:accounts": profilod megváltoztatása
+      "write:blocks": fiókok és domainek letiltása
+      "write:bookmarks": bejegyzések könyvjelzőzése
+      "write:favourites": bejegyzések kedvencnek jelölése
+      "write:filters": szűrők létrehozása
+      "write:follows": mások követése
+      "write:lists": listák létrehozása
+      "write:media": média feltöltése
+      "write:mutes": emberek és beszélgetések némítása
+      "write:notifications": értesítések törlése
+      "write:reports": mások bejelentése
+      "write:statuses": bejegyzések közzététele

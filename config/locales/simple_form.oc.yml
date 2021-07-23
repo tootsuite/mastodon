@@ -1,4 +1,3 @@
----
 oc:
   simple_form:
     hints:
@@ -204,7 +203,7 @@ oc:
         name: Etiqueta
         trendable: Permetre a aquesta etiqueta d’aparéisser a las tendéncias
         usable: Permetre als tuts d’utilizar aquesta etiqueta
-    'no': Non
+    'no': 'Non'
     recommended: Recomandat
     required:
       mark: "*"
@@ -212,4 +211,4 @@ oc:
     title:
       sessions:
         webauthn: Utilizatz una de vòstras clau de seguretat per vos identificar
-    'yes': Òc
+    'yes': 'Òc'

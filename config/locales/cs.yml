@@ -1,7 +1,6 @@
----
 cs:
   about:
-    about_hashtag_html: Tohle jsou veřejné příspěvky označené hashtagem <strong>#%{hashtag}</strong>. Pokud máte účet kdekoliv ve fedivesmíru, můžete s nimi interagovat.
+    about_hashtag_html: 'Tohle jsou veřejné příspěvky označené hashtagem <strong>#%{hashtag}</strong>. Pokud máte účet kdekoliv ve fedivesmíru, můžete s nimi interagovat.'
     about_mastodon_html: 'Sociální síť budoucnosti: žádné reklamy, žádné korporátní sledování, etický design a decentralizace! S Mastodonem vlastníte svoje data!'
     about_this: O tomto serveru
     active_count_after: aktivních
@@ -32,9 +31,9 @@ cs:
     server_stats: 'Statistika serveru:'
     source_code: Zdrojový kód
     status_count_after:
+      one: příspěvek
       few: příspěvky
       many: příspěvků
-      one: příspěvek
       other: příspěvků
     status_count_before: Kteří napsali
     tagline: Sledujte své přátele a objevujte nové
@@ -46,28 +45,28 @@ cs:
       rejecting_media: 'Mediální soubory z tohoto serveru nebudou zpracovány a nebudou zobrazeny žádné náhledy. Pro prohlédnutí médií bude třeba manuálně přejít na druhý server:'
       rejecting_media_title: Filtrovaná média
       silenced: 'Příspěvky z těchto serverů nebudou zobrazeny ve veřejných časových osách a konverzacích a nebudou generována oznámení o interakcích uživatelů z toho serveru, pokud je nesledujete:'
-      silenced_title: Ztišené servery
+      silenced_title: Omezené servery
       suspended: 'Žádná data z těchto serverů nebudou zpracována, ukládána ani vyměňována, čímž bude znemožněna jakákoliv interakce či komunikace s uživateli z těchto serverů:'
       suspended_title: Pozastavené servery
     unavailable_content_html: Mastodon vám obvykle dovoluje prohlížet si obsah a komunikovat s uživateli z jakéhokoliv dalšího serveru ve fedivesmíru. Tohle jsou výjimky, které byly zavedeny na tomto konkrétním serveru.
     user_count_after:
+      one: uživatel
       few: uživatelé
       many: uživatelů
-      one: uživatel
       other: uživatelů
     user_count_before: Domov
     what_is_mastodon: Co je Mastodon?
   accounts:
-    choices_html: 'Volby %{name}:'
+    choices_html: "Volby %{name}:"
     endorsements_hint: Z webového rozhraní můžete podpořit lidi, které sledujete. Ti se poté zobrazí zde.
     featured_tags_hint: Můžete vybrat konkrétní hashtagy, které se zobrazí zde.
     follow: Sledovat
     followers:
+      one: Sledující
       few: Sledující
       many: Sledujících
-      one: Sledující
       other: Sledujících
-    following: Sledovaní
+    following: Sledovaných
     instance_actor_flash: Tento účet je virtuální aktér, který představuje server samotný, nikoliv jednotlivého uživatele. Používá se pro účely federace a neměl by být pozastaven.
     joined: Uživatelem od %{date}
     last_active: naposledy aktivní
@@ -82,9 +81,9 @@ cs:
     pin_errors:
       following: Osobu, kterou chcete podpořit, už musíte sledovat
     posts:
+      one: Příspěvek
       few: Příspěvky
       many: Příspěvků
-      one: Příspěvek
       other: Příspěvků
     posts_tab_heading: Příspěvky
     posts_with_replies: Příspěvky a odpovědi
@@ -125,8 +124,9 @@ cs:
       delete: Smazat data
       deleted: Smazáno
       demote: Degradovat
-      destroyed_msg: Data účtu %{username} jsou nyní ve frontě k okamžitému smazání
+      destroyed_msg: "Data účtu %{username} jsou nyní ve frontě k okamžitému smazání"
       disable: Zmrazit
+      disable_sign_in_token_auth: Zrušit ověřování e-mailovým tokenem
       disable_two_factor_authentication: Vypnout 2FA
       disabled: Zmrazen
       display_name: Zobrazované jméno
@@ -135,6 +135,7 @@ cs:
       email: E-mail
       email_status: Stav e-mailu
       enable: Rozmrazit
+      enable_sign_in_token_auth: Povolit ověřování e-mailovým tokenem
       enabled: Povoleno
       enabled_msg: Účet %{username} byl úspěšně rozmrazen
       followers: Sledující
@@ -159,8 +160,8 @@ cs:
         active: Aktivní
         all: Vše
         pending: Čekající
-        silenced: Uživatel ztišen
-        suspended: Uživatel pozastaven
+        silenced: Omezené
+        suspended: Pozastavené
         title: Moderování
       moderation_notes: Moderátorské poznámky
       most_recent_activity: Nejnovější aktivita
@@ -199,6 +200,10 @@ cs:
       search: Hledat
       search_same_email_domain: Ostatní uživatelé se stejnou e-mailovou doménou
       search_same_ip: Další uživatelé se stejnou IP adresou
+      security_measures:
+        only_password: Pouze heslo
+        password_and_2fa: Heslo a 2FA
+        password_and_sign_in_token: Heslo a e-mailový token
       sensitive: Citlivý
       sensitized: označen jako citlivý
       shared_inbox_url: URL sdílené příchozí schránky
@@ -216,7 +221,7 @@ cs:
       title: Účty
       unconfirmed_email: Nepotvrzený e-mail
       undo_sensitized: Vrátit zpět citlivost
-      undo_silenced: Zrušit ztišení
+      undo_silenced: Zrušit omezení
       undo_suspension: Zrušit pozastavení
       unsilenced_msg: Omezení účtu %{username} úspěšně odstraněno
       unsubscribe: Přestat odebírat
@@ -250,8 +255,10 @@ cs:
         destroy_unavailable_domain: Smazat nedostupnou doménu
         disable_2fa_user: Vypnout 2FA
         disable_custom_emoji: Zakázat vlastní emoji
+        disable_sign_in_token_auth_user: Zrušit uživatelovo ověřování e-mailovým tokenem
         disable_user: Deaktivovat uživatele
         enable_custom_emoji: Povolit vlastní emoji
+        enable_sign_in_token_auth_user: Povolit uživatelovo ověřování e-mailovým tokenem
         enable_user: Povolit uživatele
         memorialize_account: Změna na „in memoriam“
         promote_user: Povýšit uživatele
@@ -260,59 +267,61 @@ cs:
         reset_password_user: Obnovit heslo
         resolve_report: Označit hlášení jako vyřešené
         sensitive_account: Označit média ve vašem účtu jako citlivá
-        silence_account: Ztišit účet
+        silence_account: Omezit účet
         suspend_account: Pozastavit účet
         unassigned_report: Zrušit přiřazení hlášení
         unsensitive_account: Zrušit označení médií ve vašem účtu jako citlivých
-        unsilence_account: Zrušit ztišení účtu
+        unsilence_account: Zrušit omezení účtu
         unsuspend_account: Zrušit pozastavení účtu
         update_announcement: Aktualizovat oznámení
         update_custom_emoji: Aktualizovat vlastní emoji
         update_domain_block: Změnit blokaci domény
         update_status: Aktualizovat Příspěvek
       actions:
-        assigned_to_self_report_html: Uživatel %{name} si přidělil hlášení %{target}
-        change_email_user_html: Uživatel %{name} změnil e-mailovou adresu uživatele %{target}
-        confirm_user_html: Uživatel %{name} potvrdil e-mailovou adresu uživatele %{target}
-        create_account_warning_html: Uživatel %{name} poslal varování uživateli %{target}
-        create_announcement_html: Uživatel %{name} vytvořil nové oznámení %{target}
-        create_custom_emoji_html: Uživatel %{name} nahrál nové emoji %{target}
-        create_domain_allow_html: Uživatel %{name} povolil federaci s doménou %{target}
-        create_domain_block_html: Uživatel %{name} zablokoval doménu %{target}
-        create_email_domain_block_html: Uživatel %{name} zablokoval e-mailovou doménu %{target}
+        assigned_to_self_report_html: "Uživatel %{name} si přidělil hlášení %{target}"
+        change_email_user_html: "Uživatel %{name} změnil e-mailovou adresu uživatele %{target}"
+        confirm_user_html: "Uživatel %{name} potvrdil e-mailovou adresu uživatele %{target}"
+        create_account_warning_html: "Uživatel %{name} poslal varování uživateli %{target}"
+        create_announcement_html: "Uživatel %{name} vytvořil nové oznámení %{target}"
+        create_custom_emoji_html: "Uživatel %{name} nahrál nové emoji %{target}"
+        create_domain_allow_html: "Uživatel %{name} povolil federaci s doménou %{target}"
+        create_domain_block_html: "Uživatel %{name} zablokoval doménu %{target}"
+        create_email_domain_block_html: "Uživatel %{name} zablokoval e-mailovou doménu %{target}"
         create_ip_block_html: "%{name} vytvořil pravidlo pro IP %{target}"
         create_unavailable_domain_html: "%{name} zastavil doručování na doménu %{target}"
-        demote_user_html: Uživatel %{name} degradoval uživatele %{target}
-        destroy_announcement_html: Uživatel %{name} odstranil oznámení %{target}
-        destroy_custom_emoji_html: Uživatel %{name} zničil emoji %{target}
-        destroy_domain_allow_html: Uživatel %{name} zakázal federaci s doménou %{target}
-        destroy_domain_block_html: Uživatel %{name} odblokoval doménu %{target}
-        destroy_email_domain_block_html: Uživatel %{name} odblokoval e-mailovou doménu %{target}
+        demote_user_html: "Uživatel %{name} degradoval uživatele %{target}"
+        destroy_announcement_html: "Uživatel %{name} odstranil oznámení %{target}"
+        destroy_custom_emoji_html: "Uživatel %{name} zničil emoji %{target}"
+        destroy_domain_allow_html: "Uživatel %{name} zakázal federaci s doménou %{target}"
+        destroy_domain_block_html: "Uživatel %{name} odblokoval doménu %{target}"
+        destroy_email_domain_block_html: "Uživatel %{name} odblokoval e-mailovou doménu %{target}"
         destroy_ip_block_html: "%{name} odstranil pravidlo pro IP %{target}"
-        destroy_status_html: Uživatel %{name} odstranil příspěvek uživatele %{target}
+        destroy_status_html: "Uživatel %{name} odstranil příspěvek uživatele %{target}"
         destroy_unavailable_domain_html: "%{name} obnovil doručování na doménu %{target}"
-        disable_2fa_user_html: Uživatel %{name} vypnul dvoufázové ověřování pro uživatele %{target}
-        disable_custom_emoji_html: Uživatel %{name} zakázal emoji %{target}
-        disable_user_html: Uživatel %{name} zakázal přihlašování pro uživatele %{target}
-        enable_custom_emoji_html: Uživatel %{name} povolil emoji %{target}
-        enable_user_html: Uživatel %{name} povolil přihlašování pro uživatele %{target}
-        memorialize_account_html: Uživatel %{name} změnil účet %{target} na „in memoriam“ stránku
-        promote_user_html: Uživatel %{name} povýšil uživatele %{target}
-        remove_avatar_user_html: Uživatel %{name} odstranil avatar uživatele %{target}
-        reopen_report_html: Uživatel %{name} znovu otevřel hlášení %{target}
-        reset_password_user_html: Uživatel %{name} obnovil heslo uživatele %{target}
-        resolve_report_html: Uživatel %{name} vyřešil hlášení %{target}
+        disable_2fa_user_html: "Uživatel %{name} vypnul dvoufázové ověřování pro uživatele %{target}"
+        disable_custom_emoji_html: "Uživatel %{name} zakázal emoji %{target}"
+        disable_sign_in_token_auth_user_html: "Uživatel %{name} zrušil ověřování e-mailovým tokenem pro %{target}"
+        disable_user_html: "Uživatel %{name} zakázal přihlašování pro uživatele %{target}"
+        enable_custom_emoji_html: "Uživatel %{name} povolil emoji %{target}"
+        enable_sign_in_token_auth_user_html: "Uživatel %{name} povolil ověřování e-mailovým tokenem pro %{target}"
+        enable_user_html: "Uživatel %{name} povolil přihlašování pro uživatele %{target}"
+        memorialize_account_html: "Uživatel %{name} změnil účet %{target} na „in memoriam“ stránku"
+        promote_user_html: "Uživatel %{name} povýšil uživatele %{target}"
+        remove_avatar_user_html: "Uživatel %{name} odstranil avatar uživatele %{target}"
+        reopen_report_html: "Uživatel %{name} znovu otevřel hlášení %{target}"
+        reset_password_user_html: "Uživatel %{name} obnovil heslo uživatele %{target}"
+        resolve_report_html: "Uživatel %{name} vyřešil hlášení %{target}"
         sensitive_account_html: "%{name} označil média účtu %{target} jako citlivá"
-        silence_account_html: Uživatel %{name} ztišil uživatele %{target}
-        suspend_account_html: Uživatel %{name} pozastavil účet uživatele %{target}
-        unassigned_report_html: Uživatel %{name} odebral hlášení %{target}
+        silence_account_html: "Uživatel %{name} ztišil uživatele %{target}"
+        suspend_account_html: "Uživatel %{name} pozastavil účet uživatele %{target}"
+        unassigned_report_html: "Uživatel %{name} odebral hlášení %{target}"
         unsensitive_account_html: "%{name} zrušil označení médií účtu %{target} jako citlivých"
-        unsilence_account_html: Uživatel %{name} zrušil ztišení uživatele %{target}
-        unsuspend_account_html: Uživatel %{name} zrušil pozastavení účtu uživatele %{target}
-        update_announcement_html: Uživatel %{name} aktualizoval oznámení %{target}
-        update_custom_emoji_html: Uživatel %{name} aktualizoval emoji %{target}
+        unsilence_account_html: "Uživatel %{name} zrušil ztišení uživatele %{target}"
+        unsuspend_account_html: "Uživatel %{name} zrušil pozastavení účtu uživatele %{target}"
+        update_announcement_html: "Uživatel %{name} aktualizoval oznámení %{target}"
+        update_custom_emoji_html: "Uživatel %{name} aktualizoval emoji %{target}"
         update_domain_block_html: "%{name} aktualizoval blokaci domény %{target}"
-        update_status_html: Uživatel %{name} aktualizoval příspěvek uživatele %{target}
+        update_status_html: "Uživatel %{name} aktualizoval příspěvek uživatele %{target}"
       deleted_status: "(smazaný příspěvek)"
       empty: Nebyly nalezeny žádné záznamy.
       filter_by_action: Filtrovat podle akce
@@ -429,16 +438,16 @@ cs:
       rejecting_media: odmítají se mediální soubory
       rejecting_reports: odmítají se hlášení
       severity:
-        silence: ztišeno
+        silence: omezena
         suspend: pozastaveno
       show:
         affected_accounts:
+          one: Jeden účet v databázi byl ovlivněn
           few: "%{count} účty v databázi byly ovlivněny"
           many: "%{count} účtů v databázi bylo ovlivněno"
-          one: Jeden účet v databázi byl ovlivněn
           other: "%{count} účtů v databázi bylo ovlivněno"
         retroactive:
-          silence: Zrušit ztišení existujících ovlivněných účtů z této domény
+          silence: Vzít zpět omezení existujících dotčených účtů z této domény
           suspend: Zrušit pozastavení existujících ovlivněných účtů z této domény
         title: Zrušit blokaci domény %{domain}
         undo: Odvolat
@@ -479,18 +488,18 @@ cs:
         unavailable_message: Doručování nedostupné
         warning: Varování
         warning_message:
+          one: Doručení selhává %{count} den
           few: Doručení selhává %{count} dny
           many: Doručení selhává %{count} dnů
-          one: Doručení selhává %{count} den
           other: Doručení selhává %{count} dnů
       delivery_available: Doručení je k dispozici
       delivery_error_days: Dny chybného doručování
       delivery_error_hint: Není-li možné doručení po dobu %{count} dnů, bude automaticky označen za nedoručitelný.
       empty: Nebyly nalezeny žádné domény.
       known_accounts:
+        one: "%{count} známý účet"
         few: "%{count} známé účty"
         many: "%{count} známých účtů"
-        one: "%{count} známý účet"
         other: "%{count} známých účtů"
       moderation:
         all: Všechny
@@ -530,11 +539,11 @@ cs:
     pending_accounts:
       title: Čekající účty (%{count})
     relationships:
-      title: Vztahy uživatele %{acct}
+      title: "Vztahy uživatele %{acct}"
     relays:
       add_new: Přidat nový most
       delete: Smazat
-      description_html: "<strong>Federovací most</strong> je zprostředkující server, který vyměňuje velké objemy veřejných příspěvků mezi servery, které je z něj odebírají a publikují na něj. <strong>Může pomoci malým a středně velkým serverům objevovat obsah z fedivesmíru</strong>, což by jinak vyžadovalo, aby místní uživatelé ručně začali sledovat jiné lidi na vzdálených serverech."
+      description_html: <strong>Federovací most</strong> je zprostředkující server, který vyměňuje velké objemy veřejných příspěvků mezi servery, které je z něj odebírají a publikují na něj. <strong>Může pomoci malým a středně velkým serverům objevovat obsah z fedivesmíru</strong>, což by jinak vyžadovalo, aby místní uživatelé ručně začali sledovat jiné lidi na vzdálených serverech.
       disable: Zakázat
       disabled: Zakázáno
       enable: Povolit
@@ -553,14 +562,14 @@ cs:
     reports:
       account:
         notes:
+          one: "%{count} poznámka"
           few: "%{count} poznámky"
           many: "%{count} poznámek"
-          one: "%{count} poznámka"
           other: "%{count} poznámek"
         reports:
+          one: "%{count} hlášení"
           few: "%{count} hlášení"
           many: "%{count} hlášení"
-          one: "%{count} hlášení"
           other: "%{count} hlášení"
       action_taken_by: Akci vykonal uživatel
       are_you_sure: Opravu?
@@ -587,6 +596,7 @@ cs:
       resolved: Vyřešeno
       resolved_msg: Hlášení úspěšně vyřešeno!
       status: Stav
+      target_origin: Původ nahlášeného účtu
       title: Hlášení
       unassign: Odebrat
       unresolved: Nevyřešeno
@@ -724,7 +734,7 @@ cs:
       reviewed: Schválen
       title: Hashtagy
       trending_right_now: Populární právě teď
-      unique_uses_today: Dnes použilo %{count} uživatelů
+      unique_uses_today: "Dnes použilo %{count} uživatelů"
       unreviewed: Nezkontrolováno
       updated_msg: Nastavení hashtagů bylo úspěšně aktualizováno
     title: Administrace
@@ -739,12 +749,12 @@ cs:
       body: Detaily nového účtu jsou uvedeny níže. Tuto žádost můžete schválit nebo zamítnout.
       subject: Nový účet na serveru %{instance} čekající na posouzení (%{username})
     new_report:
-      body: Uživatel %{reporter} nahlásil uživatele %{target}
+      body: "Uživatel %{reporter} nahlásil uživatele %{target}"
       body_remote: Někdo z domény %{domain} nahlásil uživatele %{target}
-      subject: Nové hlášení pro %{instance} (#%{id})
+      subject: 'Nové hlášení pro %{instance} (#%{id})'
     new_trending_tag:
       body: 'Hashtag #%{name} je dnes populární, ale nebyl dříve schválen. Pokud to nedovolíte, nebude veřejně zobrazen. Nebo pouze uložte formulář tak, jak je, a už o něm neuslyšíte.'
-      subject: Nový hashtag ke schválení na %{instance} (#%{name})
+      subject: 'Nový hashtag ke schválení na %{instance} (#%{name})'
   aliases:
     add_new: Vytvořit alias
     created_msg: Nový alias byl úspěšně vytvořen. Nyní můžete zahájit přesun ze starého účtu.
@@ -955,9 +965,9 @@ cs:
     order_by: Seřadit podle
     save_changes: Uložit změny
     validation_errors:
+      one: Něco ještě není úplně v pořádku! Zkontrolujte prosím chybu uvedenou níže
       few: Něco ještě není úplně v pořádku! Zkontrolujte prosím %{count} chyby uvedené níže
       many: Něco ještě není úplně v pořádku! Zkontrolujte prosím %{count} chyb uvedených níže
-      one: Něco ještě není úplně v pořádku! Zkontrolujte prosím chybu uvedenou níže
       other: Něco ještě není úplně v pořádku! Zkontrolujte prosím %{count} chyb uvedených níže
   html_validator:
     invalid_markup: 'obsahuje neplatný HTML kód: %{error}'
@@ -990,7 +1000,7 @@ cs:
       overwrite: Přepsat
       overwrite_long: Nahradit aktuální záznamy novými
     preface: Můžete importovat data, která jste exportovali z jiného serveru, jako například seznam lidí, které sledujete či blokujete.
-    success: Vaše data byla úspěšně nahrána a nyní budou zpracována v daný čas
+    success: Vaše data byla úspěšně nahrána a budou zpracována v pravý čas
     types:
       blocking: Seznam blokovaných
       bookmarks: Záložky
@@ -1013,9 +1023,9 @@ cs:
     generate: Vygenerovat zvací odkaz
     invited_by: 'Pozval váš uživatel:'
     max_uses:
+      one: 1 použití
       few: "%{count} použití"
       many: "%{count} použití"
-      one: 1 použití
       other: "%{count} použití"
     max_uses_prompt: Bez omezení
     prompt: Generujte a sdílejte s ostatními odkazy umožňující jim přístup na tento server
@@ -1026,6 +1036,17 @@ cs:
   lists:
     errors:
       limit: Dosáhli jste maximálního počtu seznamů
+  login_activities:
+    authentication_methods:
+      otp: aplikací pro dvoufaktorové ověření
+      password: heslem
+      sign_in_token: e-mailovým bezpečnostním kódem
+      webauthn: bezpečnostními klíči
+    description_html: Pokud vidíte aktivitu, kterou nepoznáváte, zvažte změnu hesla a zapnutí dvoufaktorového ověřování.
+    empty: Není k dispozici žádná historie přihlášení
+    failed_sign_in_html: Neúspěšný pokus o přihlášení %{method} z %{ip} (%{browser})
+    successful_sign_in_html: Úspěšné přihlášení %{method} z %{ip} (%{browser})
+    title: Historie přihlášení
   media_attachments:
     validations:
       images_and_video: K příspěvku, který již obsahuje obrázky, nelze připojit video
@@ -1056,7 +1077,7 @@ cs:
     warning:
       backreference_required: Nový účet musí být nejprve nastaven, aby odkazoval zpátky na tento
       before: 'Před pokračováním si prosím pečlivě přečtěte tyto poznámky:'
-      cooldown: Po přesunu nastane období odpočinku, kdy se nebudete moci opět přesunout
+      cooldown: Po přesunu následuje čekací doba, po kterou se nebudete moci znovu přesunout
       disabled_account: Váš aktuální účet nebude poté zcela použitelný. Budete však mít přístup k datovým exportům a budete ho moci znovu aktivovat.
       followers: Touto akcí přesunete všechny sledující z aktuálního účtu na nový
       only_redirect_html: Alternativně můžete <a href="%{path}">nastavit pouze přesměrování na váš profil</a>.
@@ -1072,21 +1093,21 @@ cs:
     digest:
       action: Zobrazit všechna oznámení
       body: Zde najdete stručný souhrn zpráv, které jste zmeškali od vaší poslední návštěvy %{since}
-      mention: 'Uživatel %{name} vás zmínil v:'
+      mention: "Uživatel %{name} vás zmínil v:"
       new_followers_summary:
+        one: Zatímco jste byli pryč jste navíc získali jednoho nového sledujícího! Hurá!
         few: Zatímco jste byli pryč jste navíc získali %{count} nové sledující! Skvělé!
         many: Zatímco jste byli pryč jste navíc získali %{count} nových sledujících! Úžasné!
-        one: Zatímco jste byli pryč jste navíc získali jednoho nového sledujícího! Hurá!
         other: Zatímco jste byli pryč jste navíc získali %{count} nových sledujících! Úžasné!
       subject:
+        one: "1 nové oznámení od vaší poslední návštěvy \U0001F418"
         few: "%{count} nová oznámení od vaší poslední návštěvy \U0001F418"
         many: "%{count} nových oznámení od vaší poslední návštěvy \U0001F418"
-        one: "1 nové oznámení od vaší poslední návštěvy \U0001F418"
         other: "%{count} nových oznámení od vaší poslední návštěvy \U0001F418"
       title: Ve vaší nepřítomnosti…
     favourite:
       body: 'Váš příspěvek si oblíbil uživatel %{name}:'
-      subject: Uživatel %{name} si oblíbil váš příspěvek
+      subject: "Uživatel %{name} si oblíbil váš příspěvek"
       title: Nové oblíbení
     follow:
       body: "%{name} vás nyní sleduje!"
@@ -1094,7 +1115,7 @@ cs:
       title: Nový sledující
     follow_request:
       action: Spravovat žádosti o sledování
-      body: Uživatel %{name} požádal o povolení vás sledovat
+      body: "Uživatel %{name} požádal o povolení vás sledovat"
       subject: 'Čekající sledující: %{name}'
       title: Nová žádost o sledování
     mention:
@@ -1106,10 +1127,10 @@ cs:
       subject: Anketa od %{name} skončila
     reblog:
       body: 'Uživatel %{name} boostnul váš příspěvek:'
-      subject: Uživatel %{name} boostnul váš příspěvek
+      subject: "Uživatel %{name} boostnul váš příspěvek"
       title: Nový boost
     status:
-      subject: Nový příspěvek od %{name}
+      subject: "Nový příspěvek od %{name}"
   notifications:
     email_events: Události pro e-mailová oznámení
     email_events_hint: 'Vyberte události, pro které chcete dostávat oznámení:'
@@ -1236,6 +1257,7 @@ cs:
     revoke: Zrušit
     revoke_success: Relace úspěšně zrušena
     title: Relace
+    view_authentication_history: Zobrazit historii přihlášení do vašeho účtu
   settings:
     account: Účet
     account_settings: Nastavení účtu
@@ -1261,27 +1283,27 @@ cs:
   statuses:
     attached:
       audio:
+        one: "%{count} audio"
         few: "%{count} audia"
         many: "%{count} audií"
-        one: "%{count} audio"
         other: "%{count} audií"
       description: 'Přiloženo: %{attached}'
       image:
+        one: "%{count} obrázek"
         few: "%{count} obrázky"
         many: "%{count} obrázků"
-        one: "%{count} obrázek"
         other: "%{count} obrázků"
       video:
+        one: "%{count} video"
         few: "%{count} videa"
         many: "%{count} videí"
-        one: "%{count} video"
         other: "%{count} videí"
     boosted_from_html: Boostnuto z %{acct_link}
     content_warning: 'Varování o obsahu: %{warning}'
     disallowed_hashtags:
+      one: 'obsahoval nepovolený hashtag: %{tags}'
       few: 'obsahoval nepovolené hashtagy: %{tags}'
       many: 'obsahoval nepovolené hashtagy: %{tags}'
-      one: 'obsahoval nepovolený hashtag: %{tags}'
       other: 'obsahoval nepovolené hashtagy: %{tags}'
     errors:
       in_reply_not_found: Příspěvek, na který se pokoušíte odpovědět, neexistuje.
@@ -1295,14 +1317,14 @@ cs:
       reblog: Boosty nelze připnout
     poll:
       total_people:
+        one: "%{count} člověk"
         few: "%{count} lidé"
         many: "%{count} lidí"
-        one: "%{count} člověk"
         other: "%{count} lidí"
       total_votes:
+        one: "%{count} hlas"
         few: "%{count} hlasy"
         many: "%{count} hlasů"
-        one: "%{count} hlas"
         other: "%{count} hlasů"
       vote: Hlasovat
     show_more: Zobrazit více
@@ -1310,7 +1332,7 @@ cs:
     show_older: Zobrazit starší
     show_thread: Zobrazit vlákno
     sign_in_to_participate: Chcete-li se zúčastnit této konverzace, přihlaste se
-    title: "%{name}: „%{quote}“"
+    title: '%{name}: „%{quote}“'
     visibilities:
       direct: Přímé
       private: Pouze pro sledující
@@ -1407,7 +1429,7 @@ cs:
       <p>Tento dokument je dostupný pod licencí CC-BY-SA. Byl naposledy aktualizován 7. března 2018.</p>
 
       <p>Původně adaptováno ze <a href="https://github.com/discourse/discourse">zásad ochrna osobních údajů projektem Discourse</a>.</p>
-    title: Podmínky používání a zásady ochrany osobních údajů na serveru %{instance}
+    title: "Podmínky používání a zásady ochrany osobních údajů na serveru %{instance}"
   themes:
     contrast: Mastodon (vysoký kontrast)
     default: Mastodon (tmavý)

@@ -1,4 +1,3 @@
----
 cy:
   activerecord:
     attributes:
@@ -114,37 +113,37 @@ cy:
       application:
         title: Mae awdurdodiad OAuth yn ofynnol
     scopes:
-      admin:read: darllenwch yr holl ddata ar y serfiwr
-      admin:read:accounts: darllen gwybodaeth sensitif o'r holl gyfrifon
-      admin:read:reports: darllen gwybodaeth sensitif am bob adroddiad a chyfrifon yr adroddir amdanynt
-      admin:write: addasu pob data ar y serfiwr
-      admin:write:accounts: cyflawni camau cymedroli ar gyfrifon
-      admin:write:reports: cyflawni camau cymedroli ar adroddiadau
+      "admin:read": darllenwch yr holl ddata ar y serfiwr
+      "admin:read:accounts": darllen gwybodaeth sensitif o'r holl gyfrifon
+      "admin:read:reports": darllen gwybodaeth sensitif am bob adroddiad a chyfrifon yr adroddir amdanynt
+      "admin:write": addasu pob data ar y serfiwr
+      "admin:write:accounts": cyflawni camau cymedroli ar gyfrifon
+      "admin:write:reports": cyflawni camau cymedroli ar adroddiadau
       follow: addasu perthnasau cyfrif
       push: derbyn eich hysbysiadau gwthiadwy
       read: darllen holl ddata eich cyfrif
-      read:accounts: gweld gwybodaeth y cyfrif
-      read:blocks: gweld eich blociau
-      read:bookmarks: gweld eich tudalnodau
-      read:favourites: gweld eich ffefrynnau
-      read:filters: gweld eich hidlwyr
-      read:follows: gweld eich dilynwyr
-      read:lists: gweld eich rhestrau
-      read:mutes: gweld y rheini wedi'i tewi
-      read:notifications: gweld eich hysbysiadau
-      read:reports: gweld eich adroddiadau
-      read:search: edrych ar eich rhan
-      read:statuses: gweld pob statws
+      "read:accounts": gweld gwybodaeth y cyfrif
+      "read:blocks": gweld eich blociau
+      "read:bookmarks": gweld eich tudalnodau
+      "read:favourites": gweld eich ffefrynnau
+      "read:filters": gweld eich hidlwyr
+      "read:follows": gweld eich dilynwyr
+      "read:lists": gweld eich rhestrau
+      "read:mutes": gweld y rheini wedi'i tewi
+      "read:notifications": gweld eich hysbysiadau
+      "read:reports": gweld eich adroddiadau
+      "read:search": edrych ar eich rhan
+      "read:statuses": gweld pob statws
       write: addasu holl ddata eich cyfri
-      write:accounts: addasu eich proffil
-      write:blocks: blocio cyfrifon a parthau
-      write:bookmarks: statwsau tudalnod
-      write:favourites: hoff dŵtiau
-      write:filters: creu hidlwyr
-      write:follows: dilyn pobl
-      write:lists: creu rhestrau
-      write:media: uwchlwytho ffeiliau cyfryngau
-      write:mutes: tawelu pobl a sgyrsiau
-      write:notifications: clirio eich hysbysiadau
-      write:reports: adrodd pobl eraill
-      write:statuses: cyhoeddi tŵt
+      "write:accounts": addasu eich proffil
+      "write:blocks": blocio cyfrifon a parthau
+      "write:bookmarks": statwsau tudalnod
+      "write:favourites": hoff dŵtiau
+      "write:filters": creu hidlwyr
+      "write:follows": dilyn pobl
+      "write:lists": creu rhestrau
+      "write:media": uwchlwytho ffeiliau cyfryngau
+      "write:mutes": tawelu pobl a sgyrsiau
+      "write:notifications": clirio eich hysbysiadau
+      "write:reports": adrodd pobl eraill
+      "write:statuses": cyhoeddi tŵt

@@ -1,4 +1,3 @@
----
 nl:
   activerecord:
     attributes:
@@ -61,7 +60,7 @@ nl:
         title: Er is een fout opgetreden
       new:
         able_to: Deze toepassing zal in staat zijn om
-        prompt: "%{client_name} autoriseren om jouw account te gebruiken"
+        prompt: '%{client_name} autoriseren om jouw account te gebruiken'
         title: Autorisatie vereist
       show:
         title: Kopieer deze autorisatiecode en plak het in de toepassing.
@@ -118,37 +117,37 @@ nl:
       application:
         title: OAuth-autorisatie vereist
     scopes:
-      admin:read: alle gegevens op de server lezen
-      admin:read:accounts: gevoelige informatie van alle accounts lezen
-      admin:read:reports: gevoelige informatie van alle rapportages en gerapporteerde accounts lezen
-      admin:write: wijzig alle gegevens op de server
-      admin:write:accounts: moderatieacties op accounts uitvoeren
-      admin:write:reports: moderatieacties op rapportages uitvoeren
+      "admin:read": alle gegevens op de server lezen
+      "admin:read:accounts": gevoelige informatie van alle accounts lezen
+      "admin:read:reports": gevoelige informatie van alle rapportages en gerapporteerde accounts lezen
+      "admin:write": wijzig alle gegevens op de server
+      "admin:write:accounts": moderatieacties op accounts uitvoeren
+      "admin:write:reports": moderatieacties op rapportages uitvoeren
       follow: relaties tussen accounts bewerken
       push: jouw pushmeldingen ontvangen
       read: alle gegevens van jouw account lezen
-      read:accounts: informatie accounts bekijken
-      read:blocks: jouw geblokkeerde gebruikers bekijken
-      read:bookmarks: jouw bladwijzers bekijken
-      read:favourites: jouw favorieten bekijken
-      read:filters: jouw filters bekijken
-      read:follows: de accounts die jij volgt bekijken
-      read:lists: jouw lijsten bekijken
-      read:mutes: jouw genegeerde gebruikers bekijken
-      read:notifications: jouw meldingen bekijken
-      read:reports: jouw gerapporteerde toots bekijken
-      read:search: namens jou zoeken
-      read:statuses: alle toots bekijken
+      "read:accounts": informatie accounts bekijken
+      "read:blocks": jouw geblokkeerde gebruikers bekijken
+      "read:bookmarks": jouw bladwijzers bekijken
+      "read:favourites": jouw favorieten bekijken
+      "read:filters": jouw filters bekijken
+      "read:follows": de accounts die jij volgt bekijken
+      "read:lists": jouw lijsten bekijken
+      "read:mutes": jouw genegeerde gebruikers bekijken
+      "read:notifications": jouw meldingen bekijken
+      "read:reports": jouw gerapporteerde toots bekijken
+      "read:search": namens jou zoeken
+      "read:statuses": alle toots bekijken
       write: alle gegevens van jouw account bewerken
-      write:accounts: jouw profiel bewerken
-      write:blocks: accounts en domeinen blokkeren
-      write:bookmarks: toots aan bladwijzers toevoegen
-      write:favourites: toots als favoriet markeren
-      write:filters: filters aanmaken
-      write:follows: mensen volgen
-      write:lists: lijsten aanmaken
-      write:media: mediabestanden uploaden
-      write:mutes: mensen en gesprekken negeren
-      write:notifications: meldingen verwijderen
-      write:reports: andere mensen rapporteren
-      write:statuses: toots publiceren
+      "write:accounts": jouw profiel bewerken
+      "write:blocks": accounts en domeinen blokkeren
+      "write:bookmarks": toots aan bladwijzers toevoegen
+      "write:favourites": toots als favoriet markeren
+      "write:filters": filters aanmaken
+      "write:follows": mensen volgen
+      "write:lists": lijsten aanmaken
+      "write:media": mediabestanden uploaden
+      "write:mutes": mensen en gesprekken negeren
+      "write:notifications": meldingen verwijderen
+      "write:reports": andere mensen rapporteren
+      "write:statuses": toots publiceren

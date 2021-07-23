@@ -1,4 +1,3 @@
----
 eo:
   simple_form:
     hints:
@@ -56,7 +55,7 @@ eo:
       sessions:
         otp: 'Enmetu la kodon de dufaktora aŭtentigo el via telefono aŭ uzu unu el viaj realiraj kodoj:'
       user:
-        chosen_languages: Kiam estas elekto, nur mesaĝoj en elektitaj lingvoj aperos en publikaj tempolinioj
+        chosen_languages: Kiam estas elekto, nur mesaĝoj en elektitaj lingvoj aperos en publikaj templinioj
     labels:
       account:
         fields:
@@ -114,7 +113,7 @@ eo:
         password: Pasvorto
         phrase: Vorto aŭ frazo
         setting_advanced_layout: Ebligi altnivelan retpaĝan interfacon
-        setting_aggregate_reblogs: Grupigi diskonigojn en tempolinioj
+        setting_aggregate_reblogs: Grupigi diskonigojn en templinioj
         setting_auto_play_gif: Aŭtomate ekigi GIF-ojn
         setting_boost_modal: Montri konfirman fenestron antaŭ ol diskonigi mesaĝon
         setting_crop_images: Stuci bildojn en negrandigitaj mesaĝoj al 16x9
@@ -176,7 +175,7 @@ eo:
         name: Kradvorto
         trendable: Permesi al ĉi tiu kradvorto aperi en furoraĵoj
         usable: Permesi mesaĝojn uzi ĉi tiun kradvorton
-    'no': Ne
+    'no': 'Ne'
     recommended: Rekomendita
     required:
       mark: "*"
@@ -184,4 +183,4 @@ eo:
     title:
       sessions:
         webauthn: Uzi unu el viaj sekurecaj ŝlosiloj por ensaluti
-    'yes': Jes
+    'yes': 'Jes'

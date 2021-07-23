@@ -1,4 +1,3 @@
----
 pt-PT:
   simple_form:
     hints:
@@ -32,7 +31,7 @@ pt-PT:
         avatar: PNG, GIF or JPG. Arquivos até %{size}. Vão ser reduzidos para %{dimensions}px
         bot: Esta conta executa essencialmente ações automatizadas e pode não ser monitorizada
         context: Um ou múltiplos contextos nos quais o filtro deve ser aplicado
-        current_password: Para fins de segurança, por favor, digite a senha da conta atual
+        current_password: Para fins de segurança, por favor, introduza a palavra-passe da conta atual
         current_username: Para confirmar, por favor, introduza o nome de utilizador da conta atual
         digest: Enviado após um longo período de inatividade e apenas se foste mencionado na tua ausência
         discoverable: O diretório de perfis é outra maneira da sua conta alcançar um público mais vasto
@@ -61,8 +60,8 @@ pt-PT:
       domain_allow:
         domain: Este domínio será capaz de obter dados desta instância e os dados dele recebidos serão processados e armazenados
       email_domain_block:
-        domain: Este pode ser o nome de domínio que aparece no endereço de email, o registro MX para o qual o domínio resolve, ou o IP do servidor para o qual o registro MX resolve. Estes serão verificados no momento da inscrição do utilizador e a inscrição será rejeitada.
-        with_dns_records: Será feita uma tentativa de resolver os registros DNS do domínio em questão e os resultados também serão colocados na lista negra
+        domain: Este pode ser o nome de domínio que aparece no endereço de e-mail, o registo MX para o qual o domínio resolve, ou o IP do servidor para o qual o registo MX resolve. Estes serão verificados no momento da inscrição do utilizador e a inscrição será rejeitada.
+        with_dns_records: Será feita uma tentativa de resolver os registos DNS do domínio em questão e os resultados também serão colocados na lista negra
       featured_tag:
         name: 'Poderás querer usar um destes:'
       form_challenge:
@@ -82,7 +81,7 @@ pt-PT:
       rule:
         text: Descreva uma regra ou requisito para os utilizadores nesta instância. Tente mantê-la curta e simples
       sessions:
-        otp: 'Insere o código de autenticação em dois passos gerado pelo teu telemóvel ou usa um dos teus códigos de recuperação:'
+        otp: 'Insira o código de autenticação em duas etapas gerado pelo seu telemóvel ou use um dos seus códigos de recuperação:'
         webauthn: Se for uma chave USB tenha certeza de inseri-la e, se necessário, toque nela.
       tag:
         name: Só pode alterar a capitalização das letras, por exemplo, para torná-las mais legíveis
@@ -106,7 +105,7 @@ pt-PT:
         text: Aviso personalizado
         type: Acção
         types:
-          disable: Desactivar
+          disable: Congelar
           none: Não fazer algo
           sensitive: Sensível
           silence: Silenciar
@@ -142,7 +141,7 @@ pt-PT:
         max_uses: Número máximo de utilizações
         new_password: Nova palavra-passe
         note: Biografia
-        otp_attempt: Código de autenticação em dois passos
+        otp_attempt: Código de autenticação em duas etapas
         password: Palavra-passe
         phrase: Palavra ou expressão-chave
         setting_advanced_layout: Ativar interface web avançada
@@ -154,7 +153,7 @@ pt-PT:
         setting_default_privacy: Privacidade da publicação
         setting_default_sensitive: Sempre marcar media como sensível
         setting_delete_modal: Solicitar confirmação antes de eliminar uma publicação
-        setting_disable_swiping: Desactivar os movimentos de deslize
+        setting_disable_swiping: Desativar os movimentos de deslize
         setting_display_media: Visualização de media
         setting_display_media_default: Pré-definição
         setting_display_media_hide_all: Esconder todos
@@ -177,7 +176,7 @@ pt-PT:
         username_or_email: Nome de utilizador ou e-mail
         whole_word: Palavra completa
       email_domain_block:
-        with_dns_records: Incluir registros MX e IPs do domínio
+        with_dns_records: Incluir registos MX e IPs do domínio
       featured_tag:
         name: Hashtag
       interactions:
@@ -197,14 +196,14 @@ pt-PT:
         severity: Regra
       notification_emails:
         digest: Enviar e-mails de resumo
-        favourite: Enviar e-mail quando alguém adiciona uma publicação tua aos favoritos
-        follow: Enviar e-mail quando alguém te segue
-        follow_request: Enviar e-mail quando alguém solicita ser teu seguidor
-        mention: Enviar e-mail quando alguém te menciona
-        pending_account: Enviar e-mail quando uma nova conta aguarda aprovação
-        reblog: Enviar e-mail quando alguém partilha uma publicação tua
-        report: Enviar um e-mail quando um novo relatório é submetido
-        trending_tag: Enviar e-mail quando uma hashtag não aprovada anteriormente estiver em destaque
+        favourite: Quando alguém adiciona uma publicação sua aos favoritos
+        follow: Quando alguém começar a segui-lo
+        follow_request: Quando alguém solicitar ser seu seguidor
+        mention: Quando alguém o mencionar
+        pending_account: Quando uma nova conta aguarda aprovação
+        reblog: Quando alguém partilhar uma publicação sua
+        report: Quando um novo relatório é submetido
+        trending_tag: Quando uma hashtag não aprovada anteriormente estiver em destaque
       rule:
         text: Regra
       tag:
@@ -212,7 +211,7 @@ pt-PT:
         name: Hashtag
         trendable: Permitir que esta hashtag apareça em destaque
         usable: Permitir que toots utilizem esta hashtag
-    'no': Não
+    'no': 'Não'
     recommended: Recomendado
     required:
       mark: "*"
@@ -220,4 +219,4 @@ pt-PT:
     title:
       sessions:
         webauthn: Utilize uma das suas chaves de segurança para entrar
-    'yes': Sim
+    'yes': 'Sim'

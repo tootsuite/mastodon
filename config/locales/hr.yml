@@ -1,7 +1,6 @@
----
 hr:
   about:
-    about_hashtag_html: Ovo su javni tootovi označeni s <strong>#%{hashtag}</strong>. Možete biti u interakciji s njima, ako imate račun bilo gdje u fediverzumu.
+    about_hashtag_html: 'Ovo su javni tootovi označeni s <strong>#%{hashtag}</strong>. Možete biti u interakciji s njima, ako imate račun bilo gdje u fediverzumu.'
     about_mastodon_html: 'Društvena mreža budućnosti: bez oglasa, bez korporativnog nadzora, etički dizajn i decentralizacija! Budite u vlasništvu svojih podataka pomoću Mastodona!'
     about_this: Dodatne informacije
     active_count_after: aktivnih
@@ -112,9 +111,9 @@ hr:
     '404': The page you are looking for isn't here.
     '406': This page is not available in the requested format.
     '410': The page you were looking for doesn't exist here anymore.
-    '422': 
+    '422':
     '429': Too many requests
-    '500': 
+    '500':
     '503': The page could not be served due to a temporary server failure.
   exports:
     archive_takeout:
@@ -166,15 +165,15 @@ hr:
     generate: Generiraj poveznicu za pozivanje
     invited_by: 'Poziva Vas:'
     max_uses:
-      few: "%{count} korištenja"
       one: 1 korištenje
+      few: "%{count} korištenja"
       other: "%{count} korištenja"
   notification_mailer:
     digest:
       body: Ovo je kratak sažetak propuštenih poruka od Vašeg prošlog posjeta %{since}
       mention: "%{name} Vas je spomenuo/la:"
     favourite:
-      body: "%{name} je označio/la Vaš status favoritom:"
+      body: '%{name} je označio/la Vaš status favoritom:'
       subject: "%{name} je označio/la Vaš status favoritom"
     follow:
       body: "%{name} Vas sada prati!"
@@ -239,12 +238,12 @@ hr:
     over_character_limit: prijeđeno je ograničenje od %{max} znakova
     poll:
       total_people:
-        few: "%{count} osobe"
         one: "%{count} osoba"
+        few: "%{count} osobe"
         other: "%{count} ljudi"
       total_votes:
-        few: "%{count} glasa"
         one: "%{count} glas"
+        few: "%{count} glasa"
         other: "%{count} glasova"
       vote: Glasaj
     show_more: Prikaži više

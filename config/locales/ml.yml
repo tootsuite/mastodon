@@ -1,4 +1,3 @@
----
 ml:
   about:
     about_this: കുറിച്ച്
@@ -26,7 +25,7 @@ ml:
   accounts:
     follow: പിന്തുടരുക
     following: പിന്തുടരുന്നു
-    joined: "%{date} ൽ ചേർന്നു"
+    joined: '%{date} ൽ ചേർന്നു'
     last_active: അവസാനം സജീവമായിരുന്നത്
     link_verified_on: സന്ധിയുടെ ഉടമസ്ഥാവസ്‌കാശം %{date} ൽ പരിശോധിക്കപ്പെട്ടു
     media: മാധ്യമങ്ങൾ
@@ -56,7 +55,7 @@ ml:
         label: മാറിയ ഇലക്ട്രോണിക് കത്തിന്റെ മേൽവിലാസം
         new_email: പുതിയ ഇലക്ട്രോണിക് കത്ത്
         submit: ഇലക്ട്രോണിക് കത്ത് മേൽവിലാസം മാറ്റുക
-        title: "%{username} ന്റെ ഇലക്ട്രോണിക് കത്ത് മേൽവിലാസം മാറ്റുക"
+        title: '%{username} ന്റെ ഇലക്ട്രോണിക് കത്ത് മേൽവിലാസം മാറ്റുക'
       confirm: നിജപ്പെടുത്തുക
       confirmed: നിജപ്പെടുത്തി
       confirming: സ്ഥിരീകരിക്കുന്നു
@@ -130,9 +129,9 @@ ml:
     '404': The page you are looking for isn't here.
     '406': This page is not available in the requested format.
     '410': The page you were looking for doesn't exist here anymore.
-    '422': 
+    '422':
     '429': Too many requests
-    '500': 
+    '500':
     '503': The page could not be served due to a temporary server failure.
   filters:
     contexts:

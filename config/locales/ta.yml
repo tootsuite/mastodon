@@ -1,4 +1,3 @@
----
 ta:
   about:
     about_mastodon_html: 'எதிர்காலத்தின் சமூகப் பிணையம்: விளம்பரம் இல்லை, பொதுநிறுவனக் கண்காணிப்பு இல்லை, நெறிக்குட்பட்ட வரைவுத்திட்டம், மற்றும் பகிர்ந்தாளுதல்! மஸ்டோடோனுடன் உங்கள் தரவுகள் உங்களுக்கே சொந்தம்!'
@@ -50,15 +49,15 @@ ta:
       one: பின்தொடர்பவர்
       other: பின்தொடர்பவர்கள்
     following: பின்தொடரும்
-    joined: "%{date} அன்று இனைந்தார்"
+    joined: '%{date} அன்று இனைந்தார்'
     last_active: கடைசியாக பார்த்தது
     media: படங்கள்
     moved_html: "%{name} %{new_profile_link}க்கு மாறியுள்ளது:"
     network_hidden: இத்தகவல் கிடைக்கவில்லை
     never_active: எப்போதுமில்லை
     nothing_here: இங்கு எதுவும் இல்லை!
-    people_followed_by: "%{name} பின்தொடரும் நபர்கள்"
-    people_who_follow: "%{name}ஐ பின்தொடரும் நபர்கள்"
+    people_followed_by: '%{name} பின்தொடரும் நபர்கள்'
+    people_who_follow: '%{name}ஐ பின்தொடரும் நபர்கள்'
     pin_errors:
       following: தாங்கள் அங்கீகரிக்க விரும்பும் நபரை தாங்கள் ஏற்கனவே பின்தொடரந்து கொண்டு இருக்க வேண்டும்
     posts_tab_heading: பிளிறல்கள்
@@ -73,7 +72,7 @@ ta:
   admin:
     account_actions:
       action: நடவடிக்கை எடு
-      title: "%{acct}ஐ நடுநிலைப்படுத்தவும்"
+      title: '%{acct}ஐ நடுநிலைப்படுத்தவும்'
     account_moderation_notes:
       create: குறிப்பு எழுதவும்
       created_msg: நடுநிலை குறிப்பு வெற்றிகரமாக பதிவு செய்யப்பட்டது!
@@ -92,7 +91,7 @@ ta:
         label: மின் அஞ்சலை மற்றுக
         new_email: புதிய மின் அஞ்சல்
         submit: மின் அஞ்சல் மாற்றுக
-        title: "%{username} உடைய மின் அஞ்சலை மாற்றுக"
+        title: '%{username} உடைய மின் அஞ்சலை மாற்றுக'
       confirm: உறுதிசெய்
       confirmed: உறுதி செய்யப்பட்டது
       confirming: உறுதி செய்யப்படுகிறது
@@ -214,7 +213,7 @@ ta:
         create: அறிவிப்பை உருவாக்கு
         title: புதிய அறிவிப்பு
       published_msg: அறிவிப்பு வெற்றிகரமாகப் பதியப்பட்டது!
-      scheduled_for: "%{time} மணிக்குப் பதியப்படும்"
+      scheduled_for: '%{time} மணிக்குப் பதியப்படும்'
       scheduled_msg: அறிவிப்பு, குறித்த நேரத்தில் பதியப்படும்!
       title: அறிவிப்புகள்
       unpublished_msg: அறிவிப்பு வெற்றிகரமாகத் திரும்பப் பெறப்பட்டது!
@@ -238,7 +237,7 @@ ta:
           suspend: தற்காலீகமாக நீக்குக
     email_domain_blocks:
       empty: மின்னஞ்சற் களங்கள் எதுவும் தடுக்கப்படவில்லை.
-      from_html: "%{domain} -இலிருந்து"
+      from_html: '%{domain} -இலிருந்து'
     invites:
       filter:
         all: அனைத்தும்
@@ -281,9 +280,9 @@ ta:
     '404': The page you are looking for isn't here.
     '406': This page is not available in the requested format.
     '410': The page you were looking for doesn't exist here anymore.
-    '422': 
+    '422':
     '429': Too many requests
-    '500': 
+    '500':
     '503': The page could not be served due to a temporary server failure.
   filters:
     index:

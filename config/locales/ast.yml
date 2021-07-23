@@ -1,7 +1,6 @@
----
 ast:
   about:
-    about_hashtag_html: Estos son los barritos públicos etiquetaos con <strong>#%{hashtag}</strong>. Pues interactuar con ellos si tienes una cuenta en cualesquier parte del fediversu.
+    about_hashtag_html: 'Estos son los barritos públicos etiquetaos con <strong>#%{hashtag}</strong>. Pues interactuar con ellos si tienes una cuenta en cualesquier parte del fediversu.'
     about_mastodon_html: 'La rede social del futuru: ¡ensin anuncios nin vixilancia, con un diseñu éticu y descentralizáu! Controla los tos datos con Mastodon.'
     about_this: Tocante a
     administered_by: 'Alministráu por:'
@@ -32,7 +31,7 @@ ast:
       one: usuariu
       other: usuarios
     user_count_before: Ye'l llar de
-    what_is_mastodon: "¿Qué ye Mastodon?"
+    what_is_mastodon: '¿Qué ye Mastodon?'
   accounts:
     featured_tags_hint: Pues destacar etiquetes específiques que van amosase equí.
     followers:
@@ -42,7 +41,7 @@ ast:
     moved_html: "%{name} mudóse a %{new_profile_link}:"
     network_hidden: Esta información nun ta disponible
     never_active: Enxamás
-    nothing_here: "¡Equí nun hai nada!"
+    nothing_here: '¡Equí nun hai nada!'
     people_followed_by: Persones a les que sigue %{name}
     people_who_follow: Persones que siguen a %{name}
     posts:
@@ -55,7 +54,7 @@ ast:
   admin:
     accounts:
       approve_all: Aprobar too
-      are_you_sure: "¿De xuru?"
+      are_you_sure: '¿De xuru?'
       by_domain: Dominiu
       domain: Dominiu
       email: Corréu
@@ -79,10 +78,10 @@ ast:
       title: Cuentes
       username: Nome d'usuariu
     announcements:
-      destroyed_msg: "¡L'anunciu desanicióse con ésitu!"
+      destroyed_msg: '¡L''anunciu desanicióse con ésitu!'
       new:
         title: Anunciu nuevu
-      published_msg: "¡L'anunciu espublizóse con ésitu!"
+      published_msg: '¡L''anunciu espublizóse con ésitu!'
       title: Anuncios
     custom_emojis:
       by_domain: Dominiu
@@ -121,7 +120,7 @@ ast:
         reports:
           one: "%{count} informe"
           other: "%{count} informes"
-      are_you_sure: "¿De xuru?"
+      are_you_sure: '¿De xuru?'
       status: Estáu
       title: Informes
     settings:
@@ -170,16 +169,16 @@ ast:
     delete_account: Desaniciu de la cuenta
     delete_account_html: Si deseyes desaniciar la to cuenta, pues <a href="%{path}">siguir equí</a>. Va pidísete la confirmación.
     description:
-      suffix: "¡Con una cuenta, vas ser a siguir a persones, espublizar anovamientos ya intercambiar mensaxes con usuarios de cualesquier sirvidor de Mastodon y más!"
-    didnt_get_confirmation: "¿Nun recibiesti les instrucciones de confirmación?"
-    dont_have_your_security_key: "¿Nun tienes una clave de seguranza?"
-    forgot_password: "¿Escaeciesti la contraseña?"
+      suffix: '¡Con una cuenta, vas ser a siguir a persones, espublizar anovamientos ya intercambiar mensaxes con usuarios de cualesquier sirvidor de Mastodon y más!'
+    didnt_get_confirmation: '¿Nun recibiesti les instrucciones de confirmación?'
+    dont_have_your_security_key: '¿Nun tienes una clave de seguranza?'
+    forgot_password: '¿Escaeciesti la contraseña?'
     login: Aniciar sesión
     migrate_account: Mudase a otra cuenta
     migrate_account_html: Si deseyes redirixir esta cuenta a otra, pues <a href="%{path}">configuralo equí</a>.
     register: Rexistrase
     security: Seguranza
-    trouble_logging_in: "¿Problemes col aniciu de sesión?"
+    trouble_logging_in: '¿Problemes col aniciu de sesión?'
   authorize_follow:
     already_following: Yá tas siguiendo a esta cuenta
     already_requested: Yá unviesti una solicitú de siguimientu a esa cuenta
@@ -213,7 +212,7 @@ ast:
       content: Falló la verificación de seguranza. ¿Tas bloquiando les cookies?
       title: Falló la verificación de seguranza
     '429': Ficiéronse milenta solicitúes
-    '500': 
+    '500':
     '503': The page could not be served due to a temporary server failure.
   exports:
     archive_takeout:
@@ -244,7 +243,7 @@ ast:
     resources: Recursos
   generic:
     all: Too
-    changes_saved_msg: "¡Los cambeos guardáronse con ésitu!"
+    changes_saved_msg: '¡Los cambeos guardáronse con ésitu!'
     order_by: Clasificación
     save_changes: Guardar cambeos
   identity_proofs:
@@ -311,11 +310,11 @@ ast:
       body: "%{name} solicitó siguite"
       title: Petición nueva de siguimientu
     mention:
-      body: "%{name} mentóte en:"
-      subject: "%{name} mentóte"
+      body: '%{name} mentóte en:'
+      subject: '%{name} mentóte'
       title: Mención nueva
     reblog:
-      body: "%{name} compartió'l to estáu:"
+      body: '%{name} compartió''l to estáu:'
       subject: "%{name} compartió'l to estáu"
       title: Compartición nueva de barritu
   notifications:
@@ -339,7 +338,7 @@ ast:
     status: Estáu
   remote_follow:
     acct: Introduz el nome_usuariu@dominiu dende'l que lo quies facer
-    no_account_html: "¿Nun tienes una cuenta? Pues <a href='%{sign_up_path}' target='_blank'>rexistrate equí</a>"
+    no_account_html: '¿Nun tienes una cuenta? Pues <a href=''%{sign_up_path}'' target=''_blank''>rexistrate equí</a>'
     proceed: Siguir
     prompt: 'Vas siguir a:'
     reason_html: "<strong>¿Por qué esti pasu ye precisu?</strong> <code>%{instance}</code> seique nun seya'l sirvidor onde tas rexistráu, polo que precisamos redirixite primero al de to."
@@ -408,7 +407,7 @@ ast:
         one: "%{count} votu"
         other: "%{count} votos"
     show_more: Amosar más
-    title: "%{name}: «%{quote}»"
+    title: '%{name}: «%{quote}»'
     visibilities:
       private: Namái siguidores
       private_long: Namái s'amuesen a los siguidores

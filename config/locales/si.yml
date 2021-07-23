@@ -1,13 +1,16 @@
----
 si:
   about:
     about_this: පිලිබඳව
     active_count_after: සක්‍රීයයි
+    active_footnote: මාසික ක්‍රියාකාරී පරිශීලකයින් (මාක්‍රිප)
     api: යෙ.ක්‍ර. මු. (API)
     apps: ජංගම යෙදුම්
+    contact_unavailable: අ/නොවේ
+    get_apps: ජංගම යෙදුමක් උත්සාහ කරන්න
     learn_more: තව දැනගන්න
     privacy_policy: රහස්‍යතා ප්‍රතිපත්තිය
     rules: සේවාදායකයේ නීති
+    source_code: මූල කේතය
     status_count_after:
       one: තත්වය
       other: තත්වයන්
@@ -15,18 +18,25 @@ si:
     unavailable_content_description:
       domain: සේවාදායකය
       reason: හේතුව
+      silenced_title: සීමාසහිත සේවාදායක
       suspended_title: අත්හිටවූ සේවාදායකයන්
     user_count_after:
       one: පරිශීලක
       other: පරිශීලකයින්
+    what_is_mastodon: මාස්ටඩන් යනු කුමක්ද?
   accounts:
+    joined: '%{date} එක් වී ඇත'
     media: මාධ්‍යය
+    nothing_here: මෙහි කිසිත් නැත!
     roles:
       admin: පරිපාලක
       bot: ස්වයං ක්‍රමලේඛය
       group: සමූහය
   admin:
     accounts:
+      add_email_domain_block: වි-තැපැල් වසම අවහිර කරන්න
+      approve: අනුමත කරන්න
+      approve_all: සියල්ල අනුමත කරන්න
       are_you_sure: ඔබට විශ්වාසද?
       by_domain: වසම
       change_email:
@@ -34,7 +44,7 @@ si:
         label: වි-තැපෑල වෙනස් කරන්න
         new_email: නව විද්‍යුත් තැපෑල
         submit: වි-තැපෑල වෙනස් කරන්න
-        title: "%{username} සඳහා වි-තැපෑල වෙනස් කරන්න"
+        title: '%{username} සඳහා වි-තැපෑල වෙනස් කරන්න'
       confirm: සනාථ කරන්න
       confirmed: සනාථ කර ඇත
       confirming: සනාථ කරමින්
@@ -43,7 +53,10 @@ si:
       email: විද්‍යුත් තැපෑල
       email_status: වි-තැපෑලෙහි තත්වය
       enabled: සබල කර ඇත
+      header: ශීර්ෂය
+      invite_request_text: එක්වීම සඳහා හේතුව
       ip: අ.ජා. කෙ. (IP)
+      joined: එක් වී ඇත
       location:
         all: සියල්ල
         local: ස්ථානීය
@@ -54,27 +67,48 @@ si:
       moderation:
         active: සක්‍රීයයි
         all: සියල්ල
+        silenced: සීමාසහිත
         suspended: අත්හිටුවන ලදි
+      most_recent_ip: වඩා මෑත අ.ජා.කෙ.(IP)
       perform_full_suspension: අත්හිටුවන්න
       protocol: කෙටුම්පත
+      public: ප්‍රසිද්ධ
+      redownload: පැතිකඩ නැවුම්කරන්න
       reject: ප්‍රතික්ෂේප
+      remove_header: ශීර්ෂය ඉවත්කරන්න
       role: අවසරයන්
       roles:
         admin: පරිපාලක
         staff: කාර්ය මණ්ඩලය
         user: පරිශීලක
       search: සොයන්න
+      security_measures:
+        only_password: මුරපදය පමණි
       sensitive: සංවේදී
       silence: සීමාව
+      silenced: සීමාසහිත
       statuses: තත්වයන්
       suspended: අත්හිටුවන ලදි
       title: ගිණුම්
+      username: පරිශීලක නාමය
+      warn: අවවාද
       web: වියමන
     action_logs:
       action_types:
+        change_email_user: පරිශීලකට වි-තැපෑල වෙනස් කරන්න
+        create_account_warning: අවවාදයක් සාදන්න
+        create_announcement: නිවේදනය සාදන්න
+        create_domain_allow: වසම් ඉඩදීමක් සාදන්න
+        create_domain_block: වසම් අවහිරයක් සාදන්න
         create_ip_block: අ.ජා. කෙ. (IP) නීතියක් සාදන්න
+        disable_user: පරිශීලක අබල කරන්න
         enable_user: පරිශීලක සබල කරන්න
+        reopen_report: වාර්තාව නැවත විවෘත කරන්න
+        suspend_account: ගිණුම අත්හිටුවන්න
+        update_announcement: නිවේදනය යාවත්කාල කරන්න
     announcements:
+      edit:
+        title: නිවේදනය සංස්කරණය
       live: සජීවී
       new:
         create: නිවේදනය සාදන්න
@@ -85,17 +119,26 @@ si:
       by_domain: වසම
       copy: පිටපත්
       create_new_category: නව ප්‍රවර්ගයක් සාදන්න
+      disable: අබල කරන්න
+      disabled: අබල කර ඇත
+      enable: සබල කරන්න
+      enabled: සබල කර ඇත
       list: ලැයිස්තුව
       upload: උඩුගත කරන්න
     dashboard:
+      config: වින්‍යාසය
+      feature_invites: ඇරයුම් සබැඳි
+      feature_profile_directory: පැතිකඩ නාමාවලිය
       features: විශේෂාංග
       open_reports: වාර්තා විවෘත කරන්න
+      recent_users: මෑත පරිශීලකයින්
       software: මෘදුකාංගය
       title: උපකරණ පුවරුව
     domain_blocks:
       domain: වසම
       new:
         severity:
+          noop: කිසිවක් නැත
           suspend: අත්හිටුවන්න
       private_comment: පුද්ගලික අදහස
       public_comment: ප්‍රසිද්ධ අදහස
@@ -111,44 +154,99 @@ si:
       new:
         create: වසම එකතු කරන්න
       title: අවහිර කළ වි-තැපැල් වසම්
+    follow_recommendations:
+      language: භාෂාව සඳහා
+      status: තත්වය
     instances:
+      back_to_all: සියල්ල
+      back_to_warning: අවවාදයයි
       by_domain: වසම
+      delivery:
+        all: සියල්ල
+        warning: අවවාදයයි
       moderation:
         all: සියල්ල
       private_comment: පුද්ගලික අදහස
       public_comment: ප්‍රසිද්ධ අදහස
+    invites:
+      filter:
+        all: සියල්ල
+        expired: කල් ඉකුත් වී ඇත
+        title: පෙරහන
+      title: ඇරයුම්
     ip_blocks:
+      add_new: නීතිය සාදන්න
+      expires_in:
+        '1209600': සති 2
+        '15778476': මාස 6
+        '2629746': මාස 1
+        '31556952': අවුරුදු 1
+        '86400': දින 1
+        '94670856': අවුරුදු 3
+      new:
+        title: නව අ.ජා. කෙ.(IP) නීතියක් සාදන්න
       title: අ.ජා. කෙ. (IP) නීති
     relays:
       disable: අබල කරන්න
+      disabled: අබල කර ඇත
       enable: සබල කරන්න
       enabled: සබල කර ඇත
       status: තත්වය
     reports:
       are_you_sure: ඔබට විශ්වාසද?
       by_target_domain: වාර්තා කළ ගිණුමෙහි වසම
+      comment:
+        none: කිසිවක් නැත
       notes:
         create: සටහන එකතු කරන්න
-      report: "@%{id} වාර්තා කරන්න"
+      reopen: වාර්තාව නැවත විවෘත කරන්න
+      report: '@%{id} වාර්තා කරන්න'
       reported_account: වාර්තා කළ ගිණුම
       status: තත්වය
       title: වාර්තා
+    rules:
+      add_new: නීතිය එකතු කරන්න
+      edit: නීතිය සංස්කරණය කරන්න
+      title: සේවාදායකයේ නීති
     settings:
+      contact_information:
+        email: ව්‍යාපාරික වි-තැපෑල
+      site_description:
+        title: සේවාදායකයේ සවිස්තරය
+      site_short_description:
+        title: සේවාදායකයේ කෙටි සවිස්තරය
       site_title: සේවාදායකයේ නම
+      title: අඩවියේ සැකසුම්
     statuses:
+      back_to_account: ගිණුම් පිටුවට ආපසු යන්න
       media:
         title: මාධ්‍යය
+      no_media: මාධ්‍ය නැත
+      with_media: මාධ්‍ය සමඟ
+    title: පරිපාලනය
+  appearance:
+    advanced_web_interface: උසස් වියමන අතුරුමුහුණත
+    localization:
+      guide_link: https://crowdin.com/project/mastodon
+    sensitive_content: සංවේදී අන්තර්ගතයකි
   application_mailer:
     salutation: "%{name},"
   auth:
     change_password: මුර පදය
     login: පිවිසෙන්න
     logout: නික්මෙන්න
+    or_log_in_with: හෝ සමඟ පිවිසෙන්න
+    security: ආරක්ෂාව
     status:
       account_status: ගිණුමේ තත්වය
   authorize_follow:
     post_follow:
+      close: හෝ ඔබට මෙම කවුළුව වසාදැමිය හැකිය.
+      return: පරිශීලකගේ පැතිකඩ පෙන්වන්න
       web: වියමන ට යන්න
+  challenge:
+    confirm: ඉදිරියට
+    invalid_password: අවලංගු නොවන මුරපදයකි
   date:
     formats:
       default: "%b %d, %Y"
@@ -162,20 +260,23 @@ si:
     '404': The page you are looking for isn't here.
     '406': This page is not available in the requested format.
     '410': The page you were looking for doesn't exist here anymore.
-    '422': 
+    '422':
     '429': Too many requests
-    '500': 
+    '500':
     '503': The page could not be served due to a temporary server failure.
   exports:
     archive_takeout:
       date: දිනය
+      download: ඔබගේ සංරක්ෂිතය බාගන්න
       size: ප්‍රමාණය
+    bookmarks: පොත් යොමු
     lists: ලැයිස්තු
     storage: මාධ්‍ය ගබඩාව
   filters:
     contexts:
       account: පැතිකඩයන්
       notifications: දැනුම්දීම්
+      thread: සංවාද
     edit:
       title: පෙරහන සංස්කරණය
     index:
@@ -186,9 +287,16 @@ si:
     developers: සංවර්ධකයින්
     more: තව…
     resources: සම්පත්
+  generic:
+    all: සියල්ල
+    copy: පිටපත්
+    save_changes: වෙනස්කම් සුරකින්න
   identity_proofs:
+    active: ක්‍රියාත්මකයි
     identity: අනන්‍යතාව
   imports:
+    types:
+      bookmarks: පොත් යොමු
     upload: උඩුගත කරන්න
   invites:
     expires_in:
@@ -198,6 +306,28 @@ si:
       '43200': හෝරා 12
       '604800': සති 1
       '86400': දින 1
+    title: මිනිසුන්ට ආරාධනා කරන්න
+  login_activities:
+    authentication_methods:
+      password: මුර පදය
+  notification_mailer:
+    mention:
+      action: පිළිතුර
+      title: නව සඳැහුම
+  notifications:
+    other_settings: වෙනත් දැනුම්දීම් සැකසුම්
+  number:
+    human:
+      decimal_units:
+        format: "%n%u"
+  otp_authentication:
+    enable: සබල කරන්න
+  pagination:
+    next: ඊළඟ
+    truncate: "&hellip;"
+  relationships:
+    activity: ගිණුමේ ක්‍රියාකාරකම්
+    status: ගිණුමේ තත්වය
   sessions:
     browser: අතිරික්සුව
     browsers:
@@ -212,7 +342,9 @@ si:
       micro_messenger: මයික්‍රොමැසෙන්ජර්
       opera: ඔපෙරා
       otter: ඔටර්
+      qq: කියුකියු අතිරික්සුව
       safari: සෆාරි
+      uc_browser: යූසී අතිරික්සුව
       weibo: වෙයිබො
     ip: අ.ජා. කෙ. (IP)
     platforms:
@@ -230,6 +362,19 @@ si:
   settings:
     account: ගිණුම
     account_settings: ගිණුමේ සැකසුම්
+    edit_profile: පැතිකඩ සංස්කරණය
+    export: දත්ත නිර්යාත
+    import: ආයාත කරන්න
+    import_and_export: ආයාත සහ නිර්යාත
+    notifications: දැනුම්දීම්
+    profile: පැතිකඩ
+  statuses:
+    show_more: තව පෙන්වන්න
+    title: '%{name}: "%{quote}"'
+    visibilities:
+      public: ප්‍රසිද්ධ
+  stream_entries:
+    sensitive_content: සංවේදී අන්තර්ගතයකි
   two_factor_authentication:
     edit: සංස්කරණය
     webauthn: ආරක්ෂිත යතුරු

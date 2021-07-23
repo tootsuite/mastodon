@@ -1,4 +1,3 @@
----
 uk:
   devise:
     confirmations:
@@ -111,7 +110,7 @@ uk:
       not_found: не знайдено
       not_locked: не був заблокований
       not_saved:
+        one: '1 помилка не дала цьому %{resource} зберегтися:'
         few: "%{count} помилки не дали цьому %{resource} зберегтися:"
         many: "%{count} помилок не дало цьому %{resource} зберегтися:"
-        one: '1 помилка не дала цьому %{resource} зберегтися:'
         other: "%{count} помилок не дало цьому %{resource} зберегтися:"

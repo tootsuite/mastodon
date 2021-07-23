@@ -1,4 +1,3 @@
----
 da:
   simple_form:
     hints:
@@ -212,7 +211,7 @@ da:
         name: Hashtag
         trendable: Tillad visning af dette hashtag under trends
         usable: Tillad indlæg at benytte dette hashtag
-    'no': Nej
+    'no': 'Nej'
     recommended: Anbefalet
     required:
       mark: "*"
@@ -220,4 +219,4 @@ da:
     title:
       sessions:
         webauthn: Brug en af dine sikkerhedskoder til indlogning
-    'yes': Ja
+    'yes': 'Ja'

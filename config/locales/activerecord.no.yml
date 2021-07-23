@@ -1,5 +1,4 @@
----
-'no':
+"no":
   activerecord:
     attributes:
       poll:
@@ -7,6 +6,7 @@
         options: Valg
       user:
         email: E-mail address
+        locale: Område
         password: Passord
       user/account:
         username: Brukernavn

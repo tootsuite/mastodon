@@ -1,4 +1,3 @@
----
 ja:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ ja:
       application:
         title: OAuth認証
     scopes:
-      admin:read: サーバーのすべてのデータの読み取り
-      admin:read:accounts: すべてのアカウントの機密情報の読み取り
-      admin:read:reports: すべての通報と通報されたアカウントの機密情報の読み取り
-      admin:write: サーバーのすべてのデータの変更
-      admin:write:accounts: アカウントに対するアクションの実行
-      admin:write:reports: 通報に対するアクションの実行
+      "admin:read": サーバーのすべてのデータの読み取り
+      "admin:read:accounts": すべてのアカウントの機密情報の読み取り
+      "admin:read:reports": すべての通報と通報されたアカウントの機密情報の読み取り
+      "admin:write": サーバーのすべてのデータの変更
+      "admin:write:accounts": アカウントに対するアクションの実行
+      "admin:write:reports": 通報に対するアクションの実行
       follow: アカウントのつながりを変更
       push: プッシュ通知の受信
       read: アカウントのすべてのデータの読み取り
-      read:accounts: アカウント情報の読み取り
-      read:blocks: ブロックの読み取り
-      read:bookmarks: ブックマークの読み取り
-      read:favourites: お気に入りの読み取り
-      read:filters: フィルターの読み取り
-      read:follows: フォローの読み取り
-      read:lists: リストの読み取り
-      read:mutes: ミュートの読み取り
-      read:notifications: 通知の読み取り
-      read:reports: 通報の読み取り
-      read:search: あなたの代わりに検索
-      read:statuses: すべての投稿の読み取り
+      "read:accounts": アカウント情報の読み取り
+      "read:blocks": ブロックの読み取り
+      "read:bookmarks": ブックマークの読み取り
+      "read:favourites": お気に入りの読み取り
+      "read:filters": フィルターの読み取り
+      "read:follows": フォローの読み取り
+      "read:lists": リストの読み取り
+      "read:mutes": ミュートの読み取り
+      "read:notifications": 通知の読み取り
+      "read:reports": 通報の読み取り
+      "read:search": あなたの代わりに検索
+      "read:statuses": すべての投稿の読み取り
       write: アカウントのすべてのデータの変更
-      write:accounts: プロフィールの変更
-      write:blocks: ユーザーのブロックやドメインの非表示
-      write:bookmarks: 投稿のブックマーク登録
-      write:favourites: 投稿のお気に入り登録
-      write:filters: フィルターの変更
-      write:follows: あなたの代わりにフォロー、アンフォロー
-      write:lists: リストの変更
-      write:media: メディアのアップロード
-      write:mutes: アカウントや会話のミュート
-      write:notifications: 通知の消去
-      write:reports: 通報の作成
-      write:statuses: 投稿の送信
+      "write:accounts": プロフィールの変更
+      "write:blocks": ユーザーのブロックやドメインの非表示
+      "write:bookmarks": 投稿のブックマーク登録
+      "write:favourites": 投稿のお気に入り登録
+      "write:filters": フィルターの変更
+      "write:follows": あなたの代わりにフォロー、アンフォロー
+      "write:lists": リストの変更
+      "write:media": メディアのアップロード
+      "write:mutes": アカウントや会話のミュート
+      "write:notifications": 通知の消去
+      "write:reports": 通報の作成
+      "write:statuses": 投稿の送信

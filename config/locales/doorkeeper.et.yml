@@ -1,4 +1,3 @@
----
 et:
   activerecord:
     attributes:
@@ -113,37 +112,37 @@ et:
       application:
         title: OAuth autoriseerimine vajalik
     scopes:
-      admin:read: lugeda kõiki andmeid serveril
-      admin:read:accounts: lugeda privaatset informatsiooni kõikidel kontodel
-      admin:read:reports: lugeda privaatset informatsiooni kõikide teavituste ja teavitatud kasutajate kohta
-      admin:write: muuta kõiki andmeid serveril
-      admin:write:accounts: teostada moderaatori tegevusi kontodel
-      admin:write:reports: teostada moderaatori tegevusi teavitustel
+      "admin:read": lugeda kõiki andmeid serveril
+      "admin:read:accounts": lugeda privaatset informatsiooni kõikidel kontodel
+      "admin:read:reports": lugeda privaatset informatsiooni kõikide teavituste ja teavitatud kasutajate kohta
+      "admin:write": muuta kõiki andmeid serveril
+      "admin:write:accounts": teostada moderaatori tegevusi kontodel
+      "admin:write:reports": teostada moderaatori tegevusi teavitustel
       follow: muuta kontode suhteid
       push: saada Teie teateid
       read: lugeda kogu Teie konto andmeid
-      read:accounts: näha konto informatsiooni
-      read:blocks: näha Teie blokeeringuid
-      read:bookmarks: näha järjehoidjaid
-      read:favourites: näha Teie lemmikuid
-      read:filters: näha Teie filtreid
-      read:follows: näha Teie jälgimisi
-      read:lists: näha Teie nimekirju
-      read:mutes: näha Teie vaigistusi
-      read:notifications: näha Teie teateid
-      read:reports: näha Teie teavitusi
-      read:search: otsida Teie nimel
-      read:statuses: näha kõiki staatuseid
+      "read:accounts": näha konto informatsiooni
+      "read:blocks": näha Teie blokeeringuid
+      "read:bookmarks": näha järjehoidjaid
+      "read:favourites": näha Teie lemmikuid
+      "read:filters": näha Teie filtreid
+      "read:follows": näha Teie jälgimisi
+      "read:lists": näha Teie nimekirju
+      "read:mutes": näha Teie vaigistusi
+      "read:notifications": näha Teie teateid
+      "read:reports": näha Teie teavitusi
+      "read:search": otsida Teie nimel
+      "read:statuses": näha kõiki staatuseid
       write: redigeerida kogu Teie konto andmeid
-      write:accounts: redigeerida Teie profiili
-      write:blocks: blokeerida kontosid ja domeene
-      write:bookmarks: lisada staatusele järjehoidjaid
-      write:favourites: lisada staatuseid lemmikuks
-      write:filters: luua filtreid
-      write:follows: jälgida inimesi
-      write:lists: luua nimekirju
-      write:media: üles laadida meediafaile
-      write:mutes: vaigista inimesi ja vestluseid
-      write:notifications: puhasta Teie teateid
-      write:reports: teavitada teistest inimestest
-      write:statuses: avaldada staatuseid
+      "write:accounts": redigeerida Teie profiili
+      "write:blocks": blokeerida kontosid ja domeene
+      "write:bookmarks": lisada staatusele järjehoidjaid
+      "write:favourites": lisada staatuseid lemmikuks
+      "write:filters": luua filtreid
+      "write:follows": jälgida inimesi
+      "write:lists": luua nimekirju
+      "write:media": üles laadida meediafaile
+      "write:mutes": vaigista inimesi ja vestluseid
+      "write:notifications": puhasta Teie teateid
+      "write:reports": teavitada teistest inimestest
+      "write:statuses": avaldada staatuseid

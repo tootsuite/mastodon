@@ -1,4 +1,3 @@
----
 sv:
   simple_form:
     hints:
@@ -171,7 +170,7 @@ sv:
         name: Hashtag
         trendable: Tillåt att denna hashtag visas under trender
         usable: Tillåt tutningar att använda denna hashtag
-    'no': Nej
+    'no': 'Nej'
     recommended: Rekommenderad
     required:
       mark: "*"
@@ -179,4 +178,4 @@ sv:
     title:
       sessions:
         webauthn: Använd en av dina säkerhetsnycklar för att logga in
-    'yes': Ja
+    'yes': 'Ja'

@@ -1,4 +1,3 @@
----
 ar:
   devise:
     confirmations:
@@ -8,10 +7,10 @@ ar:
     failure:
       already_authenticated: لقد تم تسجيل دخولك من قبل.
       inactive: لم يتم تنشيط حسابك بعد.
-      invalid: "%{authentication_keys} أو كلمة سر خاطئة."
+      invalid: '%{authentication_keys} أو كلمة سر خاطئة.'
       last_attempt: بإمكانك إعادة المحاولة مرة واحدة قبل أن يتم قفل حسابك.
       locked: إن حسابك مقفل.
-      not_found_in_database: "%{authentication_keys} أو كلمة سر خاطئة."
+      not_found_in_database: '%{authentication_keys} أو كلمة سر خاطئة.'
       pending: إنّ حسابك في انتظار مراجعة.
       timeout: لقد انتهت مدة صلاحية جلستك. قم بتسجيل الدخول من جديد للمواصلة.
       unauthenticated: يجب عليك تسجيل الدخول أو إنشاء حساب قبل المواصلة.
@@ -111,9 +110,9 @@ ar:
       not_found: لا يوجد
       not_locked: ليس مقفلاً
       not_saved:
+        zero: "%{count} أخطاء منعت هذا %{resource} من الحفظ:"
+        one: 'خطأ واحد منع هذا %{resource} من الحفظ:'
+        two: "%{count} أخطاء منعت هذا %{resource} من الحفظ:"
         few: "%{count} أخطاء منعت هذا %{resource} من الحفظ:"
         many: "%{count} أخطاء منعت هذا %{resource} من الحفظ:"
-        one: 'خطأ واحد منع هذا %{resource} من الحفظ:'
         other: "%{count} أخطاء منعت هذا %{resource} من الحفظ:"
-        two: "%{count} أخطاء منعت هذا %{resource} من الحفظ:"
-        zero: "%{count} أخطاء منعت هذا %{resource} من الحفظ:"

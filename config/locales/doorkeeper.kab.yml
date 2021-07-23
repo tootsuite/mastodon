@@ -1,4 +1,3 @@
----
 kab:
   activerecord:
     attributes:
@@ -91,26 +90,26 @@ kab:
       application:
         title: Tlaq tsiregt n OAuth
     scopes:
-      admin:read: γeṛ akk isefka γef uqeddac
-      admin:write: ẓreg akk isefka γef uqeddac
+      "admin:read": γeṛ akk isefka γef uqeddac
+      "admin:write": ẓreg akk isefka γef uqeddac
       follow: beddel assaγen n umiḍan
       push: ṭṭef-d tilγa-ik yettwademren
       read: γeṛ akk isefka n umiḍan-ik
-      read:accounts: ẓer isallen n yimiḍanen
-      read:blocks: ẓer imiḍanen i tesḥebseḍ
-      read:bookmarks: ẓer ticraḍ-ik
-      read:favourites: ẓer ismenyifen-ik
-      read:filters: ẓer imsizedgen-ik
-      read:follows: ẓer imeḍfaṛen-ik
-      read:lists: ẓer tibdarin-ik·im
-      read:mutes: ẓer wid i tesgugmeḍ
-      read:notifications: ẓer tilγa-ik
-      read:statuses: ẓer meṛṛa tisuffaγ
+      "read:accounts": ẓer isallen n yimiḍanen
+      "read:blocks": ẓer imiḍanen i tesḥebseḍ
+      "read:bookmarks": ẓer ticraḍ-ik
+      "read:favourites": ẓer ismenyifen-ik
+      "read:filters": ẓer imsizedgen-ik
+      "read:follows": ẓer imeḍfaṛen-ik
+      "read:lists": ẓer tibdarin-ik·im
+      "read:mutes": ẓer wid i tesgugmeḍ
+      "read:notifications": ẓer tilγa-ik
+      "read:statuses": ẓer meṛṛa tisuffaγ
       write: beddel meṛṛa isefka n umiḍan-ik
-      write:accounts: ẓreg amaγnu-ik
-      write:blocks: seḥbes imiḍanen d tγula
-      write:bookmarks: ad yernu tisuffγin γer ticraḍ
-      write:filters: rnu-d imsizedgen
-      write:follows: ḍfeṛ imdanen
-      write:lists: ad yesnulfu tibdarin
-      write:media: ad yessali ifayluyen n teγwalt
+      "write:accounts": ẓreg amaγnu-ik
+      "write:blocks": seḥbes imiḍanen d tγula
+      "write:bookmarks": ad yernu tisuffγin γer ticraḍ
+      "write:filters": rnu-d imsizedgen
+      "write:follows": ḍfeṛ imdanen
+      "write:lists": ad yesnulfu tibdarin
+      "write:media": ad yessali ifayluyen n teγwalt

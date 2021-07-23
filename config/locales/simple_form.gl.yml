@@ -1,4 +1,3 @@
----
 gl:
   simple_form:
     hints:
@@ -212,7 +211,7 @@ gl:
         name: Cancelo
         trendable: Permitir que este cancelo apareza en tendencias
         usable: Permitir que as publicacións utilicen este cancelo
-    'no': Non
+    'no': 'Non'
     recommended: Recomendado
     required:
       mark: "*"
@@ -220,4 +219,4 @@ gl:
     title:
       sessions:
         webauthn: Usa unha das túas chaves de seguridade para conectar
-    'yes': Si
+    'yes': 'Si'

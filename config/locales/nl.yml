@@ -1,8 +1,7 @@
----
 nl:
   about:
-    about_hashtag_html: Dit zijn openbare toots die getagged zijn met <strong>#%{hashtag}</strong>. Je kunt er op reageren of iets anders mee doen als je op Mastodon (of ergens anders in de fediverse) een account hebt.
-    about_mastodon_html: Mastodon is een sociaal netwerk dat gebruikt maakt van open webprotocollen en vrije software. Het is net zoals e-mail gedecentraliseerd.
+    about_hashtag_html: 'Dit zijn openbare toots die getagged zijn met <strong>#%{hashtag}</strong>. Je kunt er op reageren of iets anders mee doen als je op Mastodon (of ergens anders in de fediverse) een account hebt.'
+    about_mastodon_html: 'Mastodon is een sociaal netwerk dat gebruikt maakt van open webprotocollen en vrije software. Het is net zoals e-mail gedecentraliseerd.'
     about_this: Over deze server
     active_count_after: actief
     active_footnote: Actieve gebruikers per maand (MAU)
@@ -21,7 +20,8 @@ nl:
     federation_hint_html: Met een account op %{instance} ben je in staat om mensen die zich op andere Mastodonservers (en op andere plekken) bevinden te volgen.
     get_apps: Mobiele apps
     hosted_on: Mastodon op %{domain}
-    instance_actor_flash: "Dit account is een virtuel actor dat wordt gebruikt om de server zelf te vertegenwoordigen en is geen individuele gebruiker. Het wordt voor federatiedoeleinden gebruikt en moet niet worden geblokkeerd, tenzij je de hele server wilt blokkeren. In zo'n geval dien je echter een domeinblokkade te gebruiken. \n"
+    instance_actor_flash: |
+      Dit account is een virtuel actor dat wordt gebruikt om de server zelf te vertegenwoordigen en is geen individuele gebruiker. Het wordt voor federatiedoeleinden gebruikt en moet niet worden geblokkeerd, tenzij je de hele server wilt blokkeren. In zo'n geval dien je echter een domeinblokkade te gebruiken. 
     learn_more: Meer leren
     privacy_policy: Privacybeleid
     rules: Serverregels
@@ -41,9 +41,9 @@ nl:
       reason: 'Reden:'
       rejecting_media: 'Mediabestanden van deze server worden niet verwerkt en er worden geen thumbnails getoond. Je moet handmatig naar deze server doorklikken om de mediabestanden te kunnen bekijken:'
       rejecting_media_title: Mediabestanden geweigerd
-      silenced: Toots van deze server worden nergens weergegeven, behalve op jouw eigen starttijdlijn wanneer je het account volgt.
+      silenced: 'Toots van deze server worden nergens weergegeven, behalve op jouw eigen starttijdlijn wanneer je het account volgt.'
       silenced_title: Genegeerde servers
-      suspended: Je bent niet in staat om iemand van deze server te volgen, en er worden geen gegevens van deze server verwerkt of opgeslagen, en met deze server uitgewisseld.
+      suspended: 'Je bent niet in staat om iemand van deze server te volgen, en er worden geen gegevens van deze server verwerkt of opgeslagen, en met deze server uitgewisseld.'
       suspended_title: Opgeschorte servers
     unavailable_content_html: Met Mastodon kun je in het algemeen berichten bekijken van en communiceren met gebruikers van elke andere server in de fediverse. Dit zijn de uitzonderingen die door deze server zijn gemaakt en expliciet alleen hier gelden.
     user_count_after:
@@ -52,7 +52,7 @@ nl:
     user_count_before: Thuisbasis van
     what_is_mastodon: Wat is Mastodon?
   accounts:
-    choices_html: 'Aanbevelingen van %{name}:'
+    choices_html: "Aanbevelingen van %{name}:"
     endorsements_hint: Je kunt mensen die je volgt in de webomgeving aanbevelen, waarna ze dan hier zullen verschijnen.
     featured_tags_hint: Je kunt specifieke hashtags uitlichten, waarna ze dan hier zullen verschijnen.
     follow: Volgen
@@ -115,7 +115,7 @@ nl:
       delete: Gegevens verwijderen
       deleted: Verwijderd
       demote: Degraderen
-      destroyed_msg: De verwijdering van de gegevens van %{username} staat nu in de wachtrij
+      destroyed_msg: "De verwijdering van de gegevens van %{username} staat nu in de wachtrij"
       disable: Bevriezen
       disable_two_factor_authentication: 2FA uitschakelen
       disabled: Bevroren
@@ -202,7 +202,7 @@ nl:
       suspended: Opgeschort
       suspension_irreversible: De gegevens van dit account zijn onomkeerbaar verwijderd. Je kunt het opschorten van dit account ongedaan maken zodat het weer valt te gebruiken, maar de verwijderde gegevens worden hiermee niet hersteld.
       suspension_reversible_hint_html: Dit account is opgeschort en de gegevens worden volledig verwijderd op %{date}. Tot die tijd kan dit account worden hersteld zonder nadelige gevolgen. Wanneer je alle gegevens van dit account onmiddellijk wilt verwijderen, kun je dit hieronder doen.
-      time_in_queue: "%{time} in de wachtrij"
+      time_in_queue: '%{time} in de wachtrij'
       title: Accounts
       unconfirmed_email: Onbevestigd e-mailadres
       undo_sensitized: Niet meer als gevoelig markeren
@@ -263,44 +263,44 @@ nl:
       actions:
         assigned_to_self_report_html: "%{name} heeft rapportage %{target} aan zichzelf toegewezen"
         change_email_user_html: "%{name} veranderde het e-mailadres van gebruiker %{target}"
-        confirm_user_html: E-mailadres van gebruiker %{target} is door %{name} bevestigd
+        confirm_user_html: "E-mailadres van gebruiker %{target} is door %{name} bevestigd"
         create_account_warning_html: "%{name} verzond een waarschuwing naar %{target}"
         create_announcement_html: "%{name} heeft de nieuwe mededeling %{target} aangemaakt"
-        create_custom_emoji_html: Nieuwe emoji %{target} is door %{name} geüpload
+        create_custom_emoji_html: "Nieuwe emoji %{target} is door %{name} geüpload"
         create_domain_allow_html: "%{name} heeft de federatie met het domein %{target} goedgekeurd"
-        create_domain_block_html: Domein %{target} is door %{name} geblokkeerd
+        create_domain_block_html: "Domein %{target} is door %{name} geblokkeerd"
         create_email_domain_block_html: "%{name} heeft het e-maildomein %{target} geblokkeerd"
         create_ip_block_html: "%{name} maakte regel aan voor IP %{target}"
         create_unavailable_domain_html: "%{name} heeft de bezorging voor domein %{target} beëindigd"
-        demote_user_html: Gebruiker %{target} is door %{name} gedegradeerd
+        demote_user_html: "Gebruiker %{target} is door %{name} gedegradeerd"
         destroy_announcement_html: "%{name} heeft de mededeling %{target} verwijderd"
         destroy_custom_emoji_html: "%{name} verwijderde emoji %{target}"
         destroy_domain_allow_html: "%{name} heeft de federatie met het domein %{target} afgekeurd"
-        destroy_domain_block_html: Domein %{target} is door %{name} gedeblokkeerd
+        destroy_domain_block_html: "Domein %{target} is door %{name} gedeblokkeerd"
         destroy_email_domain_block_html: "%{name} heeft het e-maildomein %{target} gedeblokkeerd"
         destroy_ip_block_html: "%{name} verwijderde regel voor IP %{target}"
-        destroy_status_html: Toot van %{target} is door %{name} verwijderd
+        destroy_status_html: "Toot van %{target} is door %{name} verwijderd"
         destroy_unavailable_domain_html: "%{name} heeft de bezorging voor domein %{target} hervat"
-        disable_2fa_user_html: De vereiste tweestapsverificatie voor %{target} is door %{name} uitgeschakeld
-        disable_custom_emoji_html: Emoji %{target} is door %{name} uitgeschakeld
-        disable_user_html: Inloggen voor %{target} is door %{name} uitgeschakeld
-        enable_custom_emoji_html: Emoji %{target} is door %{name} ingeschakeld
-        enable_user_html: Inloggen voor %{target} is door %{name} ingeschakeld
-        memorialize_account_html: Het account %{target} is door %{name} in een In memoriam veranderd
-        promote_user_html: Gebruiker %{target} is door %{name} gepromoveerd
+        disable_2fa_user_html: "De vereiste tweestapsverificatie voor %{target} is door %{name} uitgeschakeld"
+        disable_custom_emoji_html: "Emoji %{target} is door %{name} uitgeschakeld"
+        disable_user_html: "Inloggen voor %{target} is door %{name} uitgeschakeld"
+        enable_custom_emoji_html: "Emoji %{target} is door %{name} ingeschakeld"
+        enable_user_html: "Inloggen voor %{target} is door %{name} ingeschakeld"
+        memorialize_account_html: "Het account %{target} is door %{name} in een In memoriam veranderd"
+        promote_user_html: "Gebruiker %{target} is door %{name} gepromoveerd"
         remove_avatar_user_html: "%{name} verwijderde de avatar van %{target}"
         reopen_report_html: "%{name} heeft rapportage %{target} heropend"
-        reset_password_user_html: Wachtwoord van gebruiker %{target} is door %{name} opnieuw ingesteld
+        reset_password_user_html: "Wachtwoord van gebruiker %{target} is door %{name} opnieuw ingesteld"
         resolve_report_html: "%{name} heeft rapportage %{target} opgelost"
         sensitive_account_html: "%{name} markeerde de media van %{target} als gevoelig"
-        silence_account_html: Account %{target} is door %{name} beperkt
-        suspend_account_html: Account %{target} is door %{name} opgeschort
+        silence_account_html: "Account %{target} is door %{name} beperkt"
+        suspend_account_html: "Account %{target} is door %{name} opgeschort"
         unassigned_report_html: "%{name} heeft het toewijzen van rapportage %{target} ongedaan gemaakt"
         unsensitive_account_html: "%{name} markeerde media van %{target} als niet gevoelig"
-        unsilence_account_html: Beperking van account %{target} is door %{name} opgeheven
-        unsuspend_account_html: Opschorten van account %{target} is door %{name} opgeheven
+        unsilence_account_html: "Beperking van account %{target} is door %{name} opgeheven"
+        unsuspend_account_html: "Opschorten van account %{target} is door %{name} opgeheven"
         update_announcement_html: "%{name} heeft de mededeling %{target} bijgewerkt"
-        update_custom_emoji_html: Emoji %{target} is door %{name} bijgewerkt
+        update_custom_emoji_html: "Emoji %{target} is door %{name} bijgewerkt"
         update_domain_block_html: "%{name} heeft de domeinblokkade bijgewerkt voor %{target}"
         update_status_html: "%{name} heeft de toots van %{target} bijgewerkt"
       deleted_status: "(verwijderde toot}"
@@ -514,7 +514,7 @@ nl:
     pending_accounts:
       title: Accounts in afwachting (%{count})
     relationships:
-      title: Relaties van %{acct}
+      title: "Relaties van %{acct}"
     relays:
       add_new: Nieuwe relayserver toevoegen
       delete: Verwijderen
@@ -721,10 +721,10 @@ nl:
     new_report:
       body: "%{reporter} heeft %{target} gerapporteerd"
       body_remote: Iemand van %{domain} heeft %{target} gerapporteerd
-      subject: Nieuwe rapportage op %{instance} (#%{id})
+      subject: 'Nieuwe rapportage op %{instance} (#%{id})'
     new_trending_tag:
       body: 'De hashtag #%{name} is vandaag trending, maar is nog niet beoordeeld. Het wordt niet in het openbaar getoond alvorens je de hashtag goedkeurt. Je kunt ook het formulier zoals het nu is opslaan, waarna je er niks meer over zult horen.'
-      subject: Nieuwe hashtag te beoordelen op %{instance} (#%{name})
+      subject: 'Nieuwe hashtag te beoordelen op %{instance} (#%{name})'
   aliases:
     add_new: Alias aanmaken
     created_msg: Succesvol een nieuwe alias aangemaakt. Je kunt nu met de verhuizing vanaf het oude account beginnen.
@@ -862,7 +862,7 @@ nl:
   directories:
     directory: Gebruikersgids
     explanation: Ontdek gebruikers aan de hand van hun interesses
-    explore_mastodon: "%{title} verkennen"
+    explore_mastodon: '%{title} verkennen'
   domain_validator:
     invalid_domain: is een ongeldige domeinnaam
   errors:
@@ -1367,7 +1367,7 @@ nl:
       <p>This document is CC-BY-SA. It was last updated March 7, 2018.</p>
 
       <p>Originally adapted from the <a href="https://github.com/discourse/discourse">Discourse privacy policy</a>.</p>
-    title: Gebruiksvoorwaarden en privacybeleid van %{instance}
+    title: "Gebruiksvoorwaarden en privacybeleid van %{instance}"
   themes:
     contrast: Mastodon (hoog contrast)
     default: Mastodon (donker)

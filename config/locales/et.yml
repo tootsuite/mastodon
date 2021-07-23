@@ -1,7 +1,6 @@
----
 et:
   about:
-    about_hashtag_html: Need on avalikud tuututused sildistatud sildiga <strong>#%{hashtag}</strong>. Te saate suhelda nendega, kui Teil on konto üks kõik kus terves fediversumis.
+    about_hashtag_html: 'Need on avalikud tuututused sildistatud sildiga <strong>#%{hashtag}</strong>. Te saate suhelda nendega, kui Teil on konto üks kõik kus terves fediversumis.'
     about_mastodon_html: 'Tuleviku sotsiaalvõrgustik: Reklaamivaba, korporatiivse järelvalveta, eetiline kujundus ning detsentraliseeritus! Oma enda andmeid Mastodonis!'
     about_this: Meist
     active_count_after: aktiivne
@@ -323,10 +322,7 @@ et:
         create: Loo blokeering
         hint: Domeeniblokeering ei takista kontode lisamist andmebaasi, aga lisab nendele kontodele tagasiulatuvalt ja automaatselt erinevaid moderatsioonimeetodeid.
         severity:
-          desc_html: |-
-            <strong>Vaigista</strong> teeb konto postitused nähtamatuks kõigile, kes teda ei jälgi.
-            <strong>Peata</strong> eemaldab kogu konto sisu, meedia ja profiiliandmed.
-            <strong>Ei midagi</strong> kui Te soovite lihtsalt keelata meediafailid.
+          desc_html: "<strong>Vaigista</strong> teeb konto postitused nähtamatuks kõigile, kes teda ei jälgi.\n<strong>Peata</strong> eemaldab kogu konto sisu, meedia ja profiiliandmed.\n<strong>Ei midagi</strong> kui Te soovite lihtsalt keelata meediafailid."
           noop: Ei midagi
           silence: Vaigista
           suspend: Peata
@@ -362,7 +358,7 @@ et:
       destroyed_msg: E-posti aadressi keelunimekirjast kustutamine õnnestus
       domain: Domeen
       empty: Ühtegi e-postidomeeni pole blokeeritud.
-      from_html: "%{domain}-ist"
+      from_html: '%{domain}-ist'
       new:
         create: Lisa domeen
         title: Uus e-posti keelunimekirja sisend
@@ -399,7 +395,7 @@ et:
     relays:
       add_new: Lisa uus relee
       delete: Kustuta
-      description_html: "<strong>Föderatsiooni relee</strong> on vahepealne server, mis vahetab suures koguses tuututusi serverite vahel, mis on selle tellijad ning mis sellele saadavad. <strong>See aitab väikestel ja keskmistel serveritel avastada sisu fediversumist</strong>, mis tavaliselt nõuab teisel serveril olevate inimeste jälgimist."
+      description_html: <strong>Föderatsiooni relee</strong> on vahepealne server, mis vahetab suures koguses tuututusi serverite vahel, mis on selle tellijad ning mis sellele saadavad. <strong>See aitab väikestel ja keskmistel serveritel avastada sisu fediversumist</strong>, mis tavaliselt nõuab teisel serveril olevate inimeste jälgimist.
       disable: Keela
       disabled: Keelatud
       enable: Luba
@@ -581,10 +577,10 @@ et:
     new_report:
       body: "%{reporter} teavitas kasutajast %{target}"
       body_remote: Keegi domeenist %{domain} teavitas kasutajast %{target}
-      subject: Uus teavitus %{instance}-ile (#%{id})
+      subject: 'Uus teavitus %{instance}-ile (#%{id})'
     new_trending_tag:
-      body: Silt %{name} on täna trendikas, aga pole eelnevalt üle vaadatud. Seda ei näidata avalikult, välja arvatud juhul, kui Te ise seda lubate või lihtsalt salvestage vorm nagu see on ning Te ei kuule sellest enam kunagi.
-      subject: Uus silt valmis ülevaatluseks serveril %{instance} (#%{name})
+      body: 'Silt %{name} on täna trendikas, aga pole eelnevalt üle vaadatud. Seda ei näidata avalikult, välja arvatud juhul, kui Te ise seda lubate või lihtsalt salvestage vorm nagu see on ning Te ei kuule sellest enam kunagi.'
+      subject: 'Uus silt valmis ülevaatluseks serveril %{instance} (#%{name})'
   aliases:
     add_new: Loo teine nimi
     created_msg: Teine nimi on edukalt loodud. Te saate nüüd alustada kolimist vanalt kontolt.
@@ -894,7 +890,7 @@ et:
         other: "%{count} uut teavitust peale Teie eelmist külastust \U0001F418"
       title: Teie puudumisel...
     favourite:
-      body: "%{name} lisas Teie staatuse lemmikutesse:"
+      body: '%{name} lisas Teie staatuse lemmikutesse:'
       subject: "%{name} märkis su staatuse lemmikuks"
       title: Uus lemmik
     follow:
@@ -908,11 +904,11 @@ et:
       title: Uus jälgimistaotlus
     mention:
       action: Vasta
-      body: "%{name} mainis Teid:"
-      subject: "%{name} mainis Teid"
+      body: '%{name} mainis Teid:'
+      subject: '%{name} mainis Teid'
       title: Uus mainimine
     reblog:
-      body: "%{name} upitas Teie staatust:"
+      body: '%{name} upitas Teie staatust:'
       subject: "%{name} upitas su staatust"
       title: Uus upitus
   notifications:
@@ -971,9 +967,7 @@ et:
     no_account_html: Teil pole veel kontot? Saate <a href='%{sign_up_path}' target='_blank'>luua ühe siit</a>
     proceed: Jätka jälgimiseks
     prompt: 'Te hakkate jälgima:'
-    reason_html: |-
-      <strong>Miks on see samm vajalik?</strong>
-      <code>%{instance}</code> ei pruugi olla server, kus asub Teie konto, nii et me peame Teid suunama oma kodu serverile.
+    reason_html: "<strong>Miks on see samm vajalik?</strong>\n<code>%{instance}</code> ei pruugi olla server, kus asub Teie konto, nii et me peame Teid suunama oma kodu serverile."
   remote_interaction:
     favourite:
       proceed: Jätka lemmikuks lisamiseks

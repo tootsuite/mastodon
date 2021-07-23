@@ -1,4 +1,3 @@
----
 de:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ de:
       application:
         title: OAuth-Autorisierung nötig
     scopes:
-      admin:read: alle Daten auf dem Server lesen
-      admin:read:accounts: sensible Daten aller Konten lesen
-      admin:read:reports: sensible Daten aller Meldungen und gemeldeten Konten lesen
-      admin:write: alle Daten auf dem Server ändern
-      admin:write:accounts: Moderationsaktionen auf Konten ausführen
-      admin:write:reports: Moderationsaktionen auf Meldungen ausführen
+      "admin:read": alle Daten auf dem Server lesen
+      "admin:read:accounts": sensible Daten aller Konten lesen
+      "admin:read:reports": sensible Daten aller Meldungen und gemeldeten Konten lesen
+      "admin:write": alle Daten auf dem Server ändern
+      "admin:write:accounts": Moderationsaktionen auf Konten ausführen
+      "admin:write:reports": Moderationsaktionen auf Meldungen ausführen
       follow: Kontenbeziehungen verändern
       push: deine Push-Benachrichtigungen erhalten
       read: all deine Daten lesen
-      read:accounts: deine Konteninformationen einsehen
-      read:blocks: deine Blockaden einsehen
-      read:bookmarks: deine Lesezeichen lesen
-      read:favourites: deine Favoriten ansehen
-      read:filters: deine Filter ansehen
-      read:follows: sehen, wem du folgst
-      read:lists: deine Listen sehen
-      read:mutes: deine Stummschaltungen einsehen
-      read:notifications: deine Benachrichtigungen sehen
-      read:reports: deine Meldungen sehen
-      read:search: in deinem Namen suchen
-      read:statuses: alle Beiträge sehen
+      "read:accounts": deine Konteninformationen einsehen
+      "read:blocks": deine Blockaden einsehen
+      "read:bookmarks": deine Lesezeichen lesen
+      "read:favourites": deine Favoriten ansehen
+      "read:filters": deine Filter ansehen
+      "read:follows": sehen, wem du folgst
+      "read:lists": deine Listen sehen
+      "read:mutes": deine Stummschaltungen einsehen
+      "read:notifications": deine Benachrichtigungen sehen
+      "read:reports": deine Meldungen sehen
+      "read:search": in deinem Namen suchen
+      "read:statuses": alle Beiträge sehen
       write: all deine Benutzerdaten verändern
-      write:accounts: dein Profil bearbeiten
-      write:blocks: Domains und Konten blockieren
-      write:bookmarks: Lesezeichen hinzufügen
-      write:favourites: Beiträge favorisieren
-      write:filters: Filter erstellen
-      write:follows: Leuten folgen
-      write:lists: Listen erstellen
-      write:media: Mediendateien hochladen
-      write:mutes: Leute und Konversationen stummschalten
-      write:notifications: deine Benachrichtigungen leeren
-      write:reports: andere Leute melden
-      write:statuses: Beiträge veröffentlichen
+      "write:accounts": dein Profil bearbeiten
+      "write:blocks": Domains und Konten blockieren
+      "write:bookmarks": Lesezeichen hinzufügen
+      "write:favourites": Beiträge favorisieren
+      "write:filters": Filter erstellen
+      "write:follows": Leuten folgen
+      "write:lists": Listen erstellen
+      "write:media": Mediendateien hochladen
+      "write:mutes": Leute und Konversationen stummschalten
+      "write:notifications": deine Benachrichtigungen leeren
+      "write:reports": andere Leute melden
+      "write:statuses": Beiträge veröffentlichen

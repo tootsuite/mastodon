@@ -1,29 +1,31 @@
----
 pt-BR:
   simple_form:
     hints:
       account_alias:
-        acct: Especifique o usuário@domínio da conta da qual você deseja se mudar
+        acct: Especifique o usuário@domínio de onde veio
       account_migration:
-        acct: Especifique o usuário@domínio da conta para a qual você deseja se mudar
+        acct: Especifique o usuário@domínio para onde vai
       account_warning_preset:
         text: Você pode usar a sintaxe do toot, como links, hashtags e menções
         title: Opcional. Não visível para o destinatário
       admin_account_action:
-        include_statuses: O usuário verá quais toots causaram o aviso ou ação da moderação
+        include_statuses: O usuário verá quais toots causaram a advertência ou ação da moderação
         send_email_notification: O usuário receberá uma explicação do que aconteceu com a própria conta
-        text_html: Opcional. Você pode usar a sintaxe do toot e também pode <a href="%{path}">adicionar avisos pré-definidos</a> para poupar tempo
+        text_html: Opcional. Você pode usar a sintaxe do toot ou pode poupar tempo <a href="%{path}">adicionando advertências pré-definidas</a>
         type_html: Decida o que fazer com <strong>%{acct}</strong>
         types:
-          disable: Impedir o usuário de usar sua conta, porém sem deletá-la ou escondê-la.
+          disable: Impede o usuário de usar a conta, porém sem excluí-la ou suspendê-la.
           none: Use isto para enviar uma advertência ao usuário, sem nenhuma outra ação.
-        warning_preset_id: Opcional. Você ainda pode adicionar texto personalizado no final do aviso pré-definido
+          sensitive: Marca todas as mídias do usuário como sensível.
+          silence: Impede o usuário de tootar publicamente, e oculta toots e notificações dos que não o seguem.
+          suspend: Impede interações e exclui conteúdo da conta. Reversível apenas dentro de 30 dias.
+        warning_preset_id: Opcional. Você pode adicionar texto personalizado no final da advertência pré-definida
       announcement:
         all_day: Quando marcada, apenas as datas do período serão mostradas
-        ends_at: Opcional. O anúncio será automaticamente não publicado no momento
-        scheduled_at: Deixe em branco para publicar o anúncio imediatamente
-        starts_at: Opcional. Caso seu anúncio esteja vinculado a um período específico
-        text: Você pode usar a sintaxe toot. Esteja ciente do espaço que o anúncio ocupará na tela do usuário
+        ends_at: Opcional. O comunicado sairá do ar automaticamente
+        scheduled_at: Deixe em branco para publicar o comunicado agora
+        starts_at: Opcional. Caso o comunicado esteja vinculado a um período específico
+        text: Você pode usar a sintaxe do toot. Considere o espaço que o comunicado ocupará na tela do usuário
       defaults:
         autofollow: Pessoas que criarem conta através de seu convite te seguirão automaticamente
         avatar: PNG, GIF or JPG. Arquivos de até %{size}. Serão redimensionados para %{dimensions}px
@@ -41,7 +43,7 @@ pt-BR:
         locale: O idioma da interface do usuário, e-mails e notificações
         locked: Requer aprovação manual de seguidores
         password: Use pelo menos 8 caracteres
-        phrase: Corresponderá independente de maiúsculas ou minúsculas, no texto ou no aviso de conteúdo de um toot
+        phrase: Corresponderá independente de maiúsculas ou minúsculas, no texto ou no Aviso de Conteúdo de um toot
         scopes: Quais APIs o aplicativo vai ter permissão de acessar. Se você selecionar uma autorização de alto nível, você não precisa selecionar individualmente os outros.
         setting_aggregate_reblogs: Não mostra novos boosts para toots que receberam boost recentemente (afeta somente os boosts mais recentes)
         setting_default_sensitive: Mídia sensível está oculta por padrão e pode ser revelada com um clique
@@ -95,30 +97,30 @@ pt-BR:
       account_migration:
         acct: Nome de usuário da nova conta
       account_warning_preset:
-        text: Aviso pré-definido
+        text: Advertência pré-definida
         title: Título
       admin_account_action:
         include_statuses: Incluir toots denunciados no e-mail
         send_email_notification: Notificar o usuário por e-mail
-        text: Aviso personalizado
+        text: Advertência personalizada
         type: Ação
         types:
           disable: Congelar
           none: Não fazer nada
           sensitive: Sensível
-          silence: Silenciar
-          suspend: Banir e excluir irreversivelmente dados da conta
-        warning_preset_id: Usar um aviso pré-definido
+          silence: Suspender
+          suspend: Banir e excluir conta
+        warning_preset_id: Usar advertência pré-definida
       announcement:
         all_day: Evento o dia inteiro
         ends_at: Fim do evento
         scheduled_at: Agendar publicação
         starts_at: Início do evento
-        text: Anúncio
+        text: Comunicados
       defaults:
         autofollow: Convite para seguir a sua conta
         avatar: Imagem de perfil
-        bot: Esta é uma conta-robô
+        bot: Robô
         chosen_languages: Filtro de idiomas
         confirm_new_password: Confirmar nova senha
         confirm_password: Confirmar senha
@@ -127,16 +129,16 @@ pt-BR:
         data: Dados
         discoverable: Mostrar conta no diretório de perfis
         display_name: Nome de exibição
-        email: Endereço de e-mail
+        email: E-mail
         expires_in: Expira em
         fields: Metadados do perfil
-        header: Cabeçalho
+        header: Capa
         honeypot: "%{label} (não preencher)"
         inbox_url: Link da caixa de entrada do repetidor
         irreversible: Ignorar ao invés de ocultar
         locale: Idioma da interface
-        locked: Trancar conta
-        max_uses: Número máximo de usos
+        locked: Trancar perfil
+        max_uses: Limite de uso
         new_password: Nova senha
         note: Biografia
         otp_attempt: Código de autenticação de dois fatores
@@ -165,7 +167,7 @@ pt-BR:
         setting_theme: Tema do site
         setting_trends: Mostrar em alta hoje
         setting_unfollow_modal: Solicitar confirmação antes de deixar de seguir alguém
-        setting_use_blurhash: Mostrar blur em mídias ocultas
+        setting_use_blurhash: Mostrar blur em mídias sensíveis
         setting_use_pending_items: Modo lento
         severity: Gravidade
         sign_in_token_attempt: Código de segurança
@@ -175,41 +177,46 @@ pt-BR:
         whole_word: Palavra inteira
       email_domain_block:
         with_dns_records: Incluir registros MX e IPs do domínio
+      featured_tag:
+        name: Hashtag
       interactions:
         must_be_follower: Bloquear notificações de não-seguidores
-        must_be_following: Bloquear notificações de pessoas que você não segue
-        must_be_following_dm: Bloquear mensagens diretas de pessoas que você não segue
+        must_be_following: Bloquear notificações de não-seguidos
+        must_be_following_dm: Bloquear toots diretos de não-seguidos
       invite:
         comment: Comentário
       invite_request:
         text: Por que você deseja criar uma conta aqui?
       ip_block:
         comment: Comentário
+        ip: IP
         severities:
           no_access: Bloquear acesso
-          sign_up_requires_approval: Limitar registros
+          sign_up_requires_approval: Limitar novas contas
         severity: Regra
       notification_emails:
         digest: Enviar e-mails de resumo
-        favourite: Enviar e-mail quando alguém favoritar seus toots
+        favourite: Enviar e-mail quando alguém favoritar teus toots
         follow: Enviar e-mail quando alguém te seguir
-        follow_request: Enviar e-mail quando alguém solicitar ser seu seguidor
+        follow_request: Enviar e-mail quando alguém quiser te seguir
         mention: Enviar e-mail quando alguém te mencionar
-        pending_account: Enviar e-mail quando uma nova conta precisar ser revisada
-        reblog: Enviar e-mail quando alguém der boost nos seus toots
+        pending_account: Enviar e-mail quando uma nova conta precisa ser revisada
+        reblog: Enviar e-mail quando alguém der boost nos teus toots
         report: Enviar e-mail quando uma nova denúncia for enviada
-        trending_tag: Uma hashtag não-revisada está em alta
+        trending_tag: Enviar e-mail quando uma hashtag não-revisada está em alta
       rule:
         text: Regra
       tag:
-        listable: Permitir que esta hashtag apareça em pesquisas e no diretório de perfis
+        listable: Permitir que esta hashtag apareça em pesquisas e sugestões
+        name: Hashtag
         trendable: Permitir que esta hashtag fique em alta
         usable: Permitir que toots usem esta hashtag
-    'no': Não
+    'no': 'Não'
     recommended: Recomendado
     required:
+      mark: "*"
       text: obrigatório
     title:
       sessions:
         webauthn: Utilize uma das suas chaves de segurança para entrar
-    'yes': Sim
+    'yes': 'Sim'

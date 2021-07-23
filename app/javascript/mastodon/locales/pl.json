@@ -296,7 +296,7 @@
   "notification.follow_request": "{name} poprosił(a) o możliwość śledzenia Cię",
   "notification.mention": "{name} wspomniał(a) o tobie",
   "notification.own_poll": "Twoje głosowanie zakończyło się",
-  "notification.poll": "Głosowanie w którym brałeś(-aś) udział zakończyła się",
+  "notification.poll": "Głosowanie w którym brałeś(-aś) udział zakończyło się",
   "notification.reblog": "{name} podbił(a) Twój wpis",
   "notification.status": "{name} właśnie utworzył(a) wpis",
   "notifications.clear": "Wyczyść powiadomienia",

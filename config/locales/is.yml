@@ -1,7 +1,6 @@
----
 is:
   about:
-    about_hashtag_html: Þetta eru opinber tíst sem merkt eru með <strong>#%{hashtag}</strong>. Þú getur unnið með þau ef þú ert með skráðan aðgang einhversstaðar í skýjasambandinu.
+    about_hashtag_html: 'Þetta eru opinber tíst sem merkt eru með <strong>#%{hashtag}</strong>. Þú getur unnið með þau ef þú ert með skráðan aðgang einhversstaðar í skýjasambandinu.'
     about_mastodon_html: 'Samfélagsnet framtíðarinnar: Engar auglýsingar, ekkert eftirlit stórfyrirtækja, siðleg hönnun og engin miðstýring! Þú átt þín eigin gögn í Mastodon!'
     about_this: Um hugbúnaðinn
     active_count_after: virkt
@@ -117,8 +116,9 @@ is:
       delete: Eyða gögnum
       deleted: Eytt
       demote: Lækka í tign
-      destroyed_msg: Gögn notandans %{username} eru núna í bið eftir að vera endanlega eytt
+      destroyed_msg: "Gögn notandans %{username} eru núna í bið eftir að vera endanlega eytt"
       disable: Gera óvirkt
+      disable_sign_in_token_auth: Gera óvirka auðkenningu með teikni í tölvupósti
       disable_two_factor_authentication: Gera tveggja-þátta auðkenningu óvirka
       disabled: Óvirkt
       display_name: Birtingarnafn
@@ -127,6 +127,7 @@ is:
       email: Tölvupóstfang
       email_status: Staða tölvupósts
       enable: Virkja
+      enable_sign_in_token_auth: Virkja auðkenningu með teikni í tölvupósti
       enabled: Virkt
       enabled_msg: Tókst að affrysta aðgang notandans %{username}
       followers: Fylgjendur
@@ -191,6 +192,10 @@ is:
       search: Leita
       search_same_email_domain: Aðra notendur með sama tölvupóstlén
       search_same_ip: Aðrir notendur með sama IP-vistfang
+      security_measures:
+        only_password: Aðeins lykilorð
+        password_and_2fa: Lykilorð og 2-þátta auðkenning
+        password_and_sign_in_token: Lykilorð og teikn í tölvupósti
       sensitive: Viðkvæmt
       sensitized: merkt sem viðkvæmt
       shared_inbox_url: Slóð á sameiginlegt innhólf
@@ -242,8 +247,10 @@ is:
         destroy_unavailable_domain: Eyða léni sem ekki er tiltækt
         disable_2fa_user: Gera tveggja-þátta auðkenningu óvirka
         disable_custom_emoji: Gera sérsniðið tjáningartákn óvirkt
+        disable_sign_in_token_auth_user: Gera óvirka auðkenningu með teikni í tölvupósti fyrir notandann
         disable_user: Gera notanda óvirkan
         enable_custom_emoji: Virkja sérsniðið tjáningartákn
+        enable_sign_in_token_auth_user: Gera virka auðkenningu með teikni í tölvupósti fyrir notandann
         enable_user: Virkja notanda
         memorialize_account: Gera aðgang að minningargrein
         promote_user: Hækka notanda í tign
@@ -285,8 +292,10 @@ is:
         destroy_unavailable_domain_html: "%{name} hóf aftur afhendingu til lénsins %{target}"
         disable_2fa_user_html: "%{name} gerði kröfu um tveggja-þátta innskráningu óvirka fyrir notandann %{target}"
         disable_custom_emoji_html: "%{name} gerði tjáningartáknið %{target} óvirkt"
+        disable_sign_in_token_auth_user_html: "%{name} gerði óvirka auðkenningu með teikni í tölvupósti fyrir %{target}"
         disable_user_html: "%{name} gerði innskráningu óvirka fyrir notandann %{target}"
         enable_custom_emoji_html: "%{name} gerði tjáningartáknið %{target} virkt"
+        enable_sign_in_token_auth_user_html: "%{name} gerði virka auðkenningu með teikni í tölvupósti fyrir %{target}"
         enable_user_html: "%{name} gerði innskráningu virka fyrir notandann %{target}"
         memorialize_account_html: "%{name} breytti notandaaðgangnum %{target} í minningargreinarsíðu"
         promote_user_html: "%{name} hækkaði notandann %{target} í tign"
@@ -469,8 +478,8 @@ is:
         unavailable_message: Afhending ekki möguleg
         warning: Aðvörun
         warning_message:
-          one: "%{count} dagur með villum í afhendingu"
-          other: "%{count} dagar með villum í afhendingu"
+          one: '%{count} dagur með villum í afhendingu'
+          other: '%{count} dagar með villum í afhendingu'
       delivery_available: Afhending er til taks
       delivery_error_days: Dagar með villum í afhendingu
       delivery_error_hint: Ef afhending er ekki möguleg í %{count} daga, verður það sjálfkrafa merkt sem óafhendanlegt.
@@ -516,11 +525,11 @@ is:
     pending_accounts:
       title: Notendaaðgangar í bið (%{count})
     relationships:
-      title: Vensl %{acct}
+      title: "Vensl %{acct}"
     relays:
       add_new: Bæta við nýjum endurvarpa
       delete: Eyða
-      description_html: "<strong>Endurvarpi í skýjasambandi</strong> er milliþjónn sem skiptist á miklu magni opinberra tísta við aðra þjóna sem eru áskrifendur að honum og birta sín tíst á honum. <strong>Þetta getur hjálpað litlum og meðalstórum vefþjónum að uppgötva efni úr skýjasambandinu</strong>, sem annars myndi krefjast þess að staðværir notendur fylgist handvirkt með öðru fólki á fjartengdum vefþjónum."
+      description_html: <strong>Endurvarpi í skýjasambandi</strong> er milliþjónn sem skiptist á miklu magni opinberra tísta við aðra þjóna sem eru áskrifendur að honum og birta sín tíst á honum. <strong>Þetta getur hjálpað litlum og meðalstórum vefþjónum að uppgötva efni úr skýjasambandinu</strong>, sem annars myndi krefjast þess að staðværir notendur fylgist handvirkt með öðru fólki á fjartengdum vefþjónum.
       disable: Gera óvirkt
       disabled: Óvirkt
       enable: Virkja
@@ -569,6 +578,7 @@ is:
       resolved: Leyst
       resolved_msg: Það tókst að leysa kæruna!
       status: Staða
+      target_origin: Uppruni kærða notandaaðgangsins
       title: Kærur
       unassign: Aftengja úthlutun
       unresolved: Óleyst
@@ -723,10 +733,10 @@ is:
     new_report:
       body: "%{reporter} hefur kært %{target}"
       body_remote: Einhver frá %{domain} hefur kært %{target}
-      subject: Ný kæra vegna %{instance} (#%{id})
+      subject: 'Ný kæra vegna %{instance} (#%{id})'
     new_trending_tag:
       body: 'Myllumerkið #%{name} er í umræðunni í dag, en hefur ekki verið yfirfarið áður. Það mun ekki verða birt opinberlega nema að þú samþykkir það, annars geturðu vistað eyðublaðið óbreytt og aldrei heyrt á þetta minnst framar.'
-      subject: Nýtt myllumerki er komið til yfirferðar á %{instance} (#%{name})
+      subject: 'Nýtt myllumerki er komið til yfirferðar á %{instance} (#%{name})'
   aliases:
     add_new: Búa til samnefni (alias)
     created_msg: Tókst að búa til samnefni. Þú getur núna byrjað að færa gögn af gamla aðgangnum.
@@ -1004,6 +1014,17 @@ is:
   lists:
     errors:
       limit: Þú hefur náð hámarksfjölda lista
+  login_activities:
+    authentication_methods:
+      otp: tveggja-þátta auðkenningarforrit
+      password: lykilorð
+      sign_in_token: öryggiskóði í tölvupósti
+      webauthn: öryggislyklar
+    description_html: Ef þú sérð einhverja virkni sem þú kannast ekki við, skaltu íhuga að skipta um lykilorð og að virkja tveggja-þátta auðkenningu.
+    empty: Enginn aðkenningarferill tiltækur
+    failed_sign_in_html: Misheppnuð tilraun til innskráningar með %{method} frá %{ip} (%{browser})
+    successful_sign_in_html: Vel heppnuð tilraun til innskráningar með %{method} frá %{ip} (%{browser})
+    title: Auðkenningarferill
   media_attachments:
     validations:
       images_and_video: Ekki er hægt að hengja myndskeið við stöðufærslu sem þegar inniheldur myndir
@@ -1073,13 +1094,13 @@ is:
       title: Ný beiðni um að fylgjast með
     mention:
       action: Svara
-      body: "%{name} minntist á þig í:"
-      subject: "%{name} minntist á þig"
+      body: '%{name} minntist á þig í:'
+      subject: '%{name} minntist á þig'
       title: Ný tilvísun
     poll:
       subject: Könnun frá %{name} er lokið
     reblog:
-      body: "%{name} endurbirti stöðufærsluna þína:"
+      body: '%{name} endurbirti stöðufærsluna þína:'
       subject: "%{name} endurbirti stöðufærsluna þína"
       title: Ný endurbirting
     status:
@@ -1210,6 +1231,7 @@ is:
     revoke: Afturkalla
     revoke_success: Tókst að afturkalla setu
     title: Setur
+    view_authentication_history: Skoða aðkenningarferil aðgangsins þíns
   settings:
     account: Notandaaðgangur
     account_settings: Stillingar notandaaðgangs
@@ -1272,7 +1294,7 @@ is:
     show_older: Sýna eldri
     show_thread: Birta þráð
     sign_in_to_participate: Skráðu þig inn til að taka þátt í samtalinu
-    title: "%{name}: „%{quote}‟"
+    title: '%{name}: „%{quote}‟'
     visibilities:
       direct: Beint
       private: Einungis fylgjendur

@@ -1,4 +1,3 @@
----
 io:
   simple_form:
     hints:
@@ -9,7 +8,7 @@ io:
       imports:
         data: Dosiero CSV de altra instaluro di Mastodon
       sessions:
-        otp: Enter the Two-factor code from your phone or use one of your recovery codes.
+        otp: 'Enter the Two-factor code from your phone or use one of your recovery codes.'
     labels:
       defaults:
         avatar: Profilimajo

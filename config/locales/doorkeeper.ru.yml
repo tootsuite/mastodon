@@ -1,4 +1,3 @@
----
 ru:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ ru:
       application:
         title: Требуется авторизация OAuth
     scopes:
-      admin:read: читать все данные на сервере
-      admin:read:accounts: читать конфиденциальную информацию всех учётных записей
-      admin:read:reports: читать конфиденциальную информацию о всех жалобах и учётных записях с жалобами
-      admin:write: модифицировать все данные на сервере
-      admin:write:accounts: производить модерацию учётных записей
-      admin:write:reports: производить модерацию жалоб
+      "admin:read": читать все данные на сервере
+      "admin:read:accounts": читать конфиденциальную информацию всех учётных записей
+      "admin:read:reports": читать конфиденциальную информацию о всех жалобах и учётных записях с жалобами
+      "admin:write": модифицировать все данные на сервере
+      "admin:write:accounts": производить модерацию учётных записей
+      "admin:write:reports": производить модерацию жалоб
       follow: управлять подписками и списком блокировок
       push: получать push-уведомления
       read: просматривать данные вашей учётной записи
-      read:accounts: видеть информацию об учётных записях
-      read:blocks: видеть ваши блокировки
-      read:bookmarks: видеть ваши закладки
-      read:favourites: видеть ваше избранное
-      read:filters: видеть ваши фильтры
-      read:follows: видеть ваши подписки
-      read:lists: видеть ваши списки
-      read:mutes: видеть список игнорируемых
-      read:notifications: получать уведомления
-      read:reports: видеть ваши жалобы
-      read:search: использовать поиск
-      read:statuses: видеть все ваши посты
+      "read:accounts": видеть информацию об учётных записях
+      "read:blocks": видеть ваши блокировки
+      "read:bookmarks": видеть ваши закладки
+      "read:favourites": видеть ваше избранное
+      "read:filters": видеть ваши фильтры
+      "read:follows": видеть ваши подписки
+      "read:lists": видеть ваши списки
+      "read:mutes": видеть список игнорируемых
+      "read:notifications": получать уведомления
+      "read:reports": видеть ваши жалобы
+      "read:search": использовать поиск
+      "read:statuses": видеть все ваши посты
       write: изменять все данные вашей учётной записи
-      write:accounts: редактировать ваш профиль
-      write:blocks: блокировать учётные записи и домены
-      write:bookmarks: добавлять посты в закладки
-      write:favourites: отмечать посты как избранные
-      write:filters: создавать фильтры
-      write:follows: подписываться на людей
-      write:lists: создавать списки
-      write:media: загружать медиафайлы
-      write:mutes: добавлять в игнорируемое людей и обсуждения
-      write:notifications: очищать список уведомлений
-      write:reports: отправлять жалобы на других
-      write:statuses: публиковать посты
+      "write:accounts": редактировать ваш профиль
+      "write:blocks": блокировать учётные записи и домены
+      "write:bookmarks": добавлять посты в закладки
+      "write:favourites": отмечать посты как избранные
+      "write:filters": создавать фильтры
+      "write:follows": подписываться на людей
+      "write:lists": создавать списки
+      "write:media": загружать медиафайлы
+      "write:mutes": добавлять в игнорируемое людей и обсуждения
+      "write:notifications": очищать список уведомлений
+      "write:reports": отправлять жалобы на других
+      "write:statuses": публиковать посты

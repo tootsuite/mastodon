@@ -1,4 +1,3 @@
----
 es-AR:
   devise:
     confirmations:
@@ -8,10 +7,10 @@ es-AR:
     failure:
       already_authenticated: Ya iniciaste sesión.
       inactive: Tu cuenta todavía no está activada.
-      invalid: "%{authentication_keys} o contraseña no válidas."
+      invalid: '%{authentication_keys} o contraseña no válidas.'
       last_attempt: Tenés un intento más antes de que se bloquee tu cuenta.
       locked: Se bloqueó tu cuenta.
-      not_found_in_database: "%{authentication_keys} o contraseña no válidas."
+      not_found_in_database: '%{authentication_keys} o contraseña no válidas.'
       pending: Tu cuenta todavía está bajo revisión.
       timeout: Venció tu sesión. Por favor, volvé a iniciar sesión para continuar.
       unauthenticated: Necesitás iniciar sesión o registrarte antes de continuar.
@@ -87,8 +86,8 @@ es-AR:
       updated: Se cambió exitosamente tu contraseña. Ya iniciaste sesión.
       updated_not_active: Se cambió exitosamente tu contraseña.
     registrations:
-      destroyed: "¡Chauchas! Se canceló exitosamente tu cuenta. Esperamos verte pronto de nuevo."
-      signed_up: "¡Bienvenido! Te registraste exitosamente."
+      destroyed: '¡Chauchas! Se canceló exitosamente tu cuenta. Esperamos verte pronto de nuevo.'
+      signed_up: '¡Bienvenido! Te registraste exitosamente.'
       signed_up_but_inactive: Te registraste exitosamente. Sin embargo, no podés iniciar sesión porque tu cuenta todavía no está activada.
       signed_up_but_locked: Te registraste exitosamente. Sin embargo, no podés iniciar sesión porque tu cuenta está bloqueada.
       signed_up_but_pending: Se envió un correo electrónico a tu dirección de correo con un enlace de confirmación. Después que hagás clic en ese enlace, revisaremos tu pedido. Si sos aprobado, serás notificado.

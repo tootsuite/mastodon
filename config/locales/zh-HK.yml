@@ -1,12 +1,11 @@
----
 zh-HK:
   about:
-    about_hashtag_html: 這些是包含「<strong>#%{hashtag}</strong>」標籤的公開文章。只要你是任何聯盟網站的用戶，便可以與他們互動。
-    about_mastodon_html: Mastodon（萬象）是屬於未來的社交網絡︰無廣告煩擾、無企業監控、設計講道義、分散無大台！立即重奪個人資料的控制權，使用 Mastodon 吧！
+    about_hashtag_html: '這些是包含「<strong>#%{hashtag}</strong>」標籤的公開文章。只要你是任何聯盟網站的用戶，便可以與他們互動。'
+    about_mastodon_html: 'Mastodon（萬象）是屬於未來的社交網絡︰無廣告煩擾、無企業監控、設計講道義、分散無大台！立即重奪個人資料的控制權，使用 Mastodon 吧！'
     about_this: 關於本服務站
     active_count_after: 活躍
     active_footnote: 每月活躍使用者 (MAU)
-    administered_by: 管理者：
+    administered_by: '管理者：'
     api: API
     apps: 手機 App
     apps_platforms: 在 iOS、Android 和其他平台使用 Mastodon
@@ -27,9 +26,9 @@ zh-HK:
     learn_more: 了解更多
     privacy_policy: 隱私權政策
     rules: 系統規則
-    rules_html: 如果你想要在本站開一個新帳戶，以下是你需要遵守的規則：
+    rules_html: '如果你想要在本站開一個新帳戶，以下是你需要遵守的規則：'
     see_whats_happening: 看看發生什麼事
-    server_stats: 伺服器統計：
+    server_stats: '伺服器統計：'
     source_code: 源代碼
     status_count_after:
       other: 篇文章
@@ -40,11 +39,11 @@ zh-HK:
     unavailable_content_description:
       domain: 伺服器
       reason: 原因
-      rejecting_media: 這些伺服器的媒體檔案將不會被處理或儲存，我們亦不會展示其縮圖。請手動點擊以觀看原始檔：
+      rejecting_media: '這些伺服器的媒體檔案將不會被處理或儲存，我們亦不會展示其縮圖。請手動點擊以觀看原始檔：'
       rejecting_media_title: 被篩選的媒體檔案
-      silenced: 除非你已經關注個別使用者，否則來自這些伺服器的文章和通知將會被隱藏。
+      silenced: '除非你已經關注個別使用者，否則來自這些伺服器的文章和通知將會被隱藏。'
       silenced_title: 已靜音的伺服器
-      suspended: 來自這些伺服器的所有數據將不會被處理。你將不可能聯絡來自這些伺服器的使用者。
+      suspended: '來自這些伺服器的所有數據將不會被處理。你將不可能聯絡來自這些伺服器的使用者。'
       suspended_title: 已停權的伺服器
     unavailable_content_html: Mastodon 通常讓你瀏覽其他社交聯盟網站的所有內容，但是對於這個特定網站，有這些特別的例外規則。
     user_count_after:
@@ -68,7 +67,7 @@ zh-HK:
     network_hidden: 此信息不可用
     never_active: 永不
     nothing_here: 暫時未有內容可以顯示！
-    people_followed_by: "%{name} 關注的人"
+    people_followed_by: '%{name} 關注的人'
     people_who_follow: 關注 %{name} 的人
     pin_errors:
       following: 你只能推薦你正在關注的使用者。
@@ -113,7 +112,7 @@ zh-HK:
       delete: 刪除資料
       deleted: 已刪除
       demote: 降權
-      destroyed_msg: 即將刪除 %{username} 的數據
+      destroyed_msg: "即將刪除 %{username} 的數據"
       disable: 停用
       disable_two_factor_authentication: 關閉雙重認證
       disabled: 已凍結
@@ -350,7 +349,7 @@ zh-HK:
       existing_domain_block_html: 你已經對 %{name} 施加了更嚴格的限制，你需要先對他<a href="%{unblock_url}">取消封鎖</a>。
       new:
         create: 新增域名阻隔
-        hint: "「域名阻隔」不會隔絕該域名帳號進入本站資料庫，但是會在符合條件的帳號進入資料庫後，自動對它們套用特定審批操作。"
+        hint: '「域名阻隔」不會隔絕該域名帳號進入本站資料庫，但是會在符合條件的帳號進入資料庫後，自動對它們套用特定審批操作。'
         severity:
           desc_html: "「<strong>自動靜音</strong>」令該域名下帳號的文章，被設為只對關注者顯示，沒有關注的人會看不到。 「<strong>自動刪除</strong>」會刪除將該域名下用戶的文章、媒體檔案和個人資料。「<strong>無</strong>」則會拒絕接收來自該域名的媒體檔案。"
           noop: 無
@@ -374,7 +373,7 @@ zh-HK:
         suspend: 已停權
       show:
         affected_accounts:
-          other: 將影響到資料庫中的 %{count} 個帳號
+          other: "將影響到資料庫中的 %{count} 個帳號"
         retroactive:
           silence: 對此域名的所有帳號取消靜音
           suspend: 對此域名的所有帳號取消除名
@@ -442,7 +441,7 @@ zh-HK:
     relays:
       add_new: 新增中繼
       delete: 刪除
-      description_html: "<strong>聯盟中繼站</strong>是一種中繼伺服器，會在訂閱並推送至此中繼站的伺服器之間交換大量的公開嘟文。<strong>中繼站也能協助小型或中型伺服器從聯邦中探索內容</strong>，而無須本地使用者手動關注遠端伺服器的其他使用者。"
+      description_html: <strong>聯盟中繼站</strong>是一種中繼伺服器，會在訂閱並推送至此中繼站的伺服器之間交換大量的公開嘟文。<strong>中繼站也能協助小型或中型伺服器從聯邦中探索內容</strong>，而無須本地使用者手動關注遠端伺服器的其他使用者。
       disable: 停用
       disabled: 已停用
       enable: 啟用
@@ -489,6 +488,7 @@ zh-HK:
       resolved: 已處理
       resolved_msg: 舉報個案已被處理！
       status: 狀態
+      target_origin: 被檢舉帳號來源
       title: 舉報
       unassign: 取消指派
       unresolved: 未處理
@@ -615,7 +615,7 @@ zh-HK:
       reviewed: 已審核
       title: 主題標籤
       trending_right_now: 最新趨勢
-      unique_uses_today: 今天嘟了 %{count} 則
+      unique_uses_today: "今天嘟了 %{count} 則"
       unreviewed: 未審核
       updated_msg: 成功更新主題標籤設定
     title: 管理
@@ -631,7 +631,7 @@ zh-HK:
     new_report:
       body: "%{reporter} 舉報了 %{target}"
       body_remote: 來自 %{domain} 的人舉報了 %{target}
-      subject: 針對 %{instance} 的舉報（#%{id}）
+      subject: '針對 %{instance} 的舉報（#%{id}）'
     new_trending_tag:
       body: '今天流行使用未被審核的 #%{name} 主題標籤。在你允許之前，它不會被公開地顯示，你亦可以無視它使它不再污染你的眼睛。'
       subject: 在 %{instance} 上未審核的主題標籤 (%{name})
@@ -644,7 +644,7 @@ zh-HK:
     remove: 取消連結別名 (Alias)
   appearance:
     advanced_web_interface: 進階網頁介面
-    advanced_web_interface_hint: 如果你想善用整個螢幕闊度，你可以啟用「進階網頁介面」，在畫面上配置多個不同的欄目，讓你能根據需要，同時查看盡可能多的信息，支援的欄位包括：主頁、通知、其他站點和任何的列表和標籤。
+    advanced_web_interface_hint: '如果你想善用整個螢幕闊度，你可以啟用「進階網頁介面」，在畫面上配置多個不同的欄目，讓你能根據需要，同時查看盡可能多的信息，支援的欄位包括：主頁、通知、其他站點和任何的列表和標籤。'
     animations_and_accessibility: 動畫和輔助功能
     confirmation_dialogs: 確認對話框
     discovery: 探索
@@ -657,8 +657,8 @@ zh-HK:
   application_mailer:
     notification_preferences: 更改電郵設定
     salutation: "%{name}："
-    settings: 修改電郵設定︰%{link}
-    view: 進入瀏覽︰
+    settings: '修改電郵設定︰%{link}'
+    view: '進入瀏覽︰'
     view_profile: 檢視個人資料頁
     view_status: 檢視文章
   applications:
@@ -718,8 +718,8 @@ zh-HK:
     already_requested: 你先前已向該帳號發送關注請求
     error: 對不起，尋找這個跨站用戶的過程發生錯誤
     follow: 關注
-    follow_request: 關注請求已發送给：
-    following: 成功！你正在關注：
+    follow_request: '關注請求已發送给：'
+    following: '成功！你正在關注：'
     post_follow:
       close: 你也可以直接關閉這個頁面。
       return: 顯示個人資料頁
@@ -743,9 +743,9 @@ zh-HK:
       about_x_hours: "%{count}小時前"
       about_x_months: "%{count}個月前"
       about_x_years: "%{count}年前"
-      almost_x_years: 接近%{count}年前
+      almost_x_years: "接近%{count}年前"
       half_a_minute: 剛剛
-      less_than_x_minutes: 少於%{count}分鐘前
+      less_than_x_minutes: "少於%{count}分鐘前"
       less_than_x_seconds: 剛剛
       over_x_years: "%{count}年"
       x_days: "%{count}日"
@@ -759,7 +759,7 @@ zh-HK:
     proceed: 刪除帳戶
     success_msg: 你的帳戶已經成功刪除
     warning:
-      before: 在繼續之前，請仔細閱讀以下說明：
+      before: '在繼續之前，請仔細閱讀以下說明：'
       caches: 已被其他服務器緩存的內容可能不會消失
       data_removal: 你的文章和其他資料將被永久刪除
       email_change_html: 你可以在不刪除帳戶的情況下<a href="%{path}">更改電子郵件地址</a>
@@ -847,7 +847,7 @@ zh-HK:
     validation_errors:
       other: 提交的資料有 %{count} 項問題
   html_validator:
-    invalid_markup: 含有無效的HTML標記：%{error}
+    invalid_markup: '含有無效的HTML標記：%{error}'
   identity_proofs:
     active: 活躍
     authorize: 是的，請授權
@@ -862,8 +862,8 @@ zh-HK:
     i_am_html: 我是 %{service} 上的 %{username}
     identity: 身份
     inactive: 停用
-    publicize_checkbox: 發表文章：
-    publicize_toot: 驗證成功！我在%{service} 是%{username} ：%{url}
+    publicize_checkbox: '發表文章：'
+    publicize_toot: '驗證成功！我在%{service} 是%{username} ：%{url}'
     remove: 刪除帳號的驗證
     removed: 成功刪除身份驗證
     status: 確認狀態
@@ -898,7 +898,7 @@ zh-HK:
       '86400': 1 天後
     expires_in_prompt: 永不過期
     generate: 生成邀請連結
-    invited_by: 你的邀請人是：
+    invited_by: '你的邀請人是：'
     max_uses:
       other: "%{count} 次"
     max_uses_prompt: 無限制
@@ -939,7 +939,7 @@ zh-HK:
     set_redirect: 設定重新定向
     warning:
       backreference_required: 新帳戶必須首先反向標識(back-reference)當前帳戶
-      before: 在繼續之前，請仔細閱讀以下說明：
+      before: '在繼續之前，請仔細閱讀以下說明：'
       cooldown: 在轉移帳號之後將會有一段冷卻時間，在冷卻時間內你將不能再次轉移帳號
       disabled_account: 你的當前帳號將不能完整地運作。但你將會有權力匯出你的數據和重新啟用你的帳號。
       followers: 此操作將會由當前帳號轉移所有追隨者至新帳號
@@ -951,7 +951,7 @@ zh-HK:
   move_handler:
     carry_blocks_over_text: 此用戶從%{acct} 轉移，該帳號已被你封鎖。
     carry_mutes_over_text: 此用戶從%{acct} 轉移，該帳號已被你靜音。
-    copy_account_note_text: 此用戶從%{acct} 轉移，這是你之前在該帳號留下的備注：
+    copy_account_note_text: '此用戶從%{acct} 轉移，這是你之前在該帳號留下的備注：'
   notification_mailer:
     digest:
       action: 查看所有通知
@@ -963,7 +963,7 @@ zh-HK:
         other: "自從上次登入以來，你收到 %{count} 則新的通知 \U0001F418"
       title: 在你不在的這段時間……
     favourite:
-      body: 你的文章被 %{name} 喜愛：
+      body: '你的文章被 %{name} 喜愛：'
       subject: "%{name} 喜歡你的文章"
       title: 新的最愛
     follow:
@@ -973,20 +973,20 @@ zh-HK:
     follow_request:
       action: 處理關注請求
       body: "%{name} 要求關注你"
-      subject: 等候關注你的用戶︰ %{name}
+      subject: '等候關注你的用戶︰ %{name}'
       title: 新的關注請求
     mention:
       action: 回覆
-      body: "%{name} 在文章中提及你︰"
-      subject: "%{name} 在文章中提及你"
+      body: '%{name} 在文章中提及你︰'
+      subject: '%{name} 在文章中提及你'
       title: 新的提及
     reblog:
-      body: 你的文章被 %{name} 轉推：
+      body: '你的文章被 %{name} 轉推：'
       subject: "%{name} 轉推了你的文章"
       title: 新的轉推
   notifications:
     email_events: 電郵通知活動
-    email_events_hint: 選擇你想接收通知的活動：
+    email_events_hint: '選擇你想接收通知的活動：'
     other_settings: 其他通知設定
   number:
     human:
@@ -1003,7 +1003,7 @@ zh-HK:
     description_html: 當你啟用<strong>雙重認證</strong>後，你登入時將需要使用你的手機或其他認證器所產生的代碼。
     enable: 啟用
     instructions_html: "<strong>請用你手機的認證器應用程式（如 Google Authenticator、Authy），掃描這裏的QR 圖形碼</strong>。在雙重認證啟用後，你登入時將須要使用此應用程式產生的認證碼。"
-    manual_instructions: 如果你無法掃描 QR 圖形碼，請手動輸入這個文字密碼︰
+    manual_instructions: '如果你無法掃描 QR 圖形碼，請手動輸入這個文字密碼︰'
     setup: 設定
     wrong_code: 你輸入的認證碼並不正確！可能伺服器時間和你手機不一致，請檢查你手機的時鐘，或與本站管理員聯絡。
   pagination:
@@ -1053,18 +1053,18 @@ zh-HK:
     missing_resource: 無法找到你用戶的轉接網址
     no_account_html: 沒有帳號？你可以<a href='%{sign_up_path}' target='_blank'>在這裏註冊</a>
     proceed: 下一步
-    prompt: 你希望關注︰
+    prompt: '你希望關注︰'
     reason_html: "<strong>為甚麼有必要做這個步驟？</strong>因為<code>%{instance}</code>未必是你註冊的伺服器，所以我們首先需要將你帶回你的伺服器。"
   remote_interaction:
     favourite:
       proceed: 下一步
-      prompt: 你要求把這篇文章加入最愛：
+      prompt: '你要求把這篇文章加入最愛：'
     reblog:
       proceed: 繼續轉嘟
-      prompt: 你想轉推：
+      prompt: '你想轉推：'
     reply:
       proceed: 下一步
-      prompt: 你想回覆：
+      prompt: '你想回覆：'
   scheduled_statuses:
     over_daily_limit: 你已經超越了當天排定發文的限額 (%{limit})
     over_total_limit: 你已經超越了排定發文的限額 (%{limit})
@@ -1136,15 +1136,15 @@ zh-HK:
     attached:
       audio:
         other: "%{count} 段影片"
-      description: 附件： %{attached}
+      description: '附件： %{attached}'
       image:
         other: "%{count} 幅圖片"
       video:
         other: "%{count} 段影片"
     boosted_from_html: 轉推自 %{acct_link}
-    content_warning: 內容警告： %{warning}
+    content_warning: '內容警告： %{warning}'
     disallowed_hashtags:
-      other: 包含不允許的標籤： %{tags}
+      other: '包含不允許的標籤： %{tags}'
     errors:
       in_reply_not_found: 你所回覆的嘟文並不存在。
     language_detection: 自動偵測語言
@@ -1166,7 +1166,7 @@ zh-HK:
     show_older: 顯示較舊嘟文
     show_thread: 顯示討論串
     sign_in_to_participate: 登入以加入討論
-    title: "%{name}：「%{quote}」"
+    title: '%{name}：「%{quote}」'
     visibilities:
       private: 關注者觀看
       private_long: 只有關注你的人能看到
@@ -1292,9 +1292,9 @@ zh-HK:
       subject: 你的備份檔已可供下載
       title: 檔案匯出
     sign_in_token:
-      details: 這是嘗試的詳細資訊
-      explanation: 我們發現有人嘗試以未使用過的 IP 位址登入到你的帳號。 如果這個登入的人是你，請在「登入請求」頁面上輸入以下安全代碼：
-      further_actions: 如果這不是你，請到這裏更改你的密碼，並啟用雙重認證：
+      details: '這是嘗試的詳細資訊'
+      explanation: '我們發現有人嘗試以未使用過的 IP 位址登入到你的帳號。 如果這個登入的人是你，請在「登入請求」頁面上輸入以下安全代碼：'
+      further_actions: '如果這不是你，請到這裏更改你的密碼，並啟用雙重認證：'
       subject: 請確認登入請求
       title: 登入請求
     warning:
@@ -1305,7 +1305,7 @@ zh-HK:
         suspend: 你將不能使用您的帳號，你的個人資料頁面及其他資料將不能再被取得。你仍可在資料被完全刪除前請求下載你的數據，但我們仍會保留一部份資料，以防止有人規避停權處罰。
       get_in_touch: 你可以回覆此電郵來跟我們(%{instance})聯絡
       review_server_policies: 審視伺服器政策
-      statuses: 特別是：
+      statuses: '特別是：'
       subject:
         disable: 你的帳號 %{acct} 已經被涷結
         none: 警告帳號%{acct}
@@ -1342,10 +1342,10 @@ zh-HK:
     invalid_sign_in_token: 無效的安全碼
     otp_lost_help_html: 如果這兩者你均無法登入，你可以聯繫 %{email}
     seamless_external_login: 因為你正在使用第三方服務登入，所以不能設定密碼和電郵。
-    signed_in_as: 目前登入的帳戶：
+    signed_in_as: '目前登入的帳戶：'
     suspicious_sign_in_confirmation: 你似乎未曾從此設備登入，而你又有一段時間沒有登入了。我們剛剛把安全碼傳送到你的電郵地址，請查看你的電郵信箱，以確認你是帳號擁有者本人。
   verification:
-    explanation_html: 你可以<strong>認證個人資料頁面的元數據 (Metadata) 連結是屬於你的</strong>。要認證，那些連結的目的地網站必須有一條回到你 Mastodon 個人頁面的連結，而且連結<strong>必須</strong>具有<code>rel="me"</code>屬性。連結的文字內容都不會影響認證。這裏有一個例子：
+    explanation_html: '你可以<strong>認證個人資料頁面的元數據 (Metadata) 連結是屬於你的</strong>。要認證，那些連結的目的地網站必須有一條回到你 Mastodon 個人頁面的連結，而且連結<strong>必須</strong>具有<code>rel="me"</code>屬性。連結的文字內容都不會影響認證。這裏有一個例子：'
     verification: 驗證
   webauthn_credentials:
     add: 新增安全密鑰裝置

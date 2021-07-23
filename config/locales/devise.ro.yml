@@ -1,4 +1,3 @@
----
 ro:
   devise:
     confirmations:
@@ -8,10 +7,10 @@ ro:
     failure:
       already_authenticated: Ești deja conectat.
       inactive: Contul tău nu este încă activat.
-      invalid: "%{authentication_keys} sau parolă greșită."
+      invalid: '%{authentication_keys} sau parolă greșită.'
       last_attempt: Mai ai încă o încercare înainte de a bloca contul.
       locked: Contul tău este blocat.
-      not_found_in_database: "%{authentication_keys} sau parolă greșită."
+      not_found_in_database: '%{authentication_keys} sau parolă greșită.'
       pending: Contul tău este încă în curs de revizuire.
       timeout: Sesiunea ta a expirat. Te rugăm să te conectezi din nou pentru a continua.
       unauthenticated: Trebuie să te conectezi sau să te înregistrezi înainte de a continua.
@@ -28,12 +27,12 @@ ro:
       email_changed:
         explanation: 'Adresa de e-mail pentru contul tău este schimbată la:'
         extra: Dacă nu v-ați schimbat adresa de e-mail, probabil că cineva a obținut acces la contul dvs. Te rugăm să îți schimbi parola imediat sau să contactezi administratorul serverului dacă nu ai acces la contul tău.
-        subject: E-mail schimbat
+        subject: 'E-mail schimbat'
         title: Noua adresa de e-mail
       password_change:
         explanation: Parola contului tău a fost schimbată.
         extra: Dacă nu v-ați schimbat parola, este posibil ca cineva să fi obținut acces la contul dvs. Te rugăm să îți schimbi parola imediat sau să contactezi administratorul serverului dacă nu ai acces la contul tău.
-        subject: Parolă schimbată
+        subject: 'Parolă schimbată'
         title: Parolă schimbată
       reconfirmation_instructions:
         explanation: Confirmă noua adresă pentru a schimba adresa de e-mail.
@@ -44,22 +43,22 @@ ro:
         action: Schimbă parola
         explanation: Ați solicitat o nouă parolă pentru contul dvs.
         extra: Dacă nu ați solicitat acest lucru, ignorați acest e-mail. Parola dvs. nu se va schimba până când nu veți accesa link-ul de mai sus și nu veți crea unul nou.
-        subject: Instrucțiuni pentru resetarea parolei
+        subject: 'Instrucțiuni pentru resetarea parolei'
         title: Resetare parolă
       two_factor_disabled:
         explanation: Autentificarea în doi pași pentru contul tău a fost dezactivată. Autentificarea este posibilă acum folosind doar adresa de e-mail și parola.
-        subject: Autentificare cu doi factori dezactivată
+        subject: 'Autentificare cu doi factori dezactivată'
         title: 2FA dezactivat
       two_factor_enabled:
         explanation: Autentificarea în doi pași a fost activată pentru contul dvs. Un token generat de aplicația TOTP împerecheată va fi necesar pentru autentificare.
-        subject: Autentificare în doi pași activată
+        subject: 'Autentificare în doi pași activată'
         title: 2FA activat
       two_factor_recovery_codes_changed:
         explanation: Codurile anterioare de recuperare au fost invalidate și unele noi generate.
-        subject: Recuperare în doi factori
+        subject: 'Recuperare în doi factori'
         title: Coduri de recuperare 2FA modificate
       unlock_instructions:
-        subject: Instrucțiuni de deblocare
+        subject: 'Instrucțiuni de deblocare'
     omniauth_callbacks:
       failure: Nu te-am putut autentifica de la %{kind} deoarece "%{reason}".
       success: Autentificat cu succes din contul %{kind}.
@@ -94,6 +93,6 @@ ro:
       not_found: nu a fost găsit
       not_locked: nu a fost blocat
       not_saved:
-        few: "%{count} erori au împiedicat salvarea acestui %{resource}:"
         one: 'O eroare a împiedicat salvarea acestui %{resource}:'
+        few: "%{count} erori au împiedicat salvarea acestui %{resource}:"
         other: "%{count} de erori au împiedicat salvarea acestui %{resource}:"

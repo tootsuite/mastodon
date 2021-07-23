@@ -1,4 +1,3 @@
----
 cs:
   simple_form:
     hints:
@@ -212,7 +211,7 @@ cs:
         name: Hashtag
         trendable: Povolit zobrazení tohoto hashtagu mezi populárními
         usable: Povolit používat tento hashtag v příspěvcích
-    'no': Ne
+    'no': 'Ne'
     recommended: Doporučeno
     required:
       mark: "*"
@@ -220,4 +219,4 @@ cs:
     title:
       sessions:
         webauthn: K přihlášení použijte jeden z Vašich bezpečnostních klíčů
-    'yes': Ano
+    'yes': 'Ano'

@@ -1,4 +1,3 @@
----
 uk:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ uk:
       application:
         title: Необхідна авторизація OAuth
     scopes:
-      admin:read: читати всі дані на сервері
-      admin:read:accounts: читати конфіденційну інформацію усіх акаунтів
-      admin:read:reports: читати дражливу інформацію усіх скарг та облікових записів зі скаргами
-      admin:write: модифікувати всі дані на сервері
-      admin:write:accounts: модерувати облікові записи
-      admin:write:reports: модерувати скарги
+      "admin:read": читати всі дані на сервері
+      "admin:read:accounts": читати конфіденційну інформацію усіх акаунтів
+      "admin:read:reports": читати дражливу інформацію усіх скарг та облікових записів зі скаргами
+      "admin:write": модифікувати всі дані на сервері
+      "admin:write:accounts": модерувати облікові записи
+      "admin:write:reports": модерувати скарги
       follow: змінювати стосунки облікового запису
       push: отримувати Ваші Push-повідомлення
       read: читати усі дані вашого облікового запису
-      read:accounts: бачити інформацію про облікові записи
-      read:blocks: бачити Ваші блокування
-      read:bookmarks: бачити ваші закладки
-      read:favourites: бачити Ваші вподобані пости
-      read:filters: бачити Ваші фільтри
-      read:follows: бачити Ваші підписки
-      read:lists: бачити Ваші списки
-      read:mutes: бачити ваші заглушення
-      read:notifications: бачити Ваші сповіщення
-      read:reports: бачити Ваші скарги
-      read:search: шукати від вашого імені
-      read:statuses: бачити всі статуси
+      "read:accounts": бачити інформацію про облікові записи
+      "read:blocks": бачити Ваші блокування
+      "read:bookmarks": бачити ваші закладки
+      "read:favourites": бачити Ваші вподобані пости
+      "read:filters": бачити Ваші фільтри
+      "read:follows": бачити Ваші підписки
+      "read:lists": бачити Ваші списки
+      "read:mutes": бачити ваші заглушення
+      "read:notifications": бачити Ваші сповіщення
+      "read:reports": бачити Ваші скарги
+      "read:search": шукати від вашого імені
+      "read:statuses": бачити всі статуси
       write: змінювати усі дані вашого облікового запису
-      write:accounts: змінювати ваш профіль
-      write:blocks: блокувати облікові записи і домени
-      write:bookmarks: додавати пости в закладки
-      write:favourites: вподобані статуси
-      write:filters: створювати фільтри
-      write:follows: підписуйтесь на людей
-      write:lists: створювайте списки
-      write:media: завантажити медіафайли
-      write:mutes: заглушити людей або бесіди
-      write:notifications: очищувати Ваші сповіщення
-      write:reports: надіслати скаргу про людей
-      write:statuses: публікувати статуси
+      "write:accounts": змінювати ваш профіль
+      "write:blocks": блокувати облікові записи і домени
+      "write:bookmarks": додавати пости в закладки
+      "write:favourites": вподобані статуси
+      "write:filters": створювати фільтри
+      "write:follows": підписуйтесь на людей
+      "write:lists": створювайте списки
+      "write:media": завантажити медіафайли
+      "write:mutes": заглушити людей або бесіди
+      "write:notifications": очищувати Ваші сповіщення
+      "write:reports": надіслати скаргу про людей
+      "write:statuses": публікувати статуси

@@ -1,4 +1,3 @@
----
 is:
   devise:
     confirmations:

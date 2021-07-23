@@ -1,7 +1,6 @@
----
 ca:
   about:
-    about_hashtag_html: Aquests són tuts públics etiquetats amb <strong>#%{hashtag}</strong>. Pots interactuar amb elles si tens un compte a qualsevol lloc del fedivers.
+    about_hashtag_html: 'Aquests són tuts públics etiquetats amb <strong>#%{hashtag}</strong>. Pots interactuar amb elles si tens un compte a qualsevol lloc del fedivers.'
     about_mastodon_html: 'La xarxa social del futur: sense anuncis, sense vigilància corporativa, disseny ètic i descentralització. Posseeix les teves dades amb Mastodon!'
     about_this: Quant a
     active_count_after: actiu
@@ -54,7 +53,7 @@ ca:
     user_count_before: Tenim
     what_is_mastodon: Què és Mastodon?
   accounts:
-    choices_html: 'Eleccions de %{name}:'
+    choices_html: "Eleccions de %{name}:"
     endorsements_hint: Pots recomanar persones que segueixes a l'interfície de web, que apareixeran aquí.
     featured_tags_hint: Pots presentar etiquetes específiques que seràn mostrades aquí.
     follow: Segueix
@@ -117,8 +116,9 @@ ca:
       delete: Esborra les dades
       deleted: Esborrats
       demote: Degrada
-      destroyed_msg: Les dades de %{username} son a la cua per a ser esborrades en breu
+      destroyed_msg: "Les dades de %{username} son a la cua per a ser esborrades en breu"
       disable: Inhabilita
+      disable_sign_in_token_auth: Desactivar l'autenticació de token per correu
       disable_two_factor_authentication: Desactiva 2FA
       disabled: Inhabilitat
       display_name: Nom visible
@@ -127,6 +127,7 @@ ca:
       email: Adreça electrònica
       email_status: Estat de l'adreça electrònica
       enable: Habilita
+      enable_sign_in_token_auth: Activar l'autenticació de token per correu
       enabled: Habilitat
       enabled_msg: El compte de %{username} s’ha descongelat amb èxit
       followers: Seguidors
@@ -191,6 +192,10 @@ ca:
       search: Cerca
       search_same_email_domain: Altres usuaris amb el mateix domini de correu
       search_same_ip: Altres usuaris amb la mateixa IP
+      security_measures:
+        only_password: Només contrasenya
+        password_and_2fa: Contrasenya i 2FA
+        password_and_sign_in_token: Contrasenya i token per correu
       sensitive: Sensible
       sensitized: marcar com a sensible
       shared_inbox_url: URL de la safata d'entrada compartida
@@ -242,8 +247,10 @@ ca:
         destroy_unavailable_domain: Esborra domini no disponible
         disable_2fa_user: Desactiva 2FA
         disable_custom_emoji: Desactiva l'emoji personalitzat
+        disable_sign_in_token_auth_user: Desactivar l'autenticació de token per correu per l'usuari
         disable_user: Deshabilita l'usuari
         enable_custom_emoji: Activa l'emoji personalitzat
+        enable_sign_in_token_auth_user: Activar l'autenticació de token per correu pel l'usuari
         enable_user: Activa l'usuari
         memorialize_account: Memoritza el compte
         promote_user: Promou l'usuari
@@ -285,8 +292,10 @@ ca:
         destroy_unavailable_domain_html: "%{name} ha représ el lliurament delivery al domini %{target}"
         disable_2fa_user_html: "%{name} ha desactivat el requisit de dos factors per a l'usuari %{target}"
         disable_custom_emoji_html: "%{name} ha desactivat l'emoji %{target}"
+        disable_sign_in_token_auth_user_html: "%{name} ha desactivat l'autenticació de token per correu per a %{target}"
         disable_user_html: "%{name} ha desactivat l'accés del usuari %{target}"
         enable_custom_emoji_html: "%{name} ha activat l'emoji %{target}"
+        enable_sign_in_token_auth_user_html: "%{name} ha activat l'autenticació de token per correu per a %{target}"
         enable_user_html: "%{name} ha activat l'accés del usuari %{target}"
         memorialize_account_html: "%{name} ha convertit el compte %{target} en una pàgina de memorial"
         promote_user_html: "%{name} ha promogut l'usuari %{target}"
@@ -468,6 +477,9 @@ ca:
         unavailable: No disponible
         unavailable_message: El lliurament no està disponible
         warning: Avís
+        warning_message:
+          one: Fallada de lliurament %{count} dia
+          other: Fallada de lliurament %{count} dies
       delivery_available: El lliurament està disponible
       delivery_error_days: Dies de fallades de lliurament
       delivery_error_hint: Si el lliurament no és possible per %{count} dies, serà automàticament marcat com a no lliurable.
@@ -513,7 +525,7 @@ ca:
     pending_accounts:
       title: Comptes pendents (%{count})
     relationships:
-      title: relacions del %{acct}
+      title: "relacions del %{acct}"
     relays:
       add_new: Afegiu un nou relay
       delete: Esborra
@@ -566,6 +578,7 @@ ca:
       resolved: Resolt
       resolved_msg: Informe resolt amb èxit!
       status: Estat
+      target_origin: Origen del compte reportat
       title: Informes
       unassign: Treu l'assignació
       unresolved: No resolt
@@ -720,10 +733,10 @@ ca:
     new_report:
       body: "%{reporter} ha informat de %{target}"
       body_remote: Algú des de el domini %{domain} ha informat sobre %{target}
-      subject: Informe nou per a %{instance} (#%{id})
+      subject: 'Informe nou per a %{instance} (#%{id})'
     new_trending_tag:
       body: 'La etiqueta #%{name} està actualment en tendència però no s''ha revisat prèviament. No es mostrarà públicament tret que ho permetis o guardis el formulari tal com està per a no tornar a escoltar res al respecte.'
-      subject: Nova etiqueta pendent de revisió a %{instance} (#%{name})
+      subject: 'Nova etiqueta pendent de revisió a %{instance} (#%{name})'
   aliases:
     add_new: Crea un àlies
     created_msg: Nou àlies creat amb èxit. Ara pots iniciar el moviment des de'l compte vell.
@@ -834,7 +847,7 @@ ca:
       about_x_years: "%{count} anys"
       almost_x_years: "%{count}anys"
       half_a_minute: Ara mateix
-      less_than_x_minutes: fa %{count} minuts
+      less_than_x_minutes: "fa %{count} minuts"
       less_than_x_seconds: Ara mateix
       over_x_years: "%{count} anys"
       x_days: "%{count} dies"
@@ -1001,6 +1014,17 @@ ca:
   lists:
     errors:
       limit: Has assolit la quantitat màxima de llistes
+  login_activities:
+    authentication_methods:
+      otp: aplicació d'autenticació de dos factors
+      password: contrasenya
+      sign_in_token: codi de seguretat per correu electrònic
+      webauthn: claus de seguretat
+    description_html: Si veus activitat que no reconeixes, considera canviar la teva contrasenya i activar l'autenticació de dos factors.
+    empty: Historial d'autenticació no disponible
+    failed_sign_in_html: Intent d'inici de sessió errat amb %{method} des-de %{ip} (%{browser})
+    successful_sign_in_html: Inici de sessió exitós amb %{method} des-de %{ip} (%{browser})
+    title: Historial d'autenticació
   media_attachments:
     validations:
       images_and_video: No es pot adjuntar un vídeo a una publicació que ja contingui imatges
@@ -1056,7 +1080,7 @@ ca:
         other: "%{count} notificacions noves des de la darrera visita \U0001F418"
       title: Durant la teva absència…
     favourite:
-      body: "%{name} ha marcat com a favorit el teu estat:"
+      body: '%{name} ha marcat com a favorit el teu estat:'
       subject: "%{name} ha marcat com a favorit el teu estat"
       title: Favorit nou
     follow:
@@ -1070,13 +1094,13 @@ ca:
       title: Nova sol·licitud de seguiment
     mention:
       action: Respon
-      body: "%{name} t'ha mencionat en:"
-      subject: "%{name} t'ha mencionat"
+      body: '%{name} t''ha mencionat en:'
+      subject: '%{name} t''ha mencionat'
       title: Menció nova
     poll:
       subject: Ha finalitzat l'enquesta de %{name}
     reblog:
-      body: "%{name} ha impulsat el teu estat:"
+      body: '%{name} ha impulsat el teu estat:'
       subject: "%{name} ha impulsat el teu estat"
       title: Nou impuls
     status:
@@ -1207,6 +1231,7 @@ ca:
     revoke: Revoca
     revoke_success: S'ha revocat la sessió amb èxit
     title: Sessions
+    view_authentication_history: Veure l'historial d'autenticació del teu compte
   settings:
     account: Compte
     account_settings: Ajustos del compte

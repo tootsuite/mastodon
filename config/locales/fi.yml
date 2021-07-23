@@ -1,8 +1,7 @@
----
 fi:
   about:
-    about_hashtag_html: Nämä ovat hashtagilla <strong>#%{hashtag}</strong> merkittyjä julkisia tuuttauksia. Voit vastata niihin, jos sinulla on tili jossain päin fediversumia.
-    about_mastodon_html: Mastodon on sosiaalinen verkosto. Se on toteutettu avoimilla verkkoprotokollilla ja vapailla, avoimen lähdekoodin ohjelmistoilla, ja se toimii hajautetusti samaan tapaan kuin sähköposti.
+    about_hashtag_html: 'Nämä ovat hashtagilla <strong>#%{hashtag}</strong> merkittyjä julkisia tuuttauksia. Voit vastata niihin, jos sinulla on tili jossain päin fediversumia.'
+    about_mastodon_html: 'Mastodon on sosiaalinen verkosto. Se on toteutettu avoimilla verkkoprotokollilla ja vapailla, avoimen lähdekoodin ohjelmistoilla, ja se toimii hajautetusti samaan tapaan kuin sähköposti.'
     about_this: Tietoja tästä palvelimesta
     active_count_after: aktiivinen
     administered_by: 'Ylläpitäjä:'
@@ -282,7 +281,7 @@ fi:
       show:
         affected_accounts:
           one: Vaikuttaa yhteen tiliin tietokannassa
-          other: Vaikuttaa %{count} tiliin tietokannassa
+          other: "Vaikuttaa %{count} tiliin tietokannassa"
         retroactive:
           silence: Peru kaikkien tässä verkkotunnuksessa jo olemassa olevien tilien hiljennys
           suspend: Peru kaikkien tässä verkkotunnuksessa jo olemassa olevien tilien jäähy
@@ -346,7 +345,7 @@ fi:
         delete: Poista
         placeholder: Kuvaile mitä toimia on tehty tai muita päivityksiä tähän raporttiin…
       reopen: Avaa raportti uudestaan
-      report: Raportti nro %{id}
+      report: 'Raportti nro %{id}'
       reported_account: Raportoitu tili
       reported_by: Raportoija
       resolved: Ratkaistut
@@ -668,7 +667,7 @@ fi:
         other: "%{count} uutta ilmoitusta viime käyntisi jälkeen \U0001F418"
       title: Poissaollessasi…
     favourite:
-      body: "%{name} tykkäsi tilastasi:"
+      body: '%{name} tykkäsi tilastasi:'
       subject: "%{name} tykkäsi tilastasi"
       title: Uusi tykkäys
     follow:
@@ -682,11 +681,11 @@ fi:
       title: Uusi seuraamispyyntö
     mention:
       action: Vastaa
-      body: "%{name} mainitsi sinut:"
-      subject: "%{name} mainitsi sinut"
+      body: '%{name} mainitsi sinut:'
+      subject: '%{name} mainitsi sinut'
       title: Uusi maininta
     reblog:
-      body: "%{name} buustasi tilaasi:"
+      body: '%{name} buustasi tilaasi:'
       subject: "%{name} boostasi tilaasi"
       title: Uusi buustaus
   number:
@@ -788,7 +787,7 @@ fi:
     show_more: Näytä lisää
     show_thread: Näytä ketju
     sign_in_to_participate: Kirjaudu sisään osallistuaksesi keskusteluun
-    title: "%{name}: ”%{quote}”"
+    title: '%{name}: ”%{quote}”'
     visibilities:
       private: Vain seuraajille
       private_long: Näytä vain seuraajille

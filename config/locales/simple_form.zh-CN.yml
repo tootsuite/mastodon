@@ -1,4 +1,3 @@
----
 zh-CN:
   simple_form:
     hints:
@@ -64,7 +63,7 @@ zh-CN:
         domain: 这里可以是邮箱地址中的域名部分、域名解析到的 MX 记录，或者 MX 记录解析到的域名。这些检查会在用户注册时进行，如果邮箱域名被封禁，那么注册会被拒绝。
         with_dns_records: Mastodon 会尝试解析所给域名的 DNS 记录，然后把解析结果一并封禁
       featured_tag:
-        name: 你可能想要使用以下之一：
+        name: '你可能想要使用以下之一：'
       form_challenge:
         current_password: 你正在进入安全区域
       imports:
@@ -74,7 +73,7 @@ zh-CN:
       ip_block:
         comment: 可选。请记住为什么你添加了此规则。
         expires_in: IP 地址是一种有限的资源，它们有时是共享的，并且常常变化。因此，不推荐无限期的 IP 封禁。
-        ip: 输入 IPv4 或 IPv6 地址。你可以使用CIDR语法屏蔽IP段。小心不要屏蔽自己！
+        ip: 输入 IPv4 或 IPv6 地址。你可以使用 CIDR 语法屏蔽 IP 段。小心不要屏蔽自己！
         severities:
           no_access: 阻止访问所有资源
           sign_up_requires_approval: 新注册需要你的批准
@@ -82,7 +81,7 @@ zh-CN:
       rule:
         text: 描述这个服务器上的用户规则或要求。尽量确保简洁、清晰易懂
       sessions:
-        otp: 输入你手机应用上生成的双重认证码，或者任意一个恢复代码：
+        otp: '输入你手机应用上生成的双重认证码，或者任意一个恢复代码：'
         webauthn: 如果是 USB 密钥，请确保将其插入，如有必要，请点击它。
       tag:
         name: 你只能改变字母的大小写，让它更易读
@@ -145,7 +144,7 @@ zh-CN:
         otp_attempt: 双重认证代码
         password: 密码
         phrase: 关键词
-        setting_advanced_layout: 启用高级web界面
+        setting_advanced_layout: 启用高级 Web 界面
         setting_aggregate_reblogs: 在时间轴中合并转嘟
         setting_auto_play_gif: 自动播放 GIF 动画
         setting_boost_modal: 在转嘟前询问我
@@ -212,7 +211,7 @@ zh-CN:
         name: 话题标签
         trendable: 允许在热门下显示此话题
         usable: 允许嘟文使用此话题标签
-    'no': 否
+    'no': '否'
     recommended: 推荐
     required:
       mark: "*"
@@ -220,4 +219,4 @@ zh-CN:
     title:
       sessions:
         webauthn: 使用你的安全密钥登录
-    'yes': 是
+    'yes': '是'

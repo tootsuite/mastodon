@@ -1,4 +1,3 @@
----
 pt-PT:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ pt-PT:
       application:
         title: Autorização OAuth necessária
     scopes:
-      admin:read: ler todos os dados no servidor
-      admin:read:accounts: ler informações sensíveis de todas as contas
-      admin:read:reports: ler informações sensíveis de todos os relatórios e contas reportadas
-      admin:write: modificar todos os dados no servidor
-      admin:write:accounts: executar ações de moderação em contas
-      admin:write:reports: executar ações de moderação em relatórios
+      "admin:read": ler todos os dados no servidor
+      "admin:read:accounts": ler informações sensíveis de todas as contas
+      "admin:read:reports": ler informações sensíveis de todos os relatórios e contas reportadas
+      "admin:write": modificar todos os dados no servidor
+      "admin:write:accounts": executar ações de moderação em contas
+      "admin:write:reports": executar ações de moderação em relatórios
       follow: siga, bloqueie, desbloqueie, e deixa de seguir contas
       push: receber as suas notificações push
       read: tenha acesso aos dados da tua conta
-      read:accounts: ver as informações da conta
-      read:blocks: ver os seus bloqueios
-      read:bookmarks: ver os seus favoritos
-      read:favourites: ver os seus favoritos
-      read:filters: ver os seus filtros
-      read:follows: ver quem você segue
-      read:lists: ver as suas listas
-      read:mutes: ver os utilizadores que silenciou
-      read:notifications: ver as suas notificações
-      read:reports: ver as suas denúncias
-      read:search: pesquisar em seu nome
-      read:statuses: ver todos os estados
+      "read:accounts": ver as informações da conta
+      "read:blocks": ver os seus bloqueios
+      "read:bookmarks": ver os seus favoritos
+      "read:favourites": ver os seus favoritos
+      "read:filters": ver os seus filtros
+      "read:follows": ver quem você segue
+      "read:lists": ver as suas listas
+      "read:mutes": ver os utilizadores que silenciou
+      "read:notifications": ver as suas notificações
+      "read:reports": ver as suas denúncias
+      "read:search": pesquisar em seu nome
+      "read:statuses": ver todos os estados
       write: publique por ti
-      write:accounts: modificar o seu perfil
-      write:blocks: bloquear contas e domínios
-      write:bookmarks: estado dos favoritos
-      write:favourites: estado dos favoritos
-      write:filters: criar filtros
-      write:follows: seguir pessoas
-      write:lists: criar listas
-      write:media: carregar arquivos de media
-      write:mutes: silenciar pessoas e conversas
-      write:notifications: limpar as suas notificações
-      write:reports: reportar outras pessoas
-      write:statuses: publicar estado
+      "write:accounts": modificar o seu perfil
+      "write:blocks": bloquear contas e domínios
+      "write:bookmarks": estado dos favoritos
+      "write:favourites": estado dos favoritos
+      "write:filters": criar filtros
+      "write:follows": seguir pessoas
+      "write:lists": criar listas
+      "write:media": carregar arquivos de media
+      "write:mutes": silenciar pessoas e conversas
+      "write:notifications": limpar as suas notificações
+      "write:reports": reportar outras pessoas
+      "write:statuses": publicar estado

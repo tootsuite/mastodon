@@ -1,8 +1,7 @@
----
 lt:
   about:
-    about_hashtag_html: Čia visiems prieinamas įrankis <strong>#%{hashtag}</strong>. Jūs galite juo naudotis bet kur, jeigu turite paskyra fedi-visatoje.
-    about_mastodon_html: Mastodon, tai socialinis tinklas pagrįstas atviro kodo programavimu, ir atvirais web protokolais. Visiškai nemokamas. Ši sistema decantrilizuota kaip jūsų elektroninis paštas.
+    about_hashtag_html: 'Čia visiems prieinamas įrankis <strong>#%{hashtag}</strong>. Jūs galite juo naudotis bet kur, jeigu turite paskyra fedi-visatoje.'
+    about_mastodon_html: 'Mastodon, tai socialinis tinklas pagrįstas atviro kodo programavimu, ir atvirais web protokolais. Visiškai nemokamas. Ši sistema decantrilizuota kaip jūsų elektroninis paštas.'
     about_this: Apie
     administered_by: 'Administruoja:'
     apps: Mobilioji Aplikacija
@@ -196,9 +195,7 @@ lt:
         create: Sukurti bloką
         hint: Domeno blokavimas nesustabdys vartotojų paskyrų sukūrimo duomenų sistemoje, tačiau automatiškai pritaikys atitinkamus moderavimo metodus šioms paskyroms.
         severity:
-          desc_html: |-
-            <strong>1Tyla</strong>2 padarys paskyros įkelimus nematomus visiems, kurie jų neseka.
-            <strong>3Draudimas</strong>4 panaikins visus paskyros įkėlimus ir profilio informaciją.Naudok<strong>5Nieko</strong>6 jeigu tiesiog norite atmesti medijos failus.
+          desc_html: "<strong>1Tyla</strong>2 padarys paskyros įkelimus nematomus visiems, kurie jų neseka.\n<strong>3Draudimas</strong>4 panaikins visus paskyros įkėlimus ir profilio informaciją.Naudok<strong>5Nieko</strong>6 jeigu tiesiog norite atmesti medijos failus."
           noop: Nieko
           silence: Tyla
           suspend: Draudimas
@@ -253,7 +250,7 @@ lt:
     relays:
       add_new: Pridėti naują pamainą
       delete: Ištrinti
-      description_html: "<strong>Federacijos perjungėjas</strong> tai tarpinis serveris, kuris apsikeičia didelios apimties informacija tarp kitų serverių. <strong> Tai gali padėti mažesniems serveriams atrasti turinį iš fedi-visatos</strong>, kuris kitaip reikalautų vartotojų lokaliai sekti kitus žmones naudojantis kitus tolimus serverius."
+      description_html: <strong>Federacijos perjungėjas</strong> tai tarpinis serveris, kuris apsikeičia didelios apimties informacija tarp kitų serverių. <strong> Tai gali padėti mažesniems serveriams atrasti turinį iš fedi-visatos</strong>, kuris kitaip reikalautų vartotojų lokaliai sekti kitus žmones naudojantis kitus tolimus serverius.
       disable: Išjungti
       disabled: Išjungtas
       enable: Įjungti
@@ -373,7 +370,7 @@ lt:
       title: Paskyros statusai
       with_media: Su medija
     tags:
-      title: Saitažodžiai(#)
+      title: 'Saitažodžiai(#)'
     title: Administracija
     warning_presets:
       add_new: Pridėti naują
@@ -384,7 +381,7 @@ lt:
     new_report:
       body: "%{reporter} parašė skundą apie %{target}"
       body_remote: Kažkas iš %{domain} parašė skundą apie %{target}
-      subject: Naujas skundas %{instance} (#%{id})
+      subject: 'Naujas skundas %{instance} (#%{id})'
   application_mailer:
     notification_preferences: Keisti el pašto parinktis
     settings: 'Keisti el pašto parinktis: %{link}'
@@ -480,7 +477,7 @@ lt:
   featured_tags:
     add_new: Pridėti naują
     errors:
-      limit: Jūs jau naudojate maksimalų galimą saitažodžių(#) kiekį
+      limit: 'Jūs jau naudojate maksimalų galimą saitažodžių(#) kiekį'
   filters:
     contexts:
       home: Namų laiko juosta
@@ -626,7 +623,7 @@ lt:
     development: Plėtojimas
     edit_profile: Keisti profilį
     export: Informacijos eksportas
-    featured_tags: Rodomi saitažodžiai(#)
+    featured_tags: 'Rodomi saitažodžiai(#)'
     import: Importuoti
     migrate: Paskyros migracija
     notifications: Pranešimai

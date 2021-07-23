@@ -1,8 +1,7 @@
----
 cy:
   about:
-    about_hashtag_html: Dyma dŵtiau cyhoeddus wedi eu tagio gyda <strong>#%{hashtag}</strong>. Gallwch ryngweithio gyda nhw os oes gennych gyfrif yn unrhyw le yn y ffeddysawd.
-    about_mastodon_html: Mae Mastodon yn rwydwaith cymdeithasol sy'n seiliedig ar brotocolau gwe a meddalwedd cod agored rhad ac am ddim. Yn debyg i e-bost mae'n ddatganoledig.
+    about_hashtag_html: 'Dyma dŵtiau cyhoeddus wedi eu tagio gyda <strong>#%{hashtag}</strong>. Gallwch ryngweithio gyda nhw os oes gennych gyfrif yn unrhyw le yn y ffeddysawd.'
+    about_mastodon_html: 'Mae Mastodon yn rwydwaith cymdeithasol sy''n seiliedig ar brotocolau gwe a meddalwedd cod agored rhad ac am ddim. Yn debyg i e-bost mae''n ddatganoledig.'
     about_this: Ynghylch
     active_count_after: yn weithredol
     active_footnote: Defnyddwyr Gweithredol Misol (DGM)
@@ -29,12 +28,12 @@ cy:
     server_stats: 'Ystadegau gweinydd:'
     source_code: Cod ffynhonnell
     status_count_after:
+      zero: statwsau
+      one: statws
+      two: statwsau
       few: statwsau
       many: statwsau
-      one: statws
       other: statwsau
-      two: statwsau
-      zero: statwsau
     status_count_before: Ysgriffennwyd gan
     tagline: Dilyn ffrindiau a darganfod rhai newydd
     terms: Telerau gwasanaeth
@@ -42,40 +41,40 @@ cy:
     unavailable_content_description:
       domain: Gweinydd
       reason: 'Rheswm:'
-      rejecting_media: Ni fydd ffeiliau cyfryngau o'r gweinydd hwn yn cael eu prosesu ac ni fydd unrhyw fawd yn cael eu harddangos, sy'n gofyn am glicio â llaw i'r gweinydd arall.
+      rejecting_media: 'Ni fydd ffeiliau cyfryngau o''r gweinydd hwn yn cael eu prosesu ac ni fydd unrhyw fawd yn cael eu harddangos, sy''n gofyn am glicio â llaw i''r gweinydd arall.'
       rejecting_media_title: Cyfrwng hidliedig
-      silenced: Ni fydd swyddi o'r gweinydd hwn yn ymddangos yn unman heblaw eich porthiant cartref os dilynwch yr awdur.
+      silenced: 'Ni fydd swyddi o''r gweinydd hwn yn ymddangos yn unman heblaw eich porthiant cartref os dilynwch yr awdur.'
       silenced_title: Gweinyddion wedi'i tawelu
-      suspended: Ni fyddwch yn gallu dilyn unrhyw un o'r gweinydd hwn, ac ni fydd unrhyw ddata ohono'n cael ei brosesu na'i storio, ac ni chyfnewidir unrhyw ddata.
+      suspended: 'Ni fyddwch yn gallu dilyn unrhyw un o''r gweinydd hwn, ac ni fydd unrhyw ddata ohono''n cael ei brosesu na''i storio, ac ni chyfnewidir unrhyw ddata.'
       suspended_title: Gweinyddion wedi'i gwahardd
     unavailable_content_html: Yn gyffredinol, mae Mastodon yn caniatáu ichi weld cynnwys gan unrhyw weinyddwr arall yn y ffederasiwn a rhyngweithio â hi. Dyma'r eithriadau a wnaed ar y gweinydd penodol hwn.
     user_count_after:
+      zero: defnyddwyr
+      one: defnyddiwr
+      two: defnyddwyr
       few: defnyddwyr
       many: defnyddwyr
-      one: defnyddiwr
       other: defnyddwyr
-      two: defnyddwyr
-      zero: defnyddwyr
     user_count_before: Cartref i
     what_is_mastodon: Beth yw Mastodon?
   accounts:
-    choices_html: 'Dewisiadau %{name}:'
+    choices_html: "Dewisiadau %{name}:"
     endorsements_hint: Gallwch gymeradwyo pobl rydych chi'n eu dilyn o'r rhyngwyneb gwe, a byddan nhw'n ymddangos yma.
     featured_tags_hint: Gallwch ychwanegu hashnodau penodol a fydd yn cael eu harddangos yma.
     follow: Dilynwch
     followers:
+      zero: Dilynwyr
+      one: Dilynwr
+      two: Dilynwyr
       few: Dilynwyr
       many: Dilynwyr
-      one: Dilynwr
       other: Dilynwyr
-      two: Dilynwyr
-      zero: Dilynwyr
     following: Yn dilyn
     joined: Ymunodd %{date}
     last_active: diweddaraf
     link_verified_on: Gwiriwyd perchnogaeth y ddolen yma ar %{date}
     media: Cyfryngau
-    moved_html: 'Mae %{name} wedi symud i %{new_profile_link}:'
+    moved_html: "Mae %{name} wedi symud i %{new_profile_link}:"
     network_hidden: Nid yw'r wybodaeth hyn ar gael
     never_active: Peidiwch byth
     nothing_here: Does dim byd yma!
@@ -84,12 +83,12 @@ cy:
     pin_errors:
       following: Rhaid i ti fod yn dilyn y person yr ydych am ei gymeradwyo yn barod
     posts:
+      zero: Tŵtiau
+      one: Tŵt
+      two: Tŵtiau
       few: Tŵtiau
       many: Tŵtiau
-      one: Tŵt
       other: Tŵtiau
-      two: Tŵtiau
-      zero: Tŵtiau
     posts_tab_heading: Tŵtiau
     posts_with_replies: Tŵtiau ac atebion
     roles:
@@ -338,7 +337,7 @@ cy:
         create: Creu bloc
         hint: Ni fydd y bloc parth yn atal cread cofnodion cyfrif yn y bas data, ond mi fydd yn gosod dulliau goruwchwylio penodol ôl-weithredol ac awtomatig ar y cyfrifau hynny.
         severity:
-          desc_html: Mae <strong>Tawelu</strong> yn gwneud twtiau y cyfrif yn anweledig i unrhyw un nad yw'n dilyn y cyfrif. Mae <strong>Atal</strong> yn cael gwared ar holl gynnwys, cyfryngau a data proffil y cyfrif. Defnyddiwch <strong>Dim</strong> os ydych chi ond am wrthod dogfennau cyfryngau.
+          desc_html: "Mae <strong>Tawelu</strong> yn gwneud twtiau y cyfrif yn anweledig i unrhyw un nad yw'n dilyn y cyfrif. Mae <strong>Atal</strong> yn cael gwared ar holl gynnwys, cyfryngau a data proffil y cyfrif. Defnyddiwch <strong>Dim</strong> os ydych chi ond am wrthod dogfennau cyfryngau."
           noop: Dim
           silence: Tawelwch
           suspend: Atal
@@ -358,12 +357,12 @@ cy:
         suspend: ataliedig
       show:
         affected_accounts:
-          few: Effeithiwyd ar %{count} gyfrifon
-          many: Effeithiwyd ar %{count} gyfrifon
+          zero: "Effeithiwyd ar %{count} gyfrifon"
           one: Effeithiwyd ar un cyfrif
-          other: Effeithiwyd ar %{count} gyfrifon
-          two: Effeithiwyd ar %{count} gyfrifon
-          zero: Effeithiwyd ar %{count} gyfrifon
+          two: "Effeithiwyd ar %{count} gyfrifon"
+          few: "Effeithiwyd ar %{count} gyfrifon"
+          many: "Effeithiwyd ar %{count} gyfrifon"
+          other: "Effeithiwyd ar %{count} gyfrifon"
         retroactive:
           silence: Dad-dawelu pob cyfri presennol o'r parth hwn
           suspend: Dad-atal pob cyfrif o'r parth hwn sy'n bodoli
@@ -387,12 +386,12 @@ cy:
       by_domain: Parth
       delivery_available: Mae'r cyflenwad ar gael
       known_accounts:
+        zero: "%{count} cyfrifon hysbys"
+        one: "%{count} cyfrif hysbys"
+        two: "%{count} cyfrifon hysbys"
         few: "%{count} cyfrifon hysbys"
         many: "%{count} cyfrifon hysbys"
-        one: "%{count} cyfrif hysbys"
         other: "%{count} cyfrifon hysbys"
-        two: "%{count} cyfrifon hysbys"
-        zero: "%{count} cyfrifon hysbys"
       moderation:
         all: Pob
         limited: Gyfyngedig
@@ -416,7 +415,7 @@ cy:
     pending_accounts:
       title: Cyfrifau yn aros (%{count})
     relationships:
-      title: Perthnasau %{acct}
+      title: "Perthnasau %{acct}"
     relays:
       add_new: Ychwanegau relái newydd
       delete: Dileu
@@ -439,19 +438,19 @@ cy:
     reports:
       account:
         notes:
+          zero: "%{count} nodyn"
+          one: "%{count} nodyn"
+          two: "%{count} o nodiadau"
           few: "%{count} o nodiadau"
           many: "%{count} o nodiadau"
-          one: "%{count} nodyn"
           other: "%{count} o nodiadau"
-          two: "%{count} o nodiadau"
-          zero: "%{count} nodyn"
         reports:
+          zero: "%{count} adroddiad"
+          one: "%{count} adroddiad"
+          two: "%{count} o adroddiadau"
           few: "%{count} o adroddiadau"
           many: "%{count} o adroddiadau"
-          one: "%{count} adroddiad"
           other: "%{count} o adroddiadau"
-          two: "%{count} o adroddiadau"
-          zero: "%{count} adroddiad"
       action_taken_by: Gwnaethpwyd hyn gan
       are_you_sure: Ydych chi'n sicr?
       assign_to_self: Aseinio i mi
@@ -608,9 +607,9 @@ cy:
       body: Mae manylion y cyfrif newydd yn isod. Gallwch cymeradwyo neu wrthod y ceisiad hon.
       subject: Cyfrif newydd i fynu ar gyfer adolygiad ar %{instance} (%{username})
     new_report:
-      body: Mae %{reporter} wedi cwyno am %{target}
+      body: "Mae %{reporter} wedi cwyno am %{target}"
       body_remote: Mae rhywun o %{domain} wedi cwyno am %{target}
-      subject: Cwyn newydd am %{instance} (#%{id})
+      subject: 'Cwyn newydd am %{instance} (#%{id})'
     new_trending_tag:
       body: 'Mae''r hashnod #%{name} yn tueddu heddiw, ond nid yw''r hashnod wedi''i adolygu''n gynt. Ni fydd o''n cael ei arddangos yn gyhoeddus oni bai bod chi''n ei ganiataú, neu arbedwch y ffurflen fel y mae i fyth clywed amdano eto.'
       subject: Hashnod newydd i fynnu ar gyfer adolygiad ar %{instance} (%{name})
@@ -654,7 +653,7 @@ cy:
     delete_account: Dileu cyfrif
     delete_account_html: Os hoffech chi ddileu eich cyfrif, mae modd <a href="%{path}">parhau yma</a>. Bydd gofyn i chi gadarnhau.
     description:
-      prefix_invited_by_user: Mae @%{name} yn eich wahodd i ymuno â'r gweinidd Mastodon hon!
+      prefix_invited_by_user: "Mae @%{name} yn eich wahodd i ymuno â'r gweinidd Mastodon hon!"
       prefix_sign_up: Cofrestru ar Fastodon heddiw!
       suffix: Gyda cyfrif, byddwch yn gallu dilyn pobl, postio dilysiadau a chyfnewid negeseuon gyda defnyddwyr o unrhyw gweinydd Mastodon ac mwy!
     didnt_get_confirmation: Heb dderbyn cyfarwyddiadau cadarnhau?
@@ -666,7 +665,7 @@ cy:
     migrate_account_html: Os hoffech chi ailgyfeirio'r cyfrif hwn at un gwahanol, mae modd <a href="%{path}">ei ffurfweddu yma</a>.
     or_log_in_with: Neu logiwch mewn a
     register: Cofrestru
-    registration_closed: Nid yw %{instance} yn derbyn aelodau newydd
+    registration_closed: "Nid yw %{instance} yn derbyn aelodau newydd"
     resend_confirmation: Ailanfon cyfarwyddiadau cadarnhau
     reset_password: Ailosod cyfrinair
     security: Diogelwch
@@ -808,12 +807,12 @@ cy:
     order_by: Trefnu wrth
     save_changes: Cadw newidiadau
     validation_errors:
+      zero: Mae rhywbeth o'i le o hyd! Edrychwch ar y %{count} gwall isod os gwelwch yn dda
+      one: Mae rhywbeth o'i le o hyd! Edrychwch ar y gwall isod os gwelwch yn dda
+      two: Mae rhywbeth o'i le o hyd! Edrychwch ar y %{count} gwall isod os gwelwch yn dda
       few: Mae rhywbeth o'i le o hyd! Edrychwch ar y %{count} gwall isod os gwelwch yn dda
       many: Mae rhywbeth o'i le o hyd! Edrychwch ar y %{count} gwall isod os gwelwch yn dda
-      one: Mae rhywbeth o'i le o hyd! Edrychwch ar y gwall isod os gwelwch yn dda
       other: Mae rhywbeth o'i le o hyd! Edrychwch ar y %{count} gwall isod os gwelwch yn dda
-      two: Mae rhywbeth o'i le o hyd! Edrychwch ar y %{count} gwall isod os gwelwch yn dda
-      zero: Mae rhywbeth o'i le o hyd! Edrychwch ar y %{count} gwall isod os gwelwch yn dda
   html_validator:
     invalid_markup: 'yn cynnwys marciad HTML annilys: %{error}'
   identity_proofs:
@@ -865,12 +864,12 @@ cy:
     generate: Cynhyrchu
     invited_by: 'Cawsoch eich gwahodd gan:'
     max_uses:
+      zero: "%{count} defnydd"
+      one: 1 iws
+      two: "%{count} defnydd"
       few: "%{count} defnydd"
       many: "%{count} defnydd"
-      one: 1 iws
       other: "%{count} defnydd"
-      two: "%{count} defnydd"
-      zero: "%{count} defnydd"
     max_uses_prompt: Dim terfyn
     prompt: Cynhyrchwch a rhannwch ddolenni gyda eraill i ganiatau mynediad i'r achos hwn
     table:
@@ -926,33 +925,33 @@ cy:
     digest:
       action: Gweld holl hysbysiadau
       body: Dyma grynodeb byr o'r holl negeseuon golloch chi ers eich ymweliad diwethaf ar %{since}
-      mention: 'Soniodd %{name} amdanoch chi:'
+      mention: "Soniodd %{name} amdanoch chi:"
       new_followers_summary:
+        zero: Hefyd, rydych wedi ennill %{count} dilynwr newydd tra eich bod i ffwrdd! Hwrê!
+        one: Yr ydych wedi ennill dilynwr newydd tra eich bod i ffwrdd! Hwrê!
+        two: Hefyd, rydych wedi ennill %{count} dilynwr newydd tra eich bod i ffwrdd! Hwrê!
         few: Hefyd, rydych wedi ennill %{count} dilynwr newydd tra eich bod i ffwrdd! Hwrê!
         many: Hefyd, rydych wedi ennill %{count} dilynwr newydd tra eich bod i ffwrdd! Hwrê!
-        one: Yr ydych wedi ennill dilynwr newydd tra eich bod i ffwrdd! Hwrê!
         other: Hefyd, rydych wedi ennill %{count} dilynwr newydd tra eich bod i ffwrdd! Hwrê!
-        two: Hefyd, rydych wedi ennill %{count} dilynwr newydd tra eich bod i ffwrdd! Hwrê!
-        zero: Hefyd, rydych wedi ennill %{count} dilynwr newydd tra eich bod i ffwrdd! Hwrê!
       subject:
+        zero: "%{count} hysbysiad newydd ers eich ymweliad diwethaf"
+        one: "1 hysbysiad newydd ers eich ymweliad diwethaf"
+        two: "%{count} hysbysiad newydd ers eich ymweliad diwethaf"
         few: "%{count} hysbysiad newydd ers eich ymweliad diwethaf"
         many: "%{count} hysbysiad newydd ers eich ymweliad diwethaf"
-        one: 1 hysbysiad newydd ers eich ymweliad diwethaf
         other: "%{count} hysbysiad newydd ers eich ymweliad diwethaf"
-        two: "%{count} hysbysiad newydd ers eich ymweliad diwethaf"
-        zero: "%{count} hysbysiad newydd ers eich ymweliad diwethaf"
       title: Yn eich absenoldeb...
     favourite:
       body: 'Cafodd eich statws ei hoffi gan %{name}:'
-      subject: Hoffodd %{name} eich statws
+      subject: "Hoffodd %{name} eich statws"
       title: Ffefryn newydd
     follow:
-      body: Mae %{name} bellach yn eich dilyn!
-      subject: Mae %{name} bellach yn eich dilyn
+      body: "Mae %{name} bellach yn eich dilyn!"
+      subject: "Mae %{name} bellach yn eich dilyn"
       title: Dilynwr newydd
     follow_request:
       action: Rheoli ceisiadau dilyn
-      body: Mae %{name} wedi gwneud cais i'ch dilyn
+      body: "Mae %{name} wedi gwneud cais i'ch dilyn"
       subject: 'Dilynwr yn aros: %{name}'
       title: Cais dilynwr newydd
     mention:
@@ -962,7 +961,7 @@ cy:
       title: Crywbylliad newydd
     reblog:
       body: 'Cafodd eich statws ei fŵstio gan %{name}:'
-      subject: Bŵstiodd %{name} eich statws
+      subject: "Bŵstiodd %{name} eich statws"
       title: Hwb newydd
   notifications:
     email_events: Digwyddiadau ar gyfer hysbysiadau e-bost
@@ -1023,9 +1022,7 @@ cy:
     no_account_html: Heb gyfrif? Mae modd i chi <a href='%{sign_up_path}' target='_blank'>gofrestru yma</a>
     proceed: Ymlaen i ddilyn
     prompt: 'Yr ydych am ddilyn:'
-    reason_html: |-
-      <strong>Pam yw'r cam hyn yn angenrheidiol? </strong>
-      Efallai nid yw <code>%{instance}</code> yn gweinydd ble wnaethoch gofrestru, felly mae'n rhaid i ni ailarweinio chi at eich gweinydd catref yn gyntaf.
+    reason_html: "<strong>Pam yw'r cam hyn yn angenrheidiol? </strong>\nEfallai nid yw <code>%{instance}</code> yn gweinydd ble wnaethoch gofrestru, felly mae'n rhaid i ni ailarweinio chi at eich gweinydd catref yn gyntaf."
   remote_interaction:
     favourite:
       proceed: Ymlaen i hoffi
@@ -1083,36 +1080,36 @@ cy:
   statuses:
     attached:
       audio:
+        zero: "%{count} ffeil clywedol"
+        one: "%{count} ffeil clywedol"
+        two: "%{count} ffeil clywedol"
         few: "%{count} ffeil clywedol"
         many: "%{count} ffeil clywedol"
-        one: "%{count} ffeil clywedol"
         other: "%{count} ffeil clywedol"
-        two: "%{count} ffeil clywedol"
-        zero: "%{count} ffeil clywedol"
       description: 'Ynghlwm: %{attached}'
       image:
+        zero: "%{count} o luniau"
+        one: "%{count} llun"
+        two: "%{count} o luniau"
         few: "%{count} o luniau"
         many: "%{count} o luniau"
-        one: "%{count} llun"
         other: "%{count} o luniau"
-        two: "%{count} o luniau"
-        zero: "%{count} o luniau"
       video:
+        zero: "%{count} fideo"
+        one: "%{count} fideo"
+        two: "%{count} fideo"
         few: "%{count} fideo"
         many: "%{count} fideo"
-        one: "%{count} fideo"
         other: "%{count} fideo"
-        two: "%{count} fideo"
-        zero: "%{count} fideo"
     boosted_from_html: Wedi ei fŵstio %{acct_link}
     content_warning: 'Rhybudd cynnwys: %{warning}'
     disallowed_hashtags:
+      zero: 'yn cynnwys yr hashnod gwaharddedig: %{tags}'
+      one: 'yn cynnwys hashnod gwaharddedig: %{tags}'
+      two: 'yn cynnwys yr hashnod gwaharddedig: %{tags}'
       few: 'yn cynnwys yr hashnod gwaharddedig: %{tags}'
       many: 'yn cynnwys yr hashnod gwaharddedig: %{tags}'
-      one: 'yn cynnwys hashnod gwaharddedig: %{tags}'
       other: 'yn cynnwys yr hashnod gwaharddedig: %{tags}'
-      two: 'yn cynnwys yr hashnod gwaharddedig: %{tags}'
-      zero: 'yn cynnwys yr hashnod gwaharddedig: %{tags}'
     errors:
       in_reply_not_found: Nid yw'r statws rydych yn ceisio ymateb i yn edrych fel ei fod yn bodoli.
     language_detection: Canfod iaith yn awtomataidd
@@ -1125,19 +1122,19 @@ cy:
       reblog: Ni ellir pinio bŵstiau
     poll:
       total_people:
+        zero: "%{count} berson"
+        one: "%{count} berson"
+        two: "%{count} o bobl"
         few: "%{count} o bobl"
         many: "%{count} o bobl"
-        one: "%{count} berson"
         other: "%{count} o bobl"
-        two: "%{count} o bobl"
-        zero: "%{count} berson"
       total_votes:
+        zero: "%{count} pleidlais"
+        one: "%{count} bleidlais"
+        two: "%{count} o bleidleisiau"
         few: "%{count} o bleidleisiau"
         many: "%{count} o bleidleisiau"
-        one: "%{count} bleidlais"
         other: "%{count} o bleidleisiau"
-        two: "%{count} o bleidleisiau"
-        zero: "%{count} pleidlais"
       vote: Pleidleisio
     show_more: Dangos mwy
     show_thread: Dangos edefyn

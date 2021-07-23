@@ -1,4 +1,3 @@
----
 tt:
   simple_form:
     labels:
@@ -22,7 +21,7 @@ tt:
       ip_block:
         comment: Аңлатма
         ip: ІР
-    'no': Юк
+    'no': 'Юк'
     required:
       mark: "*"
-    'yes': Әйе
+    'yes': 'Әйе'

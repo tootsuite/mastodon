@@ -1,4 +1,3 @@
----
 eo:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ eo:
       application:
         title: OAuth-a rajtigo bezonata
     scopes:
-      admin:read: legu ĉiujn datumojn en la servilo
-      admin:read:accounts: legi konfidencajn informojn de ĉiuj kontoj
-      admin:read:reports: legi konfidencajn informojn de ĉiuj signaloj kaj signalitaj kontoj
-      admin:write: modifi ĉiujn datumojn en la servilo
-      admin:write:accounts: plenumi agojn de kontrolo sur kontoj
-      admin:write:reports: plenumi agojn de kontrolo sur signaloj
+      "admin:read": legu ĉiujn datumojn en la servilo
+      "admin:read:accounts": legi konfidencajn informojn de ĉiuj kontoj
+      "admin:read:reports": legi konfidencajn informojn de ĉiuj signaloj kaj signalitaj kontoj
+      "admin:write": modifi ĉiujn datumojn en la servilo
+      "admin:write:accounts": plenumi agojn de kontrolo sur kontoj
+      "admin:write:reports": plenumi agojn de kontrolo sur signaloj
       follow: ŝanĝi rilatojn al aliaj kontoj
       push: ricevi viajn puŝ-sciigojn
       read: legi ĉiujn datumojn de via konto
-      read:accounts: vidi la informojn de la kontoj
-      read:blocks: vidi viajn blokadojn
-      read:bookmarks: vidi viajn legosignojn
-      read:favourites: vidi viajn stelumojn
-      read:filters: vidi viajn filtrilojn
-      read:follows: vidi viajn sekvatojn
-      read:lists: vidi viajn listojn
-      read:mutes: vidi viajn silentigadojn
-      read:notifications: vidi viajn sciigojn
-      read:reports: vidi viajn signalojn
-      read:search: serĉi vianome
-      read:statuses: vidi ĉiujn mesaĝojn
+      "read:accounts": vidi la informojn de la kontoj
+      "read:blocks": vidi viajn blokadojn
+      "read:bookmarks": vidi viajn legosignojn
+      "read:favourites": vidi viajn stelumojn
+      "read:filters": vidi viajn filtrilojn
+      "read:follows": vidi viajn sekvatojn
+      "read:lists": vidi viajn listojn
+      "read:mutes": vidi viajn silentigadojn
+      "read:notifications": vidi viajn sciigojn
+      "read:reports": vidi viajn signalojn
+      "read:search": serĉi vianome
+      "read:statuses": vidi ĉiujn mesaĝojn
       write: ŝanĝi ĉiujn datumojn de via konto
-      write:accounts: ŝanĝi vian profilon
-      write:blocks: bloki kontojn kaj domajnojn
-      write:bookmarks: aldoni mesaĝojn al la legosignoj
-      write:favourites: stelumi mesaĝojn
-      write:filters: krei filtrilojn
-      write:follows: sekvi homojn
-      write:lists: krei listojn
-      write:media: alŝuti aŭdovidaĵojn
-      write:mutes: silentigi homojn kaj konversaciojn
-      write:notifications: forigi viajn sciigojn
-      write:reports: signali aliajn homojn
-      write:statuses: publikigi mesaĝojn
+      "write:accounts": ŝanĝi vian profilon
+      "write:blocks": bloki kontojn kaj domajnojn
+      "write:bookmarks": aldoni mesaĝojn al la legosignoj
+      "write:favourites": stelumi mesaĝojn
+      "write:filters": krei filtrilojn
+      "write:follows": sekvi homojn
+      "write:lists": krei listojn
+      "write:media": alŝuti aŭdovidaĵojn
+      "write:mutes": silentigi homojn kaj konversaciojn
+      "write:notifications": forigi viajn sciigojn
+      "write:reports": signali aliajn homojn
+      "write:statuses": publikigi mesaĝojn

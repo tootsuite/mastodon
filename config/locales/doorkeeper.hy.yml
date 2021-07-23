@@ -1,4 +1,3 @@
----
 hy:
   activerecord:
     attributes:
@@ -6,7 +5,7 @@ hy:
         name: Յաւելուածի անուն
         redirect_uri: վերաղյել URI
         scopes: Դաշտեր
-        website: Յաւելուածի վէբկայք
+        website: Յաւելուածի վէբկայք 
     errors:
       models:
         doorkeeper/application:
@@ -48,11 +47,11 @@ hy:
         title: Նոր յաւելուած
       show:
         actions: Գործողութիւններ
-        application_id: Կլիենտի բանալի
+        application_id: Կլիենտի բանալի 
         callback_urls: URL֊ների ետկանչ
         scopes: Դաշտեր
         secret: Կլիենտի գաղտնիք
-        title: Յաւելուած․ %{name}
+        title: 'Յաւելուած․ %{name}'
     authorizations:
       buttons:
         authorize: Լիազօրել
@@ -61,7 +60,7 @@ hy:
         title: Առաջացել է սխալ։
       new:
         able_to: Նա կարողանալու է
-        prompt: "%{client_name} յաւելուածը խնդրում է հասանելիութիւն քո հաշուին"
+        prompt: '%{client_name} յաւելուածը խնդրում է հասանելիութիւն քո հաշուին'
         title: Անհրաժեշտ է նոյնականացում
       show:
         title: Պատճէնիր այս նոյնականացման կոդը եւ փակցրու յաւելուածում։
@@ -113,30 +112,30 @@ hy:
       application:
         title: Անհրաժեշտ է OAuth նոյնականացում
     scopes:
-      admin:read: կարդալ սպասարկչի ողջ տուեալները
-      admin:read:accounts: կարդալ բոլոր հաշիւների զգայուն ինֆորմացիան
-      admin:read:reports: կարդալ բոլոր բողոքների եւ յաղորդուած հաշիւների զգայուն ինֆորմացիան
-      admin:write: փոփոխել սպասարկչի ողջ տուեալները
-      admin:write:accounts: իրականացնել մոդերատորական գործողութիւններ հաշիւների վրայ
-      admin:write:reports: իրականացնել մոդերատորական գործողութիւններ բողոքների վրայ
+      "admin:read": կարդալ սպասարկչի ողջ տուեալները
+      "admin:read:accounts": կարդալ բոլոր հաշիւների զգայուն ինֆորմացիան
+      "admin:read:reports": կարդալ բոլոր բողոքների եւ յաղորդուած հաշիւների զգայուն ինֆորմացիան
+      "admin:write": փոփոխել սպասարկչի ողջ տուեալները
+      "admin:write:accounts": իրականացնել մոդերատորական գործողութիւններ հաշիւների վրայ
+      "admin:write:reports": իրականացնել մոդերատորական գործողութիւններ բողոքների վրայ
       follow: փոփոխել հաշուի յարաբերութիւնները
       push: ստանալ ծանուցումները
       read: կարդալ քո հաշուի բոլոր տուեալները
-      read:accounts: տեսնել հաշիւների ինֆորմացիան
-      read:blocks: տեսնել արգելափակումները
-      read:bookmarks: տեսնել էջանիշները
-      read:favourites: տեսնել հաւանումները
-      read:filters: տեսնել ֆիլտրերը
-      read:follows: տեսնել հետեւորդներին
-      read:lists: տեսնել ցանկերը
-      read:mutes: տեսնել լռեցուածներին
-      read:notifications: տեսնել ծանուցումները
-      read:reports: տեսնել բողոքները
-      read:search: որոնիր քո անունից
-      read:statuses: տեսնել գրառումները
+      "read:accounts": տեսնել հաշիւների ինֆորմացիան
+      "read:blocks": տեսնել արգելափակումները
+      "read:bookmarks": տեսնել էջանիշները
+      "read:favourites": տեսնել հաւանումները
+      "read:filters": տեսնել ֆիլտրերը
+      "read:follows": տեսնել հետեւորդներին
+      "read:lists": տեսնել ցանկերը
+      "read:mutes": տեսնել լռեցուածներին
+      "read:notifications": տեսնել ծանուցումները
+      "read:reports": տեսնել բողոքները
+      "read:search": որոնիր քո անունից
+      "read:statuses": տեսնել գրառումները
       write: փոփոխել քո հաշուի բոլոր տուեալները
-      write:accounts: փոփոխել հաշիւը
-      write:blocks: արգելափակել հաշիւները եւ դոմէյնները
-      write:bookmarks: էջանշել գրառումները
-      write:favourites: հաւանել գրառումները
-      write:filters: "'ստեղծել ֆիլտրեր"
+      "write:accounts": փոփոխել հաշիւը
+      "write:blocks": արգելափակել հաշիւները եւ դոմէյնները
+      "write:bookmarks": էջանշել գրառումները
+      "write:favourites": հաւանել գրառումները
+      "write:filters": '''ստեղծել ֆիլտրեր'

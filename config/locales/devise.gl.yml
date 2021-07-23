@@ -1,4 +1,3 @@
----
 gl:
   devise:
     confirmations:
@@ -8,10 +7,10 @@ gl:
     failure:
       already_authenticated: Xa estás conectada.
       inactive: A túa conta aínda non está activada.
-      invalid: "%{authentication_keys} ou contrasinal non validos."
+      invalid: '%{authentication_keys} ou contrasinal non validos.'
       last_attempt: Tes un intento máis antes de que a túa conta fique bloqueada.
       locked: A túa conta está bloqueada.
-      not_found_in_database: "%{authentication_keys} ou contrasinal non válidos."
+      not_found_in_database: '%{authentication_keys} ou contrasinal non válidos.'
       pending: A túa conta aínda está baixo revisión.
       timeout: A túa sesión expirou. Por favor, entra de novo para continuares.
       unauthenticated: Precisas de entrar na túa conta ou rexistrarte antes de continuar.

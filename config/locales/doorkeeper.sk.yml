@@ -1,4 +1,3 @@
----
 sk:
   activerecord:
     attributes:
@@ -112,37 +111,37 @@ sk:
       application:
         title: Požadovaná OAuth autorizácia
     scopes:
-      admin:read: prezeraj všetky dáta na serveri
-      admin:read:accounts: prezeraj chúlostivé informácie na všetkých účtoch
-      admin:read:reports: čítaj chulostivé informácie o všetkých hláseniach a nahlásených účtoch
-      admin:write: uprav všetky dáta na serveri
-      admin:write:accounts: urob moderovacie úkony na účtoch
-      admin:write:reports: urob moderovacie úkony voči hláseniam
+      "admin:read": prezeraj všetky dáta na serveri
+      "admin:read:accounts": prezeraj chúlostivé informácie na všetkých účtoch
+      "admin:read:reports": čítaj chulostivé informácie o všetkých hláseniach a nahlásených účtoch
+      "admin:write": uprav všetky dáta na serveri
+      "admin:write:accounts": urob moderovacie úkony na účtoch
+      "admin:write:reports": urob moderovacie úkony voči hláseniam
       follow: uprav vzťahy svojho účtu
       push: dostávaj oboznámenia ohľadom tvojho účtu na obrazovku
       read: prezri si všetky dáta ohľadom svojho účetu
-      read:accounts: prezri si informácie o účte
-      read:blocks: prezri svoje bloky
-      read:bookmarks: pozri svoje záložky
-      read:favourites: prezri svoje obľúbené
-      read:filters: prezri svoje filtrovanie
-      read:follows: prezri si svoje sledovania
-      read:lists: prezri si svoje zoznamy
-      read:mutes: prezri svoje utíšenia
-      read:notifications: zhliadni svoje oboznámenia
-      read:reports: prezri svoje reporty
-      read:search: vyhľadvávaj v rámci seba
-      read:statuses: zhliadni všetky príspevky
+      "read:accounts": prezri si informácie o účte
+      "read:blocks": prezri svoje bloky
+      "read:bookmarks": pozri svoje záložky
+      "read:favourites": prezri svoje obľúbené
+      "read:filters": prezri svoje filtrovanie
+      "read:follows": prezri si svoje sledovania
+      "read:lists": prezri si svoje zoznamy
+      "read:mutes": prezri svoje utíšenia
+      "read:notifications": zhliadni svoje oboznámenia
+      "read:reports": prezri svoje reporty
+      "read:search": vyhľadvávaj v rámci seba
+      "read:statuses": zhliadni všetky príspevky
       write: upraviť všetky dáta tvojho účtu
-      write:accounts: uprav svoj profil
-      write:blocks: blokuj účty a domény
-      write:bookmarks: pridaj si príspevky k záložkám
-      write:favourites: obľúbené príspevky
-      write:filters: vytvor roztriedenie
-      write:follows: následuj ľudí
-      write:lists: vytvor listy
-      write:media: nahraj mediálne súbory
-      write:mutes: stíš diskusie, aj zapojených užívateľov
-      write:notifications: vyčisti oboznámenia
-      write:reports: nahlás iných užívateľov
-      write:statuses: publikuj príspevky
+      "write:accounts": uprav svoj profil
+      "write:blocks": blokuj účty a domény
+      "write:bookmarks": pridaj si príspevky k záložkám
+      "write:favourites": obľúbené príspevky
+      "write:filters": vytvor roztriedenie
+      "write:follows": následuj ľudí
+      "write:lists": vytvor listy
+      "write:media": nahraj mediálne súbory
+      "write:mutes": stíš diskusie, aj zapojených užívateľov
+      "write:notifications": vyčisti oboznámenia
+      "write:reports": nahlás iných užívateľov
+      "write:statuses": publikuj príspevky

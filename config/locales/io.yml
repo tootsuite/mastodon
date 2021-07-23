@@ -1,7 +1,6 @@
----
 io:
   about:
-    about_mastodon_html: Mastodon esas <em>gratuita, apertitkodexa</em> sociala reto. Ol esas <em>sencentra</em> altra alternativo a komercala servadi. Ol evitigas, ke sola firmo guvernez tua tota komunikadol. Selektez servero, quan tu fidas. Irge qua esas tua selekto, tu povas komunikar kun omna altra uzeri. Irgu povas krear sua propra instaluro di Mastodon en sua servero, e partoprenar en la <em>sociala reto</em> tote glate.
+    about_mastodon_html: 'Mastodon esas <em>gratuita, apertitkodexa</em> sociala reto. Ol esas <em>sencentra</em> altra alternativo a komercala servadi. Ol evitigas, ke sola firmo guvernez tua tota komunikadol. Selektez servero, quan tu fidas. Irge qua esas tua selekto, tu povas komunikar kun omna altra uzeri. Irgu povas krear sua propra instaluro di Mastodon en sua servero, e partoprenar en la <em>sociala reto</em> tote glate.'
     about_this: Pri ta instaluro
     contact: Kontaktar
     source_code: Fontkodexo
@@ -78,9 +77,9 @@ io:
     '404': La pagino quan tu serchas ne existas.
     '406': This page is not available in the requested format.
     '410': La pagino quan tu serchas ne plus existas.
-    '422': 
+    '422':
     '429': Too many requests
-    '500': 
+    '500':
     '503': The page could not be served due to a temporary server failure.
   exports:
     blocks: Tu blokusas
@@ -109,19 +108,19 @@ io:
         one: "1 nova savigo depos tua lasta vizito \U0001F418"
         other: "%{count} nova savigi depos tua lasta vizito \U0001F418"
     favourite:
-      body: "%{name} favoris tua mesajo:"
+      body: '%{name} favoris tua mesajo:'
       subject: "%{name} favoris tua mesajo"
     follow:
       body: "%{name} sequeskas tu!"
       subject: "%{name} sequeskas tu"
     follow_request:
       body: "%{name} demandis sequar tu"
-      subject: "%{name} demandis sequar tu"
+      subject: '%{name} demandis sequar tu'
     mention:
-      body: "%{name} mencionis tu en:"
-      subject: "%{name} mencionis tu"
+      body: '%{name} mencionis tu en:'
+      subject: '%{name} mencionis tu'
     reblog:
-      body: "%{name} diskonocigis tua mesajo:"
+      body: '%{name} diskonocigis tua mesajo:'
       subject: "%{name} diskonocigis tua mesajo"
   pagination:
     next: Sequanta

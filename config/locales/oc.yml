@@ -1,8 +1,7 @@
----
 oc:
   about:
-    about_hashtag_html: Vaquí los estatuts publics ligats a <strong>#%{hashtag}</strong>. Podètz interagir amb eles s’avètz un compte ont que siasque sul fediverse.
-    about_mastodon_html: Mastodon es un malhum social bastit amb de protocòls liures e gratuits. Es descentralizat coma los corrièls.
+    about_hashtag_html: 'Vaquí los estatuts publics ligats a <strong>#%{hashtag}</strong>. Podètz interagir amb eles s’avètz un compte ont que siasque sul fediverse.'
+    about_mastodon_html: 'Mastodon es un malhum social bastit amb de protocòls liures e gratuits. Es descentralizat coma los corrièls.'
     about_this: A prepaus d’aquesta instància
     active_count_after: actius
     active_footnote: Utilizaire actius per mes (UAM)
@@ -47,7 +46,7 @@ oc:
     user_count_before: Ostal de
     what_is_mastodon: Qu’es Mastodon ?
   accounts:
-    choices_html: 'Recomandacions de %{name} :'
+    choices_html: "Recomandacions de %{name} :"
     endorsements_hint: Podètz recomandar personas que seguètz a partir de l’interfàcia web, apreissaràn aquí.
     featured_tags_hint: Podètz indicar d’etiquetas que mostrarem aquí.
     follow: Sègre
@@ -219,7 +218,7 @@ oc:
         reopen_report: Tornar dobrir lo rapòrt
         reset_password_user: Reïnicializar lo senhal
         resolve_report: Resòlver lo rapòrt
-        silence_account: " Metre en silenci lo compte"
+        silence_account: ' Metre en silenci lo compte'
         suspend_account: Suspendre lo compte
         unassigned_report: Desafectar lo rapòrt
         unsilence_account: Levar lo silenci del compte
@@ -403,7 +402,7 @@ oc:
     pending_accounts:
       title: Comptes en espèra (%{count})
     relationships:
-      title: Relacions de %{acct}
+      title: "Relacions de %{acct}"
     relays:
       add_new: Ajustar un nòu relai
       delete: Suprimir
@@ -588,9 +587,9 @@ oc:
     new_report:
       body: "%{reporter} a senhalat %{target}"
       body_remote: Qualqu’un de %{domain} senhalèt %{target}
-      subject: Novèl senhalament per %{instance} (#%{id})
+      subject: 'Novèl senhalament per %{instance} (#%{id})'
     new_trending_tag:
-      subject: Nòva etiqueta per repassar sus %{instance} (#%{name})
+      subject: 'Nòva etiqueta per repassar sus %{instance} (#%{name})'
   aliases:
     add_new: Crear un alias
     remove: Desligar l’alias
@@ -880,7 +879,7 @@ oc:
         other: "%{count} nòvas notificacions dempuèi vòstra darrièra visita \U0001F418"
       title: Pendent vòstra abséncia…
     favourite:
-      body: "%{name} a mes vòstre estatut en favorit :"
+      body: '%{name} a mes vòstre estatut en favorit :'
       subject: "%{name} a mes vòstre estatut en favorit"
       title: Novèl apondut als favorits
     follow:
@@ -894,11 +893,11 @@ oc:
       title: Novèla demanda d’abonament
     mention:
       action: Respondre
-      body: "%{name} vos a mencionat dins :"
-      subject: "%{name} vos a mencionat"
+      body: '%{name} vos a mencionat dins :'
+      subject: '%{name} vos a mencionat'
       title: Novèla mencion
     reblog:
-      body: "%{name} a tornat partejar vòstre estatut :"
+      body: '%{name} a tornat partejar vòstre estatut :'
       subject: "%{name} a tornat partejar vòstre estatut"
       title: Novèl partatge
   notifications:
@@ -1172,14 +1171,14 @@ oc:
       <p>Aqueste document es jos licéncia CC-BY-SA. Darrièra mesa a jorn lo 4 de març de 2018</p>
 
       <p>Prima adaptacion de la <a href="https://github.com/discourse/discourse">politica de confidencialitat de Discourse</a>.</p>
-    title: Condicions d’utilizacion e politica de confidencialitat de %{instance}
+    title: "Condicions d’utilizacion e politica de confidencialitat de %{instance}"
   themes:
     contrast: Mastodon (Fòrt contrast)
     default: Mastodon (Escur)
     mastodon-light: Mastodon (Clar)
   time:
     formats:
-      default: Lo %-d %B de %Y a %Ho%M
+      default: "Lo %-d %B de %Y a %Ho%M"
       month: "%B de %Y"
   two_factor_authentication:
     add: Ajustar

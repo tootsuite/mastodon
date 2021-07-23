@@ -424,7 +424,7 @@
   "suggestions.header": "Es posible que te interese…",
   "tabs_bar.federated_timeline": "Federado",
   "tabs_bar.home": "Inicio",
-  "tabs_bar.local_timeline": "Local",
+  "tabs_bar.local_timeline": "Reciente",
   "tabs_bar.notifications": "Notificaciones",
   "tabs_bar.search": "Buscar",
   "time_remaining.days": "{number, plural, one {# día restante} other {# días restantes}}",

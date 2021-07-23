@@ -1,4 +1,3 @@
----
 pl:
   devise:
     confirmations:
@@ -48,15 +47,15 @@ pl:
         title: Przywracanie hasła
       two_factor_disabled:
         explanation: Uwierzytelnianie dwuskładnikowe dla Twojego konta zostało wyłączone. Możesz się teraz logować korzystając z samego adresu e-mail i hasła.
-        subject: Mastodon – wyłączono uwierzytelnianie dwustopniowe
+        subject: 'Mastodon – wyłączono uwierzytelnianie dwustopniowe'
         title: Wyłączono 2FA
       two_factor_enabled:
         explanation: Uwierzytelnianie dwuskładnikowe dla Twojego konta zostało włączone. Logując się, będziesz potrzebować tokenu z połączonej aplikacji TOTP.
-        subject: Mastodon – włączono uwierzytelnianie dwustopniowe
+        subject: 'Mastodon – włączono uwierzytelnianie dwustopniowe'
         title: Włączono 2FA
       two_factor_recovery_codes_changed:
         explanation: Poprzednie kody zapasowe zostały unieważnione, a nowe zostały wygenerowane.
-        subject: Mastodon – wygenerowano nowe kody ratunkowe 2FA
+        subject: 'Mastodon – wygenerowano nowe kody ratunkowe 2FA'
         title: Zmieniono kody odzyskiwania 2FA
       unlock_instructions:
         subject: 'Mastodon: Instrukcje odblokowania konta'
@@ -111,7 +110,7 @@ pl:
       not_found: nie znaleziono
       not_locked: było zablokowane
       not_saved:
-        few: 'Błędy (%{count}) uniemożliwiły zapisanie tego %{resource}:'
-        many: 'Błędy (%{count}) uniemożliwiły zapisanie tego %{resource}:'
         one: '1 błąd nie uniemożliwił zapisanie %{resource}:'
-        other: 'Błędy (%{count}) uniemożliwiły zapisanie tego %{resource}:'
+        few: "Błędy (%{count}) uniemożliwiły zapisanie tego %{resource}:"
+        many: "Błędy (%{count}) uniemożliwiły zapisanie tego %{resource}:"
+        other: "Błędy (%{count}) uniemożliwiły zapisanie tego %{resource}:"

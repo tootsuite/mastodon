@@ -1,9 +1,9 @@
----
 si:
   activerecord:
     attributes:
       doorkeeper/application:
         name: යෙදුමේ නම
+        website: යෙදුමේ වියමන අඩවිය
   doorkeeper:
     applications:
       buttons:
@@ -12,14 +12,22 @@ si:
         edit: සංස්කරණය
       confirmations:
         destroy: ඔබට විශ්වාසද?
+      edit:
+        title: යෙදුම සංස්කරණය කරන්න
       index:
         application: යෙදුම
+        empty: ඔබට කිසිම යෙදුමක් නැත.
         name: නම
+        new: නව යෙදුම
         show: පෙන්වන්න
         title: ඔබගේ යෙදුම්
+      new:
+        title: නව යෙදුම
       show:
         actions: ක්‍රියාමාර්ග
         application_id: අනුග්‍රාහක යතුර
+        secret: අනුග්‍රාහකයේ රහස
+        title: 'යෙදුම: %{name}'
     authorizations:
       buttons:
         authorize: සත්‍යාපනය
@@ -33,7 +41,21 @@ si:
       admin:
         nav:
           applications: යෙදුම්
+          oauth2_provider: වි.සත්‍යා.2 (OAuth) සැපයුම්කරු
+      application:
+        title: වි.සත්‍යා. (OAuth) අනුමැතිය අවශ්‍යයයි
     scopes:
-      read:filters: ඔබගේ පෙරහන් බලන්න
-      read:lists: ඔබගේ ලැයිස්තු බලන්න
-      read:notifications: ඔබගේ දැනුම්දීම් බලන්න
+      "admin:read": සේවාදායකයේ ඇති සියලුම දත්ත කියවන්න
+      "admin:read:accounts": සියලුම ගිණුම් වල සංවේදී තොරතුරු කියවන්න
+      "admin:read:reports": සියලුම වාර්තා සහ වාර්තා කළ ගිණුම් වල සංවේදී තොරතුරු කියවන්න
+      read: ඔබගේ ගිණුමේ සියලුම දත්ත කියවන්න
+      "read:filters": ඔබගේ පෙරහන් බලන්න
+      "read:lists": ඔබගේ ලැයිස්තු බලන්න
+      "read:notifications": ඔබගේ දැනුම්දීම් බලන්න
+      "read:search": ඔබ වෙනුවට සොයන්න
+      "write:blocks": ගිණුම් සහ වසම් අවහිර කරන්න
+      "write:filters": පෙරහන් සාදන්න
+      "write:media": මාධ්‍ය ගොනු උඩුගත කරන්න
+      "write:mutes": මිනිසුන් සහ සංවාද නිහඬකරන්න
+      "write:notifications": ඔබගේ දැනුම්දීම් හිස්කරන්න
+      "write:reports": වෙනත් මිනිසුන් වාර්තා කරන්න

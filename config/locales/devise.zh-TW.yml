@@ -1,4 +1,3 @@
----
 zh-TW:
   devise:
     confirmations:
@@ -23,59 +22,59 @@ zh-TW:
         explanation: 您已經在 %{host} 上以此電子信箱地址建立了一支帳戶。您距離啟用它只剩一點之遙了。若這不是您，請忽略此信件。
         explanation_when_pending: 您使用此電子信箱地址申請了 %{host} 的邀請。當您確認電子信箱後我們將審核您的申請。您可以登入以改變您的細節或刪除您的帳戶，但直到您的帳戶被核准之前，您無法操作大部分的功能。若您的申請遭拒絕，您的資料將被移除而不必做後續動作。如果這不是您，請忽略此信件。
         extra_html: 同時也請看看<a href="%{terms_path}">伺服器規則</a>與<a href="%{policy_path}">服務條款</a>。
-        subject: Mastodon：%{instance} 確認說明
+        subject: 'Mastodon：%{instance} 確認說明'
         title: 驗證電子信箱地址
       email_changed:
-        explanation: 您帳戶的電子信箱地址將變更為：
+        explanation: '您帳戶的電子信箱地址將變更為：'
         extra: 若您未變更電子信箱，那麼很有可能是某人取得了您帳戶的存取權限。請立刻變更密碼，或當帳戶被鎖定時，請聯絡伺服器的管理員。
-        subject: Mastodon：已變更電子信箱
+        subject: 'Mastodon：已變更電子信箱'
         title: 新電子信箱地址
       password_change:
         explanation: 您帳戶的密碼已變更。
         extra: 若您未變更密碼，那麼很有可能是某人取得了您帳戶的存取權限。請立刻變更密碼，或若帳戶被鎖定時，請聯絡伺服器的管理員。
-        subject: Mastodon：已變更密碼
+        subject: 'Mastodon：已變更密碼'
         title: 密碼已變更
       reconfirmation_instructions:
         explanation: 請確認新的電子信箱地址以變更。
         extra: 若此次變更不是由您開啟的，請忽略此信件。Mastodon 帳戶的電子信箱地址在您存取上面的連結前不會變更。
-        subject: Mastodon：確認 %{instance} 的電子信箱地址
+        subject: 'Mastodon：確認 %{instance} 的電子信箱地址'
         title: 驗證電子信箱地址
       reset_password_instructions:
         action: 變更密碼
         explanation: 您已請求帳戶的新密碼。
         extra: 若您並未請求，請忽略此信件。您的密碼在存取上方連結並建立新密碼前不會變更。
-        subject: Mastodon：重設密碼指引
+        subject: 'Mastodon：重設密碼指引'
         title: 重設密碼
       two_factor_disabled:
         explanation: 您帳戶的兩步驟驗證已停用。現在只能使用電子信箱及密碼登入。
-        subject: Mastodon：已停用兩步驟驗證
+        subject: 'Mastodon：已停用兩步驟驗證'
         title: 已停用 2FA
       two_factor_enabled:
         explanation: 已對您的帳戶啟用兩步驟驗證。登入時將需要配對之 TOTP 應用程式所產生的 Token。
-        subject: Mastodon：已啟用兩步驟驗證
+        subject: 'Mastodon：已啟用兩步驟驗證'
         title: 已啟用 2FA
       two_factor_recovery_codes_changed:
         explanation: 上一次的復原碼已經失效，且已產生新的。
-        subject: Mastodon：兩步驟驗證復原碼已經重新產生
+        subject: 'Mastodon：兩步驟驗證復原碼已經重新產生'
         title: 2FA 復原碼已變更
       unlock_instructions:
-        subject: Mastodon：解鎖指引
+        subject: 'Mastodon：解鎖指引'
       webauthn_credential:
         added:
           explanation: 下面的安全密鑰已經新增至您的帳戶
-          subject: Mastodon：新安全密鑰
+          subject: 'Mastodon：新安全密鑰'
           title: 已新增新安全密鑰
         deleted:
           explanation: 以下的安全密鑰已經從您的帳戶中移除
-          subject: Mastodon：安全密鑰已移除
+          subject: 'Mastodon：安全密鑰已移除'
           title: 您的一支安全密鑰已經被移除
       webauthn_disabled:
         explanation: 您的帳戶並沒有啟用安全密鑰認證方式。只能以 TOTP app 產生地成對 token 登入。
-        subject: Mastodon：安全密鑰認證方式已關閉
+        subject: 'Mastodon：安全密鑰認證方式已關閉'
         title: 已關閉安全密鑰
       webauthn_enabled:
         explanation: 您的帳戶已啟用安全密鑰認證。您可以使用安全密鑰登入了。
-        subject: Mastodon：已啟用安全密鑰認證
+        subject: 'Mastodon：已啟用安全密鑰認證'
         title: 已啟用安全密鑰
     omniauth_callbacks:
       failure: 無法透過 %{kind} 認證是否為您，因為「%{reason}」。
@@ -111,4 +110,4 @@ zh-TW:
       not_found: 找不到
       not_locked: 並未鎖定
       not_saved:
-        other: 因 %{count} 錯誤導致 %{resource} 無法儲存：
+        other: "因 %{count} 錯誤導致 %{resource} 無法儲存："

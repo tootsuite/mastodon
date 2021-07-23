@@ -1,4 +1,3 @@
----
 nl:
   simple_form:
     hints:
@@ -212,7 +211,7 @@ nl:
         name: Hashtag
         trendable: Toestaan dat deze hashtag onder trends te zien valt
         usable: Toestaan dat deze hashtag in toots gebruikt mag worden
-    'no': Nee
+    'no': 'Nee'
     recommended: Aanbevolen
     required:
       mark: "*"
@@ -220,4 +219,4 @@ nl:
     title:
       sessions:
         webauthn: Gebruik een van uw beveiligingssleutels om in te loggen
-    'yes': Ja
+    'yes': 'Ja'

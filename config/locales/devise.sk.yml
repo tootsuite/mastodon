@@ -1,4 +1,3 @@
----
 sk:
   devise:
     confirmations:
@@ -93,7 +92,7 @@ sk:
       not_found: nenájdený
       not_locked: nebol zamknutý
       not_saved:
+        one: '1 chyba zabránila uloženiu tohto %{resource}:'
         few: "%{count} chýb zabránilo uloženiu tohto %{resource}:"
         many: "%{count} chýb zabránilo uloženiu tohto %{resource}:"
-        one: '1 chyba zabránila uloženiu tohto %{resource}:'
         other: "%{count} chyby zabránili uloženiu tohto %{resource}:"

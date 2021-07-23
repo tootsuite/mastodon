@@ -1,4 +1,3 @@
----
 ko:
   activerecord:
     attributes:
@@ -31,7 +30,7 @@ ko:
       form:
         error: 이런! 에러를 확인하세요
       help:
-        native_redirect_uri: "%{native_redirect_uri}를 이용해 로컬 테스트를 할 수 있습니다"
+        native_redirect_uri: '%{native_redirect_uri}를 이용해 로컬 테스트를 할 수 있습니다'
         redirect_uri: 한 줄에 하나의 URI를 작성하세요
         scopes: 스페이스로 범위를 구분하세요. 빈 칸으로 놔두면 기본 범위를 사용합니다.
       index:
@@ -61,7 +60,7 @@ ko:
         title: 에러가 발생하였습니다
       new:
         able_to: 다음과 같은 행동들이 가능합니다
-        prompt: "%{client_name}이 당신의 계정에 접근 권한을 요청합니다"
+        prompt: '%{client_name}이 당신의 계정에 접근 권한을 요청합니다'
         title: 승인 필요
       show:
         title: 이 승인 코드를 복사하여 애플리케이션에 붙여넣으세요
@@ -118,37 +117,37 @@ ko:
       application:
         title: OAuth 인증이 필요합니다
     scopes:
-      admin:read: 서버의 모든 데이터 읽기
-      admin:read:accounts: 모든 계정의 민감한 정보 읽기
-      admin:read:reports: 신고와 신고 된 계정의 민감한 정보 읽기
-      admin:write: 서버의 모든 데이터 수정
-      admin:write:accounts: 계정에 모더레이션 조치 취하기
-      admin:write:reports: 신고에 모더레이션 조치 취하기
+      "admin:read": 서버의 모든 데이터 읽기
+      "admin:read:accounts": 모든 계정의 민감한 정보 읽기
+      "admin:read:reports": 신고와 신고 된 계정의 민감한 정보 읽기
+      "admin:write": 서버의 모든 데이터 수정
+      "admin:write:accounts": 계정에 모더레이션 조치 취하기
+      "admin:write:reports": 신고에 모더레이션 조치 취하기
       follow: 계정의 관계를 수정
       push: 푸시 알림을 받기
       read: 계정의 모든 데이터를 읽기
-      read:accounts: 계정의 정보를 보기
-      read:blocks: 차단을 보기
-      read:bookmarks: 내 보관함 보기
-      read:favourites: 관심글을 보기
-      read:filters: 필터를 보기
-      read:follows: 팔로우를 보기
-      read:lists: 리스트를 보기
-      read:mutes: 뮤트를 보기
-      read:notifications: 알림 보기
-      read:reports: 신고 보기
-      read:search: 당신의 권한으로 검색
-      read:statuses: 게시물 모두 보기
+      "read:accounts": 계정의 정보를 보기
+      "read:blocks": 차단을 보기
+      "read:bookmarks": 내 보관함 보기
+      "read:favourites": 관심글을 보기
+      "read:filters": 필터를 보기
+      "read:follows": 팔로우를 보기
+      "read:lists": 리스트를 보기
+      "read:mutes": 뮤트를 보기
+      "read:notifications": 알림 보기
+      "read:reports": 신고 보기
+      "read:search": 당신의 권한으로 검색
+      "read:statuses": 게시물 모두 보기
       write: 계정 정보 수정
-      write:accounts: 프로필 수정
-      write:blocks: 계정이나 도메인 차단
-      write:bookmarks: 게시글을 보관함에 넣기
-      write:favourites: 관심글 지정
-      write:filters: 필터 만들기
-      write:follows: 사람을 팔로우
-      write:lists: 리스트 만들기
-      write:media: 미디어 파일 업로드
-      write:mutes: 사람이나 대화 뮤트
-      write:notifications: 알림 모두 지우기
-      write:reports: 다른 사람을 신고
-      write:statuses: 게시물 게시
+      "write:accounts": 프로필 수정
+      "write:blocks": 계정이나 도메인 차단
+      "write:bookmarks": 게시글을 보관함에 넣기
+      "write:favourites": 관심글 지정
+      "write:filters": 필터 만들기
+      "write:follows": 사람을 팔로우
+      "write:lists": 리스트 만들기
+      "write:media": 미디어 파일 업로드
+      "write:mutes": 사람이나 대화 뮤트
+      "write:notifications": 알림 모두 지우기
+      "write:reports": 다른 사람을 신고
+      "write:statuses": 게시물 게시

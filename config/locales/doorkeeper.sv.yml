@@ -1,4 +1,3 @@
----
 sv:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ sv:
       application:
         title: OAuth-behörighet krävs
     scopes:
-      admin:read: läs all data på servern
-      admin:read:accounts: läs känslig information från alla konton
-      admin:read:reports: läs känslig information från alla rapporter och rapporterade konton
-      admin:write: ändra all data på servern
-      admin:write:accounts: utför alla aktiviteter för moderering på konton
-      admin:write:reports: utför alla aktiviteter för moderering i rapporter
+      "admin:read": läs all data på servern
+      "admin:read:accounts": läs känslig information från alla konton
+      "admin:read:reports": läs känslig information från alla rapporter och rapporterade konton
+      "admin:write": ändra all data på servern
+      "admin:write:accounts": utför alla aktiviteter för moderering på konton
+      "admin:write:reports": utför alla aktiviteter för moderering i rapporter
       follow: följa, blockera, ta bort blockerade och sluta följa konton
       push: ta emot push-aviseringar för ditt konto
       read: läsa dina kontodata
-      read:accounts: se kontoinformation
-      read:blocks: se dina blockeringar
-      read:bookmarks: se dina bokmärken
-      read:favourites: se dina favoriter
-      read:filters: se dina filter
-      read:follows: se vem du följer
-      read:lists: se dina listor
-      read:mutes: se dina tystningar
-      read:notifications: se dina aviseringar
-      read:reports: se dina rapporter
-      read:search: sök å dina vägnar
-      read:statuses: se alla statusar
+      "read:accounts": se kontoinformation
+      "read:blocks": se dina blockeringar
+      "read:bookmarks": se dina bokmärken
+      "read:favourites": se dina favoriter
+      "read:filters": se dina filter
+      "read:follows": se vem du följer
+      "read:lists": se dina listor
+      "read:mutes": se dina tystningar
+      "read:notifications": se dina aviseringar
+      "read:reports": se dina rapporter
+      "read:search": sök å dina vägnar
+      "read:statuses": se alla statusar
       write: posta åt dig
-      write:accounts: ändra din profil
-      write:blocks: blockera konton och domäner
-      write:bookmarks: bokmärkesstatusar
-      write:favourites: favoritmarkera statusar
-      write:filters: skapa filter
-      write:follows: följ människor
-      write:lists: skapa listor
-      write:media: ladda upp mediafiler
-      write:mutes: tysta människor och konversationer
-      write:notifications: rensa dina aviseringar
-      write:reports: rapportera andra människor
-      write:statuses: publicera statusar
+      "write:accounts": ändra din profil
+      "write:blocks": blockera konton och domäner
+      "write:bookmarks": bokmärkesstatusar
+      "write:favourites": favoritmarkera statusar
+      "write:filters": skapa filter
+      "write:follows": följ människor
+      "write:lists": skapa listor
+      "write:media": ladda upp mediafiler
+      "write:mutes": tysta människor och konversationer
+      "write:notifications": rensa dina aviseringar
+      "write:reports": rapportera andra människor
+      "write:statuses": publicera statusar

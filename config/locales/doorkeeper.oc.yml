@@ -1,4 +1,3 @@
----
 oc:
   activerecord:
     attributes:
@@ -52,7 +51,7 @@ oc:
         callback_urls: urls de rapèls
         scopes: Encastres
         secret: Secret
-        title: Aplicacion : %{name}
+        title: 'Aplicacion : %{name}'
     authorizations:
       buttons:
         authorize: Autorizar
@@ -118,37 +117,37 @@ oc:
       application:
         title: Cal una autorizacion OAuth
     scopes:
-      admin:read: lectura de totas las donadas del servidor
-      admin:read:accounts: lectura de las informacions sensiblas dels comptes
-      admin:read:reports: lectura de las informacions sensiblas dels senhalaments e dels comptes senhalats
-      admin:write: modificacion de las donadas del servidor
-      admin:write:accounts: realizacion d’accions de moderacion suls comptes
-      admin:write:reports: realizacion d’accions suls senhalaments
+      "admin:read": lectura de totas las donadas del servidor
+      "admin:read:accounts": lectura de las informacions sensiblas dels comptes
+      "admin:read:reports": lectura de las informacions sensiblas dels senhalaments e dels comptes senhalats
+      "admin:write": modificacion de las donadas del servidor
+      "admin:write:accounts": realizacion d’accions de moderacion suls comptes
+      "admin:write:reports": realizacion d’accions suls senhalaments
       follow: modificar las relacions del compte
       push: recebre vòstras notificacions push
       read: legir totas las donadas de vòstre compte
-      read:accounts: veire las informacions del compte
-      read:blocks: veire vòstres blocatges
-      read:bookmarks: veire vòstres marcadors
-      read:favourites: veire vòstres favorits
-      read:filters: veire vòstres filtres
-      read:follows: veire vòstres abonaments
-      read:lists: veire vòstras listas
-      read:mutes: veire qual rescondètz
-      read:notifications: veire vòstras notificacions
-      read:reports: veire vòstres senhalaments
-      read:search: recercar per vos
-      read:statuses: veire los estatuts
+      "read:accounts": veire las informacions del compte
+      "read:blocks": veire vòstres blocatges
+      "read:bookmarks": veire vòstres marcadors
+      "read:favourites": veire vòstres favorits
+      "read:filters": veire vòstres filtres
+      "read:follows": veire vòstres abonaments
+      "read:lists": veire vòstras listas
+      "read:mutes": veire qual rescondètz
+      "read:notifications": veire vòstras notificacions
+      "read:reports": veire vòstres senhalaments
+      "read:search": recercar per vos
+      "read:statuses": veire los estatuts
       write: modificar totas las donadas de vòstre compte
-      write:accounts: modificar vòstre perfil
-      write:blocks: blocar de comptes e de domenis
-      write:bookmarks: ajustar als marcadors
-      write:favourites: metre en favorit
-      write:filters: crear de filtres
-      write:follows: sègre de mond
-      write:lists: crear de listas
-      write:media: mandar de fichièrs mèdias
-      write:mutes: rescondre de mond e de conversacions
-      write:notifications: escafar vòstras notificacions
-      write:reports: senhalar de mond
-      write:statuses: publicar d’estatuts
+      "write:accounts": modificar vòstre perfil
+      "write:blocks": blocar de comptes e de domenis
+      "write:bookmarks": ajustar als marcadors
+      "write:favourites": metre en favorit
+      "write:filters": crear de filtres
+      "write:follows": sègre de mond
+      "write:lists": crear de listas
+      "write:media": mandar de fichièrs mèdias
+      "write:mutes": rescondre de mond e de conversacions
+      "write:notifications": escafar vòstras notificacions
+      "write:reports": senhalar de mond
+      "write:statuses": publicar d’estatuts

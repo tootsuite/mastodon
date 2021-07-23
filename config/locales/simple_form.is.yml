@@ -1,4 +1,3 @@
----
 is:
   simple_form:
     hints:
@@ -212,7 +211,7 @@ is:
         name: Myllumerki
         trendable: Leyfa þessu myllumerki að birtast undir tilhneigingum
         usable: Leyfa tístum að nota þetta myllumerki
-    'no': Nei
+    'no': 'Nei'
     recommended: Mælt með
     required:
       mark: "*"
@@ -220,4 +219,4 @@ is:
     title:
       sessions:
         webauthn: Nota einn af öryggislyklunum þínum til að skrá inn
-    'yes': Já
+    'yes': 'Já'

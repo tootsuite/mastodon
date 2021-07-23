@@ -1,4 +1,3 @@
----
 sv:
   devise:
     confirmations:
@@ -56,7 +55,7 @@ sv:
         title: 2FA aktiverad
       two_factor_recovery_codes_changed:
         explanation: De tidigare återställningskoderna har ogiltigförklarats och nya har genererats.
-        subject: Mastodon Tvåfaktors-återställningskoder genererades på nytt
+        subject: 'Mastodon Tvåfaktors-återställningskoder genererades på nytt'
         title: 2FA-återställningskoder ändrades
       unlock_instructions:
         subject: 'Mastodon: Lås upp instruktioner'

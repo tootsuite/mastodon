@@ -1,4 +1,3 @@
----
 ka:
   activerecord:
     attributes:
@@ -115,26 +114,26 @@ ka:
       follow: შეცვალეთ ანგარიშის ურთიერთობები
       push: მიიღეთ თქვენი ფუშ შეტყობინებები
       read: წაიკითხოს მთელი თქვენი ანგარიშის მონაცემები
-      read:accounts: იხილოს ანგარიშის ინფორმაცია
-      read:blocks: იხილოს თქვენი ბლოკები
-      read:favourites: იხილოს თქვენი ფავორიტები
-      read:filters: იხილოს თქვენი ფილრები
-      read:follows: იხილოს თქვენი მიდევნებები
-      read:lists: იხილოს თქვენი სიები
-      read:mutes: იხილოს თქვენი გაჩუმებები
-      read:notifications: იხილოს თქვენი შეტყობინებები
-      read:reports: იხილოს თქვენი რეპორტები
-      read:search: მოძებნოს თქვენი სახელით
-      read:statuses: იხილოს ყველა სტატუსი
+      "read:accounts": იხილოს ანგარიშის ინფორმაცია
+      "read:blocks": იხილოს თქვენი ბლოკები
+      "read:favourites": იხილოს თქვენი ფავორიტები
+      "read:filters": იხილოს თქვენი ფილრები
+      "read:follows": იხილოს თქვენი მიდევნებები
+      "read:lists": იხილოს თქვენი სიები
+      "read:mutes": იხილოს თქვენი გაჩუმებები
+      "read:notifications": იხილოს თქვენი შეტყობინებები
+      "read:reports": იხილოს თქვენი რეპორტები
+      "read:search": მოძებნოს თქვენი სახელით
+      "read:statuses": იხილოს ყველა სტატუსი
       write: შეცვალოს მთელი თქვენი ანგარიშის მონაცემები
-      write:accounts: შეცვალოს თქვენი პროფილი
-      write:blocks: დაბლოკოს ანგარიშები და დომენები
-      write:favourites: ფავორიტი სტატუსები
-      write:filters: შექმნას ფილტრები
-      write:follows: გაყვეს ხალხს
-      write:lists: შექმნას სიები
-      write:media: ატვირთოს მედია ფაილები
-      write:mutes: გააგჩუმოს ადამიანები და საუბრები
-      write:notifications: გაასუფთავოს თქვენი შეტყობინებები
-      write:reports: დაარეპორტოს სხვა ადამიანები
-      write:statuses: გამოაქვეყნოს სტატუსები
+      "write:accounts": შეცვალოს თქვენი პროფილი
+      "write:blocks": დაბლოკოს ანგარიშები და დომენები
+      "write:favourites": ფავორიტი სტატუსები
+      "write:filters": შექმნას ფილტრები
+      "write:follows": გაყვეს ხალხს
+      "write:lists": შექმნას სიები
+      "write:media": ატვირთოს მედია ფაილები
+      "write:mutes": გააგჩუმოს ადამიანები და საუბრები
+      "write:notifications": გაასუფთავოს თქვენი შეტყობინებები
+      "write:reports": დაარეპორტოს სხვა ადამიანები
+      "write:statuses": გამოაქვეყნოს სტატუსები

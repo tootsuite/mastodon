@@ -1,4 +1,3 @@
----
 sc:
   simple_form:
     hints:
@@ -212,7 +211,7 @@ sc:
         name: Eticheta
         trendable: Permite a custa eticheta de apàrrere in is tendèntzias
         usable: Permite a is tuts de impreare custa eticheta
-    'no': Nono
+    'no': 'Nono'
     recommended: Cussigiadu
     required:
       mark: "*"
@@ -220,4 +219,4 @@ sc:
     title:
       sessions:
         webauthn: Imprea una de is craes de seguresa tuas pro intrare
-    'yes': Eja
+    'yes': 'Eja'

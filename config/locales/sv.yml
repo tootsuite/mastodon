@@ -1,8 +1,7 @@
----
 sv:
   about:
-    about_hashtag_html: Dessa är offentliga toots märkta med <strong>#%{hashtag}</strong>. Du kan interagera med dem om du har ett konto någonstans i federationen.
-    about_mastodon_html: Mastodon är ett socialt nätverk baserat på öppna webbprotokoll och gratis, öppen källkodsprogramvara. Det är decentraliserat som e-post.
+    about_hashtag_html: 'Dessa är offentliga toots märkta med <strong>#%{hashtag}</strong>. Du kan interagera med dem om du har ett konto någonstans i federationen.'
+    about_mastodon_html: 'Mastodon är ett socialt nätverk baserat på öppna webbprotokoll och gratis, öppen källkodsprogramvara. Det är decentraliserat som e-post.'
     about_this: Om
     active_count_after: aktiv
     active_footnote: Månatligen Aktiva användare (MAU)
@@ -21,7 +20,9 @@ sv:
     federation_hint_html: Med ett konto på %{instance} kommer du att kunna följa personer på alla Mastodon-servers och mer än så.
     get_apps: Prova en mobilapp
     hosted_on: Mastodon-värd på %{domain}
-    instance_actor_flash: "Detta konto är en virtuell agent som används för att representera servern själv och inte någon individuell användare. Det används av sammanslutningsskäl och ska inte blockeras såvitt du inte vill blockera hela instansen, och för detta fall ska domänblockering användas. \n"
+    instance_actor_flash: |
+      Detta konto är en virtuell agent som används för att representera servern själv och inte någon individuell användare. Det används av sammanslutningsskäl och ska inte blockeras såvitt du inte vill blockera hela instansen, och för detta fall ska domänblockering användas. 
+
     learn_more: Lär dig mer
     privacy_policy: Integritetspolicy
     rules: Serverns regler
@@ -444,6 +445,7 @@ sv:
       reported_by: Anmäld av
       resolved: Löst
       resolved_msg: Anmälan har lösts framgångsrikt!
+      target_origin: Ursprung för anmält konto
       title: Anmälningar
       unassign: Otilldela
       unresolved: Olösta
@@ -551,7 +553,7 @@ sv:
     new_report:
       body: "%{reporter} har rapporterat %{target}"
       body_remote: Någon från %{domain} har rapporterat %{target}
-      subject: Ny rapport för %{instance} (#%{id})
+      subject: 'Ny rapport för %{instance} (#%{id})'
   aliases:
     add_new: Skapa alias
     remove: Avlänka alias
@@ -754,6 +756,9 @@ sv:
   lists:
     errors:
       limit: Du har nått det maximala antalet listor
+  login_activities:
+    authentication_methods:
+      password: lösenord
   media_attachments:
     validations:
       images_and_video: Det går inte att bifoga en video till en status som redan innehåller bilder

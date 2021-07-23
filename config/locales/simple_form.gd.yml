@@ -1,4 +1,3 @@
----
 gd:
   simple_form:
     hints:
@@ -7,7 +6,7 @@ gd:
       account_migration:
         acct: Sònraich ainm-cleachdaiche@àrainn dhen chunntas dhan a tha thu airson imrich
       account_warning_preset:
-        text: "’S urrainn dhut co-chàradh puist a chleachdadh, can URLaichean, tagaichean hais is iomraidhean"
+        text: '’S urrainn dhut co-chàradh puist a chleachdadh, can URLaichean, tagaichean hais is iomraidhean'
         title: Roghainneil. Chan fhaic am faightear seo
       admin_account_action:
         include_statuses: Chì an cleachdaiche dè na postaichean a dh’adhbharaich gnìomh na maorsainneachd no an rabhadh
@@ -19,14 +18,14 @@ gd:
           none: Cleachd seo airson rabhadh a chur dhan chleachdaiche gun ghnìomh eile a ghabhail.
           sensitive: Èignich comharra gu bheil e frionasach air a h-uile ceanglachan meadhain a’ chleachdaiche seo.
           silence: Bac an cleachdaiche o phostadh le faicsinneachd poblach, falaich na postaichean is brathan aca o na daoine nach eil a’ leantainn air.
-          suspend: Bac eadar-ghnìomh sam bith leis a’ chunntas seo agus sguab às an t-susbaint aige. Gabhaidh seo a neo-dhèanamh am broinn 30 latha.
+          suspend: Bac conaltradh sam bith leis a’ chunntas seo agus sguab às an t-susbaint aige. Gabhaidh seo a neo-dhèanamh am broinn 30 latha.
         warning_preset_id: Roghainneil. ’S urrainn dhut teacsa gnàthaichte a chur ri deireadh an ro-sheata fhathast
       announcement:
         all_day: Nuair a bhios cromag ris, cha nochd ach cinn-latha na rainse-ama
         ends_at: Roghainneil. Thèid am brath-fios a neo-fhoillseachadh gu fèin-obrachail aig an àm ud
         scheduled_at: Fàg seo bàn airson am brath-fios fhoillseachadh sa bhad
         starts_at: Roghainnean. Cleachd seo airson am brath-fios a chuingeachadh rè ama shònraichte
-        text: "’S urrainn dhut co-chàradh puist a chleachdadh. Thoir an aire air am meud a chaitheas am brath-fios air sgrìn an luchd-chleachdaidh"
+        text: '’S urrainn dhut co-chàradh puist a chleachdadh. Thoir an aire air am meud a chaitheas am brath-fios air sgrìn an luchd-chleachdaidh'
       defaults:
         autofollow: Leanaidh na daoine a chlàraicheas leis a cuireadh ort gu fèin-obrachail
         avatar: PNG, GIF or JPG. %{size} air a char as motha. Thèid a sgèileadh sìos gu %{dimensions}px
@@ -46,7 +45,7 @@ gd:
         password: Cleachd co-dhiù 8 caractaran
         phrase: Thèid a mhaidseadh gun aire air litrichean mòra ’s beaga no air rabhadh susbainte puist
         scopes: Na APIan a dh’fhaodas an aplacaid inntrigeadh. Ma thaghas tu sgòp air ìre as àirde, cha leig thu leas sgòpaichean fa leth a thaghadh.
-        setting_aggregate_reblogs: Na seall brosnachaidhean ùra do phostaichean a chaidh a bhrosnachadh o chionn ghoirid (cha doir seo buaidh ach air brosnachaidhean ùra o seo a-mach)
+        setting_aggregate_reblogs: Na seall brosnachaidhean ùra do phostaichean a chaidh a bhrosnachadh o chionn goirid (cha doir seo buaidh ach air brosnachaidhean ùra o seo a-mach)
         setting_default_sensitive: Thèid meadhanan frionasach fhalach o thùs is gabhaidh an nochdadh le briogadh orra
         setting_display_media_default: Falaich meadhanan ris a bheil comharra gu bheil iad frionasach
         setting_display_media_hide_all: Falaich na meadhanan an-còmhnaidh
@@ -59,7 +58,7 @@ gd:
         username: Bidh ainm-cleachdaiche àraidh agad air %{domain}
         whole_word: Mur eil ach litrichean is àireamhan san fhacal-luirg, cha dèid a chur an sàs ach ma bhios e a’ maidseadh an fhacail shlàin
       domain_allow:
-        domain: "’S urrainn dhan àrainn seo dàta fhaighinn on fhrithealaiche seo agus thèid an dàta a thig a-steach uaithe a phròiseasadh ’s a stòradh"
+        domain: '’S urrainn dhan àrainn seo dàta fhaighinn on fhrithealaiche seo agus thèid an dàta a thig a-steach uaithe a phròiseasadh ’s a stòradh'
       email_domain_block:
         domain: Gabhaidh an t-ainm àrainne a nochdas san t-seòladh puist-d a chleachdadh no an clàr MX dhan dèid an àrainn fhuasgladh no IP an fhrithealaiche dhan dèid an clàr MX fuasgladh. Thèid an dearbhadh nuair a chlàraicheas cleachdaiche ùr leinn is thèid an clàradh a dhiùltadh.
         with_dns_records: Thèid oidhirp a dhèanamh air fuasgladh clàran DNS na h-àrainne a chaidh a thoirt seachad agus thèid na toraidhean a bhacadh cuideachd
@@ -143,7 +142,7 @@ gd:
         new_password: Facal-faire ùr
         note: Mu mo dhèidhinn
         otp_attempt: Còd dà-cheumnach
-        password: Facal-faire
+        password: Facal-faire 
         phrase: Facal no abairt-luirg
         setting_advanced_layout: Cuir an comas an eadar-aghaidh-lìn adhartach
         setting_aggregate_reblogs: Buidhnich na brosnachaidhean air an loidhne-ama
@@ -212,7 +211,7 @@ gd:
         name: Taga hais
         trendable: Leig leis an taga hais seo gun nochd e am measg nan treandaichean
         usable: Leig le postaichean an taga hais seo a chleachdadh
-    'no': Chan eil
+    'no': 'Chan eil'
     recommended: Molta
     required:
       mark: "*"
@@ -220,4 +219,4 @@ gd:
     title:
       sessions:
         webauthn: Cleachd tè dhe na h-iuchraichean tèarainteachd agad airson clàradh a-steach
-    'yes': Tha
+    'yes': 'Tha'

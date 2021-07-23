@@ -1,9 +1,8 @@
----
 ml:
   simple_form:
     hints:
       admin_account_action:
-        type_html: "<strong>%{acct}</strong> നെ എന്ത് ചെയ്യണമെന്ന് തീരുമാനിക്കുക"
+        type_html: <strong>%{acct}</strong> നെ എന്ത് ചെയ്യണമെന്ന് തീരുമാനിക്കുക
       defaults:
         password: 8 അക്ഷരങ്ങൾ എങ്കിലും ഉപയോഗിക്കുക
     labels:

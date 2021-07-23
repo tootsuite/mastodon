@@ -1,4 +1,3 @@
----
 is:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ is:
       application:
         title: Krafist er OAuth auðkenningar við að
     scopes:
-      admin:read: lesa öll gögn á netþjóninum
-      admin:read:accounts: lesa viðkvæmar upplýsingar á öllum notendaaðgöngum
-      admin:read:reports: lesa viðkvæmar upplýsingar í öllum skýrslum og kærðum notendaaðgöngum
-      admin:write: breyta öllum gögnum á netþjóninum
-      admin:write:accounts: framkvæma umsjónaraðgerðir á notendaaðganga
-      admin:write:reports: framkvæma umsjónaraðgerðir á kærur
+      "admin:read": lesa öll gögn á netþjóninum
+      "admin:read:accounts": lesa viðkvæmar upplýsingar á öllum notendaaðgöngum
+      "admin:read:reports": lesa viðkvæmar upplýsingar í öllum skýrslum og kærðum notendaaðgöngum
+      "admin:write": breyta öllum gögnum á netþjóninum
+      "admin:write:accounts": framkvæma umsjónaraðgerðir á notendaaðganga
+      "admin:write:reports": framkvæma umsjónaraðgerðir á kærur
       follow: breyta venslum aðgangs
       push: taka á móti ýti-tilkynningum til þín
       read: lesa öll gögn á notandaaðgangnum þínum
-      read:accounts: sjá upplýsingar í notendaaðgöngum
-      read:blocks: skoða útilokanirnar þínar
-      read:bookmarks: skoða bókamerki
-      read:favourites: skoða eftirlætin þín
-      read:filters: skoða síurnar þínar
-      read:follows: sjá hverjum þú fylgist með
-      read:lists: skoða listana þína
-      read:mutes: skoða hverja þú þaggar
-      read:notifications: sjá tilkynningarnar þínar
-      read:reports: skoða skýrslurnar þína
-      read:search: leita fyrir þína hönd
-      read:statuses: sjá allar stöðufærslur
+      "read:accounts": sjá upplýsingar í notendaaðgöngum
+      "read:blocks": skoða útilokanirnar þínar
+      "read:bookmarks": skoða bókamerki
+      "read:favourites": skoða eftirlætin þín
+      "read:filters": skoða síurnar þínar
+      "read:follows": sjá hverjum þú fylgist með
+      "read:lists": skoða listana þína
+      "read:mutes": skoða hverja þú þaggar
+      "read:notifications": sjá tilkynningarnar þínar
+      "read:reports": skoða skýrslurnar þína
+      "read:search": leita fyrir þína hönd
+      "read:statuses": sjá allar stöðufærslur
       write: breyta öllum gögnum á notandaaðgangnum þínum
-      write:accounts: breyta notandasniðinu þínu
-      write:blocks: útiloka notandaaðganga og lén
-      write:bookmarks: bókamerkja stöðufærslur
-      write:favourites: setja stöðufærslur í eftirlæti
-      write:filters: útbúa síur
-      write:follows: fylgjast með fólki
-      write:lists: búa til lista
-      write:media: senda inn myndefnisskrár
-      write:mutes: þagga niður í fólki og samtölum
-      write:notifications: hreinsa tilkynningarnar þínar
-      write:reports: kæra annað fólk
-      write:statuses: gefa út stöður
+      "write:accounts": breyta notandasniðinu þínu
+      "write:blocks": útiloka notandaaðganga og lén
+      "write:bookmarks": bókamerkja stöðufærslur
+      "write:favourites": setja stöðufærslur í eftirlæti
+      "write:filters": útbúa síur
+      "write:follows": fylgjast með fólki
+      "write:lists": búa til lista
+      "write:media": senda inn myndefnisskrár
+      "write:mutes": þagga niður í fólki og samtölum
+      "write:notifications": hreinsa tilkynningarnar þínar
+      "write:reports": kæra annað fólk
+      "write:statuses": gefa út stöður

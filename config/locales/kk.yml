@@ -1,8 +1,7 @@
----
 kk:
   about:
-    about_hashtag_html: Бұл жерде <strong>#%{hashtag}</strong> хэштегімен жинақталған жазбалар. Желіге тіркеліп, сіз де қосыла аласыз бұл ортаға.
-    about_mastodon_html: Mastodon - әлеуметтік желіге негізделген, тегін және веб протоколды, ашық кодты бағдарлама. Ол email сияқты орталығы жоқ құрылым.
+    about_hashtag_html: 'Бұл жерде <strong>#%{hashtag}</strong> хэштегімен жинақталған жазбалар. Желіге тіркеліп, сіз де қосыла аласыз бұл ортаға.'
+    about_mastodon_html: 'Mastodon - әлеуметтік желіге негізделген, тегін және веб протоколды, ашық кодты бағдарлама. Ол email сияқты орталығы жоқ құрылым.'
     about_this: Туралы
     active_count_after: актив
     active_footnote: Соңғы айдағы актив қолданушылар (MAU)
@@ -17,7 +16,7 @@ kk:
     contact_unavailable: Белгісіз
     discover_users: Қолданушыларды іздеңіз
     documentation: Құжаттама
-    federation_hint_html: "%{instance} платформасындағы аккаунтыңыз арқылы Mastodon желісіндегі кез келген сервердегі қолданушыларға жазыла аласыз."
+    federation_hint_html: '%{instance} платформасындағы аккаунтыңыз арқылы Mastodon желісіндегі кез келген сервердегі қолданушыларға жазыла аласыз.'
     get_apps: Мобиль қосымшаны қолданып көріңіз
     hosted_on: Mastodon орнатылған %{domain} доменінде
     instance_actor_flash: |
@@ -64,8 +63,8 @@ kk:
     network_hidden: Бұл ақпарат қолжетімді емес
     never_active: Ешқашан
     nothing_here: Бұл жерде ештеңе жоқ!
-    people_followed_by: "%{name} жазылған адамдар"
-    people_who_follow: "%{name} атты қолданушының оқырмандары"
+    people_followed_by: '%{name} жазылған адамдар'
+    people_who_follow: '%{name} атты қолданушының оқырмандары'
     pin_errors:
       following: Оқығыңыз келген адамға жазылуыңыз керек
     posts:
@@ -180,7 +179,7 @@ kk:
       statuses: Статустар
       subscribe: Жазылу
       suspended: Тоқтатылды
-      time_in_queue: "%{time} күту"
+      time_in_queue: '%{time} күту'
       title: Аккаунттар
       unconfirmed_email: Құпталмаған email
       undo_silenced: Үнсіздікті қайтып алу
@@ -296,11 +295,11 @@ kk:
       show:
         affected_accounts:
           one: Дерекқорда бір тіркелгі қозғалды
-          other: дерекқордағы %{count} аккаунт қозғалған
+          other: "дерекқордағы %{count} аккаунт қозғалған"
         retroactive:
           silence: Осы домендегі бар тіркелгілерді жою
           suspend: Осы домендегі бар барлық тіркелгілерді тоқтатыңыз
-        title: "%{domain} доменіндегі блокты алып таста"
+        title: '%{domain} доменіндегі блокты алып таста'
         undo: Қайтару
       undo: Домен блокын қайтып алу
       view: Домен блокын көрсету
@@ -519,14 +518,14 @@ kk:
   admin_mailer:
     new_pending_account:
       body: Жаңа есептік жазба туралы мәліметтер төменде берілген. Бұл қолданбаны мақұлдауыңызға немесе қабылдамауыңызға болады.
-      subject: Жаңа аккаунт күтілуде %{instance} (#%{username})
+      subject: 'Жаңа аккаунт күтілуде %{instance} (#%{username})'
     new_report:
       body: "%{reporter} has rеported %{target}"
       body_remote: Someone from %{domain} has rеported %{target}
-      subject: New rеport for %{instance} (#%{id})
+      subject: 'New rеport for %{instance} (#%{id})'
     new_trending_tag:
-      body: "#%{name} хэштегі бүгін тренд, бірақ бұрын қарастырылмаған. Егер сіз оған рұқсат бермесеңіз немесе ол туралы ешқашан естімейтін болсаңыз, ол көпшілікке көрсетілмейді."
-      subject: Жаңа хештег күтілуде %{instance} (#%{name})
+      body: '#%{name} хэштегі бүгін тренд, бірақ бұрын қарастырылмаған. Егер сіз оған рұқсат бермесеңіз немесе ол туралы ешқашан естімейтін болсаңыз, ол көпшілікке көрсетілмейді.'
+      subject: 'Жаңа хештег күтілуде %{instance} (#%{name})'
   aliases:
     add_new: Алиас қосу
     created_msg: Жаңа алиас сәтті жасалды. Енді сіз ескі аккаунттан көшіруді бастай аласыз.
@@ -643,7 +642,7 @@ kk:
   directories:
     directory: Профильдер каталогы
     explanation: Қолданушыларды қызығушылықтарына қарай реттеу
-    explore_mastodon: "%{title} шарлау"
+    explore_mastodon: '%{title} шарлау'
   domain_validator:
     invalid_domain: жарамды домен атауы емес
   errors:
@@ -726,7 +725,7 @@ kk:
       keybase:
         invalid_token: Пернетақтаның таңбалауыштары қолтаңбалар болып табылады және олар 66 таңбадан тұруы керек
         verification_failed: Keybase бұл белгіні Keybase пайдаланушысының %{kb_username} қолтаңбасы ретінде танымайды. Keybase-тен қайталап көріңіз.
-      wrong_user: "%{current} ретінде кірген кезде %{proving} үшін дәлелдер жасау мүмкін емес. %{proving} ретінде кіріп, әрекетті қайталаңыз."
+      wrong_user: '%{current} ретінде кірген кезде %{proving} үшін дәлелдер жасау мүмкін емес. %{proving} ретінде кіріп, әрекетті қайталаңыз.'
     explanation_html: Мұнда сіз өзіңіздің жеке басыңызды, мысалы, Keybase профилі сияқты криптографиялық түрде байланыстыра аласыз. Бұл сізге басқа адамдарға шифрланған хабарламаларды жіберуге және сіз жіберетін мазмұнға сенімді болуға мүмкіндік береді.
     i_am_html: Мен %{username} атты қолданушымын - %{service}.
     identity: Жеке бас куәлігі
@@ -853,9 +852,9 @@ kk:
       duration_too_short: тым аз екен
       expired: Сауалнама уақыты аяқталған
       invalid_choice: Таңдалған жауап енді жоқ екен
-      over_character_limit: "%{max} таңбадан артық болмайды"
+      over_character_limit: '%{max} таңбадан артық болмайды'
       too_few_options: бір жауаптан көп болуы керек
-      too_many_options: "%{max} жауаптан көп болмайды"
+      too_many_options: '%{max} жауаптан көп болмайды'
   preferences:
     other: Басқа
     posting_defaults: Пост жазу негіздері
@@ -978,7 +977,7 @@ kk:
       other: 'рұқсат етілмеген хэштегтер: %{tags}'
     language_detection: Тілді өздігінен таңда
     open_in_web: Вебте ашу
-    over_character_limit: "%{max} максимум таңбадан асып кетті"
+    over_character_limit: '%{max} максимум таңбадан асып кетті'
     pin_errors:
       limit: Жабыстырылатын жазба саны максимумынан асты
       ownership: Біреудің жазбасы жабыстырылмайды
@@ -1119,9 +1118,9 @@ kk:
       statuses: 'Арнайы:'
       subject:
         disable: Аккаунтыңыз %{acct} уақытша тоқтатылды
-        none: "%{acct} ескертуі"
-        silence: "%{acct} аккаунтыңыз шектеулі"
-        suspend: "%{acct} аккаунт тоқтатылды"
+        none: '%{acct} ескертуі'
+        silence: '%{acct} аккаунтыңыз шектеулі'
+        suspend: '%{acct} аккаунт тоқтатылды'
       title:
         disable: Аккаунт қатырылды
         none: Ескерту

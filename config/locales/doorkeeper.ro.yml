@@ -1,4 +1,3 @@
----
 ro:
   activerecord:
     attributes:
@@ -113,37 +112,37 @@ ro:
       application:
         title: Este necesară autorizarea OAuth
     scopes:
-      admin:read: citește toate datele de pe server
-      admin:read:accounts: citește informații sensibile ale tuturor conturilor
-      admin:read:reports: citește informații sensibile din toate rapoartele și conturile raportate
-      admin:write: modifică toate datele de pe server
-      admin:write:accounts: efectuează acțiuni de moderare pe conturi
-      admin:write:reports: efectuează acțiuni de moderare pe rapoarte
+      "admin:read": citește toate datele de pe server
+      "admin:read:accounts": citește informații sensibile ale tuturor conturilor
+      "admin:read:reports": citește informații sensibile din toate rapoartele și conturile raportate
+      "admin:write": modifică toate datele de pe server
+      "admin:write:accounts": efectuează acțiuni de moderare pe conturi
+      "admin:write:reports": efectuează acțiuni de moderare pe rapoarte
       follow: modifică relațiile contului
       push: primește notificările tale push
       read: citește toate datele contului tău
-      read:accounts: vede informațiile privind conturile
-      read:blocks: vede blocurile tale
-      read:bookmarks: vede marcajele tale
-      read:favourites: vede favoritele tale
-      read:filters: vede filtrele tale
-      read:follows: vede urmăririle tale
-      read:lists: vede listele tale
-      read:mutes: vede ignorările tale
-      read:notifications: vede notificările tale
-      read:reports: vede raportările tale
-      read:search: caută în numele tău
-      read:statuses: vede toate stările
+      "read:accounts": vede informațiile privind conturile
+      "read:blocks": vede blocurile tale
+      "read:bookmarks": vede marcajele tale
+      "read:favourites": vede favoritele tale
+      "read:filters": vede filtrele tale
+      "read:follows": vede urmăririle tale
+      "read:lists": vede listele tale
+      "read:mutes": vede ignorările tale
+      "read:notifications": vede notificările tale
+      "read:reports": vede raportările tale
+      "read:search": caută în numele tău
+      "read:statuses": vede toate stările
       write: modifică toate datele contului tău
-      write:accounts: modifică profilul tău
-      write:blocks: blochează conturile și domeniile
-      write:bookmarks: marchează stările
-      write:favourites: favorizează stările
-      write:filters: creează filtre
-      write:follows: urmărește persoane
-      write:lists: creează liste
-      write:media: încarcă fișiere media
-      write:mutes: ignoră persoane și conversații
-      write:notifications: curăță notificările
-      write:reports: raportează alte persoane
-      write:statuses: publică stări
+      "write:accounts": modifică profilul tău
+      "write:blocks": blochează conturile și domeniile
+      "write:bookmarks": marchează stările
+      "write:favourites": favorizează stările
+      "write:filters": creează filtre
+      "write:follows": urmărește persoane
+      "write:lists": creează liste
+      "write:media": încarcă fișiere media
+      "write:mutes": ignoră persoane și conversații
+      "write:notifications": curăță notificările
+      "write:reports": raportează alte persoane
+      "write:statuses": publică stări

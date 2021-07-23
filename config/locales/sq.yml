@@ -1,7 +1,6 @@
----
 sq:
   about:
-    about_hashtag_html: Këto janë mesazhe publike të etiketuara me <strong>#%{hashtag}</strong>. Mundeni të ndërveproni me ta, nëse keni një llogari kudo qoftë në fedivers.
+    about_hashtag_html: 'Këto janë mesazhe publike të etiketuara me <strong>#%{hashtag}</strong>. Mundeni të ndërveproni me ta, nëse keni një llogari kudo qoftë në fedivers.'
     about_mastodon_html: 'Rrjeti shoqëror i së ardhmes: Pa reklama, pa survejim nga korporata, konceptim etik dhe decentralizim! Jini zot i të dhënave tuaja, me Mastodon-in!'
     about_this: Mbi
     active_count_after: aktive
@@ -54,7 +53,7 @@ sq:
     user_count_before: Shtëpi e
     what_is_mastodon: Ç’është Mastodon-i?
   accounts:
-    choices_html: 'Zgjedhje të %{name}:'
+    choices_html: "Zgjedhje të %{name}:"
     endorsements_hint: Mund t’i mbështesni personat që nga ndërfaqja web, dhe do të shfaqen këtu.
     featured_tags_hint: Mund të zgjidhni hashtag-ë të veçantë që do të shfaqen këtu.
     follow: Ndiqeni
@@ -117,8 +116,9 @@ sq:
       delete: Fshiji të dhënat
       deleted: U fshi
       demote: Zhgradoje
-      destroyed_msg: Të dhënat e %{username} tani janë vënë në radhë për fshirje të menjëhershme
+      destroyed_msg: "Të dhënat e %{username} tani janë vënë në radhë për fshirje të menjëhershme"
       disable: Çaktivizoje
+      disable_sign_in_token_auth: Çaktivizo mirëfilltësim me token email-i
       disable_two_factor_authentication: Çaktivizoni 2FA-në
       disabled: E çaktivizuar
       display_name: Emër në ekran
@@ -127,6 +127,7 @@ sq:
       email: Email
       email_status: Gjendje email-i
       enable: Shkrije
+      enable_sign_in_token_auth: Aktivizo mirëfilltësim me token email-i
       enabled: E aktivizuar
       enabled_msg: U hoq me sukses ngrirja për llogarinë e %{username}
       followers: Ndjekës
@@ -146,7 +147,7 @@ sq:
       media_attachments: Bashkëngjitje media
       memorialize: Shndërroje në përkujtimore
       memorialized: U shndërrua në përkujtimore
-      memorialized_msg: "%{username} u kthye me sukses në një llogari përkujtimore"
+      memorialized_msg: '%{username} u kthye me sukses në një llogari përkujtimore'
       moderation:
         active: Aktiv
         all: Krejt
@@ -191,6 +192,10 @@ sq:
       search: Kërkoni
       search_same_email_domain: Të tjerë përdorues me të njëjtën përkatësi email-i
       search_same_ip: Të tjerë përdorues me të njëjtën IP
+      security_measures:
+        only_password: Vetëm fjalëkalim
+        password_and_2fa: Fjalëkalim dhe 2FA
+        password_and_sign_in_token: Fjalëkalim dhe token email-i
       sensitive: Rezervat
       sensitized: iu vu shenjë si rezervat
       shared_inbox_url: URL kutie të përbashkët mesazhesh
@@ -230,6 +235,7 @@ sq:
         create_domain_block: Krijo Bllokim Përkatësie
         create_email_domain_block: Krijo Bllokim Përkatësie Email-esh
         create_ip_block: Krijoni Rregull IP
+        create_unavailable_domain: Krijo Përkatësi të Papërdorshme
         demote_user: Zhgradoje Përdoruesin
         destroy_announcement: Fshije Lajmërimin
         destroy_custom_emoji: Fshi Emotikon Vetjak
@@ -238,10 +244,13 @@ sq:
         destroy_email_domain_block: Fshi bllokim përkatësie email-esh
         destroy_ip_block: Fshini Rregull IP
         destroy_status: Fshi Gjendje
+        destroy_unavailable_domain: Fshi Përkatësi të Papërdorshme
         disable_2fa_user: Çaktivizo 2FA-në
         disable_custom_emoji: Çaktivizo Emotikon Vetjak
+        disable_sign_in_token_auth_user: Çaktivizo Mirëfilltësim me Token Email-i për Përdoruesin
         disable_user: Çaktivizo Përdorues
         enable_custom_emoji: Aktivizo Emotikon Vetjak
+        enable_sign_in_token_auth_user: Aktivizo Mirëfilltësim me Token Email-i për Përdoruesin
         enable_user: Aktivizo Përdorues
         memorialize_account: Bëje Llogari Përkujtimore
         promote_user: Promovojeni Përdoruesin
@@ -283,8 +292,10 @@ sq:
         destroy_unavailable_domain_html: "%{name} rinisi dërgimin drejt përkatësisë %{target}"
         disable_2fa_user_html: "%{name} çaktivizoi domosdoshmërinë për dyfaktorësh për përdoruesin %{target}"
         disable_custom_emoji_html: "%{name} çaktivizoi emoxhin %{target}"
+        disable_sign_in_token_auth_user_html: "%{name} çaktivizo mirëfilltësim me token email-i për %{target}"
         disable_user_html: "%{name} çaktivizoi hyrje për përdoruesin %{target}"
         enable_custom_emoji_html: "%{name} aktivizoi emoxhin %{target}"
+        enable_sign_in_token_auth_user_html: "%{name} aktivizo mirëfilltësim me token email-i përdoruesi për %{target}"
         enable_user_html: "%{name} aktivizoi hyrje për përdoruesin %{target}"
         memorialize_account_html: "%{name} e shndërroi llogarinë e %{target} në një faqe përkujtimore"
         promote_user_html: "%{name} gradoi përdoruesin %{target}"
@@ -424,7 +435,7 @@ sq:
       show:
         affected_accounts:
           one: Pat ndikim te një llogari në bazën e të dhënave
-          other: Pat ndikim te %{count} llogari në bazën e të dhënave
+          other: "Pat ndikim te %{count} llogari në bazën e të dhënave"
         retroactive:
           silence: Hiqu heshtimin krejt llogarive ekzistuese nga kjo përkatësi
           suspend: Hiqu pezullimin krejt llogarive ekzistuese nga kjo përkatësi
@@ -463,6 +474,8 @@ sq:
         restart: Rinis dërgimin
         stop: Ndale dërgimin
         title: Dërgim
+        unavailable: Jo i passhëm
+        unavailable_message: Dërgim jo i passhëm
         warning: Kujdes
         warning_message:
           one: Dështim dërgimi %{count} ditë
@@ -512,7 +525,7 @@ sq:
     pending_accounts:
       title: Llogari pezull (%{count})
     relationships:
-      title: Marrëdhënie të %{acct}
+      title: "Marrëdhënie të %{acct}"
     relays:
       add_new: Shtoni rele të re
       delete: Fshije
@@ -565,6 +578,7 @@ sq:
       resolved: I zgjidhur
       resolved_msg: Raportimi u zgjidh me sukses!
       status: Gjendje
+      target_origin: Origjinë e llogarisë së raportuar
       title: Raportime
       unassign: Hiqja
       unresolved: Të pazgjidhur
@@ -719,10 +733,10 @@ sq:
     new_report:
       body: "%{reporter} ka raportuar %{target}"
       body_remote: Dikush nga %{domain} ka raportuar %{target}
-      subject: Raportim i ri për %{instance} (#%{id})
+      subject: 'Raportim i ri për %{instance} (#%{id})'
     new_trending_tag:
       body: 'Hashtag-u #%{name} është popullor sot, por s’është shqyrtuar më parë. S’do të shfaqet publikisht pa e lejuar ju, ose thjesht ruani formularin siç është, që të mos dëgjoni më për të.'
-      subject: Hashtag i ri për shqyrtim te %{instance} (#%{name})
+      subject: 'Hashtag i ri për shqyrtim te %{instance} (#%{name})'
   aliases:
     add_new: Krijo alias
     created_msg: U krijua me sukses alias i ri. Tani mund të filloni lëvizjen prej llogarisë së vjetër.
@@ -1000,6 +1014,17 @@ sq:
   lists:
     errors:
       limit: Keni mbërritur në numrin maksimum të sasisë së listave
+  login_activities:
+    authentication_methods:
+      otp: aplikacion mirëfilltësimi dyfaktorësh
+      password: fjalëkalim
+      sign_in_token: kod sigurie përmes email-i
+      webauthn: kyçe sigurie
+    description_html: Nëse shihni veprimtari që nuk e njihni, shihni mundësinë e ndryshimit të fjalëkalimit tuaj dhe të aktivizimit të mirëfilltësimit dyfaktorësh.
+    empty: S’ka historik mirëfilltësimesh
+    failed_sign_in_html: Dështoi përpjekje hyrjeje me %{method} nga %{ip} (%{browser})
+    successful_sign_in_html: Hyrje e suksesshme me %{method} nga %{ip} (%{browser})
+    title: Historik mirëfilltësimesh
   media_attachments:
     validations:
       images_and_video: S’mund të bashkëngjitet video te një gjendje që përmban figura tashmë
@@ -1059,8 +1084,8 @@ sq:
       subject: "%{name} parapëlqeu gjendjen tuaj"
       title: E parapëlqyer e re
     follow:
-      body: Tani ju ndjek %{name}!
-      subject: Tani ju ndjek %{name}
+      body: "Tani ju ndjek %{name}!"
+      subject: "Tani ju ndjek %{name}"
       title: Ndjekës i ri
     follow_request:
       action: Administroni kërkesa ndjekjeje
@@ -1206,6 +1231,7 @@ sq:
     revoke: Shfuqizoje
     revoke_success: Sesioni u shfuqizua me sukses
     title: Sesione
+    view_authentication_history: Shihni historik mirëfilltësimesh të llogarisë tuaj
   settings:
     account: Llogari
     account_settings: Rregullime llogarie
@@ -1365,7 +1391,7 @@ sq:
       <p>Ky dokument është CC-BY-SA. U përditësua së fundi më 7 mars, 2018.</p>
 
       <p>Përshtatur fillimisht nga <a href="https://github.com/discourse/discourse">rregullat e privatësisë në Discourse</a>.</p>
-    title: Kushte Shërbimi dhe Rregulla Privatësie te %{instance}
+    title: "Kushte Shërbimi dhe Rregulla Privatësie te %{instance}"
   themes:
     contrast: Mastodon (Me shumë kontrast)
     default: Mastodon (I errët)

@@ -1,7 +1,6 @@
----
 fr:
   about:
-    about_hashtag_html: Voici des messages publics tagués avec <strong>#%{hashtag}</strong>. Vous pouvez interagir avec si vous avez un compte n’importe où dans le fédiverse.
+    about_hashtag_html: 'Voici des messages publics tagués avec <strong>#%{hashtag}</strong>. Vous pouvez interagir avec si vous avez un compte n’importe où dans le fédiverse.'
     about_mastodon_html: 'Le réseau social de l''avenir : pas de publicité, pas de surveillance institutionnelle, conception éthique et décentralisation ! Gardez le contrôle de vos données avec Mastodon !'
     about_this: À propos
     active_count_after: actif·ve·s
@@ -117,8 +116,9 @@ fr:
       delete: Supprimer les données
       deleted: Supprimé
       demote: Rétrograder
-      destroyed_msg: Les données de %{username} sont maintenant en file d’attente pour être supprimées imminemment
+      destroyed_msg: "Les données de %{username} sont maintenant en file d’attente pour être supprimées imminemment"
       disable: Désactiver
+      disable_sign_in_token_auth: Désactiver l'authentification basée sur les jetons envoyés par courriel
       disable_two_factor_authentication: Désactiver l’authentification à deux facteurs
       disabled: Désactivé
       display_name: Nom affiché
@@ -127,6 +127,7 @@ fr:
       email: Courriel
       email_status: État du courriel
       enable: Activer
+      enable_sign_in_token_auth: Activer l'authentification basée sur les jetons envoyés par courriel
       enabled: Activé
       enabled_msg: Le compte de %{username} a été débloqué avec succès
       followers: Abonné·e·s
@@ -191,6 +192,10 @@ fr:
       search: Rechercher
       search_same_email_domain: Autres utilisateurs·trices avec le même domaine de courriel
       search_same_ip: Autres utilisateur·rice·s avec la même IP
+      security_measures:
+        only_password: Mot de passe uniquement
+        password_and_2fa: Mot de passe et 2FA
+        password_and_sign_in_token: Mot de passe et jeton par courriel
       sensitive: Sensible
       sensitized: marqué comme sensible
       shared_inbox_url: URL de la boite de réception partagée
@@ -242,8 +247,10 @@ fr:
         destroy_unavailable_domain: Supprimer le domaine indisponible
         disable_2fa_user: Désactiver l’A2F
         disable_custom_emoji: Désactiver les émojis personnalisés
+        disable_sign_in_token_auth_user: Désactiver l'authentification basée sur les jetons envoyés par courriel pour l'utilisateur·rice
         disable_user: Désactiver l’utilisateur·ice
         enable_custom_emoji: Activer les émojis personnalisées
+        enable_sign_in_token_auth_user: Activer l'authentification basée sur les jetons envoyés par courriel pour l'utilisateur·rice
         enable_user: Activer l’utilisateur
         memorialize_account: Mémorialiser le compte
         promote_user: Promouvoir l’utilisateur
@@ -285,8 +292,10 @@ fr:
         destroy_unavailable_domain_html: "%{name} a repris la livraison au domaine %{target}"
         disable_2fa_user_html: "%{name} a désactivé l'authentification à deux facteurs pour l'utilisateur·rice %{target}"
         disable_custom_emoji_html: "%{name} a désactivé l'émoji %{target}"
+        disable_sign_in_token_auth_user_html: "%{name} a désactivé l'authentification basée sur les jetons envoyés par courriel pour %{target}"
         disable_user_html: "%{name} a désactivé la connexion de l'utilisateur·rice %{target}"
         enable_custom_emoji_html: "%{name} a activé l'émoji %{target}"
+        enable_sign_in_token_auth_user_html: "%{name} a activé l'authentification basée sur les jetons envoyés par courriel pour %{target}"
         enable_user_html: "%{name} a activé la connexion de l'utilisateur·rice %{target}"
         memorialize_account_html: "%{name} a converti le compte de %{target} en un mémorial"
         promote_user_html: "%{name} a promu l'utilisateur·rice %{target}"
@@ -516,7 +525,7 @@ fr:
     pending_accounts:
       title: Comptes en attente (%{count})
     relationships:
-      title: Relations de %{acct}
+      title: "Relations de %{acct}"
     relays:
       add_new: Ajouter un nouveau relais
       delete: Supprimer
@@ -569,6 +578,7 @@ fr:
       resolved: Résolus
       resolved_msg: Signalement résolu avec succès !
       status: Statut
+      target_origin: Origine du compte signalé
       title: Signalements
       unassign: Dés-assigner
       unresolved: Non résolus
@@ -723,10 +733,10 @@ fr:
     new_report:
       body: "%{reporter} a signalé %{target}"
       body_remote: Quelqu’un de %{domain} a signalé %{target}
-      subject: Nouveau signalement sur %{instance} (#%{id})
+      subject: 'Nouveau signalement sur %{instance} (#%{id})'
     new_trending_tag:
       body: 'Le hashtag #%{name} est dans les tendances aujourd’hui, mais il n’a pas encore été approuvé. Il ne sera pas affiché publiquement à moins que vous l’autorisiez. Sauvegardez simplement ce formulaire tel quel pour ne plus jamais en entendre parler.'
-      subject: Nouveau hashtag en attente d’approbation sur %{instance} (#%{name})
+      subject: 'Nouveau hashtag en attente d’approbation sur %{instance} (#%{name})'
   aliases:
     add_new: Créer un alias
     created_msg: Un nouvel alias a été créé avec succès. Vous pouvez maintenant déménager depuis l'ancien compte.
@@ -1004,6 +1014,17 @@ fr:
   lists:
     errors:
       limit: Vous avez atteint le nombre maximum de listes
+  login_activities:
+    authentication_methods:
+      otp: application d'authentification à deux facteurs
+      password: mot de passe
+      sign_in_token: code de sécurité par courriel
+      webauthn: clés de sécurité
+    description_html: Si vous voyez une activité que vous ne reconnaissez pas, envisagez de changer votre mot de passe et d'activer l'authentification à deux facteurs.
+    empty: Aucun historique d'authentification disponible
+    failed_sign_in_html: Tentative de connexion échouée avec %{method} de %{ip} (%{browser})
+    successful_sign_in_html: Connexion réussie avec %{method} de %{ip} (%{browser})
+    title: Historique d'authentification
   media_attachments:
     validations:
       images_and_video: Impossible de joindre une vidéo à un statut contenant déjà des images
@@ -1059,7 +1080,7 @@ fr:
         other: "%{count} nouvelles notifications depuis votre dernière visite \U0001F418"
       title: Pendant votre absence…
     favourite:
-      body: "%{name} a ajouté votre message à ses favoris :"
+      body: '%{name} a ajouté votre message à ses favoris :'
       subject: "%{name} a ajouté votre message à ses favoris"
       title: Nouveau favori
     follow:
@@ -1073,8 +1094,8 @@ fr:
       title: Nouvelle demande d’abonnement
     mention:
       action: Répondre
-      body: "%{name} vous a mentionné⋅e dans :"
-      subject: "%{name} vous a mentionné·e"
+      body: '%{name} vous a mentionné⋅e dans :'
+      subject: '%{name} vous a mentionné·e'
       title: Nouvelle mention
     poll:
       subject: Un sondage de %{name} est terminé
@@ -1210,6 +1231,7 @@ fr:
     revoke: Révoquer
     revoke_success: Session révoquée avec succès
     title: Sessions
+    view_authentication_history: Voir l'historique d'authentification de votre compte
   settings:
     account: Compte
     account_settings: Paramètres du compte
@@ -1369,7 +1391,7 @@ fr:
       <p>Ce document est publié sous licence CC-BY-SA. Il a été mis à jour pour la dernière fois le 7 mars 2018.</p>
 
       <p>Originellement adapté de la <a href="https://github.com/discourse/discourse">politique de confidentialité de Discourse</a>.</p>
-    title: Conditions d’utilisation et politique de confidentialité de %{instance}
+    title: "Conditions d’utilisation et politique de confidentialité de %{instance}"
   themes:
     contrast: Mastodon (Contraste élevé)
     default: Mastodon (Sombre)

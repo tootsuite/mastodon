@@ -1,4 +1,3 @@
----
 zh-HK:
   activerecord:
     attributes:
@@ -52,7 +51,7 @@ zh-HK:
         callback_urls: 回傳網址 (Callback URL)
         scopes: 權限範圍 (Scopes)
         secret: 用戶程式密碼 (Client secret)
-        title: 應用程式︰ %{name}
+        title: '應用程式︰ %{name}'
     authorizations:
       buttons:
         authorize: 批准
@@ -84,7 +83,7 @@ zh-HK:
         invalid_grant: 所提供的認證申請 (authorization grant) 不正確、過期、已被取消、或者無法對應授權請求 (authorization request) 內的轉接 URI，或者屬於別的用戶程式。
         invalid_redirect_uri: 不正確的轉接網址。
         invalid_request:
-          missing_param: 缺少必要的參數：%{value}.
+          missing_param: '缺少必要的參數：%{value}.'
           request_not_authorized: 請求必須被授權。用於授權的必要參數缺失或無效。
           unknown: 這個請求缺少必要的參數，包括有不支援的參數、或有其他格式錯誤。
         invalid_resource_owner: 資源擁有者的登入資訊無效、或者無法找到該資源擁有者
@@ -118,37 +117,37 @@ zh-HK:
       application:
         title: 需要 OAuth 授權
     scopes:
-      admin:read: 讀取伺服器的所有資料
-      admin:read:accounts: 讀取所有帳戶的敏感資訊
-      admin:read:reports: 讀取所有回報 / 被回報之帳戶的敏感資訊
-      admin:write: 修改伺服器的所有資料
-      admin:write:accounts: 對帳號進行仲裁管理動作
-      admin:write:reports: 對回報進行仲裁管理動作
+      "admin:read": 讀取伺服器的所有資料
+      "admin:read:accounts": 讀取所有帳戶的敏感資訊
+      "admin:read:reports": 讀取所有回報 / 被回報之帳戶的敏感資訊
+      "admin:write": 修改伺服器的所有資料
+      "admin:write:accounts": 對帳號進行仲裁管理動作
+      "admin:write:reports": 對回報進行仲裁管理動作
       follow: 修改帳號的對外聯繫
       push: 接收你的帳號的推送通知
       read: 閱讀你帳號的所有資料
-      read:accounts: 檢視帳號資訊
-      read:blocks: 檢視你的封鎖名單
-      read:bookmarks: 檢視你的書籤
-      read:favourites: 檢視你最愛的文章
-      read:filters: 檢視你的過濾條件
-      read:follows: 檢視你關注的人
-      read:lists: 檢視你的清單
-      read:mutes: 檢視被你靜音的人
-      read:notifications: 檢視你的通知
-      read:reports: 檢視你的檢舉
-      read:search: 以你的身份進行搜尋
-      read:statuses: 檢視所有文章
+      "read:accounts": 檢視帳號資訊
+      "read:blocks": 檢視你的封鎖名單
+      "read:bookmarks": 檢視你的書籤
+      "read:favourites": 檢視你最愛的文章
+      "read:filters": 檢視你的過濾條件
+      "read:follows": 檢視你關注的人
+      "read:lists": 檢視你的清單
+      "read:mutes": 檢視被你靜音的人
+      "read:notifications": 檢視你的通知
+      "read:reports": 檢視你的檢舉
+      "read:search": 以你的身份進行搜尋
+      "read:statuses": 檢視所有文章
       write: 以你的名義發佈文章
-      write:accounts: 修改你的個人檔案
-      write:blocks: 封鎖帳號及域名
-      write:bookmarks: 把文章加入最愛
-      write:favourites: 喜歡的文章
-      write:filters: 建立過濾條件
-      write:follows: 關注其他人
-      write:lists: 建立清單
-      write:media: 上傳媒體檔案
-      write:mutes: 靜音使用者及對話
-      write:notifications: 清除你的通知
-      write:reports: 檢舉其他人
-      write:statuses: 發布嘟文
+      "write:accounts": 修改你的個人檔案
+      "write:blocks": 封鎖帳號及域名
+      "write:bookmarks": 把文章加入最愛
+      "write:favourites": 喜歡的文章
+      "write:filters": 建立過濾條件
+      "write:follows": 關注其他人
+      "write:lists": 建立清單
+      "write:media": 上傳媒體檔案
+      "write:mutes": 靜音使用者及對話
+      "write:notifications": 清除你的通知
+      "write:reports": 檢舉其他人
+      "write:statuses": 發布嘟文

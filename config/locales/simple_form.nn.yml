@@ -1,4 +1,3 @@
----
 nn:
   simple_form:
     hints:
@@ -69,7 +68,7 @@ nn:
         severities:
           no_access: Blokker tilgang til alle ressurser
       sessions:
-        otp: Angi tofaktorkoden fra din telefon eller bruk en av dine gjenopprettingskoder.
+        otp: 'Angi tofaktorkoden fra din telefon eller bruk en av dine gjenopprettingskoder.'
       tag:
         name: Du kan berre endra bruken av store/små bokstavar, t. d. for å gjera det meir leseleg
       user:
@@ -197,7 +196,7 @@ nn:
         name: Emneknagg
         trendable: Tillat denne emneknaggen til å synast under trendar
         usable: Gje tut lov til å nytta denne emneknaggen
-    'no': Nei
+    'no': 'Nei'
     recommended: Tilrådt
     required:
       mark: "*"
@@ -205,4 +204,4 @@ nn:
     title:
       sessions:
         webauthn: Bruk en av sikkerhetsnøklene dine til å logge på
-    'yes': Ja
+    'yes': 'Ja'

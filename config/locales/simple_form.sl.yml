@@ -1,4 +1,3 @@
----
 sl:
   simple_form:
     hints:
@@ -135,8 +134,8 @@ sl:
         pending_account: Pošlji e-pošto, ko je potreben pregled novega računa
         reblog: Pošlji e-pošto, ko nekdo sune vaše stanje
         report: Pošlji e-pošto, ko je oddana nova prijava
-    'no': Ne
+    'no': 'Ne'
     recommended: Priporočeno
     required:
       text: zahtevano
-    'yes': Da
+    'yes': 'Da'

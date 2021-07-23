@@ -1,7 +1,6 @@
----
 ro:
   about:
-    about_hashtag_html: Acestea sunt postări publice etichetate cu <strong>#%{hashtag}</strong>. Poți interacționa cu ele dacă ai un cont oriunde în rețea.
+    about_hashtag_html: 'Acestea sunt postări publice etichetate cu <strong>#%{hashtag}</strong>. Poți interacționa cu ele dacă ai un cont oriunde în rețea.'
     about_mastodon_html: 'Rețeaua socială a viitorului: Fără reclame, fără supraveghere corporativă, design etic și descentralizare! Dețineți-vă datele cu Mastodon!'
     about_this: Despre
     active_count_after: activi
@@ -27,8 +26,8 @@ ro:
     server_stats: 'Statistici server:'
     source_code: Cod sursă
     status_count_after:
-      few: stări
       one: stare
+      few: stări
       other: de stări
     status_count_before: Care au postat
     tagline: Urmăriți prietenii și descoperiți alții noi
@@ -43,19 +42,19 @@ ro:
       suspended_title: Servere suspendate
     unavailable_content_html: Mastodon vă permite în general să vedeți conținutul din orice alt server și să interacționați cu utilizatorii din rețea. Acestea sunt excepţiile care au fost făcute pe acest server.
     user_count_after:
-      few: utilizatori
       one: utilizator
+      few: utilizatori
       other: de utilizatori
     user_count_before: Casa a
     what_is_mastodon: Ce este Mastodon?
   accounts:
-    choices_html: 'Alegerile lui %{name}:'
+    choices_html: "Alegerile lui %{name}:"
     endorsements_hint: Poți promova oameni pe care îi urmărești din interfața web, și ei vor apărea aici.
     featured_tags_hint: Puteți promova anumite hashtag-uri care vor fi afișate aici.
     follow: Urmărește
     followers:
-      few: Urmăritori
       one: Urmăritor
+      few: Urmăritori
       other: De Urmăritori
     following: Urmăriți
     joined: Înscris %{date}
@@ -70,8 +69,8 @@ ro:
     pin_errors:
       following: Trebuie să urmăriți deja persoana pe care doriți să o aprobați
     posts:
-      few: Postări
       one: Postare
+      few: Postări
       other: De Postări
     posts_tab_heading: Postări
     posts_with_replies: Postări și răspunsuri
@@ -400,8 +399,8 @@ ro:
     generate: Generează link de invitație
     invited_by: 'Ai fost invitat de:'
     max_uses:
-      few: "%{count} utilizări"
       one: 1 utilizare
+      few: "%{count} utilizări"
       other: "%{count} de utilizări"
     max_uses_prompt: Fără limită
     prompt: Generați și împărtășiți link-uri cu alții pentru a acorda acces la acest server
@@ -510,14 +509,14 @@ ro:
   statuses:
     attached:
       image:
-        few: "%{count} imagini"
         one: "%{count} imagine"
+        few: "%{count} imagini"
         other: "%{count} de imagini"
     boosted_from_html: Impuls de la %{acct_link}
     content_warning: 'Avertisment privind conținutul: %{warning}'
     disallowed_hashtags:
-      few: 'conținea aceste hashtag-uri nepermise: %{tags}'
       one: 'conținea un hashtag nepermis: %{tags}'
+      few: 'conținea aceste hashtag-uri nepermise: %{tags}'
       other: 'conținea aceste hashtag-uri nepermise: %{tags}'
     errors:
       in_reply_not_found: Postarea la care încercați să răspundeți nu pare să existe.
@@ -531,12 +530,12 @@ ro:
       reblog: Un impuls nu poate fi fixat
     poll:
       total_people:
-        few: "%{count} persoane"
         one: "%{count} persoană"
+        few: "%{count} persoane"
         other: "%{count} de persoane"
       total_votes:
-        few: "%{count} voturi"
         one: "%{count} vot"
+        few: "%{count} voturi"
         other: "%{count} de voturi"
       vote: Votează
     show_more: Arată mai mult

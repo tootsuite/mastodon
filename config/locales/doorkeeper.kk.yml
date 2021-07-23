@@ -1,4 +1,3 @@
----
 kk:
   activerecord:
     attributes:
@@ -113,37 +112,37 @@ kk:
       application:
         title: OAuth authorizatiоn required
     scopes:
-      admin:read: сервердегі барлық деректерді оқыңыз
-      admin:read:accounts: барлық аккаунттардың құпия ақпаратын оқыңыз
-      admin:read:reports: барлық есептер мен есептік жазбалардың құпия ақпаратын оқыңыз
-      admin:write: сервердегі барлық деректерді өзгертіңіз
-      admin:write:accounts: аккаунттардағы модерациялық әрекеттерді орындау
-      admin:write:reports: есептер бойынша модерация әрекеттерін орындау
+      "admin:read": сервердегі барлық деректерді оқыңыз
+      "admin:read:accounts": барлық аккаунттардың құпия ақпаратын оқыңыз
+      "admin:read:reports": барлық есептер мен есептік жазбалардың құпия ақпаратын оқыңыз
+      "admin:write": сервердегі барлық деректерді өзгертіңіз
+      "admin:write:accounts": аккаунттардағы модерациялық әрекеттерді орындау
+      "admin:write:reports": есептер бойынша модерация әрекеттерін орындау
       follow: modify accоunt relationships
       push: receive your push nоtifications
       read: read all your accоunt's data
-      read:accounts: see accounts infоrmation
-      read:blocks: see your blоcks
-      read:bookmarks: белгілегендерді қарау
-      read:favourites: see your favоurites
-      read:filters: see yоur filters
-      read:follows: see your follоws
-      read:lists: see yоur lists
-      read:mutes: see yоur mutes
-      read:notifications: see your nоtifications
-      read:reports: see your repоrts
-      read:search: search on yоur behalf
-      read:statuses: see all stаtuses
+      "read:accounts": see accounts infоrmation
+      "read:blocks": see your blоcks
+      "read:bookmarks": белгілегендерді қарау
+      "read:favourites": see your favоurites
+      "read:filters": see yоur filters
+      "read:follows": see your follоws
+      "read:lists": see yоur lists
+      "read:mutes": see yоur mutes
+      "read:notifications": see your nоtifications
+      "read:reports": see your repоrts
+      "read:search": search on yоur behalf
+      "read:statuses": see all stаtuses
       write: modify all your accоunt's data
-      write:accounts: modify your prоfile
-      write:blocks: block accounts and dоmains
-      write:bookmarks: белгілер статусы
-      write:favourites: favourite stаtuses
-      write:filters: creаte filters
-      write:follows: follow peоple
-      write:lists: creatе lists
-      write:media: upload mеdia files
-      write:mutes: mute pеople and conversations
-      write:notifications: clear yоur notifications
-      write:reports: report оther people
-      write:statuses: publish stаtuses
+      "write:accounts": modify your prоfile
+      "write:blocks": block accounts and dоmains
+      "write:bookmarks": белгілер статусы
+      "write:favourites": favourite stаtuses
+      "write:filters": creаte filters
+      "write:follows": follow peоple
+      "write:lists": creatе lists
+      "write:media": upload mеdia files
+      "write:mutes": mute pеople and conversations
+      "write:notifications": clear yоur notifications
+      "write:reports": report оther people
+      "write:statuses": publish stаtuses

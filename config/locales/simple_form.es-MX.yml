@@ -1,4 +1,3 @@
----
 es-MX:
   simple_form:
     hints:
@@ -120,7 +119,7 @@ es-MX:
         text: Anuncio
       defaults:
         autofollow: Invitar a seguir tu cuenta
-        avatar: Avatar
+        avatar: Foto de perfil
         bot: Esta es una cuenta bot
         chosen_languages: Filtrar idiomas
         confirm_new_password: Confirmar nueva contraseña
@@ -187,7 +186,7 @@ es-MX:
       invite:
         comment: Comentar
       invite_request:
-        text: "¿Por qué quiere unirse usted?"
+        text: '¿Por qué quiere unirse usted?'
       ip_block:
         comment: Comentario
         ip: IP
@@ -220,4 +219,4 @@ es-MX:
     title:
       sessions:
         webauthn: Utilice una de sus claves de seguridad para iniciar sesión
-    'yes': Sí
+    'yes': 'Sí'

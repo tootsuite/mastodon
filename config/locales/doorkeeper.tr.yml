@@ -1,4 +1,3 @@
----
 tr:
   activerecord:
     attributes:
@@ -61,7 +60,7 @@ tr:
         title: Bir hata oluştu
       new:
         able_to: 'Şunları yapabilecek:'
-        prompt: "%{client_name} uygulaması hesabınıza erişim istiyor"
+        prompt: '%{client_name} uygulaması hesabınıza erişim istiyor'
         title: İzin gerekli
       show:
         title: Bu yetkilendirme kodunu kopyalayın ve uygulamaya yapıştırın.
@@ -118,37 +117,37 @@ tr:
       application:
         title: OAuth yetkilendirme gerekli
     scopes:
-      admin:read: sunucudaki tüm verileri okuma
-      admin:read:accounts: tüm hesapların hassas bilgilerini okuma
-      admin:read:reports: tüm raporların ve raporlanan hesapların hassas bilgilerini okuma
-      admin:write: sunucudaki tüm verileri değiştirin
-      admin:write:accounts: hesaplarda denetleme eylemleri gerçekleştirin
-      admin:write:reports: raporlarda denetleme eylemleri gerçekleştirin
+      "admin:read": sunucudaki tüm verileri okuma
+      "admin:read:accounts": tüm hesapların hassas bilgilerini okuma
+      "admin:read:reports": tüm raporların ve raporlanan hesapların hassas bilgilerini okuma
+      "admin:write": sunucudaki tüm verileri değiştirin
+      "admin:write:accounts": hesaplarda denetleme eylemleri gerçekleştirin
+      "admin:write:reports": raporlarda denetleme eylemleri gerçekleştirin
       follow: hesap ilişkilerini değiştirin
       push: anlık bildirimlerizi alın
       read: hesabınızın tüm verilerini okuyun
-      read:accounts: hesap bilgilerini görün
-      read:blocks: engellemelerinizi görün
-      read:bookmarks: yer imlerinizi görün
-      read:favourites: beğenilerinizi görün
-      read:filters: filtrelerinizi görün
-      read:follows: takip ettiklerinizi görün
-      read:lists: listelerinizi görün
-      read:mutes: sessize aldıklarınızı görün
-      read:notifications: bildirimlerinizi görün
-      read:reports: raporlarınızı görün
-      read:search: kendi adınıza arama yapın
-      read:statuses: tüm durumları görün
+      "read:accounts": hesap bilgilerini görün
+      "read:blocks": engellemelerinizi görün
+      "read:bookmarks": yer imlerinizi görün
+      "read:favourites": beğenilerinizi görün
+      "read:filters": filtrelerinizi görün
+      "read:follows": takip ettiklerinizi görün
+      "read:lists": listelerinizi görün
+      "read:mutes": sessize aldıklarınızı görün
+      "read:notifications": bildirimlerinizi görün
+      "read:reports": raporlarınızı görün
+      "read:search": kendi adınıza arama yapın
+      "read:statuses": tüm durumları görün
       write: hesabınızın tüm verilerini değiştirin
-      write:accounts: profilinizi değiştirin
-      write:blocks: hesapları ve alan adlarını engelleyin
-      write:bookmarks: durumları yer imleyin
-      write:favourites: durumları beğenin
-      write:filters: filtreler oluşturun
-      write:follows: insanları takip edin
-      write:lists: listeler oluşturun
-      write:media: medya dosyaları yükleyin
-      write:mutes: insanları ve sohbetleri sessize al
-      write:notifications: bildirimlerinizi temizleyin
-      write:reports: diğer insanları raporlayın
-      write:statuses: durumları yayınlayın
+      "write:accounts": profilinizi değiştirin
+      "write:blocks": hesapları ve alan adlarını engelleyin
+      "write:bookmarks": durumları yer imleyin
+      "write:favourites": durumları beğenin
+      "write:filters": filtreler oluşturun
+      "write:follows": insanları takip edin
+      "write:lists": listeler oluşturun
+      "write:media": medya dosyaları yükleyin
+      "write:mutes": insanları ve sohbetleri sessize al
+      "write:notifications": bildirimlerinizi temizleyin
+      "write:reports": diğer insanları raporlayın
+      "write:statuses": durumları yayınlayın

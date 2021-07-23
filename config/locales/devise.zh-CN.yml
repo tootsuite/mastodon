@@ -1,4 +1,3 @@
----
 zh-CN:
   devise:
     confirmations:
@@ -8,10 +7,10 @@ zh-CN:
     failure:
       already_authenticated: 你已经登录。
       inactive: 你还没有激活帐户。
-      invalid: "%{authentication_keys} 无效或密码错误。"
+      invalid: '%{authentication_keys} 无效或密码错误。'
       last_attempt: 这是最后一次尝试机会，失败后你的帐户将被锁定。
       locked: 你的帐户已被锁定。
-      not_found_in_database: "%{authentication_keys}或密码错误。"
+      not_found_in_database: '%{authentication_keys}或密码错误。'
       pending: 你的帐号仍在审核中。
       timeout: 你的会话已过期。请重新登录再继续操作。
       unauthenticated: 继续操作前请注册或者登录。
@@ -23,59 +22,59 @@ zh-CN:
         explanation: 你在 %{host} 上使用这个电子邮件地址创建了一个帐户。只需点击下面的链接，即可完成激活。如果你并没有创建过帐户，请忽略此邮件。
         explanation_when_pending: 你用这个电子邮件申请了在 %{host} 注册。在确认电子邮件地址之后，我们会审核你的申请。在此之前，你不能登录。如果你的申请被驳回，你的数据会被移除，因此你无需再采取任何行动。如果申请人不是你，请忽略这封邮件。
         extra_html: 请记得阅读<a href="%{terms_path}">本服务器的相关规定</a>和<a href="%{policy_path}">我们的使用条款</a>。
-        subject: Mastodon：来自 %{instance} 的确认指引
+        subject: 'Mastodon：来自 %{instance} 的确认指引'
         title: 验证电子邮件地址
       email_changed:
-        explanation: 你的帐户的电子邮件地址将变更为：
+        explanation: '你的帐户的电子邮件地址将变更为：'
         extra: 如果你并没有请求更改你的电子邮件地址，则他人很有可能已经入侵你的帐户。请立即更改你的密码；如果你已经无法访问你的帐户，请联系服务器管理员请求协助。
-        subject: Mastodon：电子邮件地址已被更改
+        subject: 'Mastodon：电子邮件地址已被更改'
         title: 新电子邮件地址
       password_change:
         explanation: 你的帐户密码已更改。
         extra: 如果你并没有请求更改你的密码，则他人很有可能已经入侵你的帐户。请立即更改你的密码；如果你已经无法访问你的帐户，请联系服务器的管理员请求协助。
-        subject: Mastodon：密码已被更改
+        subject: 'Mastodon：密码已被更改'
         title: 密码已被重置
       reconfirmation_instructions:
         explanation: 点击下面的链接来确认你的新电子邮件地址。
         extra: 如果你并没有请求本次变更，请忽略此邮件。Mastodon 帐户的电子邮件地址只有在你点击上面的链接后才会更改。
-        subject: Mastodon：确认 %{instance} 电子邮件地址
+        subject: 'Mastodon：确认 %{instance} 电子邮件地址'
         title: 验证电子邮件地址
       reset_password_instructions:
         action: 更改密码
         explanation: 点击下面的链接来更改帐户的密码。
         extra: 如果你并没有请求本次变更，请忽略此邮件。你的密码只有在你点击上面的链接并输入新密码后才会更改。
-        subject: Mastodon：重置密码信息
+        subject: 'Mastodon：重置密码信息'
         title: 重置密码
       two_factor_disabled:
         explanation: 帐号的双重认证已禁用。现在仅使用邮箱和密码登录即可登录。
-        subject: Mastodon：双重认证已禁用。
+        subject: 'Mastodon：双重认证已禁用。'
         title: 双重认证已禁用
       two_factor_enabled:
         explanation: 账号双重认证已启用。登录时将需要来自已配对的 TOTP 应用生成的验证码。
-        subject: Mastodon：双重验证已开启
+        subject: 'Mastodon：双重验证已开启'
         title: 已启用双重认证
       two_factor_recovery_codes_changed:
         explanation: 之前的恢复码已失效，现已生成了新的恢复码。
-        subject: Mastodon：重新生成双重认证的恢复码
+        subject: 'Mastodon：重新生成双重认证的恢复码'
         title: 双重验证的恢复码已更改
       unlock_instructions:
-        subject: Mastodon：帐户解锁信息
+        subject: 'Mastodon：帐户解锁信息'
       webauthn_credential:
         added:
           explanation: 以下安全密钥已添加到你的帐户
-          subject: Mastodon：新的安全密钥
+          subject: 'Mastodon：新的安全密钥'
           title: 已添加一个新的安全密钥
         deleted:
           explanation: 以下安全密钥已从你的账户中删除
-          subject: Mastodon：安全密钥已删除
+          subject: 'Mastodon：安全密钥已删除'
           title: 你的安全密钥之一已被删除
       webauthn_disabled:
         explanation: 你的帐户已禁用安全密钥认证。现在只能使用配对的 TOTP 应用程序生成的令牌登录。
-        subject: Mastodon：安全密钥认证已禁用
+        subject: 'Mastodon：安全密钥认证已禁用'
         title: 安全密钥已禁用
       webauthn_enabled:
         explanation: 你的帐户已启用安全密钥身份验证。你的安全密钥现在可以用于登录。
-        subject: Mastodon：安全密钥认证已启用
+        subject: 'Mastodon：安全密钥认证已启用'
         title: 已启用安全密钥
     omniauth_callbacks:
       failure: 由于%{reason}，无法从%{kind}获得授权。
@@ -111,4 +110,4 @@ zh-CN:
       not_found: 未找到
       not_locked: 未被锁定
       not_saved:
-        other: 发生 %{count} 个错误，导致%{resource}保存失败：
+        other: "发生 %{count} 个错误，导致%{resource}保存失败："

@@ -1,4 +1,3 @@
----
 co:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ co:
       application:
         title: Auturizazione OAuth richiestata
     scopes:
-      admin:read: leghje tutti i dati nant'à u servore
-      admin:read:accounts: leghje i cuntinuti sensibili di tutti i conti
-      admin:read:reports: leghje i cuntinuti sensibili di tutti i rapporti è conti signalati
-      admin:write: mudificà tutti i dati nant'à u servore
-      admin:write:accounts: realizà azzione di muderazione nant'à i conti
-      admin:write:reports: realizà azzione di muderazione nant'à i rapporti
+      "admin:read": leghje tutti i dati nant'à u servore
+      "admin:read:accounts": leghje i cuntinuti sensibili di tutti i conti
+      "admin:read:reports": leghje i cuntinuti sensibili di tutti i rapporti è conti signalati
+      "admin:write": mudificà tutti i dati nant'à u servore
+      "admin:write:accounts": realizà azzione di muderazione nant'à i conti
+      "admin:write:reports": realizà azzione di muderazione nant'à i rapporti
       follow: mudificà rilazione trà i conti
       push: riceve e vostre nutificazione push
       read: leghje tutte l’infurmazioni di u vostru contu
-      read:accounts: vede l'infurmazione di i conti
-      read:blocks: vede i vostri blucchimi
-      read:bookmarks: vede i vostri segnalibri
-      read:favourites: vede i vostri favuriti
-      read:filters: vede i vostri filtri
-      read:follows: vede i vostri abbunamenti
-      read:lists: vede e vostre liste
-      read:mutes: vede i vostri piattati
-      read:notifications: vede e vostre nutificazione
-      read:reports: vede i vostri signalamenti
-      read:search: ricercà per voi
-      read:statuses: vede tutti i statuti
+      "read:accounts": vede l'infurmazione di i conti
+      "read:blocks": vede i vostri blucchimi
+      "read:bookmarks": vede i vostri segnalibri
+      "read:favourites": vede i vostri favuriti
+      "read:filters": vede i vostri filtri
+      "read:follows": vede i vostri abbunamenti
+      "read:lists": vede e vostre liste
+      "read:mutes": vede i vostri piattati
+      "read:notifications": vede e vostre nutificazione
+      "read:reports": vede i vostri signalamenti
+      "read:search": ricercà per voi
+      "read:statuses": vede tutti i statuti
       write: mudificà i dati di u vostru contu
-      write:accounts: mudificà u prufile
-      write:blocks: bluccà conti è dumini
-      write:bookmarks: segnà statuti
-      write:favourites: aghjustà statuti à i favuriti
-      write:filters: creà filtri
-      write:follows: siguità conti
-      write:lists: creà liste
-      write:media: caricà fugliali media
-      write:mutes: piattà persone è cunversazione
-      write:notifications: sguassà e nutificazione
-      write:reports: palisà altre persone
-      write:statuses: pubblicà statuti
+      "write:accounts": mudificà u prufile
+      "write:blocks": bluccà conti è dumini
+      "write:bookmarks": segnà statuti
+      "write:favourites": aghjustà statuti à i favuriti
+      "write:filters": creà filtri
+      "write:follows": siguità conti
+      "write:lists": creà liste
+      "write:media": caricà fugliali media
+      "write:mutes": piattà persone è cunversazione
+      "write:notifications": sguassà e nutificazione
+      "write:reports": palisà altre persone
+      "write:statuses": pubblicà statuti

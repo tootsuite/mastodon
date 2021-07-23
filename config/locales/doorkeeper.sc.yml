@@ -1,4 +1,3 @@
----
 sc:
   activerecord:
     attributes:
@@ -118,37 +117,37 @@ sc:
       application:
         title: Autorizatzione OAuth netzessària
     scopes:
-      admin:read: lèghere totu is datos de su serbidore
-      admin:read:accounts: lèghere informatziones sensìbiles de totu is contos
-      admin:read:reports: lèghere informatziones sensìbiles de totu is sinnalatziones e is contos sinnalados
-      admin:write: modificare totu is datos in su serbidore
-      admin:write:accounts: fàghere atziones de moderatzione in is contos
-      admin:write:reports: fàghere atziones de moderatzione in is sinnalatziones
+      "admin:read": lèghere totu is datos de su serbidore
+      "admin:read:accounts": lèghere informatziones sensìbiles de totu is contos
+      "admin:read:reports": lèghere informatziones sensìbiles de totu is sinnalatziones e is contos sinnalados
+      "admin:write": modificare totu is datos in su serbidore
+      "admin:write:accounts": fàghere atziones de moderatzione in is contos
+      "admin:write:reports": fàghere atziones de moderatzione in is sinnalatziones
       follow: modificare is relatziones intre is contos
       push: retzire is notìficas push tuas
       read: lèghere totu is datos de su contu tuo
-      read:accounts: bìdere is informatziones in su contu
-      read:blocks: bìdere is blocos tuos
-      read:bookmarks: bìdere is sinnalibros tuos
-      read:favourites: bìdere is preferidos tuos
-      read:filters: bìdere is filtros tuos
-      read:follows: bìdere is sighiduras tuas
-      read:lists: bìdere is listas tuas
-      read:mutes: bìdere is utentes chi as postu a sa muda
-      read:notifications: bìdere is notìficas tuas
-      read:reports: bìdere is sinnalatziones tuas
-      read:search: chircare a nòmine tuo
-      read:statuses: bìdere totu is istados
+      "read:accounts": bìdere is informatziones in su contu
+      "read:blocks": bìdere is blocos tuos
+      "read:bookmarks": bìdere is sinnalibros tuos
+      "read:favourites": bìdere is preferidos tuos
+      "read:filters": bìdere is filtros tuos
+      "read:follows": bìdere is sighiduras tuas
+      "read:lists": bìdere is listas tuas
+      "read:mutes": bìdere is utentes chi as postu a sa muda
+      "read:notifications": bìdere is notìficas tuas
+      "read:reports": bìdere is sinnalatziones tuas
+      "read:search": chircare a nòmine tuo
+      "read:statuses": bìdere totu is istados
       write: modificare totu is datos de su contu tuo
-      write:accounts: modificare su profilu tuo
-      write:blocks: blocare contos e domìnios
-      write:bookmarks: agiùnghere is istados a is sinnalibros
-      write:favourites: pone istados in is preferidos
-      write:filters: creare filtros
-      write:follows: sighire persones
-      write:lists: creare listas
-      write:media: carrigare documentos multimediales
-      write:mutes: pònnere persones e arresonadas a sa muda
-      write:notifications: isboidare is notìficas tuas
-      write:reports: sinnalare àteras persones
-      write:statuses: publicare istados
+      "write:accounts": modificare su profilu tuo
+      "write:blocks": blocare contos e domìnios
+      "write:bookmarks": agiùnghere is istados a is sinnalibros
+      "write:favourites": pone istados in is preferidos
+      "write:filters": creare filtros
+      "write:follows": sighire persones
+      "write:lists": creare listas
+      "write:media": carrigare documentos multimediales
+      "write:mutes": pònnere persones e arresonadas a sa muda
+      "write:notifications": isboidare is notìficas tuas
+      "write:reports": sinnalare àteras persones
+      "write:statuses": publicare istados

@@ -1,7 +1,6 @@
----
 bg:
   about:
-    about_mastodon_html: Mastodon е <em>безплатен</em> сървър с <em>отворен код</em> за социални мрежи. Като <em>децентрализирана</em> алтернатива на комерсиалните платформи, той позволява избягването на риска от монополизация на твоята комуникация от единични компании. Изберете си сървър, на който се доверявате, и ще можете да контактувате с всички останали. Всеки може да пусне Mastodon и лесно да вземе участие в <em>социалната мрежа</em>.
+    about_mastodon_html: 'Mastodon е <em>безплатен</em> сървър с <em>отворен код</em> за социални мрежи. Като <em>децентрализирана</em> алтернатива на комерсиалните платформи, той позволява избягването на риска от монополизация на твоята комуникация от единични компании. Изберете си сървър, на който се доверявате, и ще можете да контактувате с всички останали. Всеки може да пусне Mastodon и лесно да вземе участие в <em>социалната мрежа</em>.'
     about_this: За тази инстанция
     active_count_after: активно
     active_footnote: Месечни активни потребители (МАП)
@@ -47,7 +46,7 @@ bg:
     user_count_before: Дом на
     what_is_mastodon: Какво е Mastodon?
   accounts:
-    choices_html: 'Избори на %{name}:'
+    choices_html: "Избори на %{name}:"
     endorsements_hint: Можете да подкрепите хората, които следите, от уеб интерфейса и те ще се покажат тук.
     featured_tags_hint: Можете да представите конкретни хаштагове, които ще се показват тук.
     follow: Последвай
@@ -106,7 +105,7 @@ bg:
       delete: Изтриване на данни
       deleted: Изтрито
       demote: Понижаване
-      destroyed_msg: Данните на %{username} вече са на опашка за незабавно изтриване
+      destroyed_msg: "Данните на %{username} вече са на опашка за незабавно изтриване"
       disable: Замразяване
       disable_two_factor_authentication: Изключване на 2FA
       disabled: Замразено
@@ -219,9 +218,9 @@ bg:
     '404': The page you are looking for isn't here.
     '406': This page is not available in the requested format.
     '410': The page you were looking for doesn't exist here anymore.
-    '422': 
+    '422':
     '429': Too many requests
-    '500': 
+    '500':
     '503': The page could not be served due to a temporary server failure.
   exports:
     blocks: Вашите блокирания
@@ -260,8 +259,8 @@ bg:
       body: "%{name} помоли за разрешение да те последва"
       subject: 'Чакащ последовател: %{name}'
     mention:
-      body: "%{name} те спомена в:"
-      subject: "%{name} те спомена"
+      body: '%{name} те спомена в:'
+      subject: '%{name} те спомена'
     reblog:
       body: 'Твоята публикация беше споделена от %{name}:'
       subject: "%{name} сподели публикацията ти"

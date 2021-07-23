@@ -1,4 +1,3 @@
----
 tr:
   simple_form:
     hints:
@@ -13,7 +12,7 @@ tr:
         include_statuses: Kullanıcı hangi tootların denetleme eylemi ya da uyarısına neden olduğunu görecektir
         send_email_notification: Kullanıcı, hesabına ne olduğuna dair bir açıklama alacak
         text_html: İsteğe bağlı. Toot sözdizimleri kullanabilirsiniz. Zamandan kazanmak için <a href="%{path}">uyarı ön-ayarları ekleyebilirsiniz</a>
-        type_html: "<strong>%{acct}</strong> ile ne yapılacağını seçin"
+        type_html: <strong>%{acct}</strong> ile ne yapılacağını seçin
         types:
           disable: Kullanıcının hesabını kullanmasını engelle ama içeriklerini silme veya gizleme.
           none: Bunu, başka bir eylem tetiklemeden kullanıcıya bir uyarı göndermek için kullan.
@@ -82,7 +81,7 @@ tr:
       rule:
         text: Bu sunucu üzerindeki kullanıcılar için bir kural veya gereksinimi tanımlayın. Kuralı kısa ve yalın tutmaya çalışın
       sessions:
-        otp: Telefonunuzdaki two-factor kodunuzu giriniz veya kurtarma kodlarınızdan birini giriniz.
+        otp: 'Telefonunuzdaki two-factor kodunuzu giriniz veya kurtarma kodlarınızdan birini giriniz.'
         webauthn: Bir USB anahtarıysa, taktığınızdan ve gerekirse üzerine tıkladığınızdan emin olun.
       tag:
         name: Harflerin, örneğin daha okunabilir yapmak için, sadece büyük/küçük harf durumlarını değiştirebilirsiniz
@@ -212,7 +211,7 @@ tr:
         name: Etiket
         trendable: Bu etiketin gündem altında görünmesine izin ver
         usable: Tootların bu etiketi kullanmasına izin ver
-    'no': Hayır
+    'no': 'Hayır'
     recommended: Önerilen
     required:
       mark: "*"
@@ -220,4 +219,4 @@ tr:
     title:
       sessions:
         webauthn: Oturum açmak için güvenlik anahtarlarınızdan birini kullanın
-    'yes': Evet
+    'yes': 'Evet'

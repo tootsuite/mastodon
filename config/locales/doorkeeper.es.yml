@@ -1,4 +1,3 @@
----
 es:
   activerecord:
     attributes:
@@ -25,11 +24,11 @@ es:
         edit: Editar
         submit: Enviar
       confirmations:
-        destroy: "¿Está seguro?"
+        destroy: '¿Está seguro?'
       edit:
         title: Editar aplicación
       form:
-        error: "¡Uuups! Compruebe su formulario"
+        error: '¡Uuups! Compruebe su formulario'
       help:
         native_redirect_uri: Utilice %{native_redirect_uri} para pruebas locales
         redirect_uri: Utilice una línea por URI
@@ -69,7 +68,7 @@ es:
       buttons:
         revoke: Revocar
       confirmations:
-        revoke: "¿Está seguro?"
+        revoke: '¿Está seguro?'
       index:
         application: Aplicación
         created_at: Creado el
@@ -118,37 +117,37 @@ es:
       application:
         title: OAuth autorización requerida
     scopes:
-      admin:read: leer todos los datos en el servidor
-      admin:read:accounts: leer información sensible de todas las cuentas
-      admin:read:reports: leer información sensible de todos los informes y cuentas reportadas
-      admin:write: modificar todos los datos en el servidor
-      admin:write:accounts: realizar acciones de moderación en cuentas
-      admin:write:reports: realizar acciones de moderación en informes
+      "admin:read": leer todos los datos en el servidor
+      "admin:read:accounts": leer información sensible de todas las cuentas
+      "admin:read:reports": leer información sensible de todos los informes y cuentas reportadas
+      "admin:write": modificar todos los datos en el servidor
+      "admin:write:accounts": realizar acciones de moderación en cuentas
+      "admin:write:reports": realizar acciones de moderación en informes
       follow: seguir, bloquear, desbloquear y dejar de seguir cuentas
       push: recibir tus notificaciones push
       read: leer los datos de tu cuenta
-      read:accounts: ver información de cuentas
-      read:blocks: ver a quién has bloqueado
-      read:bookmarks: ver tus marcadores
-      read:favourites: ver tus favoritos
-      read:filters: ver tus filtros
-      read:follows: ver a quién sigues
-      read:lists: ver tus listas
-      read:mutes: ver a quién has silenciado
-      read:notifications: ver tus notificaciones
-      read:reports: ver tus informes
-      read:search: buscar en su nombre
-      read:statuses: ver todos los estados
+      "read:accounts": ver información de cuentas
+      "read:blocks": ver a quién has bloqueado
+      "read:bookmarks": ver tus marcadores
+      "read:favourites": ver tus favoritos
+      "read:filters": ver tus filtros
+      "read:follows": ver a quién sigues
+      "read:lists": ver tus listas
+      "read:mutes": ver a quién has silenciado
+      "read:notifications": ver tus notificaciones
+      "read:reports": ver tus informes
+      "read:search": buscar en su nombre
+      "read:statuses": ver todos los estados
       write: publicar en tu nombre
-      write:accounts: modifica tu perfil
-      write:blocks: bloquear cuentas y dominios
-      write:bookmarks: guardar estados como marcadores
-      write:favourites: publicaciones favoritas
-      write:filters: crear filtros
-      write:follows: seguir usuarios
-      write:lists: crear listas
-      write:media: subir archivos multimedia
-      write:mutes: silenciar usuarios y conversaciones
-      write:notifications: limpia tus notificaciones
-      write:reports: reportar a otras personas
-      write:statuses: publicar estados
+      "write:accounts": modifica tu perfil
+      "write:blocks": bloquear cuentas y dominios
+      "write:bookmarks": guardar estados como marcadores
+      "write:favourites": publicaciones favoritas
+      "write:filters": crear filtros
+      "write:follows": seguir usuarios
+      "write:lists": crear listas
+      "write:media": subir archivos multimedia
+      "write:mutes": silenciar usuarios y conversaciones
+      "write:notifications": limpia tus notificaciones
+      "write:reports": reportar a otras personas
+      "write:statuses": publicar estados

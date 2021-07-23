@@ -1,7 +1,6 @@
----
 it:
   about:
-    about_hashtag_html: Questi sono i toot pubblici etichettati con <strong>#%{hashtag}</strong>. Puoi interagire con loro se hai un account nel fediverse.
+    about_hashtag_html: 'Questi sono i toot pubblici etichettati con <strong>#%{hashtag}</strong>. Puoi interagire con loro se hai un account nel fediverse.'
     about_mastodon_html: 'Il social network del futuro: niente pubblicità, niente controllo da parte di qualche azienda privata, design etico e decentralizzazione! Con Mastodon il proprietario dei tuoi dati sei tu!'
     about_this: A proposito di questo server
     active_count_after: attivo
@@ -41,7 +40,7 @@ it:
     unavailable_content_description:
       domain: Server
       reason: 'Motivo:'
-      rejecting_media: I file multimediali di questo server non saranno elaborati e non verranno visualizzate miniature, che richiedono clic manuale sull'altro server.
+      rejecting_media: 'I file multimediali di questo server non saranno elaborati e non verranno visualizzate miniature, che richiedono clic manuale sull''altro server.'
       rejecting_media_title: Media filtrati
       silenced: 'I messaggi da questi server saranno nascosti nelle timeline e nelle conversazioni pubbliche, e nessuna notifica verrà generata dalle interazioni dei loro utenti, a meno che non li stai seguendo:'
       silenced_title: Server silenziati
@@ -54,7 +53,7 @@ it:
     user_count_before: Home di
     what_is_mastodon: Che cos'è Mastodon?
   accounts:
-    choices_html: 'Suggerimenti da %{name}:'
+    choices_html: "Suggerimenti da %{name}:"
     endorsements_hint: 'Puoi segnalare persone che segui e che apprezzi dall''interfaccia web: saranno mostrate qui.'
     featured_tags_hint: Puoi mettere in evidenza determinati hashtag che verranno visualizzati qui.
     follow: Segui
@@ -117,8 +116,9 @@ it:
       delete: Elimina dati
       deleted: Cancellato
       demote: Declassa
-      destroyed_msg: I dati di %{username} sono ora in coda per essere eliminati tra poco
+      destroyed_msg: "I dati di %{username} sono ora in coda per essere eliminati tra poco"
       disable: Disabilita
+      disable_sign_in_token_auth: Disabilita autenticazione con token email
       disable_two_factor_authentication: Disabilita l'autenticazione a due fattori
       disabled: Disabilitato
       display_name: Nome visualizzato
@@ -127,6 +127,7 @@ it:
       email: Email
       email_status: Stato email
       enable: Abilita
+      enable_sign_in_token_auth: Abilita autenticazione con token email
       enabled: Abilitato
       enabled_msg: L'account di %{username} è stato scongelato
       followers: Follower
@@ -191,6 +192,10 @@ it:
       search: Cerca
       search_same_email_domain: Altri utenti con lo stesso dominio e-mail
       search_same_ip: Altri utenti con lo stesso IP
+      security_measures:
+        only_password: Solo password
+        password_and_2fa: Password e autenticazione a due fattori
+        password_and_sign_in_token: Password e codice via email
       sensitive: Sensibile
       sensitized: contrassegnato come sensibile
       shared_inbox_url: URL Inbox Condiviso
@@ -242,8 +247,10 @@ it:
         destroy_unavailable_domain: Elimina dominio non disponibile
         disable_2fa_user: Disabilita l'autenticazione a due fattori
         disable_custom_emoji: Disabilita emoji personalizzata
+        disable_sign_in_token_auth_user: Disabilita autenticazione con codice via email per l'utente
         disable_user: Disabilita utente
         enable_custom_emoji: Abilita emoji personalizzata
+        enable_sign_in_token_auth_user: Abilita autenticazione con codice via email per l'utente
         enable_user: Abilita utente
         memorialize_account: Trasforma in account commemorativo
         promote_user: Promuovi utente
@@ -285,8 +292,10 @@ it:
         destroy_unavailable_domain_html: "%{name} ha ripreso la consegna al dominio %{target}"
         disable_2fa_user_html: "%{name} ha disabilitato l'autenticazione a due fattori per l'utente %{target}"
         disable_custom_emoji_html: "%{name} ha disabilitato emoji %{target}"
+        disable_sign_in_token_auth_user_html: "%{name} ha disabilitato l'autenticazione con codice via email per %{target}"
         disable_user_html: "%{name} ha disabilitato il login per l'utente %{target}"
         enable_custom_emoji_html: "%{name} ha abilitato emoji %{target}"
+        enable_sign_in_token_auth_user_html: "%{name} ha abilitato l'autenticazione con codice via email per %{target}"
         enable_user_html: "%{name} ha abilitato il login per l'utente %{target}"
         memorialize_account_html: "%{name} ha trasformato l'account di %{target} in una pagina in memoriam"
         promote_user_html: "%{name} ha promosso l'utente %{target}"
@@ -426,7 +435,7 @@ it:
       show:
         affected_accounts:
           one: Interessato un solo account nel database
-          other: Interessati %{count} account nel database
+          other: "Interessati %{count} account nel database"
         retroactive:
           silence: De-silenzia tutti gli account esistenti da questo dominio
           suspend: Annulla la sospensione di tutti gli account esistenti da questo dominio
@@ -516,7 +525,7 @@ it:
     pending_accounts:
       title: Account in attesa (%{count})
     relationships:
-      title: Relazioni di %{acct}
+      title: "Relazioni di %{acct}"
     relays:
       add_new: Aggiungi ripetitore
       delete: Cancella
@@ -569,6 +578,7 @@ it:
       resolved: Risolto
       resolved_msg: Rapporto risolto!
       status: Stato
+      target_origin: Origine dell'account segnalato
       title: Rapporti
       unassign: Non assegnare
       unresolved: Non risolto
@@ -723,10 +733,10 @@ it:
     new_report:
       body: "%{reporter} ha segnalato %{target}"
       body_remote: Qualcuno da %{domain} ha segnalato %{target}
-      subject: Nuova segnalazione per %{instance} (#%{id})
+      subject: 'Nuova segnalazione per %{instance} (#%{id})'
     new_trending_tag:
       body: 'L''hashtag #%{name} oggi è di tendenza, ma non è stato mai controllato. Non sarà visualizzato pubblicamente se non lo permetti; se salvi il form senza modifiche non lo vedrai mai più.'
-      subject: Nuovo hashtag pronto per essere controllato su %{instance} (#%{name})
+      subject: 'Nuovo hashtag pronto per essere controllato su %{instance} (#%{name})'
   aliases:
     add_new: Crea alias
     created_msg: Hai creato un nuovo alias. Ora puoi iniziare lo spostamento dal vecchio account.
@@ -736,9 +746,7 @@ it:
     remove: Scollega alias
   appearance:
     advanced_web_interface: Interfaccia web avanzata
-    advanced_web_interface_hint: |-
-      Se vuoi utilizzare l'intera larghezza dello schermo, l'interfaccia web avanzata ti consente di configurare varie colonne per mostrare più informazioni allo stesso tempo, secondo le tue preferenze:
-      Home, notifiche, timeline federata, qualsiasi numero di liste e etichette.
+    advanced_web_interface_hint: "Se vuoi utilizzare l'intera larghezza dello schermo, l'interfaccia web avanzata ti consente di configurare varie colonne per mostrare più informazioni allo stesso tempo, secondo le tue preferenze:\nHome, notifiche, timeline federata, qualsiasi numero di liste e etichette."
     animations_and_accessibility: Animazioni e accessibiiltà
     confirmation_dialogs: Dialoghi di conferma
     discovery: Scoperta
@@ -1006,6 +1014,17 @@ it:
   lists:
     errors:
       limit: Hai raggiunto il numero massimo di liste
+  login_activities:
+    authentication_methods:
+      otp: app per autenticazione a due fattori
+      password: password
+      sign_in_token: codice di sicurezza via e-mail
+      webauthn: chiavi di sicurezza
+    description_html: Se vedi attività non riconosciuta, considera di cambiare la tua password e di abilitare l'autenticazione a due fattori.
+    empty: Cronologia di autenticazione non disponibile
+    failed_sign_in_html: Tentativo di accesso fallito con %{method} da %{ip} (%{browser})
+    successful_sign_in_html: Accesso riuscito con %{method} da %{ip} (%{browser})
+    title: Cronologia delle autenticazioni
   media_attachments:
     validations:
       images_and_video: Impossibile allegare video a un post che contiene già immagini
@@ -1212,6 +1231,7 @@ it:
     revoke: Revoca
     revoke_success: Sessione revocata con successo
     title: Sessioni
+    view_authentication_history: Visualizza la cronologia di autenticazione del tuo account
   settings:
     account: Account
     account_settings: Impostazioni dell'account

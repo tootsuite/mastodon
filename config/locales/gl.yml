@@ -1,7 +1,6 @@
----
 gl:
   about:
-    about_hashtag_html: Estas son publicacións públicas etiquetadas con <strong>#%{hashtag}</strong>. Podes interactuar con elas se tes unha conta nalgures do fediverso.
+    about_hashtag_html: 'Estas son publicacións públicas etiquetadas con <strong>#%{hashtag}</strong>. Podes interactuar con elas se tes unha conta nalgures do fediverso.'
     about_mastodon_html: 'A rede social do futuro: Sen publicidade, sen seguimento por empresas, deseño ético e descentralización! En Mastodon ti posúes os teus datos!'
     about_this: Acerca de
     active_count_after: activas
@@ -21,9 +20,8 @@ gl:
     federation_hint_html: Cunha conta en %{instance} poderás seguir ás persoas en calquera servidor do Mastodon e alén.
     get_apps: Probar unha aplicación móbil
     hosted_on: Mastodon aloxado en %{domain}
-    instance_actor_flash: 'Esta conta é un actor virtual utilizado para representar ao servidor e non a unha usuaria individual. Utilízase para propósitos de federación e non debería estar bloqueada a menos que queiras bloquear a toda a instancia, en tal caso deberías utilizar o bloqueo do dominio.
-
-      '
+    instance_actor_flash: |
+      Esta conta é un actor virtual utilizado para representar ao servidor e non a unha usuaria individual. Utilízase para propósitos de federación e non debería estar bloqueada a menos que queiras bloquear a toda a instancia, en tal caso deberías utilizar o bloqueo do dominio.
     learn_more: Saber máis
     privacy_policy: Política de privacidade
     rules: Regras do servidor
@@ -54,7 +52,7 @@ gl:
     user_count_before: Fogar de
     what_is_mastodon: Qué é Mastodon?
   accounts:
-    choices_html: 'Escollas de %{name}:'
+    choices_html: "Escollas de %{name}:"
     endorsements_hint: Podes suxerir a persoas que segues dende a interface web, e amosaranse aquí.
     featured_tags_hint: Podes destacar determinados cancelos que se amosarán aquí.
     follow: Seguir
@@ -117,8 +115,9 @@ gl:
       delete: Eliminar datos
       deleted: Eliminado
       demote: Rebaixar
-      destroyed_msg: Os datos de %{username} están na cola para ser eliminados axiña
+      destroyed_msg: "Os datos de %{username} están na cola para ser eliminados axiña"
       disable: Desactivar
+      disable_sign_in_token_auth: Desactivar a autenticación por token nun email
       disable_two_factor_authentication: Desactivar 2FA
       disabled: Desactivado
       display_name: Nome a amosar
@@ -127,6 +126,7 @@ gl:
       email: Email
       email_status: Estado do email
       enable: Activar
+      enable_sign_in_token_auth: Activar autenticación cun token no email
       enabled: Activado
       enabled_msg: Desbloqueada a conta de %{username}
       followers: Seguidoras
@@ -191,6 +191,10 @@ gl:
       search: Procurar
       search_same_email_domain: Outras usuarias co mesmo dominio de email
       search_same_ip: Outras usuarias co mesmo IP
+      security_measures:
+        only_password: Só contrasinal
+        password_and_2fa: Contrasinal e 2FA
+        password_and_sign_in_token: Contrasinal e token nun email
       sensitive: Sensible
       sensitized: marcado como sensible
       shared_inbox_url: URL da caixa de entrada compartida
@@ -242,8 +246,10 @@ gl:
         destroy_unavailable_domain: Eliminar dominio Non dispoñible
         disable_2fa_user: Desactivar 2FA
         disable_custom_emoji: Desactivar emoticona personalizada
+        disable_sign_in_token_auth_user: Desactivar Autenticación por token no email para Usuaria
         disable_user: Desactivar usuaria
         enable_custom_emoji: Activar emoticona personalizada
+        enable_sign_in_token_auth_user: Activar Autenticación con token no email para Usuaria
         enable_user: Activar usuaria
         memorialize_account: Transformar en conta conmemorativa
         promote_user: Promover usuaria
@@ -285,8 +291,10 @@ gl:
         destroy_unavailable_domain_html: "%{name} retomou a interacción co dominio %{target}"
         disable_2fa_user_html: "%{name} desactivou o requerimento do segundo factor para a usuaria %{target}"
         disable_custom_emoji_html: "%{name} desactivou o emoji %{target}"
+        disable_sign_in_token_auth_user_html: "%{name} desactivou a autenticación por token no email para %{target}"
         disable_user_html: "%{name} desactivou a conexión para a usuaria %{target}"
         enable_custom_emoji_html: "%{name} activou o emoji %{target}"
+        enable_sign_in_token_auth_user_html: "%{name} activou a autenticación con token no email para %{target}"
         enable_user_html: "%{name} activou a conexión para a usuaria %{target}"
         memorialize_account_html: "%{name} convertiu a conta de %{target} nunha páxina para o recordo"
         promote_user_html: "%{name} promocionou a usuaria %{target}"
@@ -516,7 +524,7 @@ gl:
     pending_accounts:
       title: Contas pendentes (%{count})
     relationships:
-      title: Relacións de %{acct}
+      title: "Relacións de %{acct}"
     relays:
       add_new: Engadir un novo repetidor
       delete: Eliminar
@@ -569,6 +577,7 @@ gl:
       resolved: Resolto
       resolved_msg: Resolveuse con éxito a denuncia!
       status: Estado
+      target_origin: Orixe da conta denunciada
       title: Denuncias
       unassign: Non asignar
       unresolved: Non resolto
@@ -723,10 +732,10 @@ gl:
     new_report:
       body: "%{reporter} informou sobre %{target}"
       body_remote: Alguén desde %{domain} informou sobre %{target}
-      subject: Novo informe sobre %{instance} (#%{id})
+      subject: 'Novo informe sobre %{instance} (#%{id})'
     new_trending_tag:
       body: 'O cancelo #%{name} é tendencia hoxe, pero non foi previamente revisada. Non se amosará de xeito público a menos que ti o permitas, ou gardes o formulario para facer que non se che consulte de novo.'
-      subject: Un novo cancelo que revisar en %{instance} (#%{name})
+      subject: 'Un novo cancelo que revisar en %{instance} (#%{name})'
   aliases:
     add_new: Crear alcume
     created_msg: Creou un novo alcume correctamente. Pode iniciar o movemento desde a conta antiga.
@@ -736,7 +745,7 @@ gl:
     remove: Desligar alcume
   appearance:
     advanced_web_interface: Interface web avanzada
-    advanced_web_interface_hint: Se queres empregar todo o ancho da túa pantalla, a interface web avanzada permíteche configurar diferentes columnas para ver tanta información como desexe. Inicio, notificacións, cronoloxía federada, calquera número de listaxes e cancelos.
+    advanced_web_interface_hint: 'Se queres empregar todo o ancho da túa pantalla, a interface web avanzada permíteche configurar diferentes columnas para ver tanta información como desexe. Inicio, notificacións, cronoloxía federada, calquera número de listaxes e cancelos.'
     animations_and_accessibility: Animacións e accesibilidade
     confirmation_dialogs: Diálogos de confirmación
     discovery: Descubrir
@@ -773,7 +782,7 @@ gl:
       prefix_sign_up: Rexístrate agora en Mastodon!
       suffix: Ao abrir unha conta, poderás seguir a xente, actualizacións das publicacións e intercambiar mensaxes coas usuarias de calquera servidor de Mastodon e moito máis!
     didnt_get_confirmation: Non recibeu as instruccións de confirmación?
-    dont_have_your_security_key: "¿Non tes a túa chave de seguridade?"
+    dont_have_your_security_key: '¿Non tes a túa chave de seguridade?'
     forgot_password: Esqueceu o contrasinal?
     invalid_reset_password_token: O testemuño para restablecer o contrasinal non é válido ou caducou. Por favor solicite un novo.
     link_to_otp: Escribe o código do segundo factor do móbil ou un código de recuperación
@@ -1004,6 +1013,17 @@ gl:
   lists:
     errors:
       limit: Acadou o número máximo de listas
+  login_activities:
+    authentication_methods:
+      otp: app para autenticación con dous factores
+      password: contrasinal
+      sign_in_token: código de seguridade por email
+      webauthn: chaves de seguridade
+    description_html: Se ves actividade que non recoñeces, considera cambiar o contrasinal e activar o segundo factor de autenticación.
+    empty: Sen historial de autenticación dispoñible
+    failed_sign_in_html: Intento de conexión errado con %{method} desde %{ip} (%{browser})
+    successful_sign_in_html: Conexión correcta con %{method} desde %{ip} (%{browser})
+    title: Historial de autenticación
   media_attachments:
     validations:
       images_and_video: Non podes anexar un vídeo a unha publicación que xa contén imaxes
@@ -1063,8 +1083,8 @@ gl:
       subject: "%{name} marcou como favorita a túa publicación"
       title: Nova favorita
     follow:
-      body: Agora %{name} séguete!
-      subject: Agora %{name} séguete
+      body: "Agora %{name} séguete!"
+      subject: "Agora %{name} séguete"
       title: Nova seguidora
     follow_request:
       action: Xestionar peticións de seguimento
@@ -1210,6 +1230,7 @@ gl:
     revoke: Revogar
     revoke_success: A sesión revogouse con éxito
     title: Sesións
+    view_authentication_history: Ver o historial de conexións da túa conta
   settings:
     account: Conta
     account_settings: Axustes da conta
@@ -1460,7 +1481,7 @@ gl:
       error: Houbo un problema ó engadir a chave de seguridade, inténtao outra vez.
       success: Engadeuse correctamente a chave de seguridade.
     delete: Eliminar
-    delete_confirmation: "¿Tes a certeza de que queres eliminar a chave de seguridade?"
+    delete_confirmation: '¿Tes a certeza de que queres eliminar a chave de seguridade?'
     description_html: Se activas a <strong>autenticación con chave de seguridade</strong>, ó conectarte pediráseche que uses unha das túas chaves.
     destroy:
       error: Houbo un problema ó eliminar a túa chave de seguridade, inténtao outra vez.

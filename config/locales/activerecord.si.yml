@@ -1,13 +1,26 @@
----
 si:
   activerecord:
     attributes:
       poll:
         expires_at: නියමිත කාලය
         options: තේරීම්
+      user:
+        agreement: සේවා ගිවිසුම
+        email: වි-තැපැල් ලිපිනය
+        password: මුර පදය
+      user/account:
+        username: පරිශීලක නාමය
+      user/invite_request:
+        text: හේතුව
     errors:
       models:
         account:
           attributes:
             username:
               invalid: අකුරු, අංක සහ යට-ඉරි පමණි
+              reserved: වෙන් කර ඇත
+        user:
+          attributes:
+            email:
+              blocked: නොඉඩ දෙන වි-තැපැල් ප්‍රතිපාදකයෙකු භාවිතා කරයි
+              unreachable: පෙනෙන හැටියට නොපවතී

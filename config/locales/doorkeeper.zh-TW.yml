@@ -1,4 +1,3 @@
----
 zh-TW:
   activerecord:
     attributes:
@@ -52,7 +51,7 @@ zh-TW:
         callback_urls: 回傳網址
         scopes: 範圍
         secret: 客戶端密碼
-        title: 應用程式︰%{name}
+        title: '應用程式︰%{name}'
     authorizations:
       buttons:
         authorize: 授權
@@ -84,7 +83,7 @@ zh-TW:
         invalid_grant: 授權申請不正確、逾期、已被取消、與授權請求內的重新導向 URI 不符、或屬於別的客戶端程式。
         invalid_redirect_uri: 包含的重新導向 URI 是不正確的。
         invalid_request:
-          missing_param: 缺少必要的參數：%{value}.
+          missing_param: '缺少必要的參數：%{value}.'
           request_not_authorized: 請求必須是已授權的。用於授權的必要參數缺少或無效。
           unknown: 請求缺少必要的參數、有不支援的參數、或其他格式錯誤。
         invalid_resource_owner: 資源擁有者的登入資訊錯誤，或無法找到該資源擁有者
@@ -118,37 +117,37 @@ zh-TW:
       application:
         title: 需要 OAuth 授權
     scopes:
-      admin:read: 讀取伺服器的所有資料
-      admin:read:accounts: 讀取所有帳戶的敏感資訊
-      admin:read:reports: 讀取所有回報 / 被回報之帳戶的敏感資訊
-      admin:write: 修改伺服器的所有資料
-      admin:write:accounts: 對帳戶進行仲裁管理動作
-      admin:write:reports: 對報告進行仲裁管理動作
+      "admin:read": 讀取伺服器的所有資料
+      "admin:read:accounts": 讀取所有帳戶的敏感資訊
+      "admin:read:reports": 讀取所有回報 / 被回報之帳戶的敏感資訊
+      "admin:write": 修改伺服器的所有資料
+      "admin:write:accounts": 對帳戶進行仲裁管理動作
+      "admin:write:reports": 對報告進行仲裁管理動作
       follow: 修改帳戶關係
       push: 接收帳戶的推播通知
       read: 讀取您所有的帳戶資料
-      read:accounts: 檢視帳戶資訊
-      read:blocks: 檢視您的封鎖名單
-      read:bookmarks: 檢視您的書籤
-      read:favourites: 檢視您的收藏項目
-      read:filters: 檢視您的過濾條件
-      read:follows: 檢視您關注的人
-      read:lists: 檢視您的名單
-      read:mutes: 檢視您靜音的人
-      read:notifications: 檢視您的通知
-      read:reports: 檢視您的檢舉
-      read:search: 以你的身份搜尋
-      read:statuses: 檢視所有嘟文
+      "read:accounts": 檢視帳戶資訊
+      "read:blocks": 檢視您的封鎖名單
+      "read:bookmarks": 檢視您的書籤
+      "read:favourites": 檢視您的收藏項目
+      "read:filters": 檢視您的過濾條件
+      "read:follows": 檢視您關注的人
+      "read:lists": 檢視您的名單
+      "read:mutes": 檢視您靜音的人
+      "read:notifications": 檢視您的通知
+      "read:reports": 檢視您的檢舉
+      "read:search": 以你的身份搜尋
+      "read:statuses": 檢視所有嘟文
       write: 修改您帳戶的所有資料
-      write:accounts: 修改您的個人檔案
-      write:blocks: 封鎖帳戶及站台
-      write:bookmarks: 書籤狀態
-      write:favourites: 收藏嘟文
-      write:filters: 建立過濾條件
-      write:follows: 關注其他人
-      write:lists: 建立名單
-      write:media: 上傳媒體檔案
-      write:mutes: 靜音使用者及對話
-      write:notifications: 清除您的通知
-      write:reports: 檢舉其他人
-      write:statuses: 發布嘟文
+      "write:accounts": 修改您的個人檔案
+      "write:blocks": 封鎖帳戶及站台
+      "write:bookmarks": 書籤狀態
+      "write:favourites": 收藏嘟文
+      "write:filters": 建立過濾條件
+      "write:follows": 關注其他人
+      "write:lists": 建立名單
+      "write:media": 上傳媒體檔案
+      "write:mutes": 靜音使用者及對話
+      "write:notifications": 清除您的通知
+      "write:reports": 檢舉其他人
+      "write:statuses": 發布嘟文

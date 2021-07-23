@@ -1,4 +1,3 @@
----
 zgh:
   activerecord:
     attributes:
@@ -32,7 +31,7 @@ zgh:
         title: ⵜⵉⵙⵏⵙⵉ ⵜⴰⵎⴰⵢⵏⵓⵜ
       show:
         actions: ⵜⵉⴳⴰⵡⵉⵏ
-        title: ⵜⵉⵙⵏⵙⵉ %{name}
+        title: 'ⵜⵉⵙⵏⵙⵉ %{name}'
     authorizations:
       buttons:
         authorize: ⵙⵙⵓⵔⴳ
@@ -60,21 +59,21 @@ zgh:
         nav:
           applications: ⵜⵉⵙⵏⵙⵉⵡⵉⵏ
     scopes:
-      admin:read: ⵖⵔ ⵉⴼⵙⴽⴰ ⴰⴽⴽⵯ ⴳ ⵓⵎⴰⴽⴽⴰⵢ
-      admin:write: ⵙⵏⴼⵍ ⵉⴼⵙⴽⴰ ⴰⴽⴽⵯ ⴳ ⵓⵎⴰⴽⴽⴰⵢ
+      "admin:read": ⵖⵔ ⵉⴼⵙⴽⴰ ⴰⴽⴽⵯ ⴳ ⵓⵎⴰⴽⴽⴰⵢ
+      "admin:write": ⵙⵏⴼⵍ ⵉⴼⵙⴽⴰ ⴰⴽⴽⵯ ⴳ ⵓⵎⴰⴽⴽⴰⵢ
       read: ⵖⵔ ⵉⴼⵙⴽⴰ ⴰⴽⴽⵯ ⵏ ⵓⵎⵉⴹⴰⵏ
-      read:filters: ⵥⵕ ⵉⵙⵜⴰⵢⵏ ⵏⵏⴽ
-      read:follows: ⵥⵕ ⵉⵎⴹⴼⴰⵔⵏ ⵏⵏⴽ
-      read:lists: ⵥⵕ ⵜⵉⵍⴳⴰⵎⵉⵏ ⵏⵏⴽ
-      read:notifications: ⵥⵕ ⵜⵉⵏⵖⵎⵉⵙⵉⵏ ⵏⵏⴽ
-      read:search: ⵔⵣⵓ ⵙ ⵢⵉⵙⵎ ⵏⵏⴽ
-      read:statuses: ⵥⵕ ⴰⴷⴷⴰⴷⵏ ⴰⴽⴽⵯ
+      "read:filters": ⵥⵕ ⵉⵙⵜⴰⵢⵏ ⵏⵏⴽ
+      "read:follows": ⵥⵕ ⵉⵎⴹⴼⴰⵔⵏ ⵏⵏⴽ
+      "read:lists": ⵥⵕ ⵜⵉⵍⴳⴰⵎⵉⵏ ⵏⵏⴽ
+      "read:notifications": ⵥⵕ ⵜⵉⵏⵖⵎⵉⵙⵉⵏ ⵏⵏⴽ
+      "read:search": ⵔⵣⵓ ⵙ ⵢⵉⵙⵎ ⵏⵏⴽ
+      "read:statuses": ⵥⵕ ⴰⴷⴷⴰⴷⵏ ⴰⴽⴽⵯ
       write: ⵙⵏⴼⵍ ⵉⴼⵙⴽⴰ ⵏ ⵓⵎⵉⴹⴰⵏ ⵏⵏⴽ
-      write:accounts: ⵙⵏⴼⵍ ⵉⴼⵔⵙ ⵏⵏⴽ
-      write:blocks: ⴳⴷⵍ ⵉⵎⵉⴹⴰⵏⵏ ⴷ ⵢⵉⴳⵔⴰⵏ
-      write:follows: ⴹⴼⵕ ⵎⵉⴷⴷⵏ
-      write:lists: ⵙⵏⴼⵍⵓⵍ ⵜⵉⵍⴳⴰⵎⵉⵏ
-      write:mutes: ⵥⵥⵉⵥⵏ ⵎⵉⴷⴷⵏ ⴷ ⵉⵎⵙⴰⵡⴰⵍⵏ
-      write:notifications: ⵙⴼⴹ ⵜⵉⵏⵖⵎⵉⵙⵉⵏ ⵏⵏⴽ
-      write:reports: ⵎⵍ ⵎⵉⴷⴷⵏ ⵏⵏⵉⴹⵏ
-      write:statuses: ⴼⵙⵔ ⵜⵉⵥⵕⴰⴳⵉⵏ
+      "write:accounts": ⵙⵏⴼⵍ ⵉⴼⵔⵙ ⵏⵏⴽ
+      "write:blocks": ⴳⴷⵍ ⵉⵎⵉⴹⴰⵏⵏ ⴷ ⵢⵉⴳⵔⴰⵏ
+      "write:follows": ⴹⴼⵕ ⵎⵉⴷⴷⵏ
+      "write:lists": ⵙⵏⴼⵍⵓⵍ ⵜⵉⵍⴳⴰⵎⵉⵏ
+      "write:mutes": ⵥⵥⵉⵥⵏ ⵎⵉⴷⴷⵏ ⴷ ⵉⵎⵙⴰⵡⴰⵍⵏ
+      "write:notifications": ⵙⴼⴹ ⵜⵉⵏⵖⵎⵉⵙⵉⵏ ⵏⵏⴽ
+      "write:reports": ⵎⵍ ⵎⵉⴷⴷⵏ ⵏⵏⵉⴹⵏ
+      "write:statuses": ⴼⵙⵔ ⵜⵉⵥⵕⴰⴳⵉⵏ

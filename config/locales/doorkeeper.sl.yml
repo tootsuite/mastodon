@@ -1,4 +1,3 @@
----
 sl:
   activerecord:
     attributes:
@@ -112,35 +111,35 @@ sl:
       application:
         title: Potrebna je OAuth pooblastitev
     scopes:
-      admin:read: preberi vse podatke na strežniku
-      admin:read:accounts: preberi občutljive informacije vseh računov
-      admin:read:reports: preberi občutljive informacije vseh prijav in prijavljenih računov
-      admin:write: spremeni vse podatke na strežniku
-      admin:write:accounts: izvedi moderirana dejanja na računih
-      admin:write:reports: izvedi moderirana dejanja na prijavah
+      "admin:read": preberi vse podatke na strežniku
+      "admin:read:accounts": preberi občutljive informacije vseh računov
+      "admin:read:reports": preberi občutljive informacije vseh prijav in prijavljenih računov
+      "admin:write": spremeni vse podatke na strežniku
+      "admin:write:accounts": izvedi moderirana dejanja na računih
+      "admin:write:reports": izvedi moderirana dejanja na prijavah
       follow: spremeni razmerja med računi
       push: prejmi potisna obvestila
       read: preberi vse podatke svojega računa
-      read:accounts: oglejte si podrobnosti računov
-      read:blocks: oglejte si svoje blokirane
-      read:favourites: oglejte si svoje priljubljene
-      read:filters: oglejte si svoje filtre
-      read:follows: oglejte si svoje sledilce
-      read:lists: oglejte si svoje sezname
-      read:mutes: oglejte si svoje utišane
-      read:notifications: oglejte si svoja obvestila
-      read:reports: oglejte si svoje prijave
-      read:search: iščite v svojem imenu
-      read:statuses: oglejte si vsa stanja
+      "read:accounts": oglejte si podrobnosti računov
+      "read:blocks": oglejte si svoje blokirane
+      "read:favourites": oglejte si svoje priljubljene
+      "read:filters": oglejte si svoje filtre
+      "read:follows": oglejte si svoje sledilce
+      "read:lists": oglejte si svoje sezname
+      "read:mutes": oglejte si svoje utišane
+      "read:notifications": oglejte si svoja obvestila
+      "read:reports": oglejte si svoje prijave
+      "read:search": iščite v svojem imenu
+      "read:statuses": oglejte si vsa stanja
       write: spremenite vse podatke svojega računa
-      write:accounts: spremenite svoj profil
-      write:blocks: blokirajte račune in domene
-      write:favourites: priljubljena stanja
-      write:filters: ustvari filtre
-      write:follows: sledi osebam
-      write:lists: ustvarite sezname
-      write:media: pošlji medije
-      write:mutes: utišaj osebe in pogovore
-      write:notifications: počisti svoja obvestila
-      write:reports: prijavi druge osebe
-      write:statuses: objavi stanja
+      "write:accounts": spremenite svoj profil
+      "write:blocks": blokirajte račune in domene
+      "write:favourites": priljubljena stanja
+      "write:filters": ustvari filtre
+      "write:follows": sledi osebam
+      "write:lists": ustvarite sezname
+      "write:media": pošlji medije
+      "write:mutes": utišaj osebe in pogovore
+      "write:notifications": počisti svoja obvestila
+      "write:reports": prijavi druge osebe
+      "write:statuses": objavi stanja

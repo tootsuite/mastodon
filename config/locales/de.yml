@@ -1,8 +1,7 @@
----
 de:
   about:
-    about_hashtag_html: Das sind öffentliche Beiträge, die mit <strong>#%{hashtag}</strong> getaggt wurden. Wenn du irgendwo im Fediversum ein Konto besitzt, kannst du mit ihnen interagieren.
-    about_mastodon_html: Mastodon ist ein soziales Netzwerk. Es basiert auf offenen Web-Protokollen und freier, quelloffener Software. Es ist dezentral (so wie E-Mail!).
+    about_hashtag_html: 'Das sind öffentliche Beiträge, die mit <strong>#%{hashtag}</strong> getaggt wurden. Wenn du irgendwo im Fediversum ein Konto besitzt, kannst du mit ihnen interagieren.'
+    about_mastodon_html: 'Mastodon ist ein soziales Netzwerk. Es basiert auf offenen Web-Protokollen und freier, quelloffener Software. Es ist dezentral (so wie E-Mail!).'
     about_this: Über diesen Server
     active_count_after: aktiv
     active_footnote: Monatlich Aktive User (MAU)
@@ -41,11 +40,11 @@ de:
     unavailable_content_description:
       domain: Server
       reason: 'Grund:'
-      rejecting_media: Mediendateien dieses Servers werden nicht verarbeitet und keine Thumbnails werden angezeigt, was manuelles anklicken auf den anderen Server erfordert.
+      rejecting_media: 'Mediendateien dieses Servers werden nicht verarbeitet und keine Thumbnails werden angezeigt, was manuelles anklicken auf den anderen Server erfordert.'
       rejecting_media_title: Gefilterte Medien
-      silenced: Beiträge von diesem Server werden nirgends angezeigt, außer in deiner Startseite, wenn du der Person folgst, die den Beitrag verfasst hat.
+      silenced: 'Beiträge von diesem Server werden nirgends angezeigt, außer in deiner Startseite, wenn du der Person folgst, die den Beitrag verfasst hat.'
       silenced_title: Stummgeschaltete Server
-      suspended: Du kannst niemanden von diesem Server folgen, und keine Daten werden verarbeitet oder gespeichert und keine Daten ausgetauscht.
+      suspended: 'Du kannst niemanden von diesem Server folgen, und keine Daten werden verarbeitet oder gespeichert und keine Daten ausgetauscht.'
       suspended_title: Gesperrte Server
     unavailable_content_html: Mastodon erlaubt es dir generell, mit Inhalten zu interagieren, diese anzuzeigen und mit anderen Nutzern im Fediversum über Server hinweg zu interagieren. Dies sind die Ausnahmen, die auf diesem bestimmten Server gemacht wurden.
     user_count_after:
@@ -100,7 +99,7 @@ de:
       add_email_domain_block: E-Mail-Domain blacklisten
       approve: Akzeptieren
       approve_all: Alle akzeptieren
-      approved_msg: "%{username}'s Anmeldeantrag erfolgreich genehmigt"
+      approved_msg: '%{username}''s Anmeldeantrag erfolgreich genehmigt'
       are_you_sure: Bist du sicher?
       avatar: Profilbild
       by_domain: Domain
@@ -119,6 +118,7 @@ de:
       demote: Degradieren
       destroyed_msg: "%{username}'s Daten wurden zum Löschen in die Warteschlange eingereiht"
       disable: Ausschalten
+      disable_sign_in_token_auth: Deaktiviere die Zwei-Faktor-Authentifizierung per E-Mail
       disable_two_factor_authentication: 2FA abschalten
       disabled: Ausgeschaltet
       display_name: Anzeigename
@@ -127,8 +127,9 @@ de:
       email: E-Mail
       email_status: E-Mail-Status
       enable: Freischalten
+      enable_sign_in_token_auth: Aktiviere die Zwei-Faktor-Authentifizierung per E-Mail
       enabled: Freigegeben
-      enabled_msg: "%{username}'s Konto erfolgreich freigegeben"
+      enabled_msg: '%{username}''s Konto erfolgreich freigegeben'
       followers: Folgende
       follows: Folgt
       header: Titelbild
@@ -146,7 +147,7 @@ de:
       media_attachments: Dateien
       memorialize: In Gedenkmal verwandeln
       memorialized: Memorialisiert
-      memorialized_msg: "%{username} wurde erfolgreich in ein memorialisiertes Konto umgewandelt"
+      memorialized_msg: '%{username} wurde erfolgreich in ein memorialisiertes Konto umgewandelt'
       moderation:
         active: Aktiv
         all: Alle
@@ -170,11 +171,11 @@ de:
       redownloaded_msg: Profil von %{username} erfolgreich von Ursprung aktualisiert
       reject: Ablehnen
       reject_all: Alle ablehnen
-      rejected_msg: "%{username}'s Anmeldeantrag erfolgreich abgelehnt"
+      rejected_msg: '%{username}''s Anmeldeantrag erfolgreich abgelehnt'
       remove_avatar: Profilbild entfernen
       remove_header: Titelbild entfernen
       removed_avatar_msg: Profilbild von %{username} erfolgreich entfernt
-      removed_header_msg: "%{username}'s Titelbild wurde erfolgreich entfernt"
+      removed_header_msg: '%{username}''s Titelbild wurde erfolgreich entfernt'
       resend_confirmation:
         already_confirmed: Diese_r Benutzer_in wurde bereits bestätigt
         send: Bestätigungs-E-Mail erneut senden
@@ -191,6 +192,10 @@ de:
       search: Suche
       search_same_email_domain: Andere Benutzer mit der gleichen E-Mail-Domain
       search_same_ip: Andere Benutzer mit derselben IP
+      security_measures:
+        only_password: Nur Passwort
+        password_and_2fa: Passwort und 2FA
+        password_and_sign_in_token: Passwort und E-Mail-Token
       sensitive: NSFW
       sensitized: Als NSFW markieren
       shared_inbox_url: Geteilte Posteingang-URL
@@ -204,15 +209,15 @@ de:
       suspended: Verbannt
       suspension_irreversible: Die Daten dieses Kontos wurden unwiderruflich gelöscht. Du kannst das Konto aufheben, um es brauchbar zu machen, aber es wird keine Daten wiederherstellen, die es davor schon hatte.
       suspension_reversible_hint_html: Das Konto wurde gesperrt und die Daten werden am %{date} vollständig gelöscht. Bis dahin kann das Konto ohne irgendwelche negativen Auswirkungen wiederhergestellt werden. Wenn du alle Daten des Kontos sofort entfernen möchtest, kannst du dies nachfolgend tun.
-      time_in_queue: "%{time} in der Warteschlange"
+      time_in_queue: '%{time} in der Warteschlange'
       title: Konten
       unconfirmed_email: Unbestätigte E-Mail-Adresse
       undo_sensitized: Nicht mehr als NSFW markieren
       undo_silenced: Stummschaltung aufheben
       undo_suspension: Verbannung aufheben
-      unsilenced_msg: "%{username}'s Konto erfolgreich freigegeben"
+      unsilenced_msg: '%{username}''s Konto erfolgreich freigegeben'
       unsubscribe: Abbestellen
-      unsuspended_msg: "%{username}'s Konto erfolgreich freigegeben"
+      unsuspended_msg: '%{username}''s Konto erfolgreich freigegeben'
       username: Profilname
       view_domain: Übersicht für Domain anzeigen
       warn: Warnen
@@ -242,8 +247,10 @@ de:
         destroy_unavailable_domain: Nicht verfügbare Domain löschen
         disable_2fa_user: 2FA deaktivieren
         disable_custom_emoji: Benutzerdefiniertes Emoji deaktivieren
+        disable_sign_in_token_auth_user: Zwei-Faktor-Authentifizierung per E-Mail für den Nutzer deaktiviert
         disable_user: Benutzer deaktivieren
         enable_custom_emoji: Benutzerdefiniertes Emoji aktivieren
+        enable_sign_in_token_auth_user: Zwei-Faktor-Authentifizierung per E-Mail für den Nutzer aktiviert
         enable_user: Benutzer aktivieren
         memorialize_account: Account deaktivieren
         promote_user: Benutzer befördern
@@ -285,8 +292,10 @@ de:
         destroy_unavailable_domain_html: "%{name} setzte die Lieferung an die Domain %{target} fort"
         disable_2fa_user_html: "%{name} hat Zwei-Faktor-Anforderung für Benutzer_in %{target} deaktiviert"
         disable_custom_emoji_html: "%{name} hat das %{target} Emoji deaktiviert"
+        disable_sign_in_token_auth_user_html: "%{name} hat die E-Mail-Token Authentifizierung für %{target} deaktiviert"
         disable_user_html: "%{name} hat Zugang von Benutzer_in %{target} deaktiviert"
         enable_custom_emoji_html: "%{name} hat das %{target} Emoji aktiviert"
+        enable_sign_in_token_auth_user_html: "%{name} hat die E-Mail-Token Authentifizierung für %{target} aktiviert"
         enable_user_html: "%{name} hat Zugang von Benutzer_in %{target} aktiviert"
         memorialize_account_html: "%{name} hat das Konto von %{target} in eine Gedenkseite umgewandelt"
         promote_user_html: "%{name} hat %{target} befördert"
@@ -516,7 +525,7 @@ de:
     pending_accounts:
       title: Ausstehende Konten (%{count})
     relationships:
-      title: Beziehungen von %{acct}
+      title: "Beziehungen von %{acct}"
     relays:
       add_new: Neues Relay hinzufügen
       delete: Löschen
@@ -569,6 +578,7 @@ de:
       resolved: Gelöst
       resolved_msg: Meldung erfolgreich gelöst!
       status: Zustand
+      target_origin: Domain des gemeldeten Kontos
       title: Meldungen
       unassign: Zuweisung entfernen
       unresolved: Ungelöst
@@ -723,10 +733,10 @@ de:
     new_report:
       body: "%{reporter} hat %{target} gemeldet"
       body_remote: Jemand von %{domain} hat %{target} gemeldet
-      subject: Neue Meldung auf %{instance} (#%{id})
+      subject: 'Neue Meldung auf %{instance} (#%{id})'
     new_trending_tag:
       body: 'Der Hashtag #%{name} ist heute am trenden, aber wurde vorher noch nicht überprüft. Er wird nicht öffentlich angezeigt, es sei denn du erlaubst es oder speicherst das Formular ab und vergisst es.'
-      subject: Neuer Hashtag zur Überprüfung auf %{instance} verfügbar (#%{name})
+      subject: 'Neuer Hashtag zur Überprüfung auf %{instance} verfügbar (#%{name})'
   aliases:
     add_new: Alias erstellen
     created_msg: Ein neuer Alias wurde erfolgreich erstellt. Du kannst nun den Wechsel vom alten Konto starten.
@@ -736,7 +746,7 @@ de:
     remove: Alle Aliase aufheben
   appearance:
     advanced_web_interface: Fortgeschrittene Benutzeroberfläche
-    advanced_web_interface_hint: Wenn du mehr aus deiner Bildschirmbreite herausholen möchtest, erlaubt dir die fortgeschrittene Benutzeroberfläche viele unterschiedliche Spalten auf einmal zu sehen, wie z.B. deine Startseite, Benachrichtigungen, das gesamte bekannte Netz, deine Listen und beliebige Hashtags.
+    advanced_web_interface_hint: 'Wenn du mehr aus deiner Bildschirmbreite herausholen möchtest, erlaubt dir die fortgeschrittene Benutzeroberfläche viele unterschiedliche Spalten auf einmal zu sehen, wie z.B. deine Startseite, Benachrichtigungen, das gesamte bekannte Netz, deine Listen und beliebige Hashtags.'
     animations_and_accessibility: Animationen und Barrierefreiheit
     confirmation_dialogs: Bestätigungsfenster
     discovery: Entdecken
@@ -816,7 +826,7 @@ de:
       close: Oder du schließt einfach dieses Fenster.
       return: Zeige das Profil
       web: In der Benutzeroberfläche öffnen
-    title: "%{acct} folgen"
+    title: '%{acct} folgen'
   challenge:
     confirm: Fortfahren
     hint_html: "<strong>Hinweis:</strong> Wir werden dich für die nächste Stunde nicht erneut nach deinem Passwort fragen."
@@ -1004,6 +1014,17 @@ de:
   lists:
     errors:
       limit: Du hast die maximale Anzahl an Listen erreicht
+  login_activities:
+    authentication_methods:
+      otp: Zwei-Faktor-Authentifizierung-App
+      password: Passwort
+      sign_in_token: E-Mail Sicherheitscode
+      webauthn: Sicherheitsschlüssel
+    description_html: Wenn du Aktivitäten siehst, die du nicht erkennst, solltest du dein Passwort ändern und die Zwei-Faktor-Authentifizierung aktivieren.
+    empty: Kein Authentifizierungsverlauf verfügbar
+    failed_sign_in_html: Fehler beim Anmeldeversuch mit %{method} von %{ip} (%{browser})
+    successful_sign_in_html: Erfolgreiche Anmeldung mit %{method} von %{ip} (%{browser})
+    title: Authentifizierungsverlauf
   media_attachments:
     validations:
       images_and_video: Es kann kein Video an einen Beitrag, der bereits Bilder enthält, angehängt werden
@@ -1073,13 +1094,13 @@ de:
       title: Neue Folge-Anfrage
     mention:
       action: Antworten
-      body: "%{name} hat dich erwähnt:"
-      subject: "%{name} hat dich erwähnt"
+      body: '%{name} hat dich erwähnt:'
+      subject: '%{name} hat dich erwähnt'
       title: Neue Erwähnung
     poll:
       subject: Eine Umfrage von %{name} ist beendet
     reblog:
-      body: "%{name} hat deinen Beitrag geteilt:"
+      body: '%{name} hat deinen Beitrag geteilt:'
       subject: "%{name} hat deinen Beitrag geteilt"
       title: Dein Beitrag wurde geteilt
     status:
@@ -1108,7 +1129,7 @@ de:
     wrong_code: Der eingegebene Code war ungültig! Sind die Serverzeit und die Gerätezeit korrekt?
   pagination:
     newer: Neuer
-    next: Vorwärts
+    next: Weiter
     older: Älter
     prev: Zurück
     truncate: "&hellip;"
@@ -1210,6 +1231,7 @@ de:
     revoke: Schließen
     revoke_success: Sitzung erfolgreich geschlossen
     title: Sitzungen
+    view_authentication_history: Authentifizierungsverlauf deines Kontos anzeigen
   settings:
     account: Konto
     account_settings: Konto & Sicherheit

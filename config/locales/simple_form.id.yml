@@ -1,4 +1,3 @@
----
 id:
   simple_form:
     hints:
@@ -82,7 +81,7 @@ id:
       rule:
         text: Jelaskan aturan atau persyaratan untuk pengguna di server ini. Buatlah pendek dan sederhana
       sessions:
-        otp: Masukkan kode dua-faktor dari handphone atau gunakan kode pemulihan anda.
+        otp: 'Masukkan kode dua-faktor dari handphone atau gunakan kode pemulihan anda.'
         webauthn: Jika ini kunci USB pastikan dalam keadaan tercolok dan, jika perlu, ketuk.
       tag:
         name: Anda hanya dapat mengubahnya ke huruf kecil/besar, misalnya, agar lebih mudah dibaca
@@ -212,7 +211,7 @@ id:
         name: Tagar
         trendable: Izinkan tagar ini muncul di bawah tren
         usable: Izinkan toot memakai tagar ini
-    'no': Tidak
+    'no': 'Tidak'
     recommended: Direkomendasikan
     required:
       mark: "*"
@@ -220,4 +219,4 @@ id:
     title:
       sessions:
         webauthn: Gunakan salah satu kunci keamanan untuk masuk
-    'yes': Ya
+    'yes': 'Ya'

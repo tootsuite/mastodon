@@ -1,8 +1,7 @@
----
 te:
   about:
-    about_hashtag_html: ఇవి <strong>#%{hashtag}</strong>తో ట్గాగ్ చేయబడిన పబ్లిక్ టూట్లు. ఫెడివర్స్ లో ఎక్కడ ఖాతావున్నా వీటిలో పాల్గొనవచ్చు.
-    about_mastodon_html: మాస్టొడాన్ అనేది ఒక సామాజిక మాధ్యమం. ఇది పూర్తిగా ఉచితం మరియు స్వేచ్ఛా సాఫ్టువేరు. ఈమెయిల్ లాగానే ఇది వికేంద్రీకరించబడినది.
+    about_hashtag_html: 'ఇవి <strong>#%{hashtag}</strong>తో ట్గాగ్ చేయబడిన పబ్లిక్ టూట్లు. ఫెడివర్స్ లో ఎక్కడ ఖాతావున్నా వీటిలో పాల్గొనవచ్చు.'
+    about_mastodon_html: 'మాస్టొడాన్ అనేది ఒక సామాజిక మాధ్యమం. ఇది పూర్తిగా ఉచితం మరియు స్వేచ్ఛా సాఫ్టువేరు. ఈమెయిల్ లాగానే ఇది వికేంద్రీకరించబడినది.'
     about_this: గురించి
     administered_by: 'నిర్వహణలో:'
     apps: మొబైల్ యాప్స్
@@ -31,15 +30,15 @@ te:
       one: అనుచరి
       other: అనుచరులు
     following: అనుసరిస్తున్నారు
-    joined: "%{date}న చేరారు"
+    joined: '%{date}న చేరారు'
     last_active: చివరిగా క్రియాశీలకంగా వుంది
     link_verified_on: ఈ లంకె యొక్క యాజమాన్యాన్ని చివరిగా పరిశీలించింది %{date}న
     media: మీడియా
     moved_html: "%{name} ఈ %{new_profile_link}కు మారారు:"
     network_hidden: ఈ సమాచారం అందుబాటులో లేదు
     nothing_here: ఇక్కడ ఏమీ లేదు!
-    people_followed_by: "%{name} అనుసరించే వ్యక్తులు"
-    people_who_follow: "%{name}ను అనుసరించే వ్యక్తులు"
+    people_followed_by: '%{name} అనుసరించే వ్యక్తులు'
+    people_who_follow: '%{name}ను అనుసరించే వ్యక్తులు'
     pin_errors:
       following: మీరు ధృవీకరించాలనుకుంటున్న వ్యక్తిని మీరిప్పటికే అనుసరిస్తూ వుండాలి
     posts:
@@ -55,7 +54,7 @@ te:
   admin:
     account_actions:
       action: చర్య తీసుకో
-      title: "%{acct}పై మోడరేషన్ చర్యను తీసుకో"
+      title: '%{acct}పై మోడరేషన్ చర్యను తీసుకో'
     account_moderation_notes:
       create: ఏదైనా గమనికను వదులు
       created_msg: మోడరేషన్ గమనిక విజయవంతంగా సృష్టించబడింది!
@@ -71,7 +70,7 @@ te:
         label: ఈమెయిల్ ను మార్చు
         new_email: కొత్త ఈమెయిల్
         submit: ఈమెయిల్ ను మార్చు
-        title: "%{username} యొక్క ఈమెయిల్ ను మార్చు"
+        title: '%{username} యొక్క ఈమెయిల్ ను మార్చు'
       confirm: ధృవీకరించు
       confirmed: ధృవీకరించబడింది
       confirming: ధృవీకరిస్తుంది
@@ -111,7 +110,7 @@ te:
     '404': The page you are looking for isn't here.
     '406': This page is not available in the requested format.
     '410': The page you were looking for doesn't exist here anymore.
-    '422': 
+    '422':
     '429': Too many requests
-    '500': 
+    '500':
     '503': The page could not be served due to a temporary server failure.

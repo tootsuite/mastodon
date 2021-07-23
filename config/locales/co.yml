@@ -1,7 +1,6 @@
----
 co:
   about:
-    about_hashtag_html: Quessi sò statuti pubblichi taggati cù <strong>#%{hashtag}</strong>. Pudete interagisce cù elli sì voi avete un contu in qualche parte di u fediversu.
+    about_hashtag_html: 'Quessi sò statuti pubblichi taggati cù <strong>#%{hashtag}</strong>. Pudete interagisce cù elli sì voi avete un contu in qualche parte di u fediversu.'
     about_mastodon_html: 'A rete suciale di u futuru: micca pubblicità, micca surveglianza, cuncezzione etica, è dicentralizazione! Firmate in cuntrollu di i vostri dati cù Mastodon!'
     about_this: À prupositu
     active_count_after: attivi
@@ -117,7 +116,7 @@ co:
       delete: Sguassà dati
       deleted: Sguassatu
       demote: Ritrugradà
-      destroyed_msg: I dati di %{username} sò avà in fila d'attesa per esse tolti da quì à pocu
+      destroyed_msg: "I dati di %{username} sò avà in fila d'attesa per esse tolti da quì à pocu"
       disable: Disattivà
       disable_two_factor_authentication: Disattivà l’identificazione à 2 fattori
       disabled: Disattivatu
@@ -403,7 +402,7 @@ co:
         create: Creà un blucchime
         hint: U blucchime di duminiu ùn impedirà micca a creazione di conti indè a database, mà metudi di muderazione specifiche saranu applicati.
         severity:
-          desc_html: Cù <strong>Silenzà</strong>, solu l’abbunati di u contu viderenu i so missaghji. <strong>Suspende</strong> sguassarà tutti i cuntenuti è dati di u contu. Utilizate <strong>Nisuna</strong> s’è voi vulete solu righjittà fugliali media.
+          desc_html: "Cù <strong>Silenzà</strong>, solu l’abbunati di u contu viderenu i so missaghji. <strong>Suspende</strong> sguassarà tutti i cuntenuti è dati di u contu. Utilizate <strong>Nisuna</strong> s’è voi vulete solu righjittà fugliali media."
           noop: Nisuna
           silence: Silenzà
           suspend: Suspende
@@ -515,7 +514,7 @@ co:
     pending_accounts:
       title: Conti in attesa (%{count})
     relationships:
-      title: Rilazione di %{acct}
+      title: "Rilazione di %{acct}"
     relays:
       add_new: Aghjunghje un ripetitore
       delete: Sguassà
@@ -715,10 +714,10 @@ co:
     new_report:
       body: "%{reporter} hà palisatu %{target}"
       body_remote: Qualch’unu da %{domain} hà palisatu %{target}
-      subject: Novu signalamentu nant’à %{instance} (#%{id})
+      subject: 'Novu signalamentu nant’à %{instance} (#%{id})'
     new_trending_tag:
       body: 'U hashtag #%{name} hè in e tendenze oghji, mà ùn hè micca verificatu. Ùn sarà micca mustratu à u pubblicu eccettu s''ellu hè auturizatu, o pudete ancu salvà u furmulariu cusì per ùn mai più avè à ne sente parlà.'
-      subject: Novu hashtag in attesa di rivista nant'à %{instance} (#%{name})
+      subject: 'Novu hashtag in attesa di rivista nant''à %{instance} (#%{name})'
   aliases:
     add_new: Creà un pseudonimu
     created_msg: Novu pseudonimu creatu. Pudete avà inizià u trasferimentu da u vechju contu.
@@ -996,6 +995,12 @@ co:
   lists:
     errors:
       limit: Ùn pudete più creà altre liste
+  login_activities:
+    authentication_methods:
+      otp: app d'identificazione à dui fattori
+      password: chjave d’accessu
+      sign_in_token: codice di sicurità d'un e-mail
+      webauthn: chjave di sicurità
   media_attachments:
     validations:
       images_and_video: Ùn si pò micca aghjunghje un filmettu à un statutu chì hà digià ritratti
@@ -1051,7 +1056,7 @@ co:
         other: "%{count} nutificazione nove dapoi à a vostr’ultima visita \U0001F418"
       title: Dapoi l’ultima volta…
     favourite:
-      body: "%{name} hà aghjuntu u vostru statutu à i so favuriti :"
+      body: '%{name} hà aghjuntu u vostru statutu à i so favuriti :'
       subject: "%{name} hà messu u vostru post in i so favuriti"
       title: Novu favuritu
     follow:
@@ -1065,8 +1070,8 @@ co:
       title: Nova dumanda d’abbunamentu
     mention:
       action: Risposta
-      body: "%{name} v’hà mintuvatu·a indè :"
-      subject: "%{name} v’hà mintuvatu·a"
+      body: '%{name} v’hà mintuvatu·a indè :'
+      subject: '%{name} v’hà mintuvatu·a'
       title: Nova menzione
     poll:
       subject: Un scandagliu da %{name} hè finitu
@@ -1361,7 +1366,7 @@ co:
       <p>Ce document est publié sous lincence CC-BY-SA. Il a été mis à jours pour la dernière fois le 7 mars 2018.</p>
 
       <p>Originellement adapté de la <a href="https://github.com/discourse/discourse">politique de confidentialité de Discourse</a>.</p>
-    title: Termini d’usu è di cunfidenzialità per %{instance}
+    title: "Termini d’usu è di cunfidenzialità per %{instance}"
   themes:
     contrast: Mastodon (Cuntrastu altu)
     default: Mastodon (Scuru)

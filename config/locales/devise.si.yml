@@ -1,12 +1,13 @@
----
 si:
   devise:
     failure:
+      already_authenticated: ඔබ දැනටමත් පිවිස ඇත.
       locked: ඔබගේ ගිණුම අගුළු දමා ඇත.
     mailer:
       confirmation_instructions:
         title: වි. තැපැල් ලිපිනය තහවුරු කරන්න
       email_changed:
+        subject: 'මාස්ටඩන්: වි-තැපෑල වෙනස් විය'
         title: නව විද්‍යුත් තැපැල් ලිපිනය
       password_change:
         title: මුරපදය වෙනස් කරන ලදි

@@ -1,4 +1,3 @@
----
 et:
   simple_form:
     hints:
@@ -182,8 +181,8 @@ et:
         name: Silt
         trendable: Luba sellel sildil trendida
         usable: Luba tuututustel seda silti kasutada
-    'no': Ei
+    'no': 'Ei'
     recommended: Soovituslik
     required:
       text: kohustuslik
-    'yes': Jah
+    'yes': 'Jah'

@@ -1,4 +1,3 @@
----
 es:
   devise:
     confirmations:
@@ -8,7 +7,7 @@ es:
     failure:
       already_authenticated: Usted ya está registrado.
       inactive: Su cuenta no ha sido activada aún.
-      invalid: "%{authentication_keys} o contraseña inválida."
+      invalid: '%{authentication_keys} o contraseña inválida.'
       last_attempt: Tiene un intento más antes de que tu cuenta sea bloqueada.
       locked: Tu cuenta está bloqueada.
       not_found_in_database: Incorrecto %{authentication_keys} o contraseña.
@@ -87,8 +86,8 @@ es:
       updated: Tu contraseña ha sido cambiada con éxito. Has iniciado sesión.
       updated_not_active: Tu contraseña se ha cambiado con éxito.
     registrations:
-      destroyed: "¡Hasta otra! Tu cuenta ha sido cancelada con éxito. Esperamos verte de nuevo pronto."
-      signed_up: "¡Bienvenido! Te has registrado correctamente."
+      destroyed: '¡Hasta otra! Tu cuenta ha sido cancelada con éxito. Esperamos verte de nuevo pronto.'
+      signed_up: '¡Bienvenido! Te has registrado correctamente.'
       signed_up_but_inactive: Te has registrado con éxito. Sin embargo, no se ha podido iniciar sesión porque tu cuenta aún no está activada.
       signed_up_but_locked: Te has registrado con éxito. Sin embargo, no se ha podido iniciar sesión porque tu cuenta está bloqueada.
       signed_up_but_pending: Un mensaje con un enlace de confirmación ha sido enviado a tu dirección de correo electrónico. Después de hacer clic en el enlace, revisaremos tu solicitud. Serás notificado si se aprueba.

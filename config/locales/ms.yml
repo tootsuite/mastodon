@@ -1,93 +1,137 @@
----
 ms:
   about:
-    about_hashtag_html: Terdapat toot awam yang ditanda dengan <strong>#%{hashtag}</strong>. Anda boleh berinteraksi dengan mereka jika anda mempunyai akaun di mana-mana dunia persekutuan Mastodon.
-    about_mastodon_html: Mastodon ialah rangkaian sosial berasaskan protokol web terbuka dan perisian percuma bersumber terbuka. Ianya tak terpusat seperti emel.
-    about_this: Mengenai Kami
+    about_hashtag_html: 'Ini semua hantaran awam yang ditandakan dengan <strong>#%{hashtag}</strong>. Anda boleh berinteraksi dengan mereka jika anda mempunyai akaun di mana-mana dunia persekutuan.'
+    about_mastodon_html: 'Rangkaian sosial masa hadapan: Tiada iklan, tiada pengawasan korporat, reka bentuk beretika, dan desentralisasi! Miliki data anda dengan Mastodon!'
+    about_this: Perihal
+    active_count_after: aktif
+    active_footnote: Pengguna Aktif Bulanan (MAU)
     administered_by: 'Ditadbir oleh:'
+    api: API
     apps: Aplikasi mudah alih
+    apps_platforms: Guna Mastodon daripada iOS, Android dan platform yang lain
+    browse_directory: Layari direktori profil dan tapis mengikut minat
+    browse_local_posts: Layari strim langsung hantaran awam daripada pelayan ini
+    browse_public_posts: Layari strim langsung hantaran awam di Mastodon
     contact: Hubungi kami
     contact_missing: Tidak ditetapkan
     contact_unavailable: Tidak tersedia
+    discover_users: Terokai pengguna
     documentation: Pendokumenan
+    federation_hint_html: Dengan akaun di %{instance} anda akan mampu mengikuti orang di mana-mana pelayan Mastodon dan lebih lagi.
+    get_apps: Cuba aplikasi mudah alih
     hosted_on: Mastodon dihoskan di %{domain}
+    instance_actor_flash: |
+      Akaun ini ialah pelaku maya yang digunakan untuk mewakili pelayan itu sendiri dan bukannya mana-mana pengguna individu.
+      Ia digunakan untuk tujuan persekutuan dan tidak patut disekat melainkan anda ingin menyekat keseluruhan tika, yang mana anda sepatutnya gunakan sekatan domain.
     learn_more: Ketahui lebih lanjut
     privacy_policy: Polisi privasi
+    rules: Peraturan pelayan
+    rules_html: 'Di bawah ini ringkasan peraturan yang anda perlu ikuti jika anda ingin mempunyai akaun di pelayan Mastodon yang ini:'
+    see_whats_happening: Lihat apa yang sedang berlaku
+    server_stats: 'Statistik pelayan:'
     source_code: Kod sumber
     status_count_after:
-      other: status
-    status_count_before: Telah menulis
+      other: hantaran
+    status_count_before: Siapa terbitkan
+    tagline: Ikuti rakan lama dan terokai rakan baharu
     terms: Terma perkhidmatan
+    unavailable_content: Pelayan disederhanakan
+    unavailable_content_description:
+      domain: Pelayan
+      reason: Sebab
+      rejecting_media: 'Fail-fail media daripada pelayan-pelayan ini tidak akan diproses atau disimpan, dan tiada gambar kecil yang akan dipaparkan, memerlukan anda untuk klik fail asal:'
+      rejecting_media_title: Media ditapis
+      silenced: 'Hantaran daripada pelayan-pelayan ini akan disembunyikan di garis masa dan perbualan awam, dan tiada pemberitahuan yang akan dijana daripada interaksi pengguna mereka, melainkan anda mengikuti mereka:'
+      silenced_title: Pelayan didiamkan
+      suspended: 'Tiada data daripada pelayan-pelayan ini yang akan diproses, disimpan atau ditukar, membuatkan sebarang interaksi atau perhubungan dengan pengguna daripada pelayan-pelayan ini menjadi mustahil:'
+      suspended_title: Pelayan digantung
+    unavailable_content_html: Mastodon secara amnya membenarkan anda melihat kandungan daripada dan berinteraksi dengan pengguna daripada mana-mana pelayan dalam dunia persekutuan. Ini pengecualian yang telah dilakukan di pelayan ini secara khususnya.
     user_count_after:
       other: pengguna
-    user_count_before: Rumah kepada
+    user_count_before: Rumah bagi
     what_is_mastodon: Apakah itu Mastodon?
   accounts:
-    choices_html: 'Pilihan %{name}:'
+    choices_html: "Pilihan %{name}:"
+    endorsements_hint: Anda boleh syorkan orang yang anda ikuti menggunakan antara muka sesawang, dan mereka akan ditunjukkan di sini.
+    featured_tags_hint: Anda boleh mempromosikan tanda pagar khusus yang akan dipaparkan di sini.
     follow: Ikut
     followers:
       other: Pengikut
     following: Mengikuti
+    instance_actor_flash: Akaun ini ialah pelaku maya yang digunakan untuk mewakili pelayan itu sendiri dan bukan mana-mana pengguna individu. Ia digunakan untuk tujuan persekutuan dan tidak patut digantung.
     joined: Sertai pada %{date}
+    last_active: aktif terakhir
     link_verified_on: Pemilikan pautan ini diperiksa pada %{date}
+    media: Media
     moved_html: "%{name} telah berpindah ke %{new_profile_link}:"
     network_hidden: Maklumat ini tidak tersedia
+    never_active: Belum pernah
     nothing_here: Tiada apa-apa di sini!
     people_followed_by: Orang yang %{name} ikuti
     people_who_follow: Orang yang mengikut %{name}
     pin_errors:
       following: Anda mestilah sudah mengikuti orang yang anda ingin syorkan
     posts:
-      other: Toot
-    posts_tab_heading: Toot
-    posts_with_replies: Toot dan maklum balas
+      other: Hantaran
+    posts_tab_heading: Hantaran
+    posts_with_replies: Hantaran dan balasan
     roles:
-      moderator: Pengawal
+      admin: Pentadbir
+      bot: Bot
+      group: Kumpulan
+      moderator: Penyederhana
+    unavailable: Profil tidak tersedia
     unfollow: Nyahikut
   admin:
+    account_actions:
+      action: Ambil tindakan
+      title: Ambil tindakan penyederhanaan ke atas %{acct}
     account_moderation_notes:
-      create: Tinggalkan nota
-      created_msg: Nota kawalan telah berjaya dicipta!
+      create: Tinggalkan catatan
+      created_msg: Catatan penyederhanaan telah berjaya dicipta!
       delete: Padam
-      destroyed_msg: Nota kawalan telah berjaya dipadam!
+      destroyed_msg: Catatan penyederhanaan telah berjaya dipadam!
     accounts:
+      add_email_domain_block: Sekat domain e-mel
+      approve: Luluskan
+      approve_all: Luluskan semua
       approved_msg: Berjaya meluluskan permohonan pendaftaran %{username}
-      are_you_sure: Anda pasti?
+      are_you_sure: Adakah anda pasti?
       avatar: Avatar
       by_domain: Domain
       change_email:
-        changed_msg: Emel akaun telah berjaya ditukar!
-        current_email: Emel Semasa
-        label: Tukar Emel
-        new_email: Emel Baru
-        submit: Tukar Emel
-        title: Tukar Emel untuk %{username}
+        changed_msg: E-mel akaun telah berjaya ditukar!
+        current_email: E-mel semasa
+        label: Ubah e-mel
+        new_email: E-mel baharu
+        submit: Ubah e-mel
+        title: Ubah e-mel untuk %{username}
       confirm: Sahkan
       confirmed: Disahkan
       confirming: Mengesahkan
       delete: Padam data
-      deleted: Dipadam
+      deleted: Dipadamkan
       demote: Turunkan taraf
-      destroyed_msg: Data %{username} sekarang menunggu giliran untuk dipadam sebentar lagi
-      disable: Lumpuhkan
+      destroyed_msg: "Data %{username} kini menunggu giliran untuk dipadam sebentar lagi"
+      disable: Bekukan
       disable_two_factor_authentication: Lumpuhkan 2FA
-      disabled: Dilumpuhkan
+      disabled: Dibekukan
       display_name: Nama paparan
       domain: Domain
-      edit: Tukar
-      email: Emel
-      email_status: Status Emel
-      enable: Bolehkan
-      enabled: Dibolehkan
+      edit: Sunting
+      email: E-mel
+      email_status: Status e-mel
+      enable: Nyahbekukan
+      enabled: Didayakan
       enabled_msg: Berjaya menyahbekukan akaun %{username}
       followers: Pengikut
       follows: Mengikuti
       header: Pengepala
       inbox_url: URL mesej masuk
-      invite_request_text: Sebab menyertai
-      invited_by: Dijemput oleh
+      invite_request_text: Sebab untuk menyertai
+      invited_by: Diundang oleh
       ip: Alamat IP
-      joined: Sudah sertai
+      joined: Sertai pada
       location:
         all: Semua
         local: Tempatan
@@ -95,79 +139,79 @@ ms:
         title: Kedudukan
       login_status: Status log masuk
       media_attachments: Lampiran media
-      memorialize: Tukarkan menjadi akaun peringatan
+      memorialize: Tukarkan menjadi akaun kenangan
       memorialized: Dikenang
       memorialized_msg: Berjaya mengubah %{username} menjadi akaun kenangan
       moderation:
         active: Aktif
         all: Semua
         pending: Menunggu
-        silenced: Disenyapkan
+        silenced: Didiamkan
         suspended: Digantungkan
-        title: Kawalan
-      moderation_notes: Nota kawalan
+        title: Penyederhanaan
+      moderation_notes: Catatan penyederhana
       most_recent_activity: Aktiviti terbaru
-      most_recent_ip: IP terbaru
+      most_recent_ip: Alamat IP terbaru
       no_account_selected: Tiada akaun diubah kerana tiada yang dipilih
-      no_limits_imposed: Tiada had dikuatkuasakan
+      no_limits_imposed: Tiada pengehadan dikenakan
       not_subscribed: Tiada langganan
-      pending: Menunggu penilaian semula
+      pending: Menunggu semak semula
       perform_full_suspension: Gantung
       promote: Naikkan taraf
       protocol: Protokol
       public: Awam
       push_subscription_expires: Langganan PuSH tamat tempoh
-      redownload: Segarkan semula avatar
-      redownloaded_msg: Berjaya memuat semula profil %{username} dari asalnya
+      redownload: Segarkan semula profil
+      redownloaded_msg: Berjaya segarkan semula profil %{username} daripada asalnya
       reject: Tolak
       reject_all: Tolak semua
       rejected_msg: Berjaya menolak permohonan pendaftaran %{username}
       remove_avatar: Buang avatar
       remove_header: Buang pengepala
-      removed_avatar_msg: Berjaya membuang gambar avatar %{username}
-      removed_header_msg: Berjaya membuang gambar pengepala %{username}
+      removed_avatar_msg: Berjaya membuang imej avatar %{username}
+      removed_header_msg: Berjaya membuang imej pengepala %{username}
       resend_confirmation:
         already_confirmed: Pengguna ini telah disahkan
-        send: Hantar semula emel pengesahan
-        success: Emel pengesahan telah berjaya dihantar!
-      reset: Set semula
-      reset_password: Set semula kata laluan
+        send: Hantar semula e-mel pengesahan
+        success: E-mel pengesahan telah berjaya dihantar!
+      reset: Tetapkan semula
+      reset_password: Tetapkan semula kata laluan
       resubscribe: Langgan semula
       role: Kebenaran
       roles:
         admin: Pentadbir
-        moderator: Pengawal
+        moderator: Penyederhana
         staff: Kakitangan
         user: Pengguna
       search: Cari
       search_same_email_domain: Pengguna lain dengan domain e-mel yang sama
-      search_same_ip: Pengguna lain dengan IP yang sama
+      search_same_ip: Pengguna lain dengan alamat IP yang sama
       sensitive: Sensitif
-      sensitized: tanda sebagai sensitif
-      shared_inbox_url: URL Peti Masuk Berkongsi
+      sensitized: ditandakan sebagai sensitif
+      shared_inbox_url: URL peti masuk berkongsi
       show:
-        created_reports: Laporan yang dicipta oleh akaun ini
-        targeted_reports: Laporan yang dicipta berkaitan akaun ini
-      silence: Senyap
-      silenced: Disenyapkan
-      statuses: Status
+        created_reports: Laporan dicipta oleh akaun ini
+        targeted_reports: Laporan dicipta berkaitan akaun ini
+      silence: Hadkan
+      silenced: Dihadkan
+      statuses: Hantaran
       subscribe: Langgan
       suspended: Digantung
-      suspension_irreversible: Data akaun ini telah dipadam secara kekal. Anda boleh nyahgantungkannya untuk menggunakannya, tetapi data lama tidak akan diperoleh.
-      suspension_reversible_hint_html: Akaun ini telah digantung, dan datanya akan dibuang pada %{date}. Sebelum tarikh itu, akaun ini boleh diaktif semula tanpa kesan buruk. Jika anda mahu memadamkan data akaun ini serta-merta, anda boleh melakukannya di bawah.
+      suspension_irreversible: Data akaun ini telah dipadam secara kekal. Anda boleh nyahgantungkannya untuk membuatkan akaun ini boleh digunakan semula tetapi data lama tidak akan diperolehi.
+      suspension_reversible_hint_html: Akaun ini telah digantung, dan datanya akan dibuang pada %{date}. Sebelum tarikh itu, akaun ini boleh diperoleh semula tanpa kesan buruk. Jika anda mahu memadamkan kesemua data akaun ini serta-merta, anda boleh melakukannya di bawah.
       time_in_queue: Menunggu giliran %{time}
       title: Akaun
-      unconfirmed_email: Emel Belum Disahkan
+      unconfirmed_email: E-mel belum disahkan
       undo_sensitized: Nyahtanda sensitif
-      undo_silenced: Buang senyap
-      undo_suspension: Buang penggantungan
+      undo_silenced: Nyahdiamkan
+      undo_suspension: Nyahgantungkan
       unsilenced_msg: Berjaya menjadikan akaun %{username} tidak terhad
       unsubscribe: Buang langganan
       unsuspended_msg: Berjaya menyahgantungkan akaun %{username}
       username: Nama pengguna
-      view_domain: Lihat ringkasan domain
+      view_domain: Lihat ringkasan untuk domain
       warn: Beri amaran
-      web: Web
+      web: Sesawang
       whitelisted: Dibenarkan untuk persekutuan
     action_logs:
       action_types:
@@ -180,15 +224,17 @@ ms:
         create_domain_allow: Cipta Pelepasan Domain
         create_domain_block: Cipta Penyekatan Domain
         create_email_domain_block: Cipta Penyekatan Domain E-mel
-        create_ip_block: Cipta peraturan IP
+        create_ip_block: Cipta peraturan alamat IP
+        create_unavailable_domain: Cipta Domain Tidak Tersedia
         demote_user: Turunkan Taraf Pengguna
         destroy_announcement: Padam Pengumuman
         destroy_custom_emoji: Padam Emoji Tersendiri
         destroy_domain_allow: Padam Pelepasan Domain
         destroy_domain_block: Padam Penyekatan Domain
-        destroy_email_domain_block: Padam Penyekatan Domain E-mel
-        destroy_ip_block: Padam Peraturan IP
-        destroy_status: Padam Kiriman
+        destroy_email_domain_block: Padam penyekatan domain e-mel
+        destroy_ip_block: Padam peraturan alamat IP
+        destroy_status: Padam Hantaran
+        destroy_unavailable_domain: Padam Domain Tidak Tersedia
         disable_2fa_user: Nyahdayakan 2FA
         disable_custom_emoji: Nyahdayakan Emoji Tersendiri
         disable_user: Nyahdayakan Pengguna
@@ -198,19 +244,19 @@ ms:
         promote_user: Naikkan Taraf Pengguna
         remove_avatar_user: Buang Avatar
         reopen_report: Buka Semula Laporan
-        reset_password_user: Tetap Semula Kata Laluan
+        reset_password_user: Tetapkan Semula Kata Laluan
         resolve_report: Buat Keputusan Laporan
         sensitive_account: Tandakan media di akaun anda sebagai sensitif
-        silence_account: Senyapkan Akaun
-        suspend_account: Gantung Akaun
-        unassigned_report: Batalkan Laporan
+        silence_account: Diamkan Akaun
+        suspend_account: Gantungkan Akaun
+        unassigned_report: Menyahtugaskan Laporan
         unsensitive_account: Nyahtanda media di akaun anda sebagai sensitif
-        unsilence_account: Nyahsenyapkan Akaun
-        unsuspend_account: Nyahgantung Akaun
+        unsilence_account: Nyahdiamkan Akaun
+        unsuspend_account: Nyahgantungkan Akaun
         update_announcement: Kemas Kini Pengumuman
         update_custom_emoji: Kemas Kini Emoji Tersendiri
         update_domain_block: Kemas Kini Penyekatan Domain
-        update_status: Kemas Kini Kiriman
+        update_status: Kemas Kini Hantaran
       actions:
         assigned_to_self_report_html: "%{name} menugaskan laporan %{target} kepada dirinya sendiri"
         change_email_user_html: "%{name} telah mengubah alamat e-mel pengguna %{target}"
@@ -221,57 +267,109 @@ ms:
         create_domain_allow_html: "%{name} membenarkan persekutuan dengan domain %{target}"
         create_domain_block_html: "%{name} telah menyekat domain %{target}"
         create_email_domain_block_html: "%{name} telah menyekat domain e-mel %{target}"
-        create_ip_block_html: "%{name} telah mencipta peraturan IP %{target}"
-        demote_user_html: "%{name} menurunkan taraf pengguna %{target}"
-        destroy_announcement_html: "%{name} memadamkan pengumuman %{target}"
-        destroy_custom_emoji_html: "%{name} memusnahkan emoji %{target}"
-        destroy_domain_allow_html: "%{name} membuang keizinan persekutuan dengan domain %{target}"
+        create_ip_block_html: "%{name} telah mencipta peraturan alamat IP %{target}"
+        create_unavailable_domain_html: "%{name} telah menghentikan penghantaran ke domain %{target}"
+        demote_user_html: "%{name} telah menurunkan taraf pengguna %{target}"
+        destroy_announcement_html: "%{name} telah memadamkan pengumuman %{target}"
+        destroy_custom_emoji_html: "%{name} telah memusnahkan emoji %{target}"
+        destroy_domain_allow_html: "%{name} telah membuang kebenaran persekutuan dengan domain %{target}"
         destroy_domain_block_html: "%{name} telah menyahsekat domain %{target}"
         destroy_email_domain_block_html: "%{name} telah menyahsekat domain e-mel %{target}"
-        destroy_ip_block_html: "%{name} memadamkan peraturan untuk IP %{target}"
-        destroy_status_html: "%{name} membuang kiriman oleh %{target}"
+        destroy_ip_block_html: "%{name} telah memadamkan peraturan untuk alamat IP %{target}"
+        destroy_status_html: "%{name} telah membuang hantaran oleh %{target}"
+        destroy_unavailable_domain_html: "%{name} telah menyambung penghantaran ke domain %{target}"
         disable_2fa_user_html: "%{name} menyahdayakan keperluan dua faktor bagi pengguna %{target}"
-        disable_custom_emoji_html: "%{name} menyahdayakan emoji %{target}"
-        disable_user_html: "%{name} menyahdayakan log masuk bagi pengguna %{target}"
-        enable_custom_emoji_html: "%{name} mendayakan emoji %{target}"
-        enable_user_html: "%{name} mendayakan log masuk untuk pengguna %{target}"
-        memorialize_account_html: "%{name} mengubah akaun %{target} menjadi halaman kenangan"
-        promote_user_html: "%{name} menaikkan taraf pengguna %{target}"
-      deleted_status: "(status telah dipadam)"
+        disable_custom_emoji_html: "%{name} telah menyahdayakan emoji %{target}"
+        disable_user_html: "%{name} telah menyahdayakan log masuk bagi pengguna %{target}"
+        enable_custom_emoji_html: "%{name} telah mendayakan emoji %{target}"
+        enable_user_html: "%{name} telah mendayakan log masuk untuk pengguna %{target}"
+        memorialize_account_html: "%{name} telah mengubah akaun %{target} menjadi halaman kenangan"
+        promote_user_html: "%{name} telah menaikkan taraf pengguna %{target}"
+        remove_avatar_user_html: "%{name} telah membuang avatar %{target}"
+        reopen_report_html: "%{name} telah membuka semula laporan %{target}"
+        reset_password_user_html: "%{name} telah menetapkan semula kata laluan pengguna %{target}"
+        resolve_report_html: "%{name} telah menyelesaikan laporan %{target}"
+        sensitive_account_html: "%{name} telah menanda media %{target} sebagai sensitif"
+        silence_account_html: "%{name} telah mendiamkan akaun %{target}"
+        suspend_account_html: "%{name} telah menggantung akaun %{target}"
+        unassigned_report_html: "%{name} telah menyahtugaskan laporan %{target}"
+        unsensitive_account_html: "%{name} telah menyahtanda media %{target} sebagai sensitif"
+        unsilence_account_html: "%{name} telah menyahdiamkan akaun %{target}"
+        unsuspend_account_html: "%{name} telah menyahgantungkan akaun %{target}"
+        update_announcement_html: "%{name} telah mengemaskini pengumuman %{target}"
+        update_custom_emoji_html: "%{name} telah mengemaskini emoji %{target}"
+        update_domain_block_html: "%{name} telah mengemaskini penyekatan domain untuk %{target}"
+        update_status_html: "%{name} telah mengemaskini hantaran oleh %{target}"
+      deleted_status: "(hantaran telah dipadam)"
+      empty: Tiada log dijumpai.
+      filter_by_action: Tapis mengikut tindakan
+      filter_by_user: Tapis mengikut pengguna
       title: Log audit
+    announcements:
+      destroyed_msg: Pengumuman berjaya dipadam!
+      edit:
+        title: Sunting pengumuman
+      empty: Tiada pengumuman dijumpai.
+      live: Langsung
+      new:
+        create: Cipta pengumuman
+        title: Pengumuman baharu
+      publish: Terbitkan
+      published_msg: Pengumuman berjaya diterbitkan!
+      scheduled_for: Dijadualkan untuk %{time}
+      scheduled_msg: Pengumuman dijadualkan untuk terbitan!
+      title: Pengumuman
+      unpublish: Nyahterbit
+      unpublished_msg: Pengumuman berjaya dinyahterbitkan!
+      updated_msg: Pengumuman berjaya dikemaskini!
     custom_emojis:
+      assign_category: Menugaskan kategori
+      by_domain: Domain
       copied_msg: Telah berjaya mencipta salinan tempatan emoji
       copy: Salin
       copy_failed_msg: Tidak dapat membuat salinan tempatan emoji tersebut
+      create_new_category: Cipta kategori baharu
       created_msg: Emoji berjaya dicipta!
       delete: Padam
-      destroyed_msg: Emoji berjaya dipadam!
-      disable: Lumpuhkan
-      disabled_msg: Emoji tersebut berjaya dilumpuhkan
-      enable: Bolehkan
-      enabled_msg: Emoji tersebut berjaya dibolehkan
+      destroyed_msg: Emoji berjaya dimusnahkan!
+      disable: Nyahdayakan
+      disabled: Dinyahdayakan
+      disabled_msg: Emoji tersebut berjaya dinyahdayakan
+      emoji: Emoji
+      enable: Dayakan
+      enabled: Didayakan
+      enabled_msg: Emoji tersebut berjaya didayakan
       image_hint: PNG, maksimum 50KB
+      list: Senarai
       listed: Disenaraikan
       new:
-        title: Tambah emoji sendiri baru
+        title: Tambah emoji sendiri baharu
+      not_permitted: Anda tidak dibenarkan untuk membuat tindakan ini
       overwrite: Tulis ganti
       shortcode: Kod pendek
       shortcode_hint: Sekurang-kurangnya 2 aksara, hanya aksara angka abjad dan garis bawah
       title: Emoji sendiri
-      unlisted: Tidak disenaraikan
+      uncategorized: Tidak dikategorikan
+      unlist: Nyahsenaraikan
+      unlisted: Dinyahsenaraikan
       update_failed_msg: Tidak boleh mengemaskini emoji tersebut
       updated_msg: Emoji berjaya dikemaskini!
       upload: Muat naik
     dashboard:
+      authorized_fetch_mode: Mod selamat
       backlog: tugasan tunggakan
       config: Tatarajah
       feature_deletions: Pemadaman akaun
       feature_invites: Pautan undangan
+      feature_profile_directory: Direktori profil
       feature_registrations: Pendaftaran
       feature_relay: Geganti persekutuan
+      feature_timeline_preview: Pratonton garis masa
       features: Ciri-ciri
       hidden_service: Persekutuan dengan perkhidmatan tersembunyi
       open_reports: laporan belum selesai
+      pending_tags: tanda pagar menunggu semakan
+      pending_users: pengguna menunggu semakan
       recent_users: Pengguna terbaru
       search: Carian teks penuh
       single_user_mode: Mod pengguna tunggal
@@ -283,64 +381,67 @@ ms:
       week_interactions: interaksi minggu ini
       week_users_active: aktif minggu ini
       week_users_new: pengguna minggu ini
+      whitelist_mode: Mod persekutuan terhad
     domain_allows:
-      destroyed_msg: Domain sudah tidak diizinkan dari persekutuan
-      undo: Nyahizin persekutuan dengan domain
+      add_new: Benarkan persekutuan dengan domain
+      created_msg: Domain telah berjaya dibenarkan untuk persekutuan
+      destroyed_msg: Domain telah dibuang kebenaran daripada persekutuan
+      undo: Buang kebenaran persekutuan dengan domain
     domain_blocks:
-      add_new: Tambah
+      add_new: Tambah penyekatan domain baharu
       created_msg: Sekatan domain sedang diproses
-      destroyed_msg: Sekatan domain telah dibatalkan
+      destroyed_msg: Sekatan domain telah diundurkan
       domain: Domain
       edit: Sunting penyekatan domain
-      existing_domain_block_html: Anda telah memberikan pembatasan yang lebih tegas ke atas %{name}, anda perlu <a href="%{unblock_url}">menyahsekatinya</a> dulu.
+      existing_domain_block_html: Anda telah mengenakan pengehadan yang lebih tegas ke atas %{name}, anda perlu <a href="%{unblock_url}">menyahsekatinya</a> dahulu.
       new:
         create: Cipta sekatan
-        hint: Sekatan domain tidak akan menghindarkan penciptaan entri akaun dalam pangkalan data, tetapi akan diberikan kaedah kawalan khusus tertentu pada akaun-akaun tersebut secara retroaktif dan automatik.
+        hint: Sekatan domain tidak akan menghindarkan penciptaan entri akaun dalam pangkalan data, tetapi akan dikenakan kaedah penyederhanaan khusus tertentu pada akaun-akaun tersebut secara retroaktif dan automatik.
         severity:
-          desc_html: "<strong>Senyapkan</strong> akan membuatkan hantaran akaun tidak kelihatan kepada sesiapa yang tidak mengikut mereka. <strong>Gantungkan</strong> akan membuang semua kandungan, media, dan data profil akaun tersebut. Gunakan <strong>Tiada</strong> jika anda hanya ingin menolak fail media."
+          desc_html: "<strong>Diamkan</strong> akan membuatkan hantaran akaun tidak kelihatan kepada sesiapa yang tidak mengikut mereka. <strong>Gantungkan</strong> akan membuang kesemua kandungan, media, dan data profil akaun tersebut. Gunakan <strong>Tiada</strong> jika anda hanya ingin menolak fail media."
           noop: Tiada
-          silence: Senyapkan
+          silence: Diamkan
           suspend: Gantungkan
-        title: Sekatan domain baru
-      obfuscate: Nama domain samar-samar
-      obfuscate_hint: Menjadikan nama domain samar-samar dalam senarai jika pengiklanan senarai pembatasan domain didayakan
-      private_comment: Komen peribadi
-      private_comment_hint: Komen tentang pembatasan domain ini bagi kegunaan dalaman para pengendali.
-      public_comment: Komen umum
-      public_comment_hint: Komen tentang pembatasan domain ini untuk khalayak umum, jika pengiklanan senarai pembatasan domain didayakan.
+        title: Sekatan domain baharu
+      obfuscate: Mengaburkan nama domain
+      obfuscate_hint: Mengaburkan nama domain secara separa dalam senarai sekiranya pengehadan pengiklanan senarai domain didayakan
+      private_comment: Ulasan peribadi
+      private_comment_hint: Ulasan mengenai pengehadan domain ini untuk kegunaan dalaman penyederhana.
+      public_comment: Ulasan awam
+      public_comment_hint: Ulasan mengenai pengehadan domain ini untuk orang awam, sekiranya pengehadan pengiklanan senarai domain didayakan.
       reject_media: Tolak fail media
-      reject_media_hint: Buang fail media yang disimpan di sini dan menolak sebarang muat turun pada masa depan. Tidak berkaitan dengan penggantungan
+      reject_media_hint: Buang fail media yang disimpan secara tempatan dan tolak sebarang muat turun pada masa hadapan. Tidak terpakai untuk penggantungan
       reject_reports: Tolak laporan
-      reject_reports_hint: Abaikan semua laporan daripada domain ini. Tidak dikira untuk penggantungan
+      reject_reports_hint: Abaikan semua laporan daripada domain ini. Tidak terpakai untuk penggantungan
       rejecting_media: menolak fail media
       rejecting_reports: menolak laporan
       severity:
-        silence: disenyapkan
-        suspend: digantung
+        silence: didiamkan
+        suspend: digantungkan
       show:
         affected_accounts:
           other: "%{count} akaun dalam pangkalan data menerima kesan"
         retroactive:
-          silence: Buang penyenyapan semua akaun sedia ada daripada domain ini
-          suspend: Buang penggantungan semua akaun sedia ada daripada domain ini
-        title: Buang sekatan domain %{domain}
-        undo: Buang
-      undo: Buang
+          silence: Nyahdiamkan akaun yang menerima kesan sedia ada daripada domain ini
+          suspend: Nyahgantungkan akaun yang menerima kesan sedia ada daripada domain ini
+        title: Undurkan sekatan domain untuk %{domain}
+        undo: Undurkan
+      undo: Undurkan penyekatan domain
       view: Lihat penyekatan domain
     email_domain_blocks:
-      add_new: Tambah
-      created_msg: Berjaya menambah domain emel ke dalam senarai hitam
+      add_new: Tambah baharu
+      created_msg: Telah berjaya menyekat domain e-mel
       delete: Padam
-      destroyed_msg: Berjaya memadam domain emel daripada senarai hitam
+      destroyed_msg: Telah berjaya menyahsekat domain e-mel
       domain: Domain
       empty: Tiada domain e-mel sedang disekat.
       from_html: dari %{domain}
       new:
         create: Tambah domain
-        title: Entri senarai hitam emel baru
-      title: Senarai hitam emel
+        title: Sekat domain e-mel baharu
+      title: Domain e-mel disekat
     follow_recommendations:
-      description_html: "<strong>Saranan ikutan membantu pengguna mencari kandungan menarik dengan cepat</strong>. Apabila pengguna belum cukup berhubung dengan akaun lain untuk membentuk saranan ikutan tersendiri, akaun-akaun inilah yang akan disarankan. Ia dinilai semula setiap hari dari gabungan keterlibatan tertinggi terkini dan juga jumlah pengikut tempatan tertinggi mengikut bahasa masing-masing."
+      description_html: "<strong>Saranan ikutan membantu pengguna baharu mencari kandungan menarik dengan cepat</strong>. Apabila pengguna belum cukup berinteraksi dengan akaun lain untuk membentuk saranan ikutan tersendiri, akaun-akaun inilah yang akan disarankan. Ia dinilai semula setiap hari dari gabungan keterlibatan tertinggi terkini dan juga jumlah pengikut tempatan tertinggi mengikut bahasa masing-masing."
       language: Untuk bahasa
       status: Status
       suppress: Hadkan saranan ikutan
@@ -348,18 +449,34 @@ ms:
       title: Saranan ikutan
       unsuppress: Tetap semula saranan ikutan
     instances:
+      back_to_all: Semua
+      back_to_limited: Terhad
+      back_to_warning: Amaran
       by_domain: Domain
+      delivery:
+        all: Semua
+        clear: Buang ralat penghantaran
+        restart: Mulakan semula penghantaran
+        stop: Hentikan penghantaran
+        title: Penghantaran
+        unavailable: Tidak tersedia
+        unavailable_message: Penghantaran tidak tersedia
+        warning: Amaran
+        warning_message:
+          other: Penghantaran gagal selama %{count} hari
       delivery_available: Penghantaran tersedia
-      empty: Tiada domain ditemukan.
+      delivery_error_days: Hari ralat penghantaran
+      delivery_error_hint: Jika penghantaran tidak berjaya selama %{count} hari, ia akan ditanda sebagai tidak boleh dihantar.
+      empty: Tiada domain dijumpai.
       known_accounts:
         other: "%{count} akaun dikenali"
       moderation:
         all: Semua
         limited: Terhad
         title: Penyederhanaan
-      private_comment: Komen peribadi
-      public_comment: Komen umum
-      title: Tika diketahui
+      private_comment: Ulasan peribadi
+      public_comment: Ulasan awam
+      title: Persekutuan
       total_blocked_by_us: Disekati kami
       total_followed_by_them: Diikuti mereka
       total_followed_by_us: Diikuti kami
@@ -375,7 +492,7 @@ ms:
       title: Undangan
     ip_blocks:
       add_new: Cipta peraturan
-      created_msg: Berjaya menambah peraturan IP baharu
+      created_msg: Telah berjaya menambah peraturan alamat IP baharu
       delete: Padam
       expires_in:
         '1209600': 2 minggu
@@ -385,38 +502,74 @@ ms:
         '86400': 1 hari
         '94670856': 3 tahun
       new:
-        title: Cipta peraturan IP baharu
+        title: Cipta peraturan alamat IP baharu
+      no_ip_block_selected: Tiada peraturan alamat IP diubah kerana tiada yang dipilih
+      title: Peraturan alamat IP
+    pending_accounts:
+      title: Akaun sedang menunggu (%{count})
+    relationships:
+      title: "Hubungan %{acct}"
     relays:
-      add_new: Tambah geganti baru
+      add_new: Tambah geganti baharu
       delete: Padam
-      description_html: "<strong>Geganti persekutuan</strong> ialah pelayan perantara yang saling menukar toot awam dalam jumlah yang banyak di antara pelayan yang melanggan ia dan menerbitkan kepada ia. <strong>Ia boleh bantu pelayan kecil dan sederhana untuk menemui kandungan daripada dunia persekutuan Mastodon</strong>, yang mana jika tidak digunakan akan memerlukan pengguna tempatan mengikut orang lain di pelayan jarak jauh secara manual."
-      disable: Lumpuhkan
-      disabled: Dilumpuhkan
-      enable: Bolehkan
-      enable_hint: Apabila dibolehkan, pelayan anda akan melanggan kesemua toot awam daripada geganti ini, dan akan mula menghantar toot awam pelayan ini kepada ia.
-      enabled: Dibolehkan
+      description_html: <strong>Geganti persekutuan</strong> ialah pelayan perantara yang saling menukar hantaran awam dalam jumlah yang banyak di antara pelayan yang melanggan ia dan menerbitkan kepadanya. <strong>Ia boleh bantu pelayan kecil dan sederhana untuk menemui kandungan daripada dunia persekutuan</strong>, yang mana jika tidak digunakan akan memerlukan pengguna tempatan mengikut orang lain di pelayan jarak jauh secara manual.
+      disable: Nyahdayakan
+      disabled: Dinyahdayakan
+      enable: Dayakan
+      enable_hint: Apabila didayakan, pelayan anda akan melanggan kesemua hantaran awam daripada geganti ini, dan akan mula menghantar hantaran awam pelayan ini kepadanya.
+      enabled: Didayakan
       inbox_url: URL geganti
-      pending: Menunggu persetujuan geganti
-      save_and_enable: Simpan dan bolehkan
+      pending: Menunggu kelulusan geganti
+      save_and_enable: Simpan dan dayakan
       setup: Tetapkan sambungan geganti
+      signatures_not_enabled: Geganti tidak akan berfungsi dengan betul apabila mod selamat atau mod persekutuan terhad didayakan
+      status: Status
       title: Geganti
     report_notes:
-      created_msg: Nota laporan berjaya dicipta!
-      destroyed_msg: Nota laporan berjaya dipadam!
+      created_msg: Catatan laporan telah berjaya dicipta!
+      destroyed_msg: Catatan laporan telah berjaya dipadam!
     reports:
-      action_taken_by: Tindakan oleh
-      are_you_sure: Anda pasti?
-      assign_to_self: Berikan pada saya
-      assigned: Pengawal yang menerima
+      account:
+        notes:
+          other: "%{count} catatan"
+        reports:
+          other: "%{count} laporan"
+      action_taken_by: Tindakan diambil oleh
+      are_you_sure: Adakah anda pasti?
+      assign_to_self: Menugaskan kepada saya
+      assigned: Penyederhana yang ditugaskan
+      by_target_domain: Domain bagi akaun yang dilaporkan
       comment:
         none: Tiada
       created_at: Dilaporkan
+      forwarded: Dipanjangkan
+      forwarded_to: Dipanjangkan ke %{domain}
       mark_as_resolved: Tanda sebagai sudah selesai
       mark_as_unresolved: Tanda sebagai belum selesai
       notes:
-        create: Tambah nota
-        create_and_resolve: Selesaikan dengan nota
+        create: Tambah catatan
+        create_and_resolve: Selesaikan dengan catatan
+        create_and_unresolve: Buka semula dengan catatan
+        delete: Padam
         placeholder: Terangkan tindakan apa yang telah diambil, atau sebarang kemas kini lain yang berkaitan...
+      reopen: Buka semula laporan
+      report: 'Laporan #%{id}'
+      reported_account: Akaun yang dilaporkan
+      reported_by: Dilaporkan oleh
+      resolved: Diselesaikan
+      resolved_msg: Laporan berjaya diselesaikan!
+      status: Status
+      title: Laporan
+      unassign: Nyahtugaskan
+      unresolved: Nyahselesaikan
+      updated_at: Dikemaskini
+    rules:
+      add_new: Tambah peraturan
+      delete: Padam
+      description_html: Walaupun ramai yang berkata mereka telah membaca dan bersetuju dengan terma-terma perkhidmatan, selalunya orang tidak baca dengan teliti sehinggalah terjadinya sesuatu masalah. <strong>Buatkan peraturan pelayan anda lebih mudah dilihat dalam sekali pandang dengan menyediakannya dalam bentuk senarai titik peluru rata.</strong> Cuba untuk kekalkan setiap peraturan khusus itu pendek dan mudah, tetapi jangan pula terlalu pisahkannya menjadi terlalu banyak item yang berlainan.
+      edit: Sunting peraturan
+      empty: Masih belum ada peraturan pelayan yang ditakrifkan.
+      title: Peraturan pelayan
     settings:
       peers_api_enabled:
         title: Terbitkan senarai pelayan ditemukan dalam aplikasi
@@ -451,9 +604,9 @@ ms:
     '404': The page you are looking for isn't here.
     '406': This page is not available in the requested format.
     '410': The page you were looking for doesn't exist here anymore.
-    '422': 
+    '422':
     '429': Too many requests
-    '500': 
+    '500':
     '503': The page could not be served due to a temporary server failure.
   exports:
     archive_takeout:

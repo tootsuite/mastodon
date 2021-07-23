@@ -1,8 +1,7 @@
----
 sl:
   about:
-    about_hashtag_html: To so javni tuti, označeni z <strong>#%{hashtag}</strong>. Z njimi se lahko povežete, če imate račun kjerkoli v fediverse-u.
-    about_mastodon_html: Mastodon je socialno omrežje, ki temelji na odprtih spletnih protokolih in prosti ter odprtokodni programski opremi. Je decentraliziran, kot e-pošta.
+    about_hashtag_html: 'To so javni tuti, označeni z <strong>#%{hashtag}</strong>. Z njimi se lahko povežete, če imate račun kjerkoli v fediverse-u.'
+    about_mastodon_html: 'Mastodon je socialno omrežje, ki temelji na odprtih spletnih protokolih in prosti ter odprtokodni programski opremi. Je decentraliziran, kot e-pošta.'
     about_this: O Mastodonu
     active_count_after: dejaven
     active_footnote: Aktivni mesečni uporabniki (AMU)
@@ -28,28 +27,28 @@ sl:
     server_stats: 'Statistika strežnika:'
     source_code: Izvorna koda
     status_count_after:
-      few: stanja
       one: stanje
-      other: stanj
       two: stanja
+      few: stanja
+      other: stanj
     status_count_before: Ki so avtorji
     tagline: Sledite prijateljem in odkrijte nove
     terms: Pogoji storitve
     user_count_after:
-      few: uporabniki
       one: uporabnik
-      other: uporabnikov
       two: uporabnika
+      few: uporabniki
+      other: uporabnikov
     user_count_before: Dom za
     what_is_mastodon: Kaj je Mastodon?
   accounts:
     choices_html: "%{name} izbire:"
     follow: Sledi
     followers:
-      few: Sledilci
       one: Sledilec
-      other: Sledilcev
       two: Sledilca
+      few: Sledilci
+      other: Sledilcev
     following: Sledim
     joined: Se je pridružil na %{date}
     last_active: zadnja dejavnost
@@ -64,10 +63,10 @@ sl:
     pin_errors:
       following: Verjetno že sledite osebi, ki jo želite potrditi
     posts:
-      few: Tuti
       one: Tut
-      other: Tutov
       two: Tuta
+      few: Tuti
+      other: Tutov
     posts_tab_heading: Tuti
     posts_with_replies: Tuti in odgovori
     roles:
@@ -264,10 +263,10 @@ sl:
         suspend: suspendirani
       show:
         affected_accounts:
-          few: "%{count} računi v bazi podatkov so prizadeti"
           one: En račun v bazi podatkov je prizadet
-          other: "%{count} računov v bazi podatkov je prizadetih"
           two: "%{count} računa v bazi podatkov so prizadeta"
+          few: "%{count} računi v bazi podatkov so prizadeti"
+          other: "%{count} računov v bazi podatkov je prizadetih"
         retroactive:
           silence: Prekliči utišanje za vse obstoječe račune iz te domene
           suspend: Aktiviraj vse obstoječe račune iz te domene
@@ -288,10 +287,10 @@ sl:
       by_domain: Domena
       delivery_available: Na voljo je dostava
       known_accounts:
-        few: "%{count} znani računi"
         one: "%{count} znan račun"
-        other: "%{count} znanih računov"
         two: "%{count} znana računa"
+        few: "%{count} znani računi"
+        other: "%{count} znanih računov"
       moderation:
         all: Vse
         limited: Omejeno
@@ -310,11 +309,11 @@ sl:
         expired: Potekel
       title: Povabila
     pending_accounts:
-      title: "(%{count}) računov na čakanju"
+      title: (%{count}) računov na čakanju
     relays:
       add_new: Dodaj nov rele
       delete: Izbriši
-      description_html: "<strong>Rele federacije</strong> je posredniški strežnik, ki si izmenjuje velike količine javnih tutov med strežniki, ki so se naročili in objavili na njem. <strong>Majhnim in srednjim strežnikom lahko pomaga pri odkrivanju vsebine iz sistema fediverse</strong>, kar bi sicer zahtevalo, da lokalni uporabniki ročno sledijo druge osebe na oddaljenih strežnikih."
+      description_html: <strong>Rele federacije</strong> je posredniški strežnik, ki si izmenjuje velike količine javnih tutov med strežniki, ki so se naročili in objavili na njem. <strong>Majhnim in srednjim strežnikom lahko pomaga pri odkrivanju vsebine iz sistema fediverse</strong>, kar bi sicer zahtevalo, da lokalni uporabniki ročno sledijo druge osebe na oddaljenih strežnikih.
       disable: Onemogoči
       disabled: Onemogočeno
       enable: Omogoči
@@ -454,7 +453,7 @@ sl:
     new_report:
       body: "%{reporter} je prijavil %{target}"
       body_remote: Nekdo iz %{domain} je prijavil %{target}
-      subject: Nove prijave za %{instance} (#%{id})
+      subject: 'Nove prijave za %{instance} (#%{id})'
   appearance:
     advanced_web_interface: Napredni spletni vmesnik
     advanced_web_interface_hint: 'Če želite uporabiti celotno širino zaslona, vam napredni spletni vmesnik omogoča, da si nastavite več različnih stolpcev in da si hkrati ogledate toliko informacij, kot želite: domačo stran, obvestila, združeno časovnico, poljubno število seznamov in ključnikov.'
@@ -590,10 +589,10 @@ sl:
     order_by: Razvrsti po
     save_changes: Shrani spremembe
     validation_errors:
-      few: Nekaj še ni čisto v redu! Spodaj si oglejte %{count} napake
       one: Nekaj še ni čisto v redu! Spodaj si oglejte napako
-      other: Nekaj še ni čisto v redu! Spodaj si oglejte %{count} napak
       two: Nekaj še ni čisto v redu! Spodaj si oglejte %{count} napaki
+      few: Nekaj še ni čisto v redu! Spodaj si oglejte %{count} napake
+      other: Nekaj še ni čisto v redu! Spodaj si oglejte %{count} napak
   html_validator:
     invalid_markup: 'vsebuje neveljavno oznako HTML: %{error}'
   identity_proofs:
@@ -643,10 +642,10 @@ sl:
     generate: Ustvari
     invited_by: 'Povabil/a vas je:'
     max_uses:
-      few: "%{count} uporabe"
       one: 1 uporaba
-      other: "%{count} uporab"
       two: "%{count} uporabi"
+      few: "%{count} uporabe"
+      other: "%{count} uporab"
     max_uses_prompt: Brez omejitve
     prompt: Ustvarite in delite povezave z drugimi, da omogočite dostop do tega strežnika
     table:
@@ -670,18 +669,18 @@ sl:
       body: Tukaj je kratek povzetek sporočil, ki ste jih zamudili od vašega zadnjega obiska v %{since}
       mention: "%{name} vas je omenil/a v:"
       new_followers_summary:
-        few: Prav tako ste pridobili %{count} nove sledilce, ko ste bili odsotni! Juhu!
         one: Prav tako ste pridobili enega novega sledilca, ko ste bili odsotni! Juhu!
-        other: Prav tako ste pridobili %{count} novih sledilcev, ko ste bili odsotni! Juhu!
         two: Prav tako ste pridobili %{count} nova sledilca, ko ste bili odsotni! Juhu!
+        few: Prav tako ste pridobili %{count} nove sledilce, ko ste bili odsotni! Juhu!
+        other: Prav tako ste pridobili %{count} novih sledilcev, ko ste bili odsotni! Juhu!
       subject:
-        few: "%{count} nova obvestila od vašega zadnjega obiska \U0001F418"
         one: "1 novo obvestilo od vašega zadnjega obiska \U0001F418"
-        other: "%{count} novih obvestil od vašega zadnjega obiska \U0001F418"
         two: "%{count} novi obvestili od vašega zadnjega obiska \U0001F418"
+        few: "%{count} nova obvestila od vašega zadnjega obiska \U0001F418"
+        other: "%{count} novih obvestil od vašega zadnjega obiska \U0001F418"
       title: V vaši odsotnosti...
     favourite:
-      body: "%{name} je vzljubil/a vaše stanje:"
+      body: '%{name} je vzljubil/a vaše stanje:'
       subject: "%{name} je vzljubil/a vaše stanje"
       title: Novo priljubljeno
     follow:
@@ -695,11 +694,11 @@ sl:
       title: Nova prošnja za sledenje
     mention:
       action: Odgovori
-      body: "%{name} vas je omenil/a v:"
-      subject: "%{name} vas je omenil/a"
+      body: '%{name} vas je omenil/a v:'
+      subject: '%{name} vas je omenil/a'
       title: Nova omemba
     reblog:
-      body: "%{name} je spodbudil/a vaše stanje:"
+      body: '%{name} je spodbudil/a vaše stanje:'
       subject: "%{name} je spodbudil/a vaše stanje"
       title: Nova spodbuda
   pagination:
@@ -796,22 +795,22 @@ sl:
     attached:
       description: 'Priloženo: %{attached}'
       image:
-        few: "%{count} slike"
         one: "%{count} slika"
-        other: "%{count} slik"
         two: "%{count} sliki"
+        few: "%{count} slike"
+        other: "%{count} slik"
       video:
-        few: "%{count} video posnetki"
         one: "%{count} video posnetek"
-        other: "%{count} video posnetkov"
         two: "%{count} video posnetka"
+        few: "%{count} video posnetki"
+        other: "%{count} video posnetkov"
     boosted_from_html: Spodbujeno iz %{acct_link}
     content_warning: 'Opozorilo o vsebini: %{warning}'
     disallowed_hashtags:
-      few: 'vsebuje nedovoljene ključnike: %{tags}'
       one: 'vsebuje nedovoljeni ključnik: %{tags}'
-      other: 'vsebuje nedovoljenih ključnikov: %{tags}'
       two: 'vsebuje nedovoljena ključnika: %{tags}'
+      few: 'vsebuje nedovoljene ključnike: %{tags}'
+      other: 'vsebuje nedovoljenih ključnikov: %{tags}'
     language_detection: Samodejno zaznaj jezik
     open_in_web: Odpri na spletu
     over_character_limit: omejitev %{max} znakov je presežena
@@ -822,10 +821,10 @@ sl:
       reblog: Spodbuda ne more biti pripeta
     poll:
       total_votes:
-        few: "%{count} glasovi"
         one: "%{count} glas"
-        other: "%{count} glasov"
         two: "%{count} glasova"
+        few: "%{count} glasovi"
+        other: "%{count} glasov"
       vote: Glasuj
     show_more: Pokaži več
     sign_in_to_participate: Prijavite se, če želite sodelovati v pogovoru
